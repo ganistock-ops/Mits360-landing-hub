@@ -1,0 +1,1482 @@
+<!-- ==========================================================================
+     MITS 360 Market Intelligence - Standalone WordPress / Elementor Widget
+     Alpha Terminal Dark Theme (Self-Contained HTML + Scoped CSS + ES6 JS)
+     ========================================================================== -->
+
+<!-- Google Fonts Preconnect & Loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ==========================================================================
+   SCOPED ALPHA TERMINAL DARK STYLING
+   All styles strictly scoped to #mits360-terminal-root to prevent any
+   conflicts with WordPress themes, Elementor, Divi, or Gutenberg styles.
+   ========================================================================== */
+
+#mits360-terminal-root {
+  /* Color Tokens */
+  --m360-bg-core: #06090e;
+  --m360-bg-surface: #0a0f18;
+  --m360-bg-surface-elevated: #111827;
+  --m360-bg-card: rgba(16, 24, 39, 0.85);
+  --m360-bg-card-hover: rgba(26, 38, 62, 0.9);
+  
+  --m360-border-subtle: rgba(255, 255, 255, 0.08);
+  --m360-border-medium: rgba(56, 189, 248, 0.2);
+  --m360-border-focus: #00f0ff;
+  
+  --m360-bull-bright: #00e676;
+  --m360-bull-dark: rgba(0, 230, 118, 0.14);
+  --m360-bull-text: #69f0ae;
+
+  --m360-bear-bright: #ff3366;
+  --m360-bear-dark: rgba(255, 51, 102, 0.14);
+  --m360-bear-text: #ff80ab;
+
+  --m360-neutral-blue: #00f0ff;
+  --m360-accent-gold: #f59e0b;
+  --m360-unchanged: #94a3b8;
+  
+  --m360-text-primary: #f8fafc;
+  --m360-text-secondary: #94a3b8;
+  --m360-text-muted: #64748b;
+  
+  --m360-font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --m360-font-mono: 'JetBrains Mono', 'Space Mono', monospace;
+  --m360-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Reset host container */
+  all: initial;
+  display: block;
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 10px 16px 40px 16px;
+  background-color: var(--m360-bg-core);
+  color: var(--m360-text-primary);
+  font-family: var(--m360-font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  background-image: 
+    radial-gradient(circle at 15% 10%, rgba(0, 240, 255, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(0, 230, 118, 0.04) 0%, transparent 50%),
+    linear-gradient(to bottom, rgba(6, 9, 14, 0.95), rgba(6, 9, 14, 0.98));
+  border-radius: 16px;
+  border: 1px solid var(--m360-border-subtle);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scoped universal box-sizing */
+#mits360-terminal-root *,
+#mits360-terminal-root *::before,
+#mits360-terminal-root *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clean reset for common WordPress style bleeds */
+#mits360-terminal-root p,
+#mits360-terminal-root h1,
+#mits360-terminal-root h2,
+#mits360-terminal-root h3,
+#mits360-terminal-root ul,
+#mits360-terminal-root li,
+#mits360-terminal-root button,
+#mits360-terminal-root input {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+#mits360-terminal-root .font-mono {
+  font-family: var(--m360-font-mono) !important;
+}
+
+/* Header & Hero Branding */
+#mits360-terminal-root .terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--m360-border-subtle);
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#mits360-terminal-root .brand-section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+#mits360-terminal-root .brand-radar {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.2), rgba(0, 230, 118, 0.1));
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}
+
+#mits360-terminal-root .brand-radar-inner {
+  width: 14px;
+  height: 14px;
+  background: var(--m360-neutral-blue);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--m360-neutral-blue);
+  animation: m360-pulse 2s infinite ease-in-out;
+}
+
+@keyframes m360-pulse {
+  0%, 100% { transform: scale(0.85); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 6px var(--m360-neutral-blue)); }
+}
+
+#mits360-terminal-root .brand-text h1 {
+  font-family: var(--m360-font-display);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+}
+
+#mits360-terminal-root .alpha-badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--m360-neutral-blue);
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: var(--m360-font-mono);
+}
+
+#mits360-terminal-root .alpha-badge.live {
+  color: var(--m360-bull-bright);
+  background: var(--m360-bull-dark);
+  border-color: rgba(0, 230, 118, 0.4);
+  box-shadow: 0 0 10px rgba(0, 230, 118, 0.2);
+}
+
+#mits360-terminal-root .brand-subtitle {
+  font-size: 13px;
+  color: var(--m360-text-secondary);
+  letter-spacing: 0.2px;
+  margin-top: 2px;
+}
+
+#mits360-terminal-root .market-status-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid var(--m360-border-subtle);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: var(--m360-font-mono);
+  font-size: 12px;
+  color: var(--m360-text-secondary);
+}
+
+#mits360-terminal-root .status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--m360-bull-bright);
+  box-shadow: 0 0 8px var(--m360-bull-bright);
+}
+
+/* Marquee / Index Pulse Strip */
+#mits360-terminal-root .index-pulse-strip {
+  background: rgba(10, 15, 24, 0.8);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 12px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+  margin-bottom: 22px;
+  scrollbar-width: none;
+}
+#mits360-terminal-root .index-pulse-strip::-webkit-scrollbar { display: none; }
+
+#mits360-terminal-root .pulse-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  font-family: var(--m360-font-mono);
+  font-size: 13px;
+  padding-right: 16px;
+  border-right: 1px solid var(--m360-border-subtle);
+}
+#mits360-terminal-root .pulse-item:last-child { border-right: none; }
+
+#mits360-terminal-root .pulse-name { color: var(--m360-text-secondary); font-weight: 600; font-size: 12px; }
+#mits360-terminal-root .pulse-val { font-weight: 700; color: var(--m360-text-primary); }
+
+#mits360-terminal-root .delta-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--m360-font-mono);
+}
+#mits360-terminal-root .delta-pill.bullish { background: var(--m360-bull-dark); color: var(--m360-bull-bright); }
+#mits360-terminal-root .delta-pill.bearish { background: var(--m360-bear-dark); color: var(--m360-bear-bright); }
+#mits360-terminal-root .delta-pill.vix-neutral { background: rgba(56, 189, 248, 0.12); color: var(--m360-neutral-blue); }
+
+/* Universe Tabs & Search */
+#mits360-terminal-root .universe-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+#mits360-terminal-root .universe-tabs {
+  display: flex;
+  background: rgba(10, 15, 24, 0.9);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 10px;
+  padding: 4px;
+  gap: 4px;
+  overflow-x: auto;
+}
+
+#mits360-terminal-root .tab-btn {
+  color: var(--m360-text-secondary);
+  font-family: var(--m360-font-display);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+#mits360-terminal-root .tab-btn:hover { color: #ffffff; background: rgba(255, 255, 255, 0.05); }
+#mits360-terminal-root .tab-btn.active {
+  background: rgba(0, 240, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.15);
+}
+
+#mits360-terminal-root .tab-count-badge {
+  font-family: var(--m360-font-mono);
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--m360-text-secondary);
+}
+#mits360-terminal-root .tab-btn.active .tab-count-badge { background: rgba(0, 240, 255, 0.25); color: #e0faff; }
+
+#mits360-terminal-root .quick-terminal-search { position: relative; min-width: 260px; }
+#mits360-terminal-root .search-input {
+  width: 100%;
+  background: rgba(10, 15, 24, 0.85);
+  border: 1px solid var(--m360-border-subtle);
+  color: var(--m360-text-primary);
+  font-family: var(--m360-font-mono);
+  font-size: 13px;
+  padding: 8px 12px 8px 34px;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+#mits360-terminal-root .search-input:focus {
+  border-color: var(--m360-neutral-blue);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+#mits360-terminal-root .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--m360-text-muted);
+  pointer-events: none;
+  font-size: 14px;
+}
+
+/* Market Breadth & ADR */
+#mits360-terminal-root .market-breadth-card {
+  background: var(--m360-bg-card);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#mits360-terminal-root .breadth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#mits360-terminal-root .breadth-title-group h2 {
+  font-family: var(--m360-font-display);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--m360-text-secondary);
+}
+#mits360-terminal-root .active-universe-name { color: var(--m360-neutral-blue); font-family: var(--m360-font-mono); }
+
+#mits360-terminal-root .adr-metric-badge {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  background: rgba(6, 9, 14, 0.8);
+  border: 1px solid var(--m360-border-subtle);
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+#mits360-terminal-root .adr-metric-label { font-size: 11px; color: var(--m360-text-secondary); text-transform: uppercase; font-weight: 600; }
+#mits360-terminal-root .adr-ratio-value { font-family: var(--m360-font-mono); font-size: 20px; font-weight: 800; color: var(--m360-bull-bright); }
+#mits360-terminal-root .adr-sentiment-tag {
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--m360-font-mono);
+}
+#mits360-terminal-root .adr-sentiment-tag.bullish { background: var(--m360-bull-dark); color: var(--m360-bull-bright); border: 1px solid rgba(0, 230, 118, 0.3); }
+#mits360-terminal-root .adr-sentiment-tag.bearish { background: var(--m360-bear-dark); color: var(--m360-bear-bright); border: 1px solid rgba(255, 51, 102, 0.3); }
+
+#mits360-terminal-root .adr-progress-container { margin-bottom: 12px; }
+#mits360-terminal-root .adr-progress-bar {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  gap: 2px;
+}
+#mits360-terminal-root .adr-segment { height: 100%; transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+#mits360-terminal-root .adr-segment.advances { background: linear-gradient(90deg, #00b050, #00e676); box-shadow: 0 0 10px rgba(0, 230, 118, 0.3); }
+#mits360-terminal-root .adr-segment.unchanged { background: #64748b; }
+#mits360-terminal-root .adr-segment.declines { background: linear-gradient(90deg, #ff3366, #c2185b); box-shadow: 0 0 10px rgba(255, 51, 102, 0.3); }
+
+#mits360-terminal-root .breadth-stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+#mits360-terminal-root .stat-pill-box {
+  background: rgba(10, 15, 24, 0.6);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#mits360-terminal-root .stat-pill-label { font-size: 11px; color: var(--m360-text-secondary); display: flex; align-items: center; gap: 4px; }
+#mits360-terminal-root .stat-pill-val { font-family: var(--m360-font-mono); font-weight: 700; font-size: 14px; }
+#mits360-terminal-root .val-green { color: var(--m360-bull-bright); }
+#mits360-terminal-root .val-red { color: var(--m360-bear-bright); }
+#mits360-terminal-root .val-neutral { color: var(--m360-text-secondary); }
+#mits360-terminal-root .val-cyan { color: var(--m360-neutral-blue); }
+
+/* Main Grid Layout */
+#mits360-terminal-root .terminal-grid-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 1100px) {
+  #mits360-terminal-root .terminal-grid-section { grid-template-columns: 1.35fr 1fr; }
+}
+
+#mits360-terminal-root .panel-card {
+  background: var(--m360-bg-card);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+#mits360-terminal-root .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#mits360-terminal-root .panel-title {
+  font-family: var(--m360-font-display);
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+}
+#mits360-terminal-root .panel-title-badge {
+  font-size: 10px;
+  font-family: var(--m360-font-mono);
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--m360-text-secondary);
+  border: 1px solid var(--m360-border-subtle);
+}
+
+#mits360-terminal-root .btn-toggle-group {
+  display: flex;
+  background: rgba(10, 15, 24, 0.8);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 7px;
+  padding: 2px;
+  gap: 2px;
+}
+#mits360-terminal-root .btn-toggle-pill {
+  color: var(--m360-text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#mits360-terminal-root .btn-toggle-pill:hover { color: #fff; }
+#mits360-terminal-root .btn-toggle-pill.active { background: rgba(255, 255, 255, 0.12); color: #fff; }
+#mits360-terminal-root .btn-toggle-pill.active.bull-mode { background: var(--m360-bull-dark); color: var(--m360-bull-bright); border: 1px solid rgba(0, 230, 118, 0.3); }
+#mits360-terminal-root .btn-toggle-pill.active.bear-mode { background: var(--m360-bear-dark); color: var(--m360-bear-bright); border: 1px solid rgba(255, 51, 102, 0.3); }
+
+/* Heatmap Grid */
+#mits360-terminal-root .heatmap-view-container { display: flex; flex-direction: column; gap: 14px; }
+#mits360-terminal-root .heatmap-sector-group {
+  background: rgba(10, 15, 24, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 9px;
+  padding: 12px;
+}
+#mits360-terminal-root .sector-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+#mits360-terminal-root .sector-name-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--m360-text-secondary); }
+#mits360-terminal-root .sector-delta-mini { font-family: var(--m360-font-mono); font-size: 11px; font-weight: 700; }
+
+#mits360-terminal-root .heatmap-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+  gap: 8px;
+}
+
+#mits360-terminal-root .heat-tile {
+  border-radius: 7px;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 68px;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#mits360-terminal-root .heat-tile:hover {
+  transform: translateY(-2px) scale(1.02);
+  z-index: 5;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+#mits360-terminal-root .heat-super-bull { background: linear-gradient(135deg, rgba(0, 180, 80, 0.45), rgba(0, 230, 118, 0.65)); border-color: rgba(0, 230, 118, 0.5); }
+#mits360-terminal-root .heat-bull { background: linear-gradient(135deg, rgba(6, 120, 60, 0.35), rgba(16, 185, 129, 0.45)); border-color: rgba(16, 185, 129, 0.3); }
+#mits360-terminal-root .heat-neutral-bull { background: linear-gradient(135deg, rgba(6, 78, 59, 0.3), rgba(16, 185, 129, 0.25)); border-color: rgba(16, 185, 129, 0.2); }
+#mits360-terminal-root .heat-neutral { background: rgba(30, 41, 59, 0.4); border-color: rgba(148, 163, 184, 0.15); }
+#mits360-terminal-root .heat-neutral-bear { background: linear-gradient(135deg, rgba(127, 29, 29, 0.3), rgba(220, 38, 38, 0.25)); border-color: rgba(239, 68, 68, 0.2); }
+#mits360-terminal-root .heat-bear { background: linear-gradient(135deg, rgba(153, 27, 27, 0.4), rgba(239, 68, 68, 0.45)); border-color: rgba(239, 68, 68, 0.3); }
+#mits360-terminal-root .heat-super-bear { background: linear-gradient(135deg, rgba(185, 28, 28, 0.5), rgba(255, 51, 102, 0.65)); border-color: rgba(255, 51, 102, 0.5); }
+
+#mits360-terminal-root .tile-top { display: flex; justify-content: space-between; align-items: baseline; }
+#mits360-terminal-root .tile-ticker { font-family: var(--m360-font-mono); font-size: 12px; font-weight: 800; color: #ffffff; }
+#mits360-terminal-root .tile-change { font-family: var(--m360-font-mono); font-size: 11px; font-weight: 700; color: #ffffff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); }
+#mits360-terminal-root .tile-bottom { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 3px; }
+#mits360-terminal-root .tile-price { font-family: var(--m360-font-mono); font-size: 10px; color: rgba(255, 255, 255, 0.85); }
+#mits360-terminal-root .tile-vol { font-size: 9px; color: rgba(255, 255, 255, 0.65); font-family: var(--m360-font-mono); }
+
+#mits360-terminal-root .heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--m360-border-subtle);
+  font-size: 10px;
+  color: var(--m360-text-secondary);
+  font-family: var(--m360-font-mono);
+}
+#mits360-terminal-root .legend-scale-bar {
+  height: 6px;
+  width: 180px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #ff3366, #ef4444, #334155, #10b981, #00e676);
+}
+
+/* Movers & Shakers */
+#mits360-terminal-root .sectors-list-container { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+#mits360-terminal-root .sector-row-card {
+  display: grid;
+  grid-template-columns: 28px 1.4fr 1fr 1fr 18px;
+  align-items: center;
+  padding: 10px 14px;
+  background: rgba(10, 15, 24, 0.7);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#mits360-terminal-root .sector-row-card:hover {
+  background: rgba(20, 29, 46, 0.85);
+  border-color: rgba(0, 240, 255, 0.3);
+  transform: translateX(3px);
+}
+#mits360-terminal-root .sector-row-card.selected {
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.45);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.12);
+}
+#mits360-terminal-root .sector-rank-badge { font-family: var(--m360-font-mono); font-size: 10px; font-weight: 700; color: var(--m360-text-muted); }
+#mits360-terminal-root .sector-info-name { font-weight: 600; font-size: 13px; color: var(--m360-text-primary); }
+#mits360-terminal-root .sector-mcap { font-size: 10px; color: var(--m360-text-muted); }
+#mits360-terminal-root .sector-row-change { font-family: var(--m360-font-mono); font-size: 12px; font-weight: 700; text-align: right; padding-right: 8px; }
+#mits360-terminal-root .sector-row-adr { display: flex; flex-direction: column; gap: 2px; }
+#mits360-terminal-root .sector-mini-track { height: 4px; border-radius: 2px; background: rgba(255, 255, 255, 0.08); overflow: hidden; display: flex; }
+#mits360-terminal-root .sector-mini-adv { background: var(--m360-bull-bright); }
+#mits360-terminal-root .sector-mini-dec { background: var(--m360-bear-bright); }
+#mits360-terminal-root .sector-adr-ratio-text { font-size: 9px; color: var(--m360-text-secondary); font-family: var(--m360-font-mono); }
+#mits360-terminal-root .sector-arrow { color: var(--m360-text-muted); font-size: 13px; text-align: right; }
+#mits360-terminal-root .sector-row-card.selected .sector-arrow { color: var(--m360-neutral-blue); }
+
+/* Drill-Down Panel */
+#mits360-terminal-root .sector-drilldown-box {
+  background: rgba(10, 15, 24, 0.9);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+}
+#mits360-terminal-root .drilldown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--m360-border-subtle);
+  margin-bottom: 12px;
+}
+#mits360-terminal-root .drilldown-sector-title { font-family: var(--m360-font-display); font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 8px; color: #fff; }
+#mits360-terminal-root .drilldown-split-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 580px) {
+  #mits360-terminal-root .drilldown-split-grid { grid-template-columns: 1fr 1fr; }
+}
+
+#mits360-terminal-root .movers-column { display: flex; flex-direction: column; gap: 8px; }
+#mits360-terminal-root .movers-column-header { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding-bottom: 4px; }
+#mits360-terminal-root .movers-column-header.gainers { color: var(--m360-bull-bright); }
+#mits360-terminal-root .movers-column-header.losers { color: var(--m360-bear-bright); }
+
+#mits360-terminal-root .mover-stock-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid var(--m360-border-subtle);
+  padding: 8px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#mits360-terminal-root .mover-stock-item:hover { background: rgba(25, 36, 58, 0.85); border-color: rgba(255, 255, 255, 0.2); }
+#mits360-terminal-root .mover-symbol { font-family: var(--m360-font-mono); font-size: 12px; font-weight: 700; color: #fff; display: block; }
+#mits360-terminal-root .mover-vol { font-size: 9px; color: var(--m360-text-muted); display: block; }
+#mits360-terminal-root .mover-price { font-family: var(--m360-font-mono); font-size: 11px; color: var(--m360-text-primary); display: block; text-align: right; }
+#mits360-terminal-root .mover-delta { font-family: var(--m360-font-mono); font-size: 11px; font-weight: 700; display: block; text-align: right; }
+
+/* Stock Quick-Inspection Modal / Drawer */
+#mits360-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 999998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+#mits360-drawer-backdrop.open { opacity: 1; pointer-events: auto; }
+
+#mits360-stock-drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 420px;
+  max-width: 92vw;
+  background: #090e17;
+  border-left: 1px solid var(--m360-border-medium);
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.85);
+  z-index: 999999;
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  color: var(--m360-text-primary);
+  font-family: var(--m360-font-body);
+}
+#mits360-stock-drawer.open { transform: translateX(0); }
+
+#mits360-stock-drawer .drawer-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--m360-border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#mits360-stock-drawer .drawer-title-box h3 { font-family: var(--m360-font-mono); font-size: 20px; font-weight: 800; color: #ffffff; }
+#mits360-stock-drawer .drawer-company-name { font-size: 12px; color: var(--m360-text-secondary); margin-top: 2px; }
+#mits360-stock-drawer .drawer-close-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--m360-border-subtle);
+  color: var(--m360-text-secondary);
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+#mits360-stock-drawer .drawer-close-btn:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
+
+#mits360-stock-drawer .drawer-body {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+#mits360-stock-drawer .drawer-hero-quote {
+  background: rgba(16, 24, 39, 0.6);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mits360-stock-drawer .drawer-price-large { font-family: var(--m360-font-mono); font-size: 24px; font-weight: 800; color: #fff; }
+#mits360-stock-drawer .drawer-change-large { font-family: var(--m360-font-mono); font-size: 14px; font-weight: 700; padding: 3px 8px; border-radius: 5px; }
+
+#mits360-stock-drawer .range-bar-container { background: rgba(10, 15, 24, 0.6); border: 1px solid var(--m360-border-subtle); border-radius: 9px; padding: 12px; }
+#mits360-stock-drawer .range-bar-title { font-size: 11px; color: var(--m360-text-secondary); margin-bottom: 6px; }
+#mits360-stock-drawer .range-bar-track { height: 6px; background: rgba(255, 255, 255, 0.1); border-radius: 3px; position: relative; margin: 10px 0 6px 0; }
+#mits360-stock-drawer .range-bar-fill { position: absolute; height: 100%; background: linear-gradient(90deg, #38bdf8, #00e676); border-radius: 3px; }
+#mits360-stock-drawer .range-bar-thumb { position: absolute; top: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; border-radius: 50%; background: #ffffff; box-shadow: 0 0 6px rgba(0, 240, 255, 0.8); }
+#mits360-stock-drawer .range-bar-bounds { display: flex; justify-content: space-between; font-family: var(--m360-font-mono); font-size: 10px; color: var(--m360-text-muted); }
+
+#mits360-stock-drawer .drawer-metrics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+#mits360-stock-drawer .drawer-metric-item { background: rgba(10, 15, 24, 0.6); border: 1px solid var(--m360-border-subtle); border-radius: 7px; padding: 10px; }
+#mits360-stock-drawer .drawer-metric-label { font-size: 10px; color: var(--m360-text-muted); text-transform: uppercase; margin-bottom: 2px; }
+#mits360-stock-drawer .drawer-metric-value { font-family: var(--m360-font-mono); font-size: 13px; font-weight: 700; color: var(--m360-text-primary); }
+
+#mits360-terminal-root .terminal-footer {
+  border-top: 1px solid var(--m360-border-subtle);
+  padding: 16px 0 0 0;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--m360-text-muted);
+  font-size: 11px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#mits360-terminal-root .footer-hub-badge { color: var(--m360-neutral-blue); font-family: var(--m360-font-mono); font-weight: 600; }
+</style>
+
+<!-- Terminal Root Layout -->
+<div id="mits360-terminal-root">
+
+  <!-- 1. Header & Hero Branding -->
+  <header class="terminal-header">
+    <div class="brand-section">
+      <div class="brand-radar" aria-hidden="true">
+        <div class="brand-radar-inner"></div>
+      </div>
+      <div class="brand-text">
+        <h1>MITS 360 <span class="alpha-badge">Alpha Terminal</span> <span class="alpha-badge live" id="m360DataSourceBadge">LIVE NSE EOD</span></h1>
+        <p class="brand-subtitle">Indian Equities Institutional Market Intelligence &amp; EOD Telemetry</p>
+      </div>
+    </div>
+
+    <div class="market-status-pill">
+      <div class="status-indicator" title="Live Telemetry"></div>
+      <span class="terminal-clock" id="m360TerminalClock">Loading NSE EOD Telemetry...</span>
+    </div>
+  </header>
+
+  <!-- 2. Market Index Pulse Marquee Strip -->
+  <section class="index-pulse-strip" id="m360TickerPulseStrip" aria-label="Key Market Tickers"></section>
+
+  <!-- 3. Universe Navigation & Search -->
+  <nav class="universe-nav-wrapper" aria-label="Equities Universe Selector">
+    <div class="universe-tabs" role="tablist">
+      <button class="tab-btn active" data-universe="nifty50">
+        Nifty 50 <span class="tab-count-badge">50</span>
+      </button>
+      <button class="tab-btn" data-universe="fno">
+        F&amp;O Stocks <span class="tab-count-badge">213</span>
+      </button>
+      <button class="tab-btn" data-universe="nifty100">
+        Nifty 100 <span class="tab-count-badge">100</span>
+      </button>
+      <button class="tab-btn" data-universe="nifty500">
+        Nifty 500 <span class="tab-count-badge">501</span>
+      </button>
+    </div>
+
+    <div class="quick-terminal-search">
+      <span class="search-icon" aria-hidden="true">🔍</span>
+      <input type="text" id="m360TerminalSearch" class="search-input" placeholder="Search ticker or company..." autocomplete="off">
+    </div>
+  </nav>
+
+  <!-- 4. Market Breadth & ADR Progress Bar -->
+  <section class="market-breadth-card">
+    <div class="breadth-header">
+      <div class="breadth-title-group">
+        <h2>Market Breadth &bull; <span class="active-universe-name" id="m360ActiveUniverseName">NIFTY 50</span></h2>
+      </div>
+
+      <div class="adr-metric-badge">
+        <span class="adr-metric-label">ADR Ratio</span>
+        <span class="adr-ratio-value" id="m360AdrRatioVal">--</span>
+        <span class="adr-sentiment-tag bullish" id="m360AdrSentimentTag">CALCULATING</span>
+      </div>
+    </div>
+
+    <div class="adr-progress-container">
+      <div class="adr-progress-bar">
+        <div class="adr-segment advances" id="m360AdrSegmentAdv" style="width: 50%;"></div>
+        <div class="adr-segment unchanged" id="m360AdrSegmentUnch" style="width: 5%;"></div>
+        <div class="adr-segment declines" id="m360AdrSegmentDec" style="width: 45%;"></div>
+      </div>
+    </div>
+
+    <div class="breadth-stats-row">
+      <div class="stat-pill-box">
+        <span class="stat-pill-label"><span style="color: var(--m360-bull-bright);">▲</span> Advances</span>
+        <span class="stat-pill-val val-green" id="m360AdvCountVal">--</span>
+      </div>
+      <div class="stat-pill-box">
+        <span class="stat-pill-label"><span style="color: var(--m360-bear-bright);">▼</span> Declines</span>
+        <span class="stat-pill-val val-red" id="m360DecCountVal">--</span>
+      </div>
+      <div class="stat-pill-box">
+        <span class="stat-pill-label"><span style="color: var(--m360-unchanged);">&bull;</span> Unchanged</span>
+        <span class="stat-pill-val val-neutral" id="m360UnchCountVal">--</span>
+      </div>
+      <div class="stat-pill-box">
+        <span class="stat-pill-label">Total Traded Value</span>
+        <span class="stat-pill-val val-cyan" id="m360StatTotalValue">--</span>
+      </div>
+      <div class="stat-pill-box">
+        <span class="stat-pill-label">52W Highs / Lows</span>
+        <span class="stat-pill-val font-mono"><span class="val-green" id="m360Stat52wHighs">--</span> / <span class="val-red" id="m360Stat52wLows">--</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Main Content Grid -->
+  <div class="terminal-grid-section">
+    <!-- Column A: Heatmap -->
+    <section class="panel-card">
+      <div class="panel-header">
+        <div class="panel-title">
+          <span>Performance Heatmap</span>
+          <span class="panel-title-badge">% Change EOD</span>
+        </div>
+        <div class="btn-toggle-group">
+          <button class="btn-toggle-pill active" data-heatmap-mode="grouped">Sectors</button>
+          <button class="btn-toggle-pill" data-heatmap-mode="flat">Flat Grid</button>
+        </div>
+      </div>
+
+      <div class="heatmap-view-container" id="m360HeatmapContainer"></div>
+
+      <div class="heatmap-legend" aria-hidden="true">
+        <span>-3.0%</span>
+        <div class="legend-scale-bar"></div>
+        <span>+3.0%</span>
+      </div>
+    </section>
+
+    <!-- Column B: Movers & Shakers -->
+    <section class="panel-card">
+      <div class="panel-header">
+        <div class="panel-title">
+          <span>Top 10 Core Sectors</span>
+          <span class="panel-title-badge">Movers &amp; Shakers</span>
+        </div>
+        <div class="btn-toggle-group">
+          <button class="btn-toggle-pill active bull-mode" data-sector-filter="best">Best</button>
+          <button class="btn-toggle-pill" data-sector-filter="worst">Worst</button>
+          <button class="btn-toggle-pill" data-sector-filter="all">All 10</button>
+        </div>
+      </div>
+
+      <div class="sectors-list-container" id="m360SectorsList" role="list"></div>
+
+      <div class="sector-drilldown-box">
+        <div class="drilldown-header">
+          <div class="drilldown-sector-title">
+            <span id="m360DrilldownSectorName">Nifty Sector</span>
+            <span class="delta-pill bullish" id="m360DrilldownSectorPill">+0.00%</span>
+          </div>
+          <span style="font-size: 10px; color: var(--m360-text-muted); font-family: var(--m360-font-mono);">Click ticker to inspect</span>
+        </div>
+
+        <div class="drilldown-split-grid">
+          <div class="movers-column">
+            <div class="movers-column-header gainers">▲ Top Gainers</div>
+            <div id="m360GainersList"></div>
+          </div>
+          <div class="movers-column">
+            <div class="movers-column-header losers">▼ Top Decliners</div>
+            <div id="m360LosersList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="terminal-footer">
+    <div>
+      <span class="footer-hub-badge">MITS360.CO.IN</span>
+      <span>&bull; Market Intelligence Engine</span>
+    </div>
+    <div>
+      <span>Alpha Terminal Dark Edition &bull; Auto-synced with NSE Bhavcopy</span>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Stock Quick-Inspection Drawer -->
+<div id="mits360-drawer-backdrop"></div>
+<aside id="mits360-stock-drawer" aria-label="Stock Quick Inspection Drawer">
+  <div class="drawer-header">
+    <div class="drawer-title-box">
+      <h3 id="m360DrawerTicker">--</h3>
+      <p class="drawer-company-name" id="m360DrawerCompany">--</p>
+    </div>
+    <button class="drawer-close-btn" id="m360DrawerCloseBtn" aria-label="Close Drawer">&times;</button>
+  </div>
+
+  <div class="drawer-body">
+    <div class="drawer-hero-quote">
+      <div>
+        <div style="font-size: 10px; color: var(--m360-text-muted); text-transform: uppercase;">Last Traded Price</div>
+        <div class="drawer-price-large" id="m360DrawerPrice">₹0.00</div>
+      </div>
+      <div class="drawer-change-large font-mono" id="m360DrawerChange">0.00%</div>
+    </div>
+
+    <div class="range-bar-container">
+      <div class="range-bar-title">Day Range (LTP Position)</div>
+      <div class="range-bar-track">
+        <div class="range-bar-fill" id="m360DrawerDayFill" style="width: 50%;"></div>
+        <div class="range-bar-thumb" id="m360DrawerDayThumb" style="left: 50%;"></div>
+      </div>
+      <div class="range-bar-bounds">
+        <span id="m360DrawerDayLow">₹0.00</span>
+        <span id="m360DrawerDayHigh">₹0.00</span>
+      </div>
+    </div>
+
+    <div class="range-bar-container">
+      <div class="range-bar-title">52-Week Range</div>
+      <div class="range-bar-track">
+        <div class="range-bar-fill" id="m360Drawer52Fill" style="width: 50%;"></div>
+        <div class="range-bar-thumb" id="m360Drawer52Thumb" style="left: 50%;"></div>
+      </div>
+      <div class="range-bar-bounds">
+        <span id="m360Drawer52Low">₹0.00</span>
+        <span id="m360Drawer52High">₹0.00</span>
+      </div>
+    </div>
+
+    <div class="drawer-metrics-grid">
+      <div class="drawer-metric-item">
+        <div class="drawer-metric-label">Sector</div>
+        <div class="drawer-metric-value" id="m360DrawerSector">--</div>
+      </div>
+      <div class="drawer-metric-item">
+        <div class="drawer-metric-label">Volume</div>
+        <div class="drawer-metric-value" id="m360DrawerVolume">--</div>
+      </div>
+      <div class="drawer-metric-item">
+        <div class="drawer-metric-label">Volume Activity</div>
+        <div class="drawer-metric-value" id="m360DrawerVolMul">--</div>
+      </div>
+      <div class="drawer-metric-item">
+        <div class="drawer-metric-label">Delivery %</div>
+        <div class="drawer-metric-value" id="m360DrawerDelivery">--</div>
+      </div>
+      <div class="drawer-metric-item">
+        <div class="drawer-metric-label">P/E Ratio</div>
+        <div class="drawer-metric-value" id="m360DrawerPE">--</div>
+      </div>
+      <div class="drawer-metric-item">
+        <div class="drawer-metric-label">Institutional Status</div>
+        <div class="drawer-metric-value" style="color: var(--m360-bull-bright);">ACTIVE</div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- ==========================================================================
+     SELF-CONTAINED JAVASCRIPT LOGIC
+     ========================================================================== -->
+<script>
+(function () {
+  'use strict';
+
+  // --- Configuration ---
+  // Live Raw GitHub file generated by GitHub Actions
+  const GITHUB_USERNAME = "ganistock-ops";
+  const GITHUB_REPO     = "Mits360-landing-hub";
+  const GITHUB_BRANCH   = "main";
+  
+  // Primary URL: Live Raw GitHub file generated by GitHub Actions
+  const REMOTE_DATA_URL = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${GITHUB_REPO}/${GITHUB_BRANCH}/data/market_summary.json`;
+  // Relative path (if hosted under same domain or development environment)
+  const LOCAL_DATA_URL  = 'data/market_summary.json';
+
+  // --- Embedded Fallback Dataset ---
+  const FALLBACK_DATA = {
+    meta: { market_date: "Latest EOD", source: "NSE EOD Feed" },
+    ticker_pulse: [
+      { symbol: "NIFTY 50", price: "25,388.90", change: "+0.78%", isPositive: true },
+      { symbol: "BANK NIFTY", price: "52,145.30", change: "+1.24%", isPositive: true },
+      { symbol: "SENSEX", price: "83,184.80", change: "+0.71%", isPositive: true },
+      { symbol: "INDIA VIX", price: "12.82", change: "-4.18%", isPositive: false, isVix: true },
+      { symbol: "NIFTY IT", price: "42,890.10", change: "-0.82%", isPositive: false },
+      { symbol: "NIFTY AUTO", price: "26,420.50", change: "+1.88%", isPositive: true },
+      { symbol: "NIFTY REALTY", price: "1,085.40", change: "+3.12%", isPositive: true },
+      { symbol: "NIFTY METAL", price: "9,640.25", change: "+2.45%", isPositive: true }
+    ],
+    universes: {
+      nifty50: { name: "NIFTY 50", adv: 34, dec: 14, unch: 2, adr: 2.43, totalValueCr: "₹82,450 Cr", high52: 18, low52: 0 },
+      fno: { name: "F&O STOCKS", adv: 124, dec: 54, unch: 6, adr: 2.30, totalValueCr: "₹1,94,300 Cr", high52: 42, low52: 3 },
+      nifty100: { name: "NIFTY 100", adv: 68, dec: 28, unch: 4, adr: 2.43, totalValueCr: "₹1,12,600 Cr", high52: 29, low52: 1 },
+      nifty500: { name: "NIFTY 500", adv: 342, dec: 142, unch: 16, adr: 2.41, totalValueCr: "₹1,68,900 Cr", high52: 84, low52: 7 }
+    },
+    sectors: [
+      { id: "realty", name: "Nifty Realty", change: 3.12, advCount: 8, decCount: 2, stockCount: 10 },
+      { id: "metals", name: "Nifty Metal", change: 2.45, advCount: 12, decCount: 3, stockCount: 15 },
+      { id: "auto", name: "Nifty Auto", change: 1.88, advCount: 11, decCount: 4, stockCount: 15 },
+      { id: "banking", name: "Nifty Bank", change: 1.24, advCount: 9, decCount: 3, stockCount: 12 },
+      { id: "finserv", name: "Nifty Fin Services", change: 1.05, advCount: 14, decCount: 6, stockCount: 20 },
+      { id: "infra", name: "Nifty Infra", change: 0.92, advCount: 20, decCount: 10, stockCount: 30 },
+      { id: "energy", name: "Nifty Energy", change: 0.65, advCount: 6, decCount: 4, stockCount: 10 },
+      { id: "fmcg", name: "Nifty FMCG", change: 0.18, advCount: 8, decCount: 7, stockCount: 15 },
+      { id: "pharma", name: "Nifty Pharma", change: -0.45, advCount: 7, decCount: 13, stockCount: 20 },
+      { id: "it", name: "Nifty IT", change: -0.82, advCount: 3, decCount: 7, stockCount: 10 }
+    ],
+    stocks: [
+      { symbol: "HDFCBANK", name: "HDFC Bank Ltd", sector: "banking", price: 1684.50, change: 1.42, volume: "18.4M", volMul: 1.35, high: 1692.00, low: 1665.10, high52: 1794.00, low52: 1363.55, pe: 19.8, delivery: "64.2%", universes: ["nifty50", "fno", "nifty100", "nifty500"] },
+      { symbol: "ICICIBANK", name: "ICICI Bank Ltd", sector: "banking", price: 1248.80, change: 2.15, volume: "15.1M", volMul: 1.62, high: 1254.00, low: 1222.00, high52: 1301.00, low52: 915.00, pe: 18.2, delivery: "58.1%", universes: ["nifty50", "fno", "nifty100", "nifty500"] },
+      { symbol: "TCS", name: "Tata Consultancy Services", sector: "it", price: 4235.00, change: -0.65, volume: "2.8M", volMul: 0.90, high: 4280.00, low: 4210.00, high52: 4585.00, low52: 3313.00, pe: 31.4, delivery: "68.4%", universes: ["nifty50", "fno", "nifty100", "nifty500"] },
+      { symbol: "INFY", name: "Infosys Ltd", sector: "it", price: 1886.40, change: -1.12, volume: "7.4M", volMul: 1.15, high: 1915.00, low: 1878.00, high52: 1991.45, low52: 1358.35, pe: 28.5, delivery: "62.0%", universes: ["nifty50", "fno", "nifty100", "nifty500"] },
+      { symbol: "TATAMOTORS", name: "Tata Motors Ltd", sector: "auto", price: 978.40, change: 2.85, volume: "14.8M", volMul: 1.70, high: 986.00, low: 950.00, high52: 1179.00, low52: 605.00, pe: 9.8, delivery: "47.8%", universes: ["nifty50", "fno", "nifty100", "nifty500"] },
+      { symbol: "RELIANCE", name: "Reliance Industries", sector: "energy", price: 2985.00, change: 0.82, volume: "9.2M", volMul: 1.18, high: 3010.00, low: 2962.00, high52: 3217.90, low52: 2221.00, pe: 27.9, delivery: "61.5%", universes: ["nifty50", "fno", "nifty100", "nifty500"] },
+      { symbol: "TATASTEEL", name: "Tata Steel Ltd", sector: "metals", price: 156.40, change: 3.15, volume: "42.0M", volMul: 1.85, high: 158.20, low: 151.80, high52: 184.60, low52: 114.60, pe: 28.5, delivery: "48.5%", universes: ["nifty50", "fno", "nifty100", "nifty500"] },
+      { symbol: "DLF", name: "DLF Ltd", sector: "realty", price: 875.40, change: 3.85, volume: "8.4M", volMul: 2.20, high: 884.00, low: 842.00, high52: 967.60, low52: 490.00, pe: 52.0, delivery: "45.0%", universes: ["fno", "nifty100", "nifty500"] },
+      { symbol: "SUNPHARMA", name: "Sun Pharma Industries", sector: "pharma", price: 1845.00, change: 0.75, volume: "3.2M", volMul: 1.05, high: 1862.00, low: 1828.00, high52: 1960.00, low52: 1080.00, pe: 38.2, delivery: "61.0%", universes: ["nifty50", "fno", "nifty100", "nifty500"] },
+      { symbol: "LT", name: "Larsen & Toubro Ltd", sector: "infra", price: 3620.00, change: 1.45, volume: "3.4M", volMul: 1.25, high: 3650.00, low: 3565.00, high52: 3919.90, low52: 2850.00, pe: 34.5, delivery: "60.0%", universes: ["nifty50", "fno", "nifty100", "nifty500"] }
+    ]
+  };
+
+  let activeData = FALLBACK_DATA;
+  let isLiveConnection = false;
+
+  const state = {
+    currentUniverse: 'nifty50',
+    heatmapMode: 'grouped',
+    sectorFilter: 'best',
+    selectedSectorId: 'realty',
+    searchQuery: ''
+  };
+
+  function getEl(id) { return document.getElementById(id); }
+
+  function formatINR(val) {
+    return '₹' + Number(val).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function getHeatClass(change) {
+    if (change >= 2.5) return 'heat-super-bull';
+    if (change >= 0.75) return 'heat-bull';
+    if (change > 0.05) return 'heat-neutral-bull';
+    if (change >= -0.05) return 'heat-neutral';
+    if (change >= -0.75) return 'heat-neutral-bear';
+    if (change >= -2.5) return 'heat-bear';
+    return 'heat-super-bear';
+  }
+
+  function updateHeader() {
+    const clock = getEl('m360TerminalClock');
+    const badge = getEl('m360DataSourceBadge');
+    if (clock) {
+      clock.textContent = isLiveConnection 
+        ? `NSE EOD Verified • ${activeData.meta.market_date}`
+        : `EOD Preview (Demo) • ${activeData.meta.market_date}`;
+    }
+    if (badge) {
+      badge.textContent = isLiveConnection ? 'LIVE NSE EOD' : 'DEMO MODE';
+      badge.className = `alpha-badge ${isLiveConnection ? 'live' : ''}`;
+    }
+
+    const ticker = getEl('m360TickerPulseStrip');
+    if (ticker && activeData.ticker_pulse) {
+      ticker.innerHTML = activeData.ticker_pulse.map(item => {
+        let pillClass = item.isPositive ? 'bullish' : 'bearish';
+        let icon = item.isPositive ? '▲' : '▼';
+        if (item.isVix) { pillClass = 'vix-neutral'; icon = '•'; }
+        return `
+          <div class="pulse-item">
+            <span class="pulse-name">${item.symbol}</span>
+            <span class="pulse-val">${item.price}</span>
+            <span class="delta-pill ${pillClass}">${icon} ${item.change}</span>
+          </div>
+        `;
+      }).join('');
+    }
+  }
+
+  function updateBreadth() {
+    const metrics = activeData.universes[state.currentUniverse];
+    if (!metrics) return;
+
+    const universeStocks = activeData.stocks.filter(s => s.universes.includes(state.currentUniverse));
+    let adv = metrics.adv !== undefined ? metrics.adv : universeStocks.filter(s => s.change > 0).length;
+    let dec = metrics.dec !== undefined ? metrics.dec : universeStocks.filter(s => s.change < 0).length;
+    let unch = metrics.unch !== undefined ? metrics.unch : universeStocks.filter(s => s.change === 0).length;
+    let adr = metrics.adr !== undefined ? metrics.adr : (dec > 0 ? (adv / dec).toFixed(2) : adv);
+
+    const total = adv + dec + unch || 1;
+    const advPct = ((adv / total) * 100).toFixed(1);
+    const unchPct = ((unch / total) * 100).toFixed(1);
+    const decPct = ((dec / total) * 100).toFixed(1);
+
+    const univName = getEl('m360ActiveUniverseName');
+    if (univName) univName.textContent = metrics.name || state.currentUniverse.toUpperCase();
+
+    const adrVal = getEl('m360AdrRatioVal');
+    if (adrVal) adrVal.textContent = `${adr}x`;
+
+    const tag = getEl('m360AdrSentimentTag');
+    if (tag) {
+      const isBull = adv >= dec;
+      tag.textContent = isBull ? 'BULLISH DOMINANCE' : 'BEARISH DOMINANCE';
+      tag.className = `adr-sentiment-tag ${isBull ? 'bullish' : 'bearish'}`;
+    }
+
+    if (getEl('m360AdvCountVal')) getEl('m360AdvCountVal').textContent = adv;
+    if (getEl('m360DecCountVal')) getEl('m360DecCountVal').textContent = dec;
+    if (getEl('m360UnchCountVal')) getEl('m360UnchCountVal').textContent = unch;
+
+    if (getEl('m360AdrSegmentAdv')) getEl('m360AdrSegmentAdv').style.width = `${advPct}%`;
+    if (getEl('m360AdrSegmentUnch')) getEl('m360AdrSegmentUnch').style.width = `${unchPct}%`;
+    if (getEl('m360AdrSegmentDec')) getEl('m360AdrSegmentDec').style.width = `${decPct}%`;
+
+    if (getEl('m360StatTotalValue')) getEl('m360StatTotalValue').textContent = metrics.totalValueCr || '₹94,200 Cr';
+    if (getEl('m360Stat52wHighs')) getEl('m360Stat52wHighs').textContent = metrics.high52 !== undefined ? metrics.high52 : adv;
+    if (getEl('m360Stat52wLows')) getEl('m360Stat52wLows').textContent = metrics.low52 !== undefined ? metrics.low52 : dec;
+  }
+
+  function renderHeatmap() {
+    let stocks = activeData.stocks.filter(s => s.universes.includes(state.currentUniverse));
+    if (state.searchQuery) {
+      const q = state.searchQuery.toLowerCase();
+      stocks = stocks.filter(s => s.symbol.toLowerCase().includes(q) || s.name.toLowerCase().includes(q));
+    }
+
+    const container = getEl('m360HeatmapContainer');
+    if (!container) return;
+
+    if (stocks.length === 0) {
+      container.innerHTML = `<div style="text-align: center; padding: 40px; color: var(--m360-text-muted); font-family: var(--m360-font-mono);">No constituents found matching "${state.searchQuery}"</div>`;
+      return;
+    }
+
+    if (state.heatmapMode === 'flat') {
+      const sorted = [...stocks].sort((a, b) => b.change - a.change);
+      container.innerHTML = `<div class="heatmap-tiles-grid">${sorted.map(s => renderTileHTML(s)).join('')}</div>`;
+    } else {
+      const sectorsMap = {};
+      activeData.sectors.forEach(sec => { sectorsMap[sec.id] = { ...sec, stocks: [] }; });
+      stocks.forEach(stock => {
+        if (sectorsMap[stock.sector]) { sectorsMap[stock.sector].stocks.push(stock); }
+        else {
+          if (!sectorsMap['infra']) sectorsMap['infra'] = { id: 'infra', name: 'Infrastructure & Misc', stocks: [] };
+          sectorsMap['infra'].stocks.push(stock);
+        }
+      });
+
+      let html = '';
+      Object.values(sectorsMap).forEach(sec => {
+        if (!sec.stocks || sec.stocks.length === 0) return;
+        sec.stocks.sort((a, b) => b.change - a.change);
+        const avgChange = (sec.stocks.reduce((acc, s) => acc + s.change, 0) / sec.stocks.length).toFixed(2);
+        const isPos = avgChange >= 0;
+        html += `
+          <div class="heatmap-sector-group">
+            <div class="sector-group-header">
+              <span class="sector-name-label">${sec.name} (${sec.stocks.length})</span>
+              <span class="sector-delta-mini ${isPos ? 'val-green' : 'val-red'}">${isPos ? '+' : ''}${avgChange}%</span>
+            </div>
+            <div class="heatmap-tiles-grid">${sec.stocks.map(s => renderTileHTML(s)).join('')}</div>
+          </div>
+        `;
+      });
+      container.innerHTML = html;
+    }
+
+    container.querySelectorAll('.heat-tile').forEach(tile => {
+      tile.addEventListener('click', () => {
+        const symbol = tile.getAttribute('data-symbol');
+        const stock = activeData.stocks.find(s => s.symbol === symbol);
+        if (stock) openDrawer(stock);
+      });
+    });
+  }
+
+  function renderTileHTML(stock) {
+    const heatClass = getHeatClass(stock.change);
+    const sign = stock.change > 0 ? '+' : '';
+    return `
+      <div class="heat-tile ${heatClass}" data-symbol="${stock.symbol}" title="${stock.name} (${stock.symbol})">
+        <div class="tile-top">
+          <span class="tile-ticker">${stock.symbol}</span>
+          <span class="tile-change">${sign}${stock.change}%</span>
+        </div>
+        <div class="tile-bottom">
+          <span class="tile-price">₹${Number(stock.price).toFixed(2)}</span>
+          <span class="tile-vol">${stock.volume || ''}</span>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderMoversAndShakers() {
+    const listEl = getEl('m360SectorsList');
+    if (!listEl) return;
+
+    let sectors = [...activeData.sectors];
+    sectors.forEach(sec => {
+      const secStocks = activeData.stocks.filter(s => s.sector === sec.id);
+      if (sec.advCount === undefined) {
+        sec.advCount = secStocks.filter(s => s.change > 0).length;
+        sec.decCount = secStocks.filter(s => s.change < 0).length;
+        sec.stockCount = secStocks.length;
+        sec.change = secStocks.length > 0 ? (secStocks.reduce((a, b) => a + b.change, 0) / secStocks.length) : sec.change;
+      }
+    });
+
+    if (state.sectorFilter === 'best') sectors.sort((a, b) => b.change - a.change);
+    else if (state.sectorFilter === 'worst') sectors.sort((a, b) => a.change - b.change);
+
+    if (!sectors.some(s => s.id === state.selectedSectorId) && sectors.length > 0) {
+      state.selectedSectorId = sectors[0].id;
+    }
+
+    listEl.innerHTML = sectors.map((sec, idx) => {
+      const isSelected = sec.id === state.selectedSectorId;
+      const sign = sec.change > 0 ? '+' : '';
+      const colorClass = sec.change >= 0 ? 'val-green' : 'val-red';
+      const totalStocks = (sec.advCount + sec.decCount) || sec.stockCount || 1;
+      const advRatio = Math.round((sec.advCount / totalStocks) * 100);
+      const decRatio = 100 - advRatio;
+
+      return `
+        <div class="sector-row-card ${isSelected ? 'selected' : ''}" data-sector-id="${sec.id}">
+          <span class="sector-rank-badge">#${idx + 1}</span>
+          <div>
+            <div class="sector-info-name">${sec.name}</div>
+            <div class="sector-mcap">${sec.stockCount || totalStocks} Constituents</div>
+          </div>
+          <div class="sector-row-change ${colorClass}">${sign}${Number(sec.change).toFixed(2)}%</div>
+          <div class="sector-row-adr">
+            <div class="sector-mini-track">
+              <div class="sector-mini-adv" style="width: ${advRatio}%"></div>
+              <div class="sector-mini-dec" style="width: ${decRatio}%"></div>
+            </div>
+            <div class="sector-adr-ratio-text">${sec.advCount} Adv / ${sec.decCount} Dec</div>
+          </div>
+          <div class="sector-arrow">›</div>
+        </div>
+      `;
+    }).join('');
+
+    listEl.querySelectorAll('.sector-row-card').forEach(row => {
+      row.addEventListener('click', () => {
+        state.selectedSectorId = row.getAttribute('data-sector-id');
+        renderMoversAndShakers();
+        renderDrilldown();
+      });
+    });
+
+    renderDrilldown();
+  }
+
+  function renderDrilldown() {
+    const sector = activeData.sectors.find(s => s.id === state.selectedSectorId) || activeData.sectors[0];
+    if (!sector) return;
+
+    const sign = sector.change > 0 ? '+' : '';
+    const isPos = sector.change >= 0;
+    if (getEl('m360DrilldownSectorName')) getEl('m360DrilldownSectorName').textContent = sector.name;
+    if (getEl('m360DrilldownSectorPill')) {
+      getEl('m360DrilldownSectorPill').textContent = `${sign}${Number(sector.change).toFixed(2)}%`;
+      getEl('m360DrilldownSectorPill').className = `delta-pill ${isPos ? 'bullish' : 'bearish'}`;
+    }
+
+    let gainers = sector.gainers;
+    let losers = sector.losers;
+    if (!gainers || !losers) {
+      const secStocks = activeData.stocks.filter(s => s.sector === sector.id);
+      gainers = [...secStocks].sort((a, b) => b.change - a.change).slice(0, 5);
+      losers = [...secStocks].sort((a, b) => a.change - b.change).slice(0, 5);
+    }
+
+    const gList = getEl('m360GainersList');
+    if (gList) {
+      gList.innerHTML = (!gainers || gainers.length === 0 || gainers[0].change <= 0)
+        ? `<div style="font-size: 11px; color: var(--m360-text-muted); padding: 6px;">No positive gainers today</div>`
+        : gainers.map(s => renderMoverHTML(s)).join('');
+    }
+
+    const lList = getEl('m360LosersList');
+    if (lList) {
+      lList.innerHTML = (!losers || losers.length === 0 || losers[0].change >= 0)
+        ? `<div style="font-size: 11px; color: var(--m360-text-muted); padding: 6px;">No negative decliners today</div>`
+        : losers.map(s => renderMoverHTML(s)).join('');
+    }
+
+    document.querySelectorAll('#mits360-terminal-root .mover-stock-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const symbol = item.getAttribute('data-symbol');
+        const stock = activeData.stocks.find(s => s.symbol === symbol);
+        if (stock) openDrawer(stock);
+      });
+    });
+  }
+
+  function renderMoverHTML(stock) {
+    const sign = stock.change > 0 ? '+' : '';
+    const isPos = stock.change >= 0;
+    return `
+      <div class="mover-stock-item" data-symbol="${stock.symbol}">
+        <div>
+          <span class="mover-symbol">${stock.symbol}</span>
+          <span class="mover-vol">Vol: ${stock.volume || '1.2M'}</span>
+        </div>
+        <div>
+          <span class="mover-price">₹${Number(stock.price).toFixed(2)}</span>
+          <span class="mover-delta ${isPos ? 'val-green' : 'val-red'}">${sign}${Number(stock.change).toFixed(2)}%</span>
+        </div>
+      </div>
+    `;
+  }
+
+  function openDrawer(stock) {
+    if (getEl('m360DrawerTicker')) getEl('m360DrawerTicker').textContent = stock.symbol;
+    if (getEl('m360DrawerCompany')) getEl('m360DrawerCompany').textContent = stock.name;
+    if (getEl('m360DrawerPrice')) getEl('m360DrawerPrice').textContent = formatINR(stock.price);
+
+    const sign = stock.change > 0 ? '+' : '';
+    const chgEl = getEl('m360DrawerChange');
+    if (chgEl) {
+      chgEl.textContent = `${sign}${Number(stock.change).toFixed(2)}%`;
+      chgEl.className = `drawer-change-large font-mono ${stock.change >= 0 ? 'heat-super-bull' : 'heat-super-bear'}`;
+    }
+
+    const secObj = activeData.sectors.find(s => s.id === stock.sector);
+    if (getEl('m360DrawerSector')) getEl('m360DrawerSector').textContent = secObj ? secObj.name : stock.sector.toUpperCase();
+    if (getEl('m360DrawerVolume')) getEl('m360DrawerVolume').textContent = stock.volume || 'N/A';
+    if (getEl('m360DrawerVolMul')) getEl('m360DrawerVolMul').textContent = `${stock.volMul || '1.2'}x vs 20D Avg`;
+    if (getEl('m360DrawerDelivery')) getEl('m360DrawerDelivery').textContent = stock.delivery || '52.4%';
+    if (getEl('m360DrawerPE')) getEl('m360DrawerPE').textContent = `${stock.pe || 24.5}x`;
+
+    const dayLow = stock.low || stock.price * 0.98;
+    const dayHigh = stock.high || stock.price * 1.02;
+    const dayRange = dayHigh - dayLow;
+    const dayPct = dayRange > 0 ? Math.min(100, Math.max(0, ((stock.price - dayLow) / dayRange) * 100)) : 50;
+    if (getEl('m360DrawerDayLow')) getEl('m360DrawerDayLow').textContent = formatINR(dayLow);
+    if (getEl('m360DrawerDayHigh')) getEl('m360DrawerDayHigh').textContent = formatINR(dayHigh);
+    if (getEl('m360DrawerDayFill')) getEl('m360DrawerDayFill').style.width = `${dayPct}%`;
+    if (getEl('m360DrawerDayThumb')) getEl('m360DrawerDayThumb').style.left = `${dayPct}%`;
+
+    const yrLow = stock.low52 || stock.price * 0.7;
+    const yrHigh = stock.high52 || stock.price * 1.25;
+    const yrRange = yrHigh - yrLow;
+    const yrPct = yrRange > 0 ? Math.min(100, Math.max(0, ((stock.price - yrLow) / yrRange) * 100)) : 50;
+    if (getEl('m360Drawer52Low')) getEl('m360Drawer52Low').textContent = formatINR(yrLow);
+    if (getEl('m360Drawer52High')) getEl('m360Drawer52High').textContent = formatINR(yrHigh);
+    if (getEl('m360Drawer52Fill')) getEl('m360Drawer52Fill').style.width = `${yrPct}%`;
+    if (getEl('m360Drawer52Thumb')) getEl('m360Drawer52Thumb').style.left = `${yrPct}%`;
+
+    getEl('mits360-stock-drawer').classList.add('open');
+    getEl('mits360-drawer-backdrop').classList.add('open');
+  }
+
+  function closeDrawer() {
+    getEl('mits360-stock-drawer').classList.remove('open');
+    getEl('mits360-drawer-backdrop').classList.remove('open');
+  }
+
+  async function loadData() {
+    // Try relative URL first, then remote GitHub raw URL
+    const urlsToTry = [LOCAL_DATA_URL, REMOTE_DATA_URL];
+    let loaded = false;
+
+    for (const url of urlsToTry) {
+      try {
+        const res = await fetch(url + '?nocache=' + Date.now());
+        if (res.ok) {
+          const json = await res.json();
+          if (json && json.universes && json.stocks) {
+            activeData = json;
+            isLiveConnection = true;
+            loaded = true;
+            break;
+          }
+        }
+      } catch (e) {
+        // continue to next URL
+      }
+    }
+
+    if (!loaded) {
+      activeData = FALLBACK_DATA;
+      isLiveConnection = false;
+    }
+
+    if (activeData.sectors && activeData.sectors.length > 0) {
+      state.selectedSectorId = activeData.sectors[0].id;
+    }
+
+    updateHeader();
+    updateBreadth();
+    renderHeatmap();
+    renderMoversAndShakers();
+  }
+
+  function bindEvents() {
+    document.querySelectorAll('#mits360-terminal-root .tab-btn').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('#mits360-terminal-root .tab-btn').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        state.currentUniverse = tab.getAttribute('data-universe');
+        updateBreadth();
+        renderHeatmap();
+        renderMoversAndShakers();
+      });
+    });
+
+    document.querySelectorAll('#mits360-terminal-root [data-heatmap-mode]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#mits360-terminal-root [data-heatmap-mode]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.heatmapMode = btn.getAttribute('data-heatmap-mode');
+        renderHeatmap();
+      });
+    });
+
+    document.querySelectorAll('#mits360-terminal-root [data-sector-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#mits360-terminal-root [data-sector-filter]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.sectorFilter = btn.getAttribute('data-sector-filter');
+        renderMoversAndShakers();
+      });
+    });
+
+    const searchInput = getEl('m360TerminalSearch');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        state.searchQuery = e.target.value.trim();
+        renderHeatmap();
+      });
+    }
+
+    const closeBtn = getEl('m360DrawerCloseBtn');
+    const backdrop = getEl('mits360-drawer-backdrop');
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    if (backdrop) backdrop.addEventListener('click', closeDrawer);
+    window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
+  }
+
+  function init() {
+    bindEvents();
+    loadData();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
