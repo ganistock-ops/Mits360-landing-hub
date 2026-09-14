@@ -504,7 +504,7 @@
 
 #mits360-terminal-root .heatmap-tiles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 8px;
 }
 
@@ -515,9 +515,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 68px;
+  min-height: 64px;
   border: 1px solid transparent;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 #mits360-terminal-root .heat-tile:hover {
   transform: translateY(-2px) scale(1.02);
@@ -534,12 +536,73 @@
 #mits360-terminal-root .heat-bear { background: linear-gradient(135deg, rgba(153, 27, 27, 0.4), rgba(239, 68, 68, 0.45)); border-color: rgba(239, 68, 68, 0.3); }
 #mits360-terminal-root .heat-super-bear { background: linear-gradient(135deg, rgba(185, 28, 28, 0.5), rgba(255, 51, 102, 0.65)); border-color: rgba(255, 51, 102, 0.5); }
 
-#mits360-terminal-root .tile-top { display: flex; justify-content: space-between; align-items: baseline; }
-#mits360-terminal-root .tile-ticker { font-family: var(--m360-font-mono); font-size: 12px; font-weight: 800; color: #ffffff; }
-#mits360-terminal-root .tile-change { font-family: var(--m360-font-mono); font-size: 11px; font-weight: 700; color: #ffffff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); }
-#mits360-terminal-root .tile-bottom { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 3px; }
-#mits360-terminal-root .tile-price { font-family: var(--m360-font-mono); font-size: 10px; color: rgba(255, 255, 255, 0.85); }
-#mits360-terminal-root .tile-vol { font-size: 9px; color: rgba(255, 255, 255, 0.65); font-family: var(--m360-font-mono); }
+#mits360-terminal-root .tile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.25;
+  width: 100%;
+}
+#mits360-terminal-root .tile-ticker {
+  font-family: var(--m360-font-mono);
+  font-size: 12px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+#mits360-terminal-root .tile-change {
+  font-family: var(--m360-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
+  text-align: right;
+}
+#mits360-terminal-root .tile-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.2;
+  margin-top: 4px;
+  width: 100%;
+}
+#mits360-terminal-root .tile-price {
+  font-family: var(--m360-font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+#mits360-terminal-root .tile-vol {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: var(--m360-font-mono);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
+  text-align: right;
+  display: inline-flex;
+  align-items: center;
+}
+#mits360-terminal-root .tile-vol:not(:empty)::before {
+  content: "•";
+  margin-right: 4px;
+  opacity: 0.45;
+  font-size: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 #mits360-terminal-root .heatmap-legend {
   display: flex;
@@ -740,6 +803,140 @@
   gap: 10px;
 }
 #mits360-terminal-root .footer-hub-badge { color: var(--m360-neutral-blue); font-family: var(--m360-font-mono); font-weight: 600; }
+
+/* Responsive adjustments for WordPress / Elementor embedding */
+@media (max-width: 768px) {
+  #mits360-terminal-root .terminal-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  #mits360-terminal-root .universe-nav-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  #mits360-terminal-root .universe-tabs {
+    overflow-x: auto;
+    width: 100%;
+  }
+  #mits360-terminal-root .search-box-container {
+    width: 100%;
+  }
+  #mits360-terminal-root .sector-row-card {
+    grid-template-columns: 24px 1.2fr 1fr 18px;
+  }
+  #mits360-terminal-root .sector-row-adr {
+    display: none;
+  }
+  #mits360-stock-drawer {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+}
+
+/* Mobile Screens under 600px - Stock Card & Layout Optimization */
+@media (max-width: 600px) {
+  #mits360-terminal-root {
+    padding: 8px 10px 30px 10px !important;
+    border-radius: 12px !important;
+  }
+  #mits360-terminal-root .panel-card {
+    padding: 12px 10px !important;
+  }
+  #mits360-terminal-root .heatmap-sector-group {
+    padding: 8px 8px !important;
+    margin-bottom: 10px !important;
+  }
+  #mits360-terminal-root .sector-group-header {
+    margin-bottom: 6px !important;
+    padding-bottom: 6px !important;
+  }
+  #mits360-terminal-root .sector-name-label {
+    font-size: 11px !important;
+  }
+  #mits360-terminal-root .heatmap-tiles-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
+    gap: 6px !important;
+  }
+  #mits360-terminal-root .heat-tile {
+    padding: 7px 8px !important;
+    min-height: 58px !important;
+    border-radius: 6px !important;
+  }
+  #mits360-terminal-root .tile-top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 4px !important;
+    line-height: 1.25 !important;
+    width: 100% !important;
+  }
+  #mits360-terminal-root .tile-ticker {
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.2px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+  #mits360-terminal-root .tile-change {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+    text-align: right !important;
+  }
+  #mits360-terminal-root .tile-bottom {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 4px !important;
+    line-height: 1.2 !important;
+    margin-top: 4px !important;
+    width: 100% !important;
+  }
+  #mits360-terminal-root .tile-price {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+  #mits360-terminal-root .tile-vol {
+    font-size: 10px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+    text-align: right !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+  #mits360-terminal-root .tile-vol:not(:empty)::before {
+    content: "•";
+    margin-right: 3px;
+    opacity: 0.45;
+    font-size: 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #mits360-terminal-root .breadth-stats-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+  #mits360-terminal-root .mover-stock-item {
+    padding: 7px 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #mits360-terminal-root .heatmap-tiles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+  }
+}
 </style>
 
 <!-- Terminal Root Layout -->

@@ -737,42 +737,75 @@ body {
 .tile-top {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.25;
+  width: 100%;
 }
 
 .tile-ticker {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
   color: #ffffff;
   letter-spacing: 0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .tile-change {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   color: #ffffff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
+  text-align: right;
 }
 
 .tile-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.2;
   margin-top: 4px;
+  width: 100%;
 }
 
 .tile-price {
   font-family: var(--font-mono);
   font-size: 11px;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .tile-vol {
   font-size: 10px;
   color: rgba(255, 255, 255, 0.65);
   font-family: var(--font-mono);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
+  text-align: right;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tile-vol:not(:empty)::before {
+  content: "•";
+  margin-right: 4px;
+  opacity: 0.45;
+  font-size: 8px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Legend Strip */
@@ -1244,6 +1277,7 @@ body {
   .universe-nav-wrapper {
     flex-direction: column;
     align-items: stretch;
+    gap: 12px;
   }
   .universe-tabs {
     overflow-x: auto;
@@ -1253,5 +1287,126 @@ body {
   }
   .sector-row-adr {
     display: none;
+  }
+  .stock-quick-drawer {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+/* Mobile Screens under 600px - Stock Card & Layout Optimization */
+@media (max-width: 600px) {
+  .terminal-layout {
+    padding: 0 10px 40px 10px;
+  }
+
+  .panel-card {
+    padding: 12px 10px;
+  }
+
+  .heatmap-sector-group {
+    padding: 8px 8px;
+    margin-bottom: 10px;
+  }
+
+  .sector-group-header {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
+
+  .sector-name-label {
+    font-size: 11px;
+  }
+
+  .heatmap-tiles-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 6px;
+  }
+
+  .heat-tile {
+    padding: 7px 8px !important;
+    min-height: 58px !important;
+    border-radius: 6px !important;
+  }
+
+  .tile-top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 4px !important;
+    line-height: 1.25 !important;
+    width: 100% !important;
+  }
+
+  .tile-ticker {
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.2px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+
+  .tile-change {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+    text-align: right !important;
+  }
+
+  .tile-bottom {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 4px !important;
+    line-height: 1.2 !important;
+    margin-top: 4px !important;
+    width: 100% !important;
+  }
+
+  .tile-price {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  .tile-vol {
+    font-size: 10px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+    text-align: right !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  .tile-vol:not(:empty)::before {
+    content: "•";
+    margin-right: 3px;
+    opacity: 0.45;
+    font-size: 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .breadth-stats-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .mover-stock-item {
+    padding: 7px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heatmap-tiles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
   }
 }
