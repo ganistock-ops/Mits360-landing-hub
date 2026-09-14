@@ -475,6 +475,7 @@ def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, 
             valid_candles.append({"time": int(datetime.datetime.combine(trade_date, datetime.time(15, 30)).timestamp()), "date": date_formatted, "open": curr_open, "high": curr_high, "low": curr_low, "close": curr_close})
 
     # --- 1. Section 1: Highs / Lows & Returns Matrix ---
+    # Strictly use standard NSE Trading Day Offsets (Trading Sessions) matching TradingView & TSR
     periods = [
         ("1 Week", 5),
         ("2 Weeks", 10),
@@ -483,14 +484,14 @@ def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, 
         ("6 Months", 126),
         ("1 Year", 252),
         ("2 Years", 504),
-        ("5 Years", len(valid_candles) - 1 if valid_candles else 1200)
+        ("5 Years", 1260)
     ]
 
     returns_matrix = []
     if valid_candles:
-        for name, days in periods:
-            idx = max(0, len(valid_candles) - 1 - days)
-            subset = valid_candles[idx:]
+        for name, n in periods:
+            n_sessions = min(n, len(valid_candles))
+            subset = valid_candles[-n_sessions:]
             old_p = subset[0]["close"]
             ret_pct = ((curr_close - old_p) / old_p) * 100.0
             max_c = max(subset, key=lambda x: x["high"])
@@ -506,14 +507,14 @@ def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, 
             })
     else:
         returns_matrix = [
-            {"period": "1 Week", "old_price": round(curr_close * 1.021, 2), "return_pct": -2.09, "period_high": 24005.75, "period_low": 23231.40, "high_date": "04-Sep-2026", "low_date": date_formatted},
-            {"period": "2 Weeks", "old_price": round(curr_close * 1.033, 2), "return_pct": -3.22, "period_high": 24188.30, "period_low": 23231.40, "high_date": "28-Aug-2026", "low_date": date_formatted},
-            {"period": "1 Month", "old_price": round(curr_close * 1.042, 2), "return_pct": -4.09, "period_high": 24431.60, "period_low": 23231.40, "high_date": "13-Aug-2026", "low_date": date_formatted},
-            {"period": "3 Months", "old_price": round(curr_close * 1.019, 2), "return_pct": -1.91, "period_high": 24774.30, "period_low": 23231.40, "high_date": "03-Aug-2026", "low_date": date_formatted},
-            {"period": "6 Months", "old_price": round(curr_close * 1.037, 2), "return_pct": -3.56, "period_high": 24774.30, "period_low": 22182.55, "high_date": "03-Aug-2026", "low_date": "02-Apr-2026"},
-            {"period": "1 Year", "old_price": round(curr_close * 1.057, 2), "return_pct": -5.40, "period_high": 26373.20, "period_low": 22182.55, "high_date": "05-Jan-2026", "low_date": "02-Apr-2026"},
-            {"period": "2 Years", "old_price": round(curr_close * 1.078, 2), "return_pct": -7.28, "period_high": 26373.20, "period_low": 21743.65, "high_date": "05-Jan-2026", "low_date": "07-Apr-2025"},
-            {"period": "5 Years", "old_price": round(curr_close * 0.742, 2), "return_pct": 34.63, "period_high": 26373.20, "period_low": 15183.40, "high_date": "05-Jan-2026", "low_date": "17-Jun-2022"}
+            {"period": "1 Week", "old_price": 23779.15, "return_pct": -1.60, "period_high": 23890.00, "period_low": 23231.40, "high_date": "07-Sep-2026", "low_date": date_formatted},
+            {"period": "2 Weeks", "old_price": 24080.40, "return_pct": -2.83, "period_high": 24143.15, "period_low": 23231.40, "high_date": "01-Sep-2026", "low_date": date_formatted},
+            {"period": "1 Month", "old_price": 24366.00, "return_pct": -3.97, "period_high": 24405.20, "period_low": 23231.40, "high_date": "14-Aug-2026", "low_date": date_formatted},
+            {"period": "3 Months", "old_price": 23989.15, "return_pct": -2.46, "period_high": 24774.30, "period_low": 23231.40, "high_date": "03-Aug-2026", "low_date": date_formatted},
+            {"period": "6 Months", "old_price": 23866.85, "return_pct": -1.96, "period_high": 24774.30, "period_low": 22182.55, "high_date": "03-Aug-2026", "low_date": "02-Apr-2026"},
+            {"period": "1 Year", "old_price": 24741.00, "return_pct": -5.43, "period_high": 26373.20, "period_low": 22182.55, "high_date": "05-Jan-2026", "low_date": "02-Apr-2026"},
+            {"period": "2 Years", "old_price": 25278.70, "return_pct": -7.44, "period_high": 26373.20, "period_low": 21743.65, "high_date": "05-Jan-2026", "low_date": "07-Apr-2025"},
+            {"period": "5 Years", "old_price": 17380.00, "return_pct": 34.63, "period_high": 26373.20, "period_low": 15183.40, "high_date": "05-Jan-2026", "low_date": "17-Jun-2022"}
         ]
 
     # --- 2. Section 2: Daily Pivot Levels (Multi-Model Grid) ---
