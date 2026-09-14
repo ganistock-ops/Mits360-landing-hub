@@ -431,6 +431,43 @@ def process_bhavcopy(sec_csv_bytes: bytes, universes: dict, index_data: dict) ->
     }
 
 
+def get_anchor_target_date(trade_date: datetime.date, period_name: str) -> datetime.date:
+    """Computes exact calendar lookback anchor target date matching TSR benchmark."""
+    y, m, d = trade_date.year, trade_date.month, trade_date.day
+    if period_name == "1 Week":
+        return trade_date - datetime.timedelta(days=7)
+    elif period_name == "2 Weeks":
+        return trade_date - datetime.timedelta(days=14)
+    elif period_name == "1 Month":
+        prev_m = 12 if m == 1 else m - 1
+        target_y = y - 1 if m == 1 else y
+        max_d = 30 if prev_m in (4, 6, 9, 11) else (28 if prev_m == 2 else 31)
+        return datetime.date(target_y, prev_m, min(d, max_d))
+    elif period_name == "3 Months":
+        target_m = m - 3
+        target_y = y
+        if target_m <= 0:
+            target_m += 12
+            target_y -= 1
+        max_d = 30 if target_m in (4, 6, 9, 11) else (28 if target_m == 2 else 31)
+        return datetime.date(target_y, target_m, min(d, max_d))
+    elif period_name == "6 Months":
+        target_m = m - 6
+        target_y = y
+        if target_m <= 0:
+            target_m += 12
+            target_y -= 1
+        max_d = 30 if target_m in (4, 6, 9, 11) else (28 if target_m == 2 else 31)
+        return datetime.date(target_y, target_m, min(d, max_d))
+    elif period_name == "1 Year":
+        return datetime.date(y - 1, m, d)
+    elif period_name == "2 Years":
+        return datetime.date(y - 2, m, d)
+    elif period_name == "5 Years":
+        return datetime.date(y - 5, m, d)
+    return trade_date
+
+
 def calculate_index_technical_analytics(
     trade_date: datetime.date,
     index_data: dict,
@@ -468,8 +505,18 @@ def calculate_index_technical_analytics(
         q = res["indicators"]["quote"][0]
         for t, o, h, l, c in zip(timestamps, q.get("open", []), q.get("high", []), q.get("low", []), q.get("close", [])):
             if None not in (t, o, h, l, c):
-                d_str = datetime.datetime.fromtimestamp(t).strftime("%d-%b-%Y")
-                valid_candles.append({"time": t, "date": d_str, "open": float(o), "high": float(h), "low": float(l), "close": float(c)})
+                dt = datetime.datetime.fromtimestamp(t)
+                d_str = dt.strftime("%d-%b-%Y")
+                d_obj = dt.date()
+                valid_candles.append({
+                    "time": t,
+                    "date": d_str,
+                    "date_obj": d_obj,
+                    "open": float(o),
+                    "high": float(h),
+                    "low": float(l),
+                    "close": float(c)
+                })
         print(f"    Loaded {len(valid_candles)} historical candles for {display_name}.")
     except Exception as e:
         print(f"    [!] Notice: Could not fetch Yahoo chart for {display_name} ({e}), utilizing baseline historical dataset.")
@@ -479,12 +526,28 @@ def calculate_index_technical_analytics(
     if valid_candles:
         last_candle = valid_candles[-1]
         if last_candle["date"] == date_formatted or abs(last_candle["close"] - curr_close) < 1.0:
-            valid_candles[-1] = {"time": last_candle["time"], "date": date_formatted, "open": curr_open, "high": curr_high, "low": curr_low, "close": curr_close}
+            valid_candles[-1] = {
+                "time": last_candle["time"],
+                "date": date_formatted,
+                "date_obj": trade_date,
+                "open": curr_open,
+                "high": curr_high,
+                "low": curr_low,
+                "close": curr_close
+            }
         else:
-            valid_candles.append({"time": int(datetime.datetime.combine(trade_date, datetime.time(15, 30)).timestamp()), "date": date_formatted, "open": curr_open, "high": curr_high, "low": curr_low, "close": curr_close})
+            valid_candles.append({
+                "time": int(datetime.datetime.combine(trade_date, datetime.time(15, 30)).timestamp()),
+                "date": date_formatted,
+                "date_obj": trade_date,
+                "open": curr_open,
+                "high": curr_high,
+                "low": curr_low,
+                "close": curr_close
+            })
 
     # --- 1. Section 1: Highs / Lows & Returns Matrix ---
-    # Strictly use standard NSE Trading Day Offsets (Trading Sessions) matching TradingView & TSR
+    # Highs/Lows strictly from N trading sessions; Old Price & Returns from anchor session prior to lookback
     periods = [
         ("1 Week", 5),
         ("2 Weeks", 10),
@@ -499,12 +562,24 @@ def calculate_index_technical_analytics(
     returns_matrix = []
     if valid_candles:
         for name, n in periods:
+            # Slicing strictly within the N trading sessions for Period High/Low & Dates
             n_sessions = min(n, len(valid_candles))
             subset = valid_candles[-n_sessions:]
-            old_p = subset[0]["close"]
-            ret_pct = ((curr_close - old_p) / old_p) * 100.0
             max_c = max(subset, key=lambda x: x["high"])
             min_c = min(subset, key=lambda x: x["low"])
+
+            # Old Price is the Close of the anchor session immediately prior to the start of the lookback
+            target_d = get_anchor_target_date(trade_date, name)
+            matches = [c for c in valid_candles if c["date_obj"] <= target_d]
+            if matches:
+                anchor_candle = matches[-1]
+            else:
+                idx_anchor = max(0, len(valid_candles) - 1 - n_sessions)
+                anchor_candle = valid_candles[idx_anchor]
+
+            old_p = anchor_candle["close"]
+            ret_pct = ((curr_close - old_p) / old_p) * 100.0
+
             returns_matrix.append({
                 "period": name,
                 "old_price": round(old_p, 2),
@@ -717,13 +792,13 @@ def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, 
         baseline_defaults={
             "close": 23398.10, "pe": 19.78, "pb": 2.83, "div_yield": 1.21,
             "fallback_returns": [
-                {"period": "1 Week", "old_price": 23779.15, "return_pct": -1.60, "period_high": 23890.00, "period_low": 23231.40, "high_date": "07-Sep-2026", "low_date": date_formatted},
-                {"period": "2 Weeks", "old_price": 24080.40, "return_pct": -2.83, "period_high": 24143.15, "period_low": 23231.40, "high_date": "01-Sep-2026", "low_date": date_formatted},
-                {"period": "1 Month", "old_price": 24366.00, "return_pct": -3.97, "period_high": 24405.20, "period_low": 23231.40, "high_date": "14-Aug-2026", "low_date": date_formatted},
-                {"period": "3 Months", "old_price": 23989.15, "return_pct": -2.46, "period_high": 24774.30, "period_low": 23231.40, "high_date": "03-Aug-2026", "low_date": date_formatted},
+                {"period": "1 Week", "old_price": 23897.70, "return_pct": -2.09, "period_high": 23890.00, "period_low": 23231.40, "high_date": "07-Sep-2026", "low_date": date_formatted},
+                {"period": "2 Weeks", "old_price": 24175.65, "return_pct": -3.22, "period_high": 24143.15, "period_low": 23231.40, "high_date": "01-Sep-2026", "low_date": date_formatted},
+                {"period": "1 Month", "old_price": 24471.70, "return_pct": -4.39, "period_high": 24405.20, "period_low": 23231.40, "high_date": "14-Aug-2026", "low_date": date_formatted},
+                {"period": "3 Months", "old_price": 23161.60, "return_pct": 1.02, "period_high": 24774.30, "period_low": 23231.40, "high_date": "03-Aug-2026", "low_date": date_formatted},
                 {"period": "6 Months", "old_price": 23866.85, "return_pct": -1.96, "period_high": 24774.30, "period_low": 22182.55, "high_date": "03-Aug-2026", "low_date": "02-Apr-2026"},
-                {"period": "1 Year", "old_price": 24741.00, "return_pct": -5.43, "period_high": 26373.20, "period_low": 22182.55, "high_date": "05-Jan-2026", "low_date": "02-Apr-2026"},
-                {"period": "2 Years", "old_price": 25278.70, "return_pct": -7.44, "period_high": 26373.20, "period_low": 21743.65, "high_date": "05-Jan-2026", "low_date": "07-Apr-2025"},
+                {"period": "1 Year", "old_price": 25005.50, "return_pct": -6.43, "period_high": 26373.20, "period_low": 22182.55, "high_date": "05-Jan-2026", "low_date": "02-Apr-2026"},
+                {"period": "2 Years", "old_price": 24918.45, "return_pct": -6.10, "period_high": 26373.20, "period_low": 21743.65, "high_date": "05-Jan-2026", "low_date": "07-Apr-2025"},
                 {"period": "5 Years", "old_price": 17380.00, "return_pct": 34.63, "period_high": 26373.20, "period_low": 15183.40, "high_date": "05-Jan-2026", "low_date": "17-Jun-2022"}
             ]
         }
@@ -744,13 +819,13 @@ def calculate_banknifty_view_analytics(trade_date: datetime.date, index_data: di
         baseline_defaults={
             "close": 56606.55, "pe": 13.39, "pb": 1.70, "div_yield": 0.69,
             "fallback_returns": [
-                {"period": "1 Week", "old_price": 57088.30, "return_pct": -0.84, "period_high": 57426.85, "period_low": 55699.45, "high_date": "07-Sep-2026", "low_date": date_formatted},
-                {"period": "2 Weeks", "old_price": 58024.95, "return_pct": -2.44, "period_high": 58024.95, "period_low": 55699.45, "high_date": "31-Aug-2026", "low_date": date_formatted},
-                {"period": "1 Month", "old_price": 57491.10, "return_pct": -1.54, "period_high": 58024.95, "period_low": 55699.45, "high_date": "31-Aug-2026", "low_date": date_formatted},
-                {"period": "3 Months", "old_price": 57297.15, "return_pct": -1.21, "period_high": 58706.05, "period_low": 55699.45, "high_date": "25-Jun-2026", "low_date": date_formatted},
+                {"period": "1 Week", "old_price": 57369.65, "return_pct": -1.33, "period_high": 57426.85, "period_low": 55699.45, "high_date": "07-Sep-2026", "low_date": date_formatted},
+                {"period": "2 Weeks", "old_price": 57496.30, "return_pct": -1.55, "period_high": 58024.95, "period_low": 55699.45, "high_date": "31-Aug-2026", "low_date": date_formatted},
+                {"period": "1 Month", "old_price": 57446.25, "return_pct": -1.46, "period_high": 58024.95, "period_low": 55699.45, "high_date": "31-Aug-2026", "low_date": date_formatted},
+                {"period": "3 Months", "old_price": 55176.75, "return_pct": 2.59, "period_high": 58706.05, "period_low": 55699.45, "high_date": "25-Jun-2026", "low_date": date_formatted},
                 {"period": "6 Months", "old_price": 55735.75, "return_pct": 1.56, "period_high": 58706.05, "period_low": 49954.85, "high_date": "25-Jun-2026", "low_date": "02-Apr-2026"},
-                {"period": "1 Year", "old_price": 54114.55, "return_pct": 4.61, "period_high": 61764.85, "period_low": 49954.85, "high_date": "03-Feb-2026", "low_date": "02-Apr-2026"},
-                {"period": "2 Years", "old_price": 51351.00, "return_pct": 10.23, "period_high": 61764.85, "period_low": 47702.90, "high_date": "03-Feb-2026", "low_date": "11-Mar-2025"},
+                {"period": "1 Year", "old_price": 54669.60, "return_pct": 3.54, "period_high": 61764.85, "period_low": 49954.85, "high_date": "03-Feb-2026", "low_date": "02-Apr-2026"},
+                {"period": "2 Years", "old_price": 51010.00, "return_pct": 10.97, "period_high": 61764.85, "period_low": 47702.90, "high_date": "03-Feb-2026", "low_date": "11-Mar-2025"},
                 {"period": "5 Years", "old_price": 36613.05, "return_pct": 54.61, "period_high": 61764.85, "period_low": 32155.35, "high_date": "03-Feb-2026", "low_date": "08-Mar-2022"}
             ]
         }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-14T13:45:32.308092+00:00",
+    "generated_at": "2026-09-14T13:59:00.543383+00:00",
     "market_date": "11-Sep-2026",
     "index_name": "NIFTY 50",
     "current_price": 23398.1,
@@ -19,8 +19,8 @@
   "returns_matrix": [
     {
       "period": "1 Week",
-      "old_price": 23779.15,
-      "return_pct": -1.6,
+      "old_price": 23897.7,
+      "return_pct": -2.09,
       "period_high": 23890.0,
       "period_low": 23231.4,
       "high_date": "07-Sep-2026",
@@ -28,8 +28,8 @@
     },
     {
       "period": "2 Weeks",
-      "old_price": 24080.4,
-      "return_pct": -2.83,
+      "old_price": 24175.65,
+      "return_pct": -3.22,
       "period_high": 24143.15,
       "period_low": 23231.4,
       "high_date": "01-Sep-2026",
@@ -37,8 +37,8 @@
     },
     {
       "period": "1 Month",
-      "old_price": 24366.0,
-      "return_pct": -3.97,
+      "old_price": 24471.7,
+      "return_pct": -4.39,
       "period_high": 24405.2,
       "period_low": 23231.4,
       "high_date": "14-Aug-2026",
@@ -46,8 +46,8 @@
     },
     {
       "period": "3 Months",
-      "old_price": 23989.15,
-      "return_pct": -2.46,
+      "old_price": 23161.6,
+      "return_pct": 1.02,
       "period_high": 24774.3,
       "period_low": 23231.4,
       "high_date": "03-Aug-2026",
@@ -64,8 +64,8 @@
     },
     {
       "period": "1 Year",
-      "old_price": 24741.0,
-      "return_pct": -5.43,
+      "old_price": 25005.5,
+      "return_pct": -6.43,
       "period_high": 26373.2,
       "period_low": 22182.55,
       "high_date": "05-Jan-2026",
@@ -73,8 +73,8 @@
     },
     {
       "period": "2 Years",
-      "old_price": 25278.7,
-      "return_pct": -7.44,
+      "old_price": 24918.45,
+      "return_pct": -6.1,
       "period_high": 26373.2,
       "period_low": 21743.65,
       "high_date": "05-Jan-2026",
