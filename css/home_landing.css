@@ -1,0 +1,770 @@
+/* ==========================================================================
+   MITS 360 Market Intelligence - Modular Home Landing Page Styles
+   Theme: Institutional Obsidian & Quantitative Telemetry
+   Scope: Strictly isolated to #mits360-home-root for WordPress / Elementor
+   ========================================================================== */
+
+#mits360-home-root {
+  /* Core Color Palette */
+  --m360-bg-void: #070a0f;
+  --m360-bg-core: #0b0e14;
+  --m360-bg-surface: #121824;
+  --m360-bg-surface-elevated: #182234;
+  --m360-bg-card: rgba(18, 24, 36, 0.75);
+  --m360-bg-card-hover: rgba(24, 34, 52, 0.9);
+
+  /* Borders & Dividers */
+  --m360-border-subtle: #1e293b;
+  --m360-border-medium: rgba(56, 189, 248, 0.22);
+  --m360-border-glow: rgba(0, 240, 255, 0.45);
+  --m360-border-green: rgba(0, 230, 118, 0.4);
+
+  /* Accents & Signals */
+  --m360-cyan: #00f0ff;
+  --m360-cyan-glow: rgba(0, 240, 255, 0.2);
+  --m360-cyan-dark: rgba(0, 240, 255, 0.08);
+
+  --m360-green: #00e676;
+  --m360-green-glow: rgba(0, 230, 118, 0.2);
+  --m360-green-dark: rgba(0, 230, 118, 0.1);
+
+  --m360-amber: #f59e0b;
+  --m360-amber-glow: rgba(245, 158, 11, 0.2);
+  --m360-amber-dark: rgba(245, 158, 11, 0.1);
+
+  --m360-purple: #a855f7;
+  --m360-purple-glow: rgba(168, 85, 247, 0.2);
+  --m360-purple-dark: rgba(168, 85, 247, 0.1);
+
+  /* Typography */
+  --m360-text-primary: #f8fafc;
+  --m360-text-secondary: #94a3b8;
+  --m360-text-muted: #64748b;
+  --m360-text-dim: #475569;
+
+  --m360-font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --m360-font-mono: 'JetBrains Mono', monospace;
+  --m360-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Host Container Reset */
+  all: initial;
+  display: block;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 24px 20px 60px 20px;
+  background-color: var(--m360-bg-core);
+  color: var(--m360-text-primary);
+  font-family: var(--m360-font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  box-sizing: border-box;
+  background-image: 
+    radial-gradient(circle at 15% 5%, rgba(0, 240, 255, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 85% 25%, rgba(0, 230, 118, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(56, 189, 248, 0.04) 0%, transparent 50%),
+    linear-gradient(180deg, #0b0e14 0%, #07090e 100%);
+  border-radius: 20px;
+  border: 1px solid var(--m360-border-subtle);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.75);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Universal Box-Sizing and WordPress Resets */
+#mits360-home-root *,
+#mits360-home-root *::before,
+#mits360-home-root *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#mits360-home-root p,
+#mits360-home-root h1,
+#mits360-home-root h2,
+#mits360-home-root h3,
+#mits360-home-root h4,
+#mits360-home-root ul,
+#mits360-home-root li,
+#mits360-home-root button,
+#mits360-home-root a {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+#mits360-home-root a {
+  cursor: pointer;
+  display: inline-flex;
+}
+
+#mits360-home-root .font-mono {
+  font-family: var(--m360-font-mono) !important;
+}
+
+/* ==========================================================================
+   1. Hero Section
+   ========================================================================== */
+#mits360-home-root .hero-section {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 40px;
+  align-items: center;
+  padding: 36px 0 60px 0;
+  border-bottom: 1px solid var(--m360-border-subtle);
+  position: relative;
+}
+
+#mits360-home-root .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#mits360-home-root .hero-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  font-family: var(--m360-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--m360-cyan);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.12);
+}
+
+#mits360-home-root .pulse-radar-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--m360-green);
+  box-shadow: 0 0 10px var(--m360-green);
+  animation: m360-dot-pulse 2s infinite ease-in-out;
+}
+
+@keyframes m360-dot-pulse {
+  0%, 100% { transform: scale(0.85); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 6px var(--m360-green)); }
+}
+
+#mits360-home-root .hero-headline {
+  font-family: var(--m360-font-display);
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+#mits360-home-root .hero-headline .gradient-accent {
+  background: linear-gradient(135deg, #00f0ff 0%, #00e676 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+#mits360-home-root .hero-subheadline {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--m360-text-secondary);
+  max-width: 580px;
+}
+
+#mits360-home-root .hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+#mits360-home-root .btn-primary-action {
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.2) 0%, rgba(0, 230, 118, 0.25) 100%);
+  border: 1px solid rgba(0, 240, 255, 0.5);
+  color: #ffffff;
+  padding: 13px 26px;
+  border-radius: 10px;
+  font-family: var(--m360-font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 240, 255, 0.2);
+}
+
+#mits360-home-root .btn-primary-action:hover {
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.35) 0%, rgba(0, 230, 118, 0.4) 100%);
+  border-color: var(--m360-cyan);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 240, 255, 0.35);
+}
+
+#mits360-home-root .btn-primary-action .action-arrow {
+  transition: transform 0.2s ease;
+  width: 16px;
+  height: 16px;
+}
+
+#mits360-home-root .btn-primary-action:hover .action-arrow {
+  transform: translateX(4px);
+}
+
+#mits360-home-root .hero-meta-tag {
+  font-family: var(--m360-font-mono);
+  font-size: 12px;
+  color: var(--m360-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(18, 24, 36, 0.6);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 8px;
+}
+
+/* Hero Right: Institutional Telemetry Snapshot Board */
+#mits360-home-root .hero-telemetry-board {
+  background: rgba(18, 24, 36, 0.85);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+#mits360-home-root .board-top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--m360-border-subtle);
+}
+
+#mits360-home-root .board-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--m360-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--m360-text-secondary);
+}
+
+#mits360-home-root .board-live-tag {
+  font-family: var(--m360-font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--m360-green);
+  background: var(--m360-green-dark);
+  border: 1px solid var(--m360-border-green);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+#mits360-home-root .telemetry-metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#mits360-home-root .telemetry-card {
+  background: rgba(11, 14, 20, 0.7);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#mits360-home-root .telemetry-label {
+  font-size: 11px;
+  color: var(--m360-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+#mits360-home-root .telemetry-val {
+  font-family: var(--m360-font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#mits360-home-root .telemetry-val.accent-green { color: var(--m360-green); }
+#mits360-home-root .telemetry-val.accent-cyan { color: var(--m360-cyan); }
+#mits360-home-root .telemetry-val.accent-gold { color: var(--m360-amber); }
+
+#mits360-home-root .board-terminal-preview {
+  background: #090d13;
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 8px;
+  padding: 12px;
+  font-family: var(--m360-font-mono);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+#mits360-home-root .telemetry-log-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--m360-text-secondary);
+}
+
+#mits360-home-root .log-tag {
+  color: var(--m360-cyan);
+}
+
+/* ==========================================================================
+   2. Core Platform Features (The 4 Pillars)
+   ========================================================================== */
+#mits360-home-root .section-container {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--m360-border-subtle);
+}
+
+#mits360-home-root .section-header-block {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 44px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#mits360-home-root .section-tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--m360-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--m360-cyan);
+  background: var(--m360-cyan-dark);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+#mits360-home-root .section-heading {
+  font-family: var(--m360-font-display);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+#mits360-home-root .section-subtext {
+  font-size: 14px;
+  color: var(--m360-text-secondary);
+  line-height: 1.6;
+}
+
+#mits360-home-root .pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+#mits360-home-root .pillar-card {
+  background: var(--m360-bg-surface);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 14px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+#mits360-home-root .pillar-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(56, 189, 248, 0.35);
+  background: var(--m360-bg-surface-elevated);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 240, 255, 0.08);
+}
+
+#mits360-home-root .pillar-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mits360-home-root .pillar-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(11, 14, 20, 0.8);
+  border: 1px solid var(--m360-border-subtle);
+  color: var(--m360-cyan);
+}
+
+#mits360-home-root .pillar-status-pill {
+  font-family: var(--m360-font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 9px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#mits360-home-root .status-live {
+  background: var(--m360-green-dark);
+  color: var(--m360-green);
+  border: 1px solid var(--m360-border-green);
+}
+
+#mits360-home-root .status-ecosystem {
+  background: var(--m360-cyan-dark);
+  color: var(--m360-cyan);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+}
+
+#mits360-home-root .status-utilities {
+  background: var(--m360-amber-dark);
+  color: var(--m360-amber);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+#mits360-home-root .status-resources {
+  background: var(--m360-purple-dark);
+  color: var(--m360-purple);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+}
+
+#mits360-home-root .pillar-title {
+  font-family: var(--m360-font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+#mits360-home-root .pillar-desc {
+  font-size: 13.5px;
+  color: var(--m360-text-secondary);
+  line-height: 1.6;
+}
+
+#mits360-home-root .pillar-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#mits360-home-root .pillar-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--m360-text-secondary);
+  font-family: var(--m360-font-mono);
+}
+
+#mits360-home-root .feature-bullet {
+  color: var(--m360-cyan);
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   3. Platform Ecosystem Overview Cards
+   ========================================================================== */
+#mits360-home-root .ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+#mits360-home-root .eco-card {
+  background: rgba(18, 24, 36, 0.7);
+  border: 1px solid var(--m360-border-subtle);
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  transition: all 0.22s ease;
+  position: relative;
+}
+
+#mits360-home-root .eco-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 240, 255, 0.3);
+  background: rgba(24, 34, 52, 0.85);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+#mits360-home-root .eco-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#mits360-home-root .eco-icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(11, 14, 20, 0.8);
+  border: 1px solid var(--m360-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--m360-cyan);
+}
+
+#mits360-home-root .eco-card-title {
+  font-family: var(--m360-font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#mits360-home-root .eco-card-body {
+  font-size: 13px;
+  color: var(--m360-text-secondary);
+  line-height: 1.55;
+}
+
+#mits360-home-root .eco-card-action {
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#mits360-home-root .eco-link-btn {
+  font-family: var(--m360-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--m360-cyan);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+#mits360-home-root .eco-link-btn:hover {
+  color: #ffffff;
+  gap: 9px;
+}
+
+#mits360-home-root .eco-status-tag {
+  font-family: var(--m360-font-mono);
+  font-size: 11px;
+  color: var(--m360-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ==========================================================================
+   4. Footer Call-To-Action Banner
+   ========================================================================== */
+#mits360-home-root .footer-cta-banner {
+  margin-top: 50px;
+  background: linear-gradient(135deg, rgba(18, 24, 36, 0.95) 0%, rgba(11, 14, 20, 0.98) 100%);
+  border: 1px solid var(--m360-border-medium);
+  border-radius: 16px;
+  padding: 44px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+#mits360-home-root .footer-cta-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 30%;
+  right: 30%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--m360-cyan), transparent);
+}
+
+#mits360-home-root .footer-badge {
+  font-family: var(--m360-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: var(--m360-green);
+  background: var(--m360-green-dark);
+  border: 1px solid var(--m360-border-green);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+#mits360-home-root .footer-cta-heading {
+  font-family: var(--m360-font-display);
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  max-width: 720px;
+  line-height: 1.25;
+}
+
+#mits360-home-root .footer-cta-subtext {
+  font-size: 14.5px;
+  color: var(--m360-text-secondary);
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+#mits360-home-root .footer-btn-wrap {
+  margin-top: 6px;
+}
+
+#mits360-home-root .footer-system-stamp {
+  margin-top: 14px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--m360-font-mono);
+  font-size: 11px;
+  color: var(--m360-text-muted);
+}
+
+#mits360-home-root .stamp-brand {
+  color: var(--m360-cyan);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   5. Responsive Breakpoints & Mobile Optimization
+   ========================================================================== */
+
+/* Tablet (Max 1024px) */
+@media (max-width: 1024px) {
+  #mits360-home-root .hero-section {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  #mits360-home-root .ecosystem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile & Small Screens (Max 768px) */
+@media (max-width: 768px) {
+  #mits360-home-root {
+    padding: 16px 14px 40px 14px;
+    border-radius: 12px;
+  }
+
+  #mits360-home-root .hero-section {
+    padding: 20px 0 40px 0;
+    gap: 24px;
+  }
+
+  #mits360-home-root .hero-headline {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  #mits360-home-root .hero-subheadline {
+    font-size: 14px;
+  }
+
+  #mits360-home-root .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  #mits360-home-root .btn-primary-action {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #mits360-home-root .hero-meta-tag {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #mits360-home-root .pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  #mits360-home-root .pillar-card {
+    padding: 18px;
+  }
+
+  #mits360-home-root .ecosystem-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  #mits360-home-root .section-heading {
+    font-size: 24px;
+  }
+
+  #mits360-home-root .footer-cta-banner {
+    padding: 28px 18px;
+    margin-top: 36px;
+  }
+
+  #mits360-home-root .footer-cta-heading {
+    font-size: 22px;
+  }
+
+  #mits360-home-root .footer-system-stamp {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* Extra Small Phones (Max 480px) */
+@media (max-width: 480px) {
+  #mits360-home-root .hero-headline {
+    font-size: 26px;
+  }
+  #mits360-home-root .telemetry-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
