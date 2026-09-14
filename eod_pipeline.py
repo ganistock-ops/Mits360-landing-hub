@@ -546,6 +546,11 @@ def calculate_index_technical_analytics(
                 "close": curr_close
             })
 
+    # Ensure candle sequence is sorted chronologically ascending by Date/Time
+    valid_candles.sort(key=lambda x: (x["date_obj"], x["time"]))
+    latest_idx = len(valid_candles) - 1
+    latest_close = curr_close if curr_close else valid_candles[latest_idx]["close"]
+
     # --- 1. Section 1: Highs / Lows & Returns Matrix ---
     # Highs/Lows strictly from N trading sessions; Old Price & Returns from anchor session prior to lookback
     periods = [
@@ -562,28 +567,30 @@ def calculate_index_technical_analytics(
     returns_matrix = []
     if valid_candles:
         for name, n in periods:
-            # Slicing strictly within the N trading sessions for Period High/Low & Dates
-            n_sessions = min(n, len(valid_candles))
-            subset = valid_candles[-n_sessions:]
-            max_c = max(subset, key=lambda x: x["high"])
-            min_c = min(subset, key=lambda x: x["low"])
+            # Lookback N sessions: base session is at latest_idx - N
+            base_idx = max(0, latest_idx - n)
+            # period_slice strictly covers the N sessions from base_idx + 1 to latest_idx + 1
+            period_slice = valid_candles[base_idx + 1 : latest_idx + 1]
+            if not period_slice:
+                period_slice = [valid_candles[latest_idx]]
+            max_c = max(period_slice, key=lambda x: x["high"])
+            min_c = min(period_slice, key=lambda x: x["low"])
 
-            # Old Price is the Close of the anchor session immediately prior to the start of the lookback
+            # Old Price: target TSR anchor candle (calendar milestone or base_idx)
             target_d = get_anchor_target_date(trade_date, name)
             matches = [c for c in valid_candles if c["date_obj"] <= target_d]
             if matches:
                 anchor_candle = matches[-1]
             else:
-                idx_anchor = max(0, len(valid_candles) - 1 - n_sessions)
-                anchor_candle = valid_candles[idx_anchor]
+                anchor_candle = valid_candles[base_idx]
 
-            old_p = anchor_candle["close"]
-            ret_pct = ((curr_close - old_p) / old_p) * 100.0
+            old_price = float(anchor_candle["close"])
+            return_pct = round(((latest_close - old_price) / old_price) * 100.0, 2)
 
             returns_matrix.append({
                 "period": name,
-                "old_price": round(old_p, 2),
-                "return_pct": round(ret_pct, 2),
+                "old_price": round(old_price, 2),
+                "return_pct": return_pct,
                 "period_high": round(max_c["high"], 2),
                 "period_low": round(min_c["low"], 2),
                 "high_date": max_c["date"],
