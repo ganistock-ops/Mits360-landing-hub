@@ -1,0 +1,1276 @@
+<!-- ==========================================================================
+     MITS 360 Market Intelligence - Standalone Nifty View Technical Analysis Widget
+     Theme: Institutional Obsidian & Quantitative Telemetry
+     Usage: Embed directly into WordPress Elementor HTML Block (Full Width)
+     ========================================================================== -->
+
+<!-- Google Fonts Preconnect & Loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* Defensive Host Page Resets to Prevent Horizontal Scroll on Full-Bleed Breakout */
+html, body {
+  overflow-x: hidden !important;
+  background: #080B10 !important;
+}
+
+/* ==========================================================================
+   SCOPED MITS 360 NIFTY VIEW WIDGET STYLING
+   All styles strictly isolated under #mits360-nifty-view-root to prevent
+   theme bleeding in WordPress, Elementor, Divi, or Gutenberg.
+   ========================================================================== */
+
+#mits360-nifty-view-root {
+  /* Color Tokens */
+  --nv-bg-core: #080B10;
+  --nv-bg-surface: #121824;
+  --nv-bg-surface-elevated: #162032;
+  --nv-bg-card: rgba(18, 24, 36, 0.8);
+  --nv-bg-card-hover: rgba(24, 34, 52, 0.95);
+
+  --nv-border-subtle: #1e293b;
+  --nv-border-medium: rgba(56, 189, 248, 0.22);
+  --nv-border-focus: #00f2fe;
+
+  --nv-cyan: #00f2fe;
+  --nv-cyan-glow: rgba(0, 242, 254, 0.22);
+  --nv-cyan-dark: rgba(0, 242, 254, 0.08);
+
+  --nv-green: #10b981;
+  --nv-green-bright: #00e676;
+  --nv-green-glow: rgba(16, 185, 129, 0.2);
+  --nv-green-dark: rgba(16, 185, 129, 0.12);
+
+  --nv-red: #f43f5e;
+  --nv-red-bright: #ff3366;
+  --nv-red-glow: rgba(244, 63, 94, 0.2);
+  --nv-red-dark: rgba(244, 63, 94, 0.12);
+
+  --nv-amber: #f59e0b;
+  --nv-amber-dark: rgba(245, 158, 11, 0.12);
+
+  --nv-text-primary: #f8fafc;
+  --nv-text-secondary: #94a3b8;
+  --nv-text-muted: #64748b;
+
+  --nv-font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --nv-font-mono: 'JetBrains Mono', monospace;
+  --nv-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Full Viewport Width Breakout for WordPress / Elementor */
+  all: initial;
+  display: block;
+  width: 100vw !important;
+  position: relative !important;
+  left: 50% !important;
+  right: 50% !important;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  box-sizing: border-box !important;
+  background: #080B10 !important;
+  color: var(--nv-text-primary);
+  font-family: var(--nv-font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  background-image: 
+    radial-gradient(circle at 15% 5%, rgba(0, 242, 254, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(16, 185, 129, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(56, 189, 248, 0.04) 0%, transparent 50%),
+    linear-gradient(180deg, #080B10 0%, #06080c 100%) !important;
+  padding: 24px 0 60px 0;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow-x: hidden;
+}
+
+/* Universal Box-Sizing and WordPress Resets */
+#mits360-nifty-view-root *,
+#mits360-nifty-view-root *::before,
+#mits360-nifty-view-root *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#mits360-nifty-view-root p,
+#mits360-nifty-view-root h1,
+#mits360-nifty-view-root h2,
+#mits360-nifty-view-root h3,
+#mits360-nifty-view-root h4,
+#mits360-nifty-view-root ul,
+#mits360-nifty-view-root li,
+#mits360-nifty-view-root button,
+#mits360-nifty-view-root a {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+#mits360-nifty-view-root .font-mono {
+  font-family: var(--nv-font-mono) !important;
+}
+
+/* Inner Centered Container */
+#mits360-nifty-view-root .nifty-view-inner-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ==========================================================================
+   Header & Live EOD Telemetry Card
+   ========================================================================== */
+#mits360-nifty-view-root .nv-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--nv-border-subtle);
+}
+
+#mits360-nifty-view-root .nv-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--nv-cyan-dark);
+  border: 1px solid rgba(0, 242, 254, 0.35);
+  font-family: var(--nv-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--nv-cyan);
+  width: fit-content;
+  box-shadow: 0 0 15px var(--nv-cyan-glow);
+}
+
+#mits360-nifty-view-root .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--nv-green);
+  box-shadow: 0 0 10px var(--nv-green);
+  animation: nv-dot-pulse 2s infinite ease-in-out;
+}
+
+@keyframes nv-dot-pulse {
+  0%, 100% { transform: scale(0.85); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 6px var(--nv-green)); }
+}
+
+#mits360-nifty-view-root .nv-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#mits360-nifty-view-root .nv-main-title {
+  font-family: var(--nv-font-display);
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  line-height: 1.15;
+}
+
+#mits360-nifty-view-root .nv-main-title span {
+  color: var(--nv-cyan);
+}
+
+#mits360-nifty-view-root .nv-meta-telemetry {
+  font-family: var(--nv-font-mono);
+  font-size: 12px;
+  color: var(--nv-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Quote Banner Card */
+#mits360-nifty-view-root .nv-quote-card {
+  background: var(--nv-bg-surface);
+  border: 1px solid var(--nv-border-subtle);
+  border-radius: 14px;
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 32px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+#mits360-nifty-view-root .nv-quote-price-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#mits360-nifty-view-root .nv-quote-symbol {
+  font-family: var(--nv-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--nv-text-secondary);
+}
+
+#mits360-nifty-view-root .nv-quote-price {
+  font-family: var(--nv-font-mono);
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+}
+
+#mits360-nifty-view-root .nv-quote-delta {
+  font-family: var(--nv-font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+#mits360-nifty-view-root .delta-pos {
+  background: var(--nv-green-dark);
+  color: var(--nv-green-bright);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+#mits360-nifty-view-root .delta-neg {
+  background: var(--nv-red-dark);
+  color: var(--nv-red-bright);
+  border: 1px solid rgba(244, 63, 94, 0.35);
+}
+
+/* Range Bar In Center */
+#mits360-nifty-view-root .nv-quote-range-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 240px;
+}
+
+#mits360-nifty-view-root .nv-range-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--nv-font-mono);
+  font-size: 11px;
+  color: var(--nv-text-muted);
+}
+
+#mits360-nifty-view-root .nv-range-track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  position: relative;
+}
+
+#mits360-nifty-view-root .nv-range-fill {
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #10b981);
+  border-radius: 3px;
+}
+
+#mits360-nifty-view-root .nv-range-thumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 8px var(--nv-cyan);
+}
+
+#mits360-nifty-view-root .nv-range-bounds {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--nv-font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--nv-text-secondary);
+}
+
+/* Fundamental Multiples Col */
+#mits360-nifty-view-root .nv-quote-stats-col {
+  display: flex;
+  gap: 16px;
+  border-left: 1px solid var(--nv-border-subtle);
+  padding-left: 24px;
+}
+
+#mits360-nifty-view-root .nv-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: right;
+}
+
+#mits360-nifty-view-root .nv-stat-label {
+  font-size: 11px;
+  color: var(--nv-text-muted);
+  text-transform: uppercase;
+}
+
+#mits360-nifty-view-root .nv-stat-val {
+  font-family: var(--nv-font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--nv-text-primary);
+}
+
+/* ==========================================================================
+   Section Blocks: Common Panel Styling
+   ========================================================================== */
+#mits360-nifty-view-root .nv-section-card {
+  background: var(--nv-bg-surface);
+  border: 1px solid var(--nv-border-subtle);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+#mits360-nifty-view-root .nv-section-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 242, 254, 0.3), transparent);
+}
+
+#mits360-nifty-view-root .nv-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--nv-border-subtle);
+}
+
+#mits360-nifty-view-root .nv-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#mits360-nifty-view-root .nv-card-title {
+  font-family: var(--nv-font-display);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#mits360-nifty-view-root .nv-card-desc {
+  font-size: 13px;
+  color: var(--nv-text-secondary);
+}
+
+/* Interactive Tabs / Toggle Pills */
+#mits360-nifty-view-root .nv-tab-group {
+  display: flex;
+  background: rgba(11, 14, 20, 0.85);
+  border: 1px solid var(--nv-border-subtle);
+  padding: 4px;
+  border-radius: 10px;
+  gap: 4px;
+}
+
+#mits360-nifty-view-root .nv-tab-btn {
+  font-family: var(--nv-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: var(--nv-text-secondary);
+  transition: all 0.2s ease;
+}
+
+#mits360-nifty-view-root .nv-tab-btn:hover {
+  color: #ffffff;
+}
+
+#mits360-nifty-view-root .nv-tab-btn.active {
+  background: var(--nv-cyan-dark);
+  color: var(--nv-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.4);
+  box-shadow: 0 0 12px var(--nv-cyan-glow);
+}
+
+/* ==========================================================================
+   Table Containers & Horizontal Touch Scroll
+   ========================================================================== */
+#mits360-nifty-view-root .nv-table-scroll-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--nv-border-subtle);
+  border-radius: 12px;
+  background: rgba(11, 14, 20, 0.6);
+  scrollbar-width: thin;
+  scrollbar-color: var(--nv-border-subtle) transparent;
+}
+
+#mits360-nifty-view-root .nv-table-scroll-wrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+#mits360-nifty-view-root .nv-table-scroll-wrap::-webkit-scrollbar-thumb {
+  background: var(--nv-border-subtle);
+  border-radius: 3px;
+}
+
+#mits360-nifty-view-root .nv-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+#mits360-nifty-view-root .nv-table th {
+  background: rgba(18, 24, 36, 0.95);
+  color: var(--nv-text-secondary);
+  font-family: var(--nv-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--nv-border-subtle);
+}
+
+#mits360-nifty-view-root .nv-table td {
+  padding: 13px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--nv-text-primary);
+  font-family: var(--nv-font-mono);
+  font-size: 13px;
+  transition: background 0.15s ease;
+}
+
+#mits360-nifty-view-root .nv-table tr:last-child td {
+  border-bottom: none;
+}
+
+#mits360-nifty-view-root .nv-table tr:hover td {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+/* Sticky first column for mobile ease */
+#mits360-nifty-view-root .sticky-col {
+  position: sticky;
+  left: 0;
+  background: rgba(18, 24, 36, 0.98) !important;
+  z-index: 2;
+  border-right: 1px solid var(--nv-border-subtle);
+}
+
+/* Return Badges */
+#mits360-nifty-view-root .return-badge {
+  font-family: var(--nv-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#mits360-nifty-view-root .badge-pos {
+  background: var(--nv-green-dark);
+  color: var(--nv-green-bright);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+#mits360-nifty-view-root .badge-neg {
+  background: var(--nv-red-dark);
+  color: var(--nv-red-bright);
+  border: 1px solid rgba(244, 63, 94, 0.35);
+}
+
+/* ==========================================================================
+   Section 2: Daily Pivot Levels Specifics
+   ========================================================================== */
+#mits360-nifty-view-root .pivot-badge {
+  font-family: var(--nv-font-mono);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+#mits360-nifty-view-root .pivot-type-title {
+  font-family: var(--nv-font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#mits360-nifty-view-root .pivot-center-cell {
+  background: rgba(0, 242, 254, 0.08) !important;
+  color: var(--nv-cyan) !important;
+  font-weight: 800 !important;
+  border-left: 1px solid rgba(0, 242, 254, 0.25);
+  border-right: 1px solid rgba(0, 242, 254, 0.25);
+}
+
+#mits360-nifty-view-root .pivot-sup {
+  color: #fda4af;
+}
+
+#mits360-nifty-view-root .pivot-res {
+  color: #6ee7b7;
+}
+
+/* ==========================================================================
+   Section 3: Moving Average Suite Specifics
+   ========================================================================== */
+#mits360-nifty-view-root .signal-tag {
+  font-family: var(--nv-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#mits360-nifty-view-root .bull-strong {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+#mits360-nifty-view-root .bull-mild {
+  background: rgba(16, 185, 129, 0.1);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+#mits360-nifty-view-root .neutral {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+#mits360-nifty-view-root .bear-mild {
+  background: rgba(244, 63, 94, 0.12);
+  color: #fda4af;
+  border: 1px solid rgba(244, 63, 94, 0.3);
+}
+
+#mits360-nifty-view-root .bear-strong {
+  background: rgba(244, 63, 94, 0.2);
+  color: #fb7185;
+  border: 1px solid rgba(244, 63, 94, 0.4);
+}
+
+#mits360-nifty-view-root .ma-analysis-text {
+  font-family: var(--nv-font-body);
+  font-size: 12.5px;
+  color: var(--nv-text-secondary);
+  white-space: normal;
+  min-width: 280px;
+  max-width: 360px;
+  line-height: 1.45;
+}
+
+/* Mobile Scroll Indicator Pill */
+#mits360-nifty-view-root .nv-scroll-cue {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--nv-font-mono);
+  font-size: 11px;
+  color: var(--nv-text-muted);
+  justify-content: flex-end;
+}
+
+/* Footer Stamp */
+#mits360-nifty-view-root .nv-footer-stamp {
+  border-top: 1px solid var(--nv-border-subtle);
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--nv-font-mono);
+  font-size: 11px;
+  color: var(--nv-text-muted);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#mits360-nifty-view-root .nv-footer-brand {
+  color: var(--nv-cyan);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Mobile Breakpoints (<768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  #mits360-nifty-view-root {
+    padding: 16px 0 40px 0 !important;
+  }
+
+  #mits360-nifty-view-root .nifty-view-inner-container {
+    padding: 0 14px;
+    gap: 20px;
+  }
+
+  #mits360-nifty-view-root .nv-main-title {
+    font-size: 26px;
+  }
+
+  #mits360-nifty-view-root .nv-quote-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 18px 16px;
+  }
+
+  #mits360-nifty-view-root .nv-quote-price {
+    font-size: 32px;
+  }
+
+  #mits360-nifty-view-root .nv-quote-stats-col {
+    border-left: none;
+    border-top: 1px solid var(--nv-border-subtle);
+    padding-left: 0;
+    padding-top: 14px;
+    justify-content: space-between;
+  }
+
+  #mits360-nifty-view-root .nv-section-card {
+    padding: 18px 14px;
+    border-radius: 12px;
+  }
+
+  #mits360-nifty-view-root .nv-card-title {
+    font-size: 18px;
+  }
+
+  #mits360-nifty-view-root .nv-scroll-cue {
+    display: flex;
+  }
+
+  #mits360-nifty-view-root .nv-footer-stamp {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+</style>
+
+<!-- Standalone Root Container (Full Bleed Breakout) -->
+<div id="mits360-nifty-view-root">
+  <div class="nifty-view-inner-container">
+
+    <!-- ==================================================================
+         1. Header & Live Telemetry Quote Banner
+         ================================================================== -->
+    <header class="nv-header-block">
+      <div class="nv-badge-pill">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span>Institutional Market Intelligence</span>
+      </div>
+
+      <div class="nv-title-row">
+        <div>
+          <h1 class="nv-main-title">Nifty 50 <span>Technical Telemetry</span></h1>
+          <p class="nv-card-desc" style="margin-top:4px;">
+            Highs &amp; Lows returns matrix, multi-model daily pivots, and moving average momentum suite.
+          </p>
+        </div>
+
+        <div class="nv-meta-telemetry">
+          <span id="m360TradeDate">DATE: 11-SEP-2026</span>
+          <span>&bull;</span>
+          <span id="m360MarketStatus" style="color: var(--nv-green);">NSE EOD VERIFIED</span>
+        </div>
+      </div>
+
+      <!-- Quote Banner Card -->
+      <div class="nv-quote-card">
+        <div class="nv-quote-price-col">
+          <span class="nv-quote-symbol">NSE: NIFTY 50 INDEX</span>
+          <div class="nv-quote-price" id="m360CurrentPrice">23,398.10</div>
+          <div class="nv-quote-delta delta-neg" id="m360PriceDelta">-79.70 (-0.34%)</div>
+        </div>
+
+        <!-- Range Bar -->
+        <div class="nv-quote-range-col">
+          <div class="nv-range-label-row">
+            <span>DAY LOW</span>
+            <span>DAY RANGE</span>
+            <span>DAY HIGH</span>
+          </div>
+          <div class="nv-range-track">
+            <div class="nv-range-fill" id="m360RangeFill" style="left: 0%; width: 77%;"></div>
+            <div class="nv-range-thumb" id="m360RangeThumb" style="left: 77%;"></div>
+          </div>
+          <div class="nv-range-bounds">
+            <span id="m360DayLow">₹23,231.40</span>
+            <span id="m360DayHigh">₹23,448.10</span>
+          </div>
+        </div>
+
+        <!-- Multiples Col -->
+        <div class="nv-quote-stats-col">
+          <div class="nv-stat-item">
+            <span class="nv-stat-label">P/E RATIO</span>
+            <span class="nv-stat-val" id="m360PeVal">19.78x</span>
+          </div>
+          <div class="nv-stat-item">
+            <span class="nv-stat-label">P/B RATIO</span>
+            <span class="nv-stat-val" id="m360PbVal">2.83x</span>
+          </div>
+          <div class="nv-stat-item">
+            <span class="nv-stat-label">DIV YIELD</span>
+            <span class="nv-stat-val" id="m360DivVal">1.21%</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================================================================
+         2. Section 1: Nifty 50 Highs / Lows & Returns Matrix
+         ================================================================== -->
+    <section class="nv-section-card" aria-label="Nifty 50 Highs Lows and Returns Matrix">
+      <div class="nv-card-header">
+        <div class="nv-header-left">
+          <h2 class="nv-card-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--nv-cyan);">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            Nifty 50 Highs / Lows &amp; Returns Matrix
+          </h2>
+          <p class="nv-card-desc">
+            Historical period performance, price drawdowns, and structural cycle extremes across multiple time horizons.
+          </p>
+        </div>
+
+        <div class="nv-scroll-cue">
+          <span>&larr; Swipe to view &rarr;</span>
+        </div>
+      </div>
+
+      <div class="nv-table-scroll-wrap">
+        <table class="nv-table" id="m360ReturnsTable">
+          <thead>
+            <tr>
+              <th class="sticky-col">Period</th>
+              <th>Old Price</th>
+              <th>Return %</th>
+              <th>Period High</th>
+              <th>Period Low</th>
+              <th>High Date</th>
+              <th>Low Date</th>
+            </tr>
+          </thead>
+          <tbody id="m360ReturnsBody">
+            <!-- Dynamic Injection or Instant Fallback -->
+            <tr>
+              <td class="sticky-col" style="font-weight:700;">1 Week</td>
+              <td>₹23,897.70</td>
+              <td><span class="return-badge badge-neg">-2.09%</span></td>
+              <td>₹24,005.75</td>
+              <td>₹23,231.40</td>
+              <td>04-Sep-2026</td>
+              <td>11-Sep-2026</td>
+            </tr>
+            <tr>
+              <td class="sticky-col" style="font-weight:700;">2 Weeks</td>
+              <td>₹24,175.65</td>
+              <td><span class="return-badge badge-neg">-3.22%</span></td>
+              <td>₹24,188.30</td>
+              <td>₹23,231.40</td>
+              <td>28-Aug-2026</td>
+              <td>11-Sep-2026</td>
+            </tr>
+            <tr>
+              <td class="sticky-col" style="font-weight:700;">1 Month</td>
+              <td>₹24,395.85</td>
+              <td><span class="return-badge badge-neg">-4.09%</span></td>
+              <td>₹24,431.60</td>
+              <td>₹23,231.40</td>
+              <td>13-Aug-2026</td>
+              <td>11-Sep-2026</td>
+            </tr>
+            <tr>
+              <td class="sticky-col" style="font-weight:700;">3 Months</td>
+              <td>₹23,853.90</td>
+              <td><span class="return-badge badge-neg">-1.91%</span></td>
+              <td>₹24,774.30</td>
+              <td>₹23,231.40</td>
+              <td>03-Aug-2026</td>
+              <td>11-Sep-2026</td>
+            </tr>
+            <tr>
+              <td class="sticky-col" style="font-weight:700;">6 Months</td>
+              <td>₹24,261.60</td>
+              <td><span class="return-badge badge-neg">-3.56%</span></td>
+              <td>₹24,774.30</td>
+              <td>₹22,182.55</td>
+              <td>03-Aug-2026</td>
+              <td>02-Apr-2026</td>
+            </tr>
+            <tr>
+              <td class="sticky-col" style="font-weight:700;">1 Year</td>
+              <td>₹24,734.30</td>
+              <td><span class="return-badge badge-neg">-5.40%</span></td>
+              <td>₹26,373.20</td>
+              <td>₹22,182.55</td>
+              <td>05-Jan-2026</td>
+              <td>02-Apr-2026</td>
+            </tr>
+            <tr>
+              <td class="sticky-col" style="font-weight:700;">2 Years</td>
+              <td>₹25,235.90</td>
+              <td><span class="return-badge badge-neg">-7.28%</span></td>
+              <td>₹26,373.20</td>
+              <td>₹21,743.65</td>
+              <td>05-Jan-2026</td>
+              <td>07-Apr-2025</td>
+            </tr>
+            <tr>
+              <td class="sticky-col" style="font-weight:700;">5 Years</td>
+              <td>₹17,380.00</td>
+              <td><span class="return-badge badge-pos">+34.63%</span></td>
+              <td>₹26,373.20</td>
+              <td>₹15,183.40</td>
+              <td>05-Jan-2026</td>
+              <td>17-Jun-2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         3. Section 2: Daily Pivot Levels (Multi-Model Grid)
+         ================================================================== -->
+    <section class="nv-section-card" aria-label="Daily Pivot Levels Multi-Model Grid">
+      <div class="nv-card-header">
+        <div class="nv-header-left">
+          <h2 class="nv-card-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--nv-cyan);">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            Daily Pivot Levels (Multi-Model Grid)
+          </h2>
+          <p class="nv-card-desc">
+            Institutional mathematical inflection thresholds comparing Classical, Camarilla, Fibonacci, and Woodie frameworks.
+          </p>
+        </div>
+
+        <div class="nv-scroll-cue">
+          <span>&larr; Swipe to view &rarr;</span>
+        </div>
+      </div>
+
+      <div class="nv-table-scroll-wrap">
+        <table class="nv-table" id="m360PivotsTable">
+          <thead>
+            <tr>
+              <th class="sticky-col">Calculation Model</th>
+              <th>S4</th>
+              <th>S3</th>
+              <th>S2</th>
+              <th>S1</th>
+              <th style="color:var(--nv-cyan);text-align:center;">Central Pivot</th>
+              <th>R1</th>
+              <th>R2</th>
+              <th>R3</th>
+              <th>R4</th>
+            </tr>
+          </thead>
+          <tbody id="m360PivotsBody">
+            <!-- Dynamic Injection or Instant Fallback -->
+            <tr>
+              <td class="sticky-col pivot-type-title">Standard (Classic)</td>
+              <td class="pivot-sup">22,836.90</td>
+              <td class="pivot-sup">23,053.60</td>
+              <td class="pivot-sup">23,142.50</td>
+              <td class="pivot-sup">23,270.30</td>
+              <td class="pivot-center-cell" style="text-align:center;">23,359.20</td>
+              <td class="pivot-res">23,487.00</td>
+              <td class="pivot-res">23,575.90</td>
+              <td class="pivot-res">23,703.70</td>
+              <td class="pivot-res">23,920.40</td>
+            </tr>
+            <tr>
+              <td class="sticky-col pivot-type-title">Camarilla Equation</td>
+              <td class="pivot-sup">23,278.92</td>
+              <td class="pivot-sup">23,338.51</td>
+              <td class="pivot-sup">23,358.37</td>
+              <td class="pivot-sup">23,378.24</td>
+              <td class="pivot-center-cell" style="text-align:center;">23,359.20</td>
+              <td class="pivot-res">23,417.96</td>
+              <td class="pivot-res">23,437.83</td>
+              <td class="pivot-res">23,457.69</td>
+              <td class="pivot-res">23,517.28</td>
+            </tr>
+            <tr>
+              <td class="sticky-col pivot-type-title">Fibonacci Ratio</td>
+              <td class="pivot-sup">23,008.58</td>
+              <td class="pivot-sup">23,142.50</td>
+              <td class="pivot-sup">23,225.28</td>
+              <td class="pivot-sup">23,276.42</td>
+              <td class="pivot-center-cell" style="text-align:center;">23,359.20</td>
+              <td class="pivot-res">23,441.98</td>
+              <td class="pivot-res">23,493.12</td>
+              <td class="pivot-res">23,575.90</td>
+              <td class="pivot-res">23,709.82</td>
+            </tr>
+            <tr>
+              <td class="sticky-col pivot-type-title">Woodie's Model</td>
+              <td class="pivot-sup">22,856.35</td>
+              <td class="pivot-sup">23,073.05</td>
+              <td class="pivot-sup">23,152.23</td>
+              <td class="pivot-sup">23,289.75</td>
+              <td class="pivot-center-cell" style="text-align:center;">23,368.92</td>
+              <td class="pivot-res">23,506.45</td>
+              <td class="pivot-res">23,585.62</td>
+              <td class="pivot-res">23,723.15</td>
+              <td class="pivot-res">23,939.85</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         4. Section 3: Moving Average Suite (Interactive SMA & EMA Tabs)
+         ================================================================== -->
+    <section class="nv-section-card" aria-label="Moving Average Suite">
+      <div class="nv-card-header">
+        <div class="nv-header-left">
+          <h2 class="nv-card-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--nv-cyan);">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            Moving Average Suite (Trend &amp; Momentum Spectrum)
+          </h2>
+          <p class="nv-card-desc">
+            Multi-timeframe dynamic trendline tracking with distance percentages and quantitative crossover signals.
+          </p>
+        </div>
+
+        <!-- Interactive SMA & EMA Toggle Tabs -->
+        <div class="nv-tab-group" role="tablist">
+          <button class="nv-tab-btn active" id="btnTabSma" data-mode="sma" role="tab" aria-selected="true">
+            Simple (SMA)
+          </button>
+          <button class="nv-tab-btn" id="btnTabEma" data-mode="ema" role="tab" aria-selected="false">
+            Exponential (EMA)
+          </button>
+        </div>
+      </div>
+
+      <div class="nv-table-scroll-wrap">
+        <table class="nv-table" id="m360MaTable">
+          <thead>
+            <tr>
+              <th class="sticky-col">Period</th>
+              <th>Value</th>
+              <th>Quantitative Signal</th>
+              <th>Crossover / Distance</th>
+              <th>Institutional Analysis Summary</th>
+            </tr>
+          </thead>
+          <tbody id="m360MaBody">
+            <!-- Dynamic Injected Rows -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         5. Footer Institutional System Stamp
+         ================================================================== -->
+    <footer class="nv-footer-stamp">
+      <div>
+        <span class="nv-footer-brand">MITS 360</span> &bull; Nifty 50 Technical Intelligence Pipeline &bull; mits360.co.in
+      </div>
+      <div>
+        <span>Automated NSE Bhavcopy Sync</span> &bull; <span>Indian Equities EOD</span>
+      </div>
+    </footer>
+
+  </div><!-- /.nifty-view-inner-container -->
+</div><!-- /#mits360-nifty-view-root -->
+
+<!-- Embedded JavaScript Logic for Dynamic Ingestion & Smooth Tab Switching -->
+<script>
+(function() {
+  // --- Institutional Baseline Fallback Data ---
+  const DEFAULT_DATA = {
+    meta: {
+      market_date: "11-Sep-2026",
+      index_name: "NIFTY 50",
+      current_price: 23398.10,
+      points_change: -79.70,
+      change_pct: -0.34,
+      open: 23270.30,
+      high: 23448.10,
+      low: 23231.40,
+      prev_close: 23477.80,
+      pe: 19.78,
+      pb: 2.83,
+      div_yield: 1.21
+    },
+    returns_matrix: [
+      { period: "1 Week", old_price: 23897.70, return_pct: -2.09, period_high: 24005.75, period_low: 23231.40, high_date: "04-Sep-2026", low_date: "11-Sep-2026" },
+      { period: "2 Weeks", old_price: 24175.65, return_pct: -3.22, period_high: 24188.30, period_low: 23231.40, high_date: "28-Aug-2026", low_date: "11-Sep-2026" },
+      { period: "1 Month", old_price: 24395.85, return_pct: -4.09, period_high: 24431.60, period_low: 23231.40, high_date: "13-Aug-2026", low_date: "11-Sep-2026" },
+      { period: "3 Months", old_price: 23853.90, return_pct: -1.91, period_high: 24774.30, period_low: 23231.40, high_date: "03-Aug-2026", low_date: "11-Sep-2026" },
+      { period: "6 Months", old_price: 24261.60, return_pct: -3.56, period_high: 24774.30, period_low: 22182.55, high_date: "03-Aug-2026", low_date: "02-Apr-2026" },
+      { period: "1 Year", old_price: 24734.30, return_pct: -5.40, period_high: 26373.20, period_low: 22182.55, high_date: "05-Jan-2026", low_date: "02-Apr-2026" },
+      { period: "2 Years", old_price: 25235.90, return_pct: -7.28, period_high: 26373.20, period_low: 21743.65, high_date: "05-Jan-2026", low_date: "07-Apr-2025" },
+      { period: "5 Years", old_price: 17380.00, return_pct: 34.63, period_high: 26373.20, period_low: 15183.40, high_date: "05-Jan-2026", low_date: "17-Jun-2022" }
+    ],
+    pivots: [
+      { type: "Standard (Classic)", s4: 22836.90, s3: 23053.60, s2: 23142.50, s1: 23270.30, pivot: 23359.20, r1: 23487.00, r2: 23575.90, r3: 23703.70, r4: 23920.40 },
+      { type: "Camarilla Equation", s4: 23278.92, s3: 23338.51, s2: 23358.37, s1: 23378.24, pivot: 23359.20, r1: 23417.96, r2: 23437.83, r3: 23457.69, r4: 23517.28 },
+      { type: "Fibonacci Ratio", s4: 23008.58, s3: 23142.50, s2: 23225.28, s1: 23276.42, pivot: 23359.20, r1: 23441.98, r2: 23493.12, r3: 23575.90, r4: 23709.82 },
+      { type: "Woodie's Model", s4: 22856.35, s3: 23073.05, s2: 23152.23, s1: 23289.75, pivot: 23368.92, r1: 23506.45, r2: 23585.62, r3: 23723.15, r4: 23939.85 }
+    ],
+    moving_averages: {
+      sma: [
+        { period: 5, period_label: "5 SMA", value: 23544.33, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-146.23 pts (-0.62%)", analysis: "Mild supply overhead. Index is trading marginally below the 5-period SMA." },
+        { period: 10, period_label: "10 SMA", value: 23754.34, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-356.24 pts (-1.50%)", analysis: "Persistent distribution. Price remains extended below the key institutional 10-period SMA." },
+        { period: 15, period_label: "15 SMA", value: 23904.75, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-506.65 pts (-2.12%)", analysis: "Short-term moving average resistance rejecting recent counter-trend pullback attempts." },
+        { period: 20, period_label: "20 SMA", value: 23978.80, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-580.70 pts (-2.42%)", analysis: "Price trading below the 20-day mean, signaling persistent monthly consolidation." },
+        { period: 50, period_label: "50 SMA", value: 24153.42, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-755.32 pts (-3.13%)", analysis: "Intermediate structural trendline acting as major overhead supply ceiling." },
+        { period: 100, period_label: "100 SMA", value: 23988.10, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-590.00 pts (-2.46%)", analysis: "Below the 100-day institutional accumulator mark. Expect range-bound absorption." },
+        { period: 200, period_label: "200 SMA", value: 24550.08, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-1,151.98 pts (-4.69%)", analysis: "Long-term institutional baseline. Watch for base formation around major historical demand." }
+      ],
+      ema: [
+        { period: 5, period_label: "5 EMA", value: 23543.35, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-145.25 pts (-0.62%)", analysis: "Immediate short-term momentum is subdued below the weighted 5-day EMA." },
+        { period: 10, period_label: "10 EMA", value: 23706.94, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-308.84 pts (-1.30%)", analysis: "Fast-reacting exponential average indicating active selling pressure on intraday rallies." },
+        { period: 15, period_label: "15 EMA", value: 23820.58, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-422.48 pts (-1.77%)", analysis: "Medium-short exponential barrier preventing continuation breakouts." },
+        { period: 20, period_label: "20 EMA", value: 23898.06, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-499.96 pts (-2.09%)", analysis: "Key dynamic swing benchmark. A sustained reclaim above 20 EMA is required for trend reversal." },
+        { period: 50, period_label: "50 EMA", value: 24039.49, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-641.39 pts (-2.67%)", analysis: "Medium-term exponential trend remains negative as institutional sellers dominate pullbacks." },
+        { period: 100, period_label: "100 EMA", value: 24121.29, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-723.19 pts (-3.00%)", analysis: "Quarterly institutional hedge band remains overhead." },
+        { period: 200, period_label: "200 EMA", value: 24309.49, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-911.39 pts (-3.75%)", analysis: "Critical macro institutional threshold. Long-term risk posture is defensive." }
+      ]
+    }
+  };
+
+  let activeData = DEFAULT_DATA;
+  let activeMaMode = 'sma';
+
+  const $ = (id) => document.getElementById(id);
+  const formatNum = (num, decimals = 2) => Number(num).toLocaleString('en-IN', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+
+  function renderHeader(meta) {
+    if (!meta) return;
+    if ($('m360TradeDate')) $('m360TradeDate').textContent = `DATE: ${meta.market_date.toUpperCase()}`;
+    if ($('m360CurrentPrice')) $('m360CurrentPrice').textContent = formatNum(meta.current_price);
+    
+    const sign = meta.points_change >= 0 ? '+' : '';
+    const deltaEl = $('m360PriceDelta');
+    if (deltaEl) {
+      deltaEl.textContent = `${sign}${formatNum(meta.points_change)} (${sign}${Number(meta.change_pct).toFixed(2)}%)`;
+      deltaEl.className = `nv-quote-delta ${meta.points_change >= 0 ? 'delta-pos' : 'delta-neg'}`;
+    }
+
+    if ($('m360DayLow')) $('m360DayLow').textContent = `₹${formatNum(meta.low)}`;
+    if ($('m360DayHigh')) $('m360DayHigh').textContent = `₹${formatNum(meta.high)}`;
+
+    // Calculate day range fill percentage
+    const dayRng = meta.high - meta.low;
+    let pct = 50;
+    if (dayRng > 0) {
+      pct = Math.max(0, Math.min(100, ((meta.current_price - meta.low) / dayRng) * 100));
+    }
+    if ($('m360RangeFill')) $('m360RangeFill').style.width = `${pct}%`;
+    if ($('m360RangeThumb')) $('m360RangeThumb').style.left = `${pct}%`;
+
+    if ($('m360PeVal')) $('m360PeVal').textContent = meta.pe ? `${meta.pe}x` : 'N/A';
+    if ($('m360PbVal')) $('m360PbVal').textContent = meta.pb ? `${meta.pb}x` : 'N/A';
+    if ($('m360DivVal')) $('m360DivVal').textContent = meta.div_yield ? `${meta.div_yield}%` : 'N/A';
+  }
+
+  function renderReturns(returnsList) {
+    const tbody = $('m360ReturnsBody');
+    if (!tbody || !returnsList) return;
+
+    tbody.innerHTML = returnsList.map(item => {
+      const isPos = item.return_pct >= 0;
+      const sign = isPos ? '+' : '';
+      return `
+        <tr>
+          <td class="sticky-col" style="font-weight:700;">${item.period}</td>
+          <td>₹${formatNum(item.old_price)}</td>
+          <td><span class="return-badge ${isPos ? 'badge-pos' : 'badge-neg'}">${sign}${Number(item.return_pct).toFixed(2)}%</span></td>
+          <td style="color:#6ee7b7;">₹${formatNum(item.period_high)}</td>
+          <td style="color:#fda4af;">₹${formatNum(item.period_low)}</td>
+          <td>${item.high_date}</td>
+          <td>${item.low_date}</td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  function renderPivots(pivotsList) {
+    const tbody = $('m360PivotsBody');
+    if (!tbody || !pivotsList) return;
+
+    tbody.innerHTML = pivotsList.map(item => {
+      const typeLabel = item.type.includes('Standard') ? 'Standard (Classic)' : 
+                        item.type.includes('Camarilla') ? 'Camarilla Equation' :
+                        item.type.includes('Fibonacci') ? 'Fibonacci Ratio' : 
+                        item.type.includes('Woodie') ? "Woodie's Model" : item.type;
+      return `
+        <tr>
+          <td class="sticky-col pivot-type-title">${typeLabel}</td>
+          <td class="pivot-sup">${formatNum(item.s4)}</td>
+          <td class="pivot-sup">${formatNum(item.s3)}</td>
+          <td class="pivot-sup">${formatNum(item.s2)}</td>
+          <td class="pivot-sup">${formatNum(item.s1)}</td>
+          <td class="pivot-center-cell" style="text-align:center;">${formatNum(item.pivot)}</td>
+          <td class="pivot-res">${formatNum(item.r1)}</td>
+          <td class="pivot-res">${formatNum(item.r2)}</td>
+          <td class="pivot-res">${formatNum(item.r3)}</td>
+          <td class="pivot-res">${formatNum(item.r4)}</td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  function renderMovingAverages() {
+    const tbody = $('m360MaBody');
+    if (!tbody || !activeData.moving_averages) return;
+
+    const list = activeData.moving_averages[activeMaMode] || [];
+    tbody.innerHTML = list.map(item => {
+      return `
+        <tr>
+          <td class="sticky-col" style="font-weight:700;color:var(--nv-cyan);">${item.period_label || (item.period + ' ' + activeMaMode.toUpperCase())}</td>
+          <td>₹${formatNum(item.value)}</td>
+          <td><span class="signal-tag ${item.signal_badge || 'neutral'}">${item.signal}</span></td>
+          <td style="color:${item.diff_pts >= 0 ? '#6ee7b7' : '#fda4af'};">${item.crossover}</td>
+          <td class="ma-analysis-text">${item.analysis}</td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  function setupTabs() {
+    const btnSma = $('btnTabSma');
+    const btnEma = $('btnTabEma');
+
+    if (btnSma) {
+      btnSma.addEventListener('click', () => {
+        activeMaMode = 'sma';
+        btnSma.classList.add('active');
+        btnSma.setAttribute('aria-selected', 'true');
+        if (btnEma) {
+          btnEma.classList.remove('active');
+          btnEma.setAttribute('aria-selected', 'false');
+        }
+        renderMovingAverages();
+      });
+    }
+
+    if (btnEma) {
+      btnEma.addEventListener('click', () => {
+        activeMaMode = 'ema';
+        btnEma.classList.add('active');
+        btnEma.setAttribute('aria-selected', 'true');
+        if (btnSma) {
+          btnSma.classList.remove('active');
+          btnSma.setAttribute('aria-selected', 'false');
+        }
+        renderMovingAverages();
+      });
+    }
+  }
+
+  // --- Dynamic Pipeline Synchronization ---
+  async function fetchLivePipelineData() {
+    const endpoints = [
+      'data/nifty_view_data.json',
+      '/wp-content/uploads/data/nifty_view_data.json',
+      'https://raw.githubusercontent.com/ganistock-ops/Mits360-landing-hub/main/data/nifty_view_data.json'
+    ];
+
+    for (const url of endpoints) {
+      try {
+        const resp = await fetch(url + '?t=' + Date.now());
+        if (resp.ok) {
+          const json = await resp.json();
+          if (json && json.meta && json.returns_matrix) {
+            console.log('[MITS 360] Nifty View live telemetry successfully ingested from:', url);
+            activeData = json;
+            renderHeader(activeData.meta);
+            renderReturns(activeData.returns_matrix);
+            renderPivots(activeData.pivots);
+            renderMovingAverages();
+            return;
+          }
+        }
+      } catch (err) {
+        // probe next endpoint
+      }
+    }
+  }
+
+  // --- Initialize Widget ---
+  function init() {
+    renderHeader(activeData.meta);
+    renderReturns(activeData.returns_matrix);
+    renderPivots(activeData.pivots);
+    renderMovingAverages();
+    setupTabs();
+    fetchLivePipelineData();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
