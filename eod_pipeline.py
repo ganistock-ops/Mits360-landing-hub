@@ -431,27 +431,36 @@ def process_bhavcopy(sec_csv_bytes: bytes, universes: dict, index_data: dict) ->
     }
 
 
-def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, output_dir: str):
+def calculate_index_technical_analytics(
+    trade_date: datetime.date,
+    index_data: dict,
+    output_dir: str,
+    index_key: str,
+    yahoo_symbol: str,
+    display_name: str,
+    output_filename: str,
+    baseline_defaults: dict
+) -> dict:
     """
     Computes Highs/Lows Returns Matrix, Multi-Model Daily Pivot Levels,
-    and Moving Average Suite (SMA & EMA) for Nifty 50, outputting data/nifty_view_data.json.
+    and Moving Average Suite (SMA & EMA) for an index, outputting json.
     """
-    print("[*] Computing Nifty View Technical Analytics (Highs/Lows, Pivots, MA Suite)...")
-    nifty_info = index_data.get("Nifty 50", {})
-    curr_close = nifty_info.get("close", 23398.10)
-    curr_high = nifty_info.get("high", curr_close * 1.002)
-    curr_low = nifty_info.get("low", curr_close * 0.998)
-    curr_open = nifty_info.get("open", curr_close)
-    points_change = nifty_info.get("points_change", 0.0)
-    change_pct = nifty_info.get("change_pct", 0.0)
-    pe_val = nifty_info.get("pe", 19.78)
-    pb_val = nifty_info.get("pb", 2.83)
-    div_yield = nifty_info.get("div_yield", 1.21)
+    print(f"[*] Computing {display_name} Technical Analytics (Highs/Lows, Pivots, MA Suite)...")
+    idx_info = index_data.get(index_key, {})
+    curr_close = idx_info.get("close", baseline_defaults.get("close", 23398.10))
+    curr_high = idx_info.get("high", curr_close * 1.002)
+    curr_low = idx_info.get("low", curr_close * 0.998)
+    curr_open = idx_info.get("open", curr_close)
+    points_change = idx_info.get("points_change", 0.0)
+    change_pct = idx_info.get("change_pct", 0.0)
+    pe_val = idx_info.get("pe", baseline_defaults.get("pe", 19.78))
+    pb_val = idx_info.get("pb", baseline_defaults.get("pb", 2.83))
+    div_yield = idx_info.get("div_yield", baseline_defaults.get("div_yield", 1.21))
 
-    # Fetch historical daily data for Nifty 50
+    # Fetch historical daily data for the index
     valid_candles = []
     try:
-        url = "https://query1.finance.yahoo.com/v8/finance/chart/%5ENSEI?range=5y&interval=1d"
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{yahoo_symbol}?range=5y&interval=1d"
         raw_bytes = fetch_url(url, timeout=12)
         raw_json = json.loads(raw_bytes.decode("utf-8"))
         res = raw_json["chart"]["result"][0]
@@ -461,9 +470,9 @@ def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, 
             if None not in (t, o, h, l, c):
                 d_str = datetime.datetime.fromtimestamp(t).strftime("%d-%b-%Y")
                 valid_candles.append({"time": t, "date": d_str, "open": float(o), "high": float(h), "low": float(l), "close": float(c)})
-        print(f"    Loaded {len(valid_candles)} historical candles for Nifty 50.")
+        print(f"    Loaded {len(valid_candles)} historical candles for {display_name}.")
     except Exception as e:
-        print(f"    [!] Notice: Could not fetch Yahoo chart ({e}), utilizing baseline historical dataset.")
+        print(f"    [!] Notice: Could not fetch Yahoo chart for {display_name} ({e}), utilizing baseline historical dataset.")
 
     # Ensure latest candle reflects the official trade date & NSE closes
     date_formatted = trade_date.strftime("%d-%b-%Y")
@@ -506,16 +515,7 @@ def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, 
                 "low_date": min_c["date"]
             })
     else:
-        returns_matrix = [
-            {"period": "1 Week", "old_price": 23779.15, "return_pct": -1.60, "period_high": 23890.00, "period_low": 23231.40, "high_date": "07-Sep-2026", "low_date": date_formatted},
-            {"period": "2 Weeks", "old_price": 24080.40, "return_pct": -2.83, "period_high": 24143.15, "period_low": 23231.40, "high_date": "01-Sep-2026", "low_date": date_formatted},
-            {"period": "1 Month", "old_price": 24366.00, "return_pct": -3.97, "period_high": 24405.20, "period_low": 23231.40, "high_date": "14-Aug-2026", "low_date": date_formatted},
-            {"period": "3 Months", "old_price": 23989.15, "return_pct": -2.46, "period_high": 24774.30, "period_low": 23231.40, "high_date": "03-Aug-2026", "low_date": date_formatted},
-            {"period": "6 Months", "old_price": 23866.85, "return_pct": -1.96, "period_high": 24774.30, "period_low": 22182.55, "high_date": "03-Aug-2026", "low_date": "02-Apr-2026"},
-            {"period": "1 Year", "old_price": 24741.00, "return_pct": -5.43, "period_high": 26373.20, "period_low": 22182.55, "high_date": "05-Jan-2026", "low_date": "02-Apr-2026"},
-            {"period": "2 Years", "old_price": 25278.70, "return_pct": -7.44, "period_high": 26373.20, "period_low": 21743.65, "high_date": "05-Jan-2026", "low_date": "07-Apr-2025"},
-            {"period": "5 Years", "old_price": 17380.00, "return_pct": 34.63, "period_high": 26373.20, "period_low": 15183.40, "high_date": "05-Jan-2026", "low_date": "17-Jun-2022"}
-        ]
+        returns_matrix = baseline_defaults.get("fallback_returns", [])
 
     # --- 2. Section 2: Daily Pivot Levels (Multi-Model Grid) ---
     rng = curr_high - curr_low
@@ -668,11 +668,11 @@ def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, 
             "analysis": e_analysis
         })
 
-    nifty_payload = {
+    payload = {
         "meta": {
             "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
             "market_date": date_formatted,
-            "index_name": "NIFTY 50",
+            "index_name": display_name,
             "current_price": curr_close,
             "points_change": points_change,
             "change_pct": change_pct,
@@ -694,12 +694,67 @@ def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, 
         }
     }
 
-    nifty_output_path = os.path.join(output_dir, "nifty_view_data.json")
-    with open(nifty_output_path, "w", encoding="utf-8") as f:
-        json.dump(nifty_payload, f, indent=2, ensure_ascii=False)
+    output_path = os.path.join(output_dir, output_filename)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
 
-    file_size_kb = os.path.getsize(nifty_output_path) / 1024.0
-    print(f"[OK] SUCCESS: Nifty View Technical Analytics saved to: {nifty_output_path} ({file_size_kb:.1f} KB)")
+    file_size_kb = os.path.getsize(output_path) / 1024.0
+    print(f"[OK] SUCCESS: {display_name} Technical Analytics saved to: {output_path} ({file_size_kb:.1f} KB)")
+    return payload
+
+
+def calculate_nifty_view_analytics(trade_date: datetime.date, index_data: dict, output_dir: str):
+    """Computes Nifty 50 technical analytics."""
+    date_formatted = trade_date.strftime("%d-%b-%Y")
+    return calculate_index_technical_analytics(
+        trade_date=trade_date,
+        index_data=index_data,
+        output_dir=output_dir,
+        index_key="Nifty 50",
+        yahoo_symbol="%5ENSEI",
+        display_name="NIFTY 50",
+        output_filename="nifty_view_data.json",
+        baseline_defaults={
+            "close": 23398.10, "pe": 19.78, "pb": 2.83, "div_yield": 1.21,
+            "fallback_returns": [
+                {"period": "1 Week", "old_price": 23779.15, "return_pct": -1.60, "period_high": 23890.00, "period_low": 23231.40, "high_date": "07-Sep-2026", "low_date": date_formatted},
+                {"period": "2 Weeks", "old_price": 24080.40, "return_pct": -2.83, "period_high": 24143.15, "period_low": 23231.40, "high_date": "01-Sep-2026", "low_date": date_formatted},
+                {"period": "1 Month", "old_price": 24366.00, "return_pct": -3.97, "period_high": 24405.20, "period_low": 23231.40, "high_date": "14-Aug-2026", "low_date": date_formatted},
+                {"period": "3 Months", "old_price": 23989.15, "return_pct": -2.46, "period_high": 24774.30, "period_low": 23231.40, "high_date": "03-Aug-2026", "low_date": date_formatted},
+                {"period": "6 Months", "old_price": 23866.85, "return_pct": -1.96, "period_high": 24774.30, "period_low": 22182.55, "high_date": "03-Aug-2026", "low_date": "02-Apr-2026"},
+                {"period": "1 Year", "old_price": 24741.00, "return_pct": -5.43, "period_high": 26373.20, "period_low": 22182.55, "high_date": "05-Jan-2026", "low_date": "02-Apr-2026"},
+                {"period": "2 Years", "old_price": 25278.70, "return_pct": -7.44, "period_high": 26373.20, "period_low": 21743.65, "high_date": "05-Jan-2026", "low_date": "07-Apr-2025"},
+                {"period": "5 Years", "old_price": 17380.00, "return_pct": 34.63, "period_high": 26373.20, "period_low": 15183.40, "high_date": "05-Jan-2026", "low_date": "17-Jun-2022"}
+            ]
+        }
+    )
+
+
+def calculate_banknifty_view_analytics(trade_date: datetime.date, index_data: dict, output_dir: str):
+    """Computes Bank Nifty technical analytics."""
+    date_formatted = trade_date.strftime("%d-%b-%Y")
+    return calculate_index_technical_analytics(
+        trade_date=trade_date,
+        index_data=index_data,
+        output_dir=output_dir,
+        index_key="Nifty Bank",
+        yahoo_symbol="%5ENSEBANK",
+        display_name="BANK NIFTY",
+        output_filename="banknifty_view_data.json",
+        baseline_defaults={
+            "close": 56606.55, "pe": 13.39, "pb": 1.70, "div_yield": 0.69,
+            "fallback_returns": [
+                {"period": "1 Week", "old_price": 57088.30, "return_pct": -0.84, "period_high": 57426.85, "period_low": 55699.45, "high_date": "07-Sep-2026", "low_date": date_formatted},
+                {"period": "2 Weeks", "old_price": 58024.95, "return_pct": -2.44, "period_high": 58024.95, "period_low": 55699.45, "high_date": "31-Aug-2026", "low_date": date_formatted},
+                {"period": "1 Month", "old_price": 57491.10, "return_pct": -1.54, "period_high": 58024.95, "period_low": 55699.45, "high_date": "31-Aug-2026", "low_date": date_formatted},
+                {"period": "3 Months", "old_price": 57297.15, "return_pct": -1.21, "period_high": 58706.05, "period_low": 55699.45, "high_date": "25-Jun-2026", "low_date": date_formatted},
+                {"period": "6 Months", "old_price": 55735.75, "return_pct": 1.56, "period_high": 58706.05, "period_low": 49954.85, "high_date": "25-Jun-2026", "low_date": "02-Apr-2026"},
+                {"period": "1 Year", "old_price": 54114.55, "return_pct": 4.61, "period_high": 61764.85, "period_low": 49954.85, "high_date": "03-Feb-2026", "low_date": "02-Apr-2026"},
+                {"period": "2 Years", "old_price": 51351.00, "return_pct": 10.23, "period_high": 61764.85, "period_low": 47702.90, "high_date": "03-Feb-2026", "low_date": "11-Mar-2025"},
+                {"period": "5 Years", "old_price": 36613.05, "return_pct": 54.61, "period_high": 61764.85, "period_low": 32155.35, "high_date": "03-Feb-2026", "low_date": "08-Mar-2022"}
+            ]
+        }
+    )
 
 
 def main():
@@ -750,8 +805,9 @@ def main():
         print(f"    Universes: Nifty 50, F&O Stocks, Nifty 100, Nifty 500")
         print(f"    Payload Size: {file_size_kb:.1f} KB")
 
-        # 7. Generate Nifty View Technical Analytics
+        # 7. Generate Nifty View & Bank Nifty View Technical Analytics
         calculate_nifty_view_analytics(trade_date, index_data, output_dir)
+        calculate_banknifty_view_analytics(trade_date, index_data, output_dir)
         print("=" * 70)
 
     except Exception as e:

@@ -39,17 +39,22 @@ jobs:
             echo "::error ::data/nifty_view_data.json was not generated!"
             exit 1
           fi
+          if [ ! -f "data/banknifty_view_data.json" ]; then
+            echo "::error ::data/banknifty_view_data.json was not generated!"
+            exit 1
+          fi
           echo "Market Summary Payload Size: $(du -h data/market_summary.json | cut -f1)"
           echo "Nifty View Payload Size: $(du -h data/nifty_view_data.json | cut -f1)"
+          echo "Bank Nifty View Payload Size: $(du -h data/banknifty_view_data.json | cut -f1)"
 
       - name: Commit and Push Updated EOD Data
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/market_summary.json data/nifty_view_data.json
+          git add data/market_summary.json data/nifty_view_data.json data/banknifty_view_data.json
           if git diff --staged --quiet; then
             echo "No changes detected in data payloads. Skipping commit."
           else
-            git commit -m "chore(data): auto-update EOD market intelligence and nifty view [skip ci]"
+            git commit -m "chore(data): auto-update EOD market intelligence, nifty view & bank nifty view [skip ci]"
             git push
           fi

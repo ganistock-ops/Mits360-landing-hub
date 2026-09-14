@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "generated_at": "2026-09-14T13:45:32.721239+00:00",
+    "market_date": "11-Sep-2026",
+    "index_name": "BANK NIFTY",
+    "current_price": 56606.55,
+    "points_change": 134.6,
+    "change_pct": 0.24,
+    "open": 55970.15,
+    "high": 56645.85,
+    "low": 55699.45,
+    "prev_close": 56471.95,
+    "pe": 13.39,
+    "pb": 1.7,
+    "div_yield": 0.69,
+    "source": "NSE Official EOD Bhavcopy & Historical Indexes",
+    "status": "FINALIZED"
+  },
+  "returns_matrix": [
+    {
+      "period": "1 Week",
+      "old_price": 57088.3,
+      "return_pct": -0.84,
+      "period_high": 57426.85,
+      "period_low": 55699.45,
+      "high_date": "07-Sep-2026",
+      "low_date": "11-Sep-2026"
+    },
+    {
+      "period": "2 Weeks",
+      "old_price": 58024.95,
+      "return_pct": -2.44,
+      "period_high": 58024.95,
+      "period_low": 55699.45,
+      "high_date": "31-Aug-2026",
+      "low_date": "11-Sep-2026"
+    },
+    {
+      "period": "1 Month",
+      "old_price": 57491.1,
+      "return_pct": -1.54,
+      "period_high": 58024.95,
+      "period_low": 55699.45,
+      "high_date": "31-Aug-2026",
+      "low_date": "11-Sep-2026"
+    },
+    {
+      "period": "3 Months",
+      "old_price": 57297.15,
+      "return_pct": -1.21,
+      "period_high": 58706.05,
+      "period_low": 55699.45,
+      "high_date": "25-Jun-2026",
+      "low_date": "11-Sep-2026"
+    },
+    {
+      "period": "6 Months",
+      "old_price": 55735.75,
+      "return_pct": 1.56,
+      "period_high": 58706.05,
+      "period_low": 49954.85,
+      "high_date": "25-Jun-2026",
+      "low_date": "02-Apr-2026"
+    },
+    {
+      "period": "1 Year",
+      "old_price": 54114.55,
+      "return_pct": 4.61,
+      "period_high": 61764.85,
+      "period_low": 49954.85,
+      "high_date": "03-Feb-2026",
+      "low_date": "02-Apr-2026"
+    },
+    {
+      "period": "2 Years",
+      "old_price": 51351.0,
+      "return_pct": 10.23,
+      "period_high": 61764.85,
+      "period_low": 47702.9,
+      "high_date": "03-Feb-2026",
+      "low_date": "11-Mar-2025"
+    },
+    {
+      "period": "5 Years",
+      "old_price": 36613.05,
+      "return_pct": 54.61,
+      "period_high": 61764.85,
+      "period_low": 32155.35,
+      "high_date": "03-Feb-2026",
+      "low_date": "08-Mar-2022"
+    }
+  ],
+  "pivots": [
+    {
+      "type": "Standard",
+      "s4": 54095.92,
+      "s3": 55042.32,
+      "s2": 55370.88,
+      "s1": 55988.72,
+      "pivot": 56317.28,
+      "r1": 56935.12,
+      "r2": 57263.68,
+      "r3": 57881.52,
+      "r4": 58827.92
+    },
+    {
+      "type": "Camarilla",
+      "s4": 56086.03,
+      "s3": 56346.29,
+      "s2": 56433.04,
+      "s1": 56519.8,
+      "pivot": 56317.28,
+      "r1": 56693.3,
+      "r2": 56780.06,
+      "r3": 56866.81,
+      "r4": 57127.07
+    },
+    {
+      "type": "Fibonacci",
+      "s4": 54786.01,
+      "s3": 55370.88,
+      "s2": 55732.41,
+      "s1": 55955.76,
+      "pivot": 56317.28,
+      "r1": 56678.81,
+      "r2": 56902.16,
+      "r3": 57263.68,
+      "r4": 57848.56
+    },
+    {
+      "type": "Woodie's",
+      "s4": 54240.55,
+      "s3": 55186.95,
+      "s2": 55443.2,
+      "s1": 56133.35,
+      "pivot": 56389.6,
+      "r1": 57079.75,
+      "r2": 57336.0,
+      "r3": 58026.15,
+      "r4": 58972.55
+    }
+  ],
+  "moving_averages": {
+    "sma": [
+      {
+        "period": 5,
+        "period_label": "5 SMA",
+        "value": 56647.98,
+        "signal": "Neutral",
+        "signal_badge": "neutral",
+        "crossover": "-41.43 pts (-0.07%)",
+        "diff_pts": -41.43,
+        "diff_pct": -0.07,
+        "analysis": "Price is consolidating directly at the 5-period SMA inflection band (56,647.98)."
+      },
+      {
+        "period": 10,
+        "period_label": "10 SMA",
+        "value": 57059.67,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-453.12 pts (-0.79%)",
+        "diff_pts": -453.12,
+        "diff_pct": -0.79,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 10-period SMA."
+      },
+      {
+        "period": 15,
+        "period_label": "15 SMA",
+        "value": 57228.46,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-621.91 pts (-1.09%)",
+        "diff_pts": -621.91,
+        "diff_pct": -1.09,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 15-period SMA."
+      },
+      {
+        "period": 20,
+        "period_label": "20 SMA",
+        "value": 57284.23,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-677.68 pts (-1.18%)",
+        "diff_pts": -677.68,
+        "diff_pct": -1.18,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 20-period SMA."
+      },
+      {
+        "period": 50,
+        "period_label": "50 SMA",
+        "value": 57463.55,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-857.00 pts (-1.49%)",
+        "diff_pts": -857.0,
+        "diff_pct": -1.49,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 50-period SMA."
+      },
+      {
+        "period": 100,
+        "period_label": "100 SMA",
+        "value": 56533.15,
+        "signal": "Neutral",
+        "signal_badge": "neutral",
+        "crossover": "+73.40 pts (+0.13%)",
+        "diff_pts": 73.4,
+        "diff_pct": 0.13,
+        "analysis": "Price is consolidating directly at the 100-period SMA inflection band (56,533.15)."
+      },
+      {
+        "period": 200,
+        "period_label": "200 SMA",
+        "value": 57373.56,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-767.01 pts (-1.34%)",
+        "diff_pts": -767.01,
+        "diff_pct": -1.34,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 200-period SMA."
+      }
+    ],
+    "ema": [
+      {
+        "period": 5,
+        "period_label": "5 EMA",
+        "value": 56685.48,
+        "signal": "Neutral",
+        "signal_badge": "neutral",
+        "crossover": "-78.93 pts (-0.14%)",
+        "diff_pts": -78.93,
+        "diff_pct": -0.14,
+        "analysis": "Price is consolidating directly at the 5-period EMA inflection band (56,685.48)."
+      },
+      {
+        "period": 10,
+        "period_label": "10 EMA",
+        "value": 56922.27,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-315.72 pts (-0.55%)",
+        "diff_pts": -315.72,
+        "diff_pct": -0.55,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 10-period EMA."
+      },
+      {
+        "period": 15,
+        "period_label": "15 EMA",
+        "value": 57068.39,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-461.84 pts (-0.81%)",
+        "diff_pts": -461.84,
+        "diff_pct": -0.81,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 15-period EMA."
+      },
+      {
+        "period": 20,
+        "period_label": "20 EMA",
+        "value": 57158.33,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-551.78 pts (-0.97%)",
+        "diff_pts": -551.78,
+        "diff_pct": -0.97,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 20-period EMA."
+      },
+      {
+        "period": 50,
+        "period_label": "50 EMA",
+        "value": 57194.01,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-587.46 pts (-1.03%)",
+        "diff_pts": -587.46,
+        "diff_pct": -1.03,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 50-period EMA."
+      },
+      {
+        "period": 100,
+        "period_label": "100 EMA",
+        "value": 57007.76,
+        "signal": "Mild Bearish",
+        "signal_badge": "bear-mild",
+        "crossover": "-401.21 pts (-0.70%)",
+        "diff_pts": -401.21,
+        "diff_pct": -0.7,
+        "analysis": "Mild supply overhead. Index is trading marginally below the 100-period EMA."
+      },
+      {
+        "period": 200,
+        "period_label": "200 EMA",
+        "value": 56754.51,
+        "signal": "Neutral",
+        "signal_badge": "neutral",
+        "crossover": "-147.96 pts (-0.26%)",
+        "diff_pts": -147.96,
+        "diff_pct": -0.26,
+        "analysis": "Price is consolidating directly at the 200-period EMA inflection band (56,754.51)."
+      }
+    ]
+  }
+}
