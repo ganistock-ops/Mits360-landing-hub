@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2026-09-15T07:20:52.835419+00:00",
+    "generated_at": "2026-09-15T12:03:34.749734+00:00",
     "market_date": "15-Sep-2026",
     "benchmark": "Nifty 50 (^NSEI)",
-    "benchmark_price": 23330.25,
+    "benchmark_price": 23118.6,
     "benchmark_returns": {
-      "1W": -1.89,
-      "1M": -4.25,
-      "3M": -2.75,
-      "6M": -2.25,
-      "1Y": -5.7
+      "1W": -2.78,
+      "1M": -5.12,
+      "3M": -3.63,
+      "6M": -3.14,
+      "1Y": -6.56
     },
     "total_sectors_tracked": 10,
     "status": "FINALIZED"
@@ -18,17 +18,17 @@
     "symbol": "^CNXIT",
     "name": "Nifty IT",
     "short_name": "IT",
-    "current_price": 29851.8,
-    "alpha_1w": 1.41,
-    "alpha_1m": -0.55,
-    "alpha_3m": 7.24,
-    "return_1w": -0.48,
+    "current_price": 29555.3,
+    "alpha_1w": 1.31,
+    "alpha_1m": -0.63,
+    "alpha_3m": 7.09,
+    "return_1w": -1.47,
     "quadrant": "Improving",
     "quadrant_code": "improving",
     "quadrant_color": "cyan",
     "headline": "Top Potential Rotation: Nifty IT",
-    "rationale": "Shift from Lagging to Improving: Emerging 1-Week Alpha of +1.41% vs Nifty 50, demonstrating institutional bottom-accumulation reversal against a 3-month baseline (+7.24%).",
-    "transition_score": -2.27
+    "rationale": "Shift from Lagging to Improving: Emerging 1-Week Alpha of +1.31% vs Nifty 50, demonstrating institutional bottom-accumulation reversal against a 3-month baseline (+7.09%).",
+    "transition_score": -2.3
   },
   "quadrants": {
     "leading_count": 4,
@@ -42,104 +42,104 @@
           "name": "Nifty Bank",
           "short_name": "Bank",
           "icon": "landmark",
-          "current_price": 56226.8,
+          "current_price": 55794.75,
           "returns": {
-            "1W": -1.51,
-            "1M": -2.2,
-            "3M": -1.87,
-            "6M": 0.88,
-            "1Y": 3.9
+            "1W": -2.27,
+            "1M": -2.95,
+            "3M": -2.62,
+            "6M": 0.11,
+            "1Y": 3.1
           },
           "alphas": {
-            "1W": 0.38,
-            "1M": 2.05,
-            "3M": 0.88,
-            "6M": 3.13,
-            "1Y": 9.6
+            "1W": 0.51,
+            "1M": 2.17,
+            "3M": 1.01,
+            "6M": 3.25,
+            "1Y": 9.66
           },
           "quadrant": "Leading",
           "quadrant_code": "leading",
           "quadrant_color": "emerald",
           "quadrant_reason": "Consistent Outperformance across short and medium horizons.",
-          "transition_score": 0.7
+          "transition_score": 0.77
         },
         {
           "symbol": "^CNXAUTO",
           "name": "Nifty Auto",
           "short_name": "Auto",
           "icon": "car",
-          "current_price": 27131.7,
+          "current_price": 26756.6,
           "returns": {
-            "1W": 0.56,
-            "1M": 1.44,
-            "3M": 2.64,
-            "6M": -3.4,
-            "1Y": 13.75
+            "1W": -0.83,
+            "1M": 0.04,
+            "3M": 1.22,
+            "6M": -4.74,
+            "1Y": 12.17
           },
           "alphas": {
-            "1W": 2.45,
-            "1M": 5.69,
-            "3M": 5.39,
-            "6M": -1.15,
-            "1Y": 19.45
+            "1W": 1.95,
+            "1M": 5.16,
+            "3M": 4.85,
+            "6M": -1.6,
+            "1Y": 18.73
           },
           "quadrant": "Leading",
           "quadrant_code": "leading",
           "quadrant_color": "emerald",
           "quadrant_reason": "Consistent Outperformance across short and medium horizons.",
-          "transition_score": 1.59
+          "transition_score": 1.29
         },
         {
           "symbol": "^CNXMETAL",
           "name": "Nifty Metal",
           "short_name": "Metal",
           "icon": "layers",
-          "current_price": 12811.35,
+          "current_price": 12669.15,
           "returns": {
-            "1W": 1.67,
-            "1M": -1.53,
-            "3M": -0.53,
-            "6M": 15.47,
-            "1Y": 34.61
+            "1W": 0.54,
+            "1M": -2.62,
+            "3M": -1.64,
+            "6M": 14.19,
+            "1Y": 33.12
           },
           "alphas": {
-            "1W": 3.56,
-            "1M": 2.72,
-            "3M": 2.22,
-            "6M": 17.72,
-            "1Y": 40.31
+            "1W": 3.32,
+            "1M": 2.5,
+            "3M": 1.99,
+            "6M": 17.33,
+            "1Y": 39.68
           },
           "quadrant": "Leading",
           "quadrant_code": "leading",
           "quadrant_color": "emerald",
           "quadrant_reason": "Consistent Outperformance across short and medium horizons.",
-          "transition_score": 2.34
+          "transition_score": 2.2
         },
         {
           "symbol": "^CNXPHARMA",
           "name": "Nifty Pharma",
           "short_name": "Pharma",
           "icon": "activity",
-          "current_price": 26375.65,
+          "current_price": 26188.4,
           "returns": {
-            "1W": -1.12,
-            "1M": -0.26,
-            "3M": 9.18,
-            "6M": 12.97,
-            "1Y": 20.35
+            "1W": -1.83,
+            "1M": -0.97,
+            "3M": 8.41,
+            "6M": 12.17,
+            "1Y": 19.5
           },
           "alphas": {
-            "1W": 0.77,
-            "1M": 3.99,
-            "3M": 11.93,
-            "6M": 15.22,
-            "1Y": 26.05
+            "1W": 0.95,
+            "1M": 4.15,
+            "3M": 12.04,
+            "6M": 15.31,
+            "1Y": 26.06
           },
           "quadrant": "Leading",
           "quadrant_code": "leading",
           "quadrant_color": "emerald",
           "quadrant_reason": "Consistent Outperformance across short and medium horizons.",
-          "transition_score": -2.71
+          "transition_score": -2.59
         }
       ],
       "improving": [
@@ -148,26 +148,26 @@
           "name": "Nifty IT",
           "short_name": "IT",
           "icon": "cpu",
-          "current_price": 29851.8,
+          "current_price": 29555.3,
           "returns": {
-            "1W": -0.48,
-            "1M": -4.8,
-            "3M": 4.49,
-            "6M": 0.67,
-            "1Y": -13.81
+            "1W": -1.47,
+            "1M": -5.75,
+            "3M": 3.46,
+            "6M": -0.33,
+            "1Y": -14.67
           },
           "alphas": {
-            "1W": 1.41,
-            "1M": -0.55,
-            "3M": 7.24,
-            "6M": 2.92,
+            "1W": 1.31,
+            "1M": -0.63,
+            "3M": 7.09,
+            "6M": 2.81,
             "1Y": -8.11
           },
           "quadrant": "Improving",
           "quadrant_code": "improving",
           "quadrant_color": "cyan",
           "quadrant_reason": "Emerging short-term outperformance over Nifty 50.",
-          "transition_score": -2.27
+          "transition_score": -2.3
         }
       ],
       "weakening": [
@@ -176,26 +176,26 @@
           "name": "Nifty Realty",
           "short_name": "Realty",
           "icon": "home",
-          "current_price": 829.0,
+          "current_price": 814.25,
           "returns": {
-            "1W": -11.54,
-            "1M": 1.07,
-            "3M": 5.35,
-            "6M": -5.15,
-            "1Y": -15.61
+            "1W": -13.11,
+            "1M": -0.73,
+            "3M": 3.48,
+            "6M": -6.84,
+            "1Y": -17.11
           },
           "alphas": {
-            "1W": -9.65,
-            "1M": 5.32,
-            "3M": 8.1,
-            "6M": -2.9,
-            "1Y": -9.91
+            "1W": -10.33,
+            "1M": 4.39,
+            "3M": 7.11,
+            "6M": -3.7,
+            "1Y": -10.55
           },
           "quadrant": "Weakening",
           "quadrant_code": "weakening",
           "quadrant_color": "amber",
           "quadrant_reason": "Losing short-term relative momentum after prior leadership.",
-          "transition_score": -6.9
+          "transition_score": -7.29
         }
       ],
       "lagging": [
@@ -204,104 +204,104 @@
           "name": "Nifty FMCG",
           "short_name": "FMCG",
           "icon": "shopping-bag",
-          "current_price": 45312.5,
+          "current_price": 44829.95,
           "returns": {
-            "1W": -7.17,
-            "1M": -8.74,
-            "3M": -8.75,
-            "6M": -13.59,
-            "1Y": -18.36
+            "1W": -8.15,
+            "1M": -9.72,
+            "3M": -9.72,
+            "6M": -14.51,
+            "1Y": -19.23
           },
           "alphas": {
-            "1W": -5.28,
-            "1M": -4.49,
-            "3M": -6.0,
-            "6M": -11.34,
-            "1Y": -12.66
+            "1W": -5.37,
+            "1M": -4.6,
+            "3M": -6.09,
+            "6M": -11.37,
+            "1Y": -12.67
           },
           "quadrant": "Lagging",
           "quadrant_code": "lagging",
           "quadrant_color": "rose",
           "quadrant_reason": "Persistent relative underperformance against Nifty 50.",
-          "transition_score": -2.56
+          "transition_score": -2.63
         },
         {
           "symbol": "^CNXENERGY",
           "name": "Nifty Energy",
           "short_name": "Energy",
           "icon": "zap",
-          "current_price": 37495.55,
+          "current_price": 37147.95,
           "returns": {
-            "1W": -4.4,
-            "1M": -7.32,
-            "3M": -3.57,
-            "6M": 8.97,
-            "1Y": 2.43
+            "1W": -5.28,
+            "1M": -8.18,
+            "3M": -4.46,
+            "6M": 7.96,
+            "1Y": 1.48
           },
           "alphas": {
-            "1W": -2.51,
-            "1M": -3.07,
-            "3M": -0.82,
-            "6M": 11.22,
-            "1Y": 8.13
+            "1W": -2.5,
+            "1M": -3.06,
+            "3M": -0.83,
+            "6M": 11.1,
+            "1Y": 8.04
           },
           "quadrant": "Lagging",
           "quadrant_code": "lagging",
           "quadrant_color": "rose",
           "quadrant_reason": "Persistent relative underperformance against Nifty 50.",
-          "transition_score": -2.41
+          "transition_score": -2.39
         },
         {
           "symbol": "^CNXINFRA",
           "name": "Nifty Infra",
           "short_name": "Infra",
           "icon": "truck",
-          "current_price": 9003.15,
+          "current_price": 8910.75,
           "returns": {
-            "1W": -4.03,
-            "1M": -5.23,
-            "3M": -3.31,
-            "6M": -3.23,
-            "1Y": -5.04
+            "1W": -5.01,
+            "1M": -6.2,
+            "3M": -4.3,
+            "6M": -4.22,
+            "1Y": -6.02
           },
           "alphas": {
-            "1W": -2.14,
-            "1M": -0.98,
-            "3M": -0.56,
-            "6M": -0.98,
-            "1Y": 0.66
+            "1W": -2.23,
+            "1M": -1.08,
+            "3M": -0.67,
+            "6M": -1.08,
+            "1Y": 0.54
           },
           "quadrant": "Lagging",
           "quadrant_code": "lagging",
           "quadrant_color": "rose",
           "quadrant_reason": "Persistent relative underperformance against Nifty 50.",
-          "transition_score": -1.45
+          "transition_score": -1.5
         },
         {
           "symbol": "^CNXPSE",
           "name": "Nifty PSE",
           "short_name": "PSE",
           "icon": "shield",
-          "current_price": 9556.55,
+          "current_price": 9467.0,
           "returns": {
-            "1W": -4.03,
-            "1M": -6.19,
-            "3M": -9.74,
-            "6M": -2.2,
-            "1Y": -5.94
+            "1W": -4.93,
+            "1M": -7.07,
+            "3M": -10.59,
+            "6M": -3.11,
+            "1Y": -6.83
           },
           "alphas": {
-            "1W": -2.14,
-            "1M": -1.94,
-            "3M": -6.99,
-            "6M": 0.05,
-            "1Y": -0.24
+            "1W": -2.15,
+            "1M": -1.95,
+            "3M": -6.96,
+            "6M": 0.03,
+            "1Y": -0.27
           },
           "quadrant": "Lagging",
           "quadrant_code": "lagging",
           "quadrant_color": "rose",
           "quadrant_reason": "Persistent relative underperformance against Nifty 50.",
-          "transition_score": 0.74
+          "transition_score": 0.71
         }
       ]
     }
@@ -312,260 +312,260 @@
       "name": "Nifty Bank",
       "short_name": "Bank",
       "icon": "landmark",
-      "current_price": 56226.8,
+      "current_price": 55794.75,
       "returns": {
-        "1W": -1.51,
-        "1M": -2.2,
-        "3M": -1.87,
-        "6M": 0.88,
-        "1Y": 3.9
+        "1W": -2.27,
+        "1M": -2.95,
+        "3M": -2.62,
+        "6M": 0.11,
+        "1Y": 3.1
       },
       "alphas": {
-        "1W": 0.38,
-        "1M": 2.05,
-        "3M": 0.88,
-        "6M": 3.13,
-        "1Y": 9.6
+        "1W": 0.51,
+        "1M": 2.17,
+        "3M": 1.01,
+        "6M": 3.25,
+        "1Y": 9.66
       },
       "quadrant": "Leading",
       "quadrant_code": "leading",
       "quadrant_color": "emerald",
       "quadrant_reason": "Consistent Outperformance across short and medium horizons.",
-      "transition_score": 0.7
+      "transition_score": 0.77
     },
     {
       "symbol": "^CNXIT",
       "name": "Nifty IT",
       "short_name": "IT",
       "icon": "cpu",
-      "current_price": 29851.8,
+      "current_price": 29555.3,
       "returns": {
-        "1W": -0.48,
-        "1M": -4.8,
-        "3M": 4.49,
-        "6M": 0.67,
-        "1Y": -13.81
+        "1W": -1.47,
+        "1M": -5.75,
+        "3M": 3.46,
+        "6M": -0.33,
+        "1Y": -14.67
       },
       "alphas": {
-        "1W": 1.41,
-        "1M": -0.55,
-        "3M": 7.24,
-        "6M": 2.92,
+        "1W": 1.31,
+        "1M": -0.63,
+        "3M": 7.09,
+        "6M": 2.81,
         "1Y": -8.11
       },
       "quadrant": "Improving",
       "quadrant_code": "improving",
       "quadrant_color": "cyan",
       "quadrant_reason": "Emerging short-term outperformance over Nifty 50.",
-      "transition_score": -2.27
+      "transition_score": -2.3
     },
     {
       "symbol": "^CNXAUTO",
       "name": "Nifty Auto",
       "short_name": "Auto",
       "icon": "car",
-      "current_price": 27131.7,
+      "current_price": 26756.6,
       "returns": {
-        "1W": 0.56,
-        "1M": 1.44,
-        "3M": 2.64,
-        "6M": -3.4,
-        "1Y": 13.75
+        "1W": -0.83,
+        "1M": 0.04,
+        "3M": 1.22,
+        "6M": -4.74,
+        "1Y": 12.17
       },
       "alphas": {
-        "1W": 2.45,
-        "1M": 5.69,
-        "3M": 5.39,
-        "6M": -1.15,
-        "1Y": 19.45
+        "1W": 1.95,
+        "1M": 5.16,
+        "3M": 4.85,
+        "6M": -1.6,
+        "1Y": 18.73
       },
       "quadrant": "Leading",
       "quadrant_code": "leading",
       "quadrant_color": "emerald",
       "quadrant_reason": "Consistent Outperformance across short and medium horizons.",
-      "transition_score": 1.59
+      "transition_score": 1.29
     },
     {
       "symbol": "^CNXFMCG",
       "name": "Nifty FMCG",
       "short_name": "FMCG",
       "icon": "shopping-bag",
-      "current_price": 45312.5,
+      "current_price": 44829.95,
       "returns": {
-        "1W": -7.17,
-        "1M": -8.74,
-        "3M": -8.75,
-        "6M": -13.59,
-        "1Y": -18.36
+        "1W": -8.15,
+        "1M": -9.72,
+        "3M": -9.72,
+        "6M": -14.51,
+        "1Y": -19.23
       },
       "alphas": {
-        "1W": -5.28,
-        "1M": -4.49,
-        "3M": -6.0,
-        "6M": -11.34,
-        "1Y": -12.66
+        "1W": -5.37,
+        "1M": -4.6,
+        "3M": -6.09,
+        "6M": -11.37,
+        "1Y": -12.67
       },
       "quadrant": "Lagging",
       "quadrant_code": "lagging",
       "quadrant_color": "rose",
       "quadrant_reason": "Persistent relative underperformance against Nifty 50.",
-      "transition_score": -2.56
+      "transition_score": -2.63
     },
     {
       "symbol": "^CNXMETAL",
       "name": "Nifty Metal",
       "short_name": "Metal",
       "icon": "layers",
-      "current_price": 12811.35,
+      "current_price": 12669.15,
       "returns": {
-        "1W": 1.67,
-        "1M": -1.53,
-        "3M": -0.53,
-        "6M": 15.47,
-        "1Y": 34.61
+        "1W": 0.54,
+        "1M": -2.62,
+        "3M": -1.64,
+        "6M": 14.19,
+        "1Y": 33.12
       },
       "alphas": {
-        "1W": 3.56,
-        "1M": 2.72,
-        "3M": 2.22,
-        "6M": 17.72,
-        "1Y": 40.31
+        "1W": 3.32,
+        "1M": 2.5,
+        "3M": 1.99,
+        "6M": 17.33,
+        "1Y": 39.68
       },
       "quadrant": "Leading",
       "quadrant_code": "leading",
       "quadrant_color": "emerald",
       "quadrant_reason": "Consistent Outperformance across short and medium horizons.",
-      "transition_score": 2.34
+      "transition_score": 2.2
     },
     {
       "symbol": "^CNXPHARMA",
       "name": "Nifty Pharma",
       "short_name": "Pharma",
       "icon": "activity",
-      "current_price": 26375.65,
+      "current_price": 26188.4,
       "returns": {
-        "1W": -1.12,
-        "1M": -0.26,
-        "3M": 9.18,
-        "6M": 12.97,
-        "1Y": 20.35
+        "1W": -1.83,
+        "1M": -0.97,
+        "3M": 8.41,
+        "6M": 12.17,
+        "1Y": 19.5
       },
       "alphas": {
-        "1W": 0.77,
-        "1M": 3.99,
-        "3M": 11.93,
-        "6M": 15.22,
-        "1Y": 26.05
+        "1W": 0.95,
+        "1M": 4.15,
+        "3M": 12.04,
+        "6M": 15.31,
+        "1Y": 26.06
       },
       "quadrant": "Leading",
       "quadrant_code": "leading",
       "quadrant_color": "emerald",
       "quadrant_reason": "Consistent Outperformance across short and medium horizons.",
-      "transition_score": -2.71
+      "transition_score": -2.59
     },
     {
       "symbol": "^CNXREALTY",
       "name": "Nifty Realty",
       "short_name": "Realty",
       "icon": "home",
-      "current_price": 829.0,
+      "current_price": 814.25,
       "returns": {
-        "1W": -11.54,
-        "1M": 1.07,
-        "3M": 5.35,
-        "6M": -5.15,
-        "1Y": -15.61
+        "1W": -13.11,
+        "1M": -0.73,
+        "3M": 3.48,
+        "6M": -6.84,
+        "1Y": -17.11
       },
       "alphas": {
-        "1W": -9.65,
-        "1M": 5.32,
-        "3M": 8.1,
-        "6M": -2.9,
-        "1Y": -9.91
+        "1W": -10.33,
+        "1M": 4.39,
+        "3M": 7.11,
+        "6M": -3.7,
+        "1Y": -10.55
       },
       "quadrant": "Weakening",
       "quadrant_code": "weakening",
       "quadrant_color": "amber",
       "quadrant_reason": "Losing short-term relative momentum after prior leadership.",
-      "transition_score": -6.9
+      "transition_score": -7.29
     },
     {
       "symbol": "^CNXENERGY",
       "name": "Nifty Energy",
       "short_name": "Energy",
       "icon": "zap",
-      "current_price": 37495.55,
+      "current_price": 37147.95,
       "returns": {
-        "1W": -4.4,
-        "1M": -7.32,
-        "3M": -3.57,
-        "6M": 8.97,
-        "1Y": 2.43
+        "1W": -5.28,
+        "1M": -8.18,
+        "3M": -4.46,
+        "6M": 7.96,
+        "1Y": 1.48
       },
       "alphas": {
-        "1W": -2.51,
-        "1M": -3.07,
-        "3M": -0.82,
-        "6M": 11.22,
-        "1Y": 8.13
+        "1W": -2.5,
+        "1M": -3.06,
+        "3M": -0.83,
+        "6M": 11.1,
+        "1Y": 8.04
       },
       "quadrant": "Lagging",
       "quadrant_code": "lagging",
       "quadrant_color": "rose",
       "quadrant_reason": "Persistent relative underperformance against Nifty 50.",
-      "transition_score": -2.41
+      "transition_score": -2.39
     },
     {
       "symbol": "^CNXINFRA",
       "name": "Nifty Infra",
       "short_name": "Infra",
       "icon": "truck",
-      "current_price": 9003.15,
+      "current_price": 8910.75,
       "returns": {
-        "1W": -4.03,
-        "1M": -5.23,
-        "3M": -3.31,
-        "6M": -3.23,
-        "1Y": -5.04
+        "1W": -5.01,
+        "1M": -6.2,
+        "3M": -4.3,
+        "6M": -4.22,
+        "1Y": -6.02
       },
       "alphas": {
-        "1W": -2.14,
-        "1M": -0.98,
-        "3M": -0.56,
-        "6M": -0.98,
-        "1Y": 0.66
+        "1W": -2.23,
+        "1M": -1.08,
+        "3M": -0.67,
+        "6M": -1.08,
+        "1Y": 0.54
       },
       "quadrant": "Lagging",
       "quadrant_code": "lagging",
       "quadrant_color": "rose",
       "quadrant_reason": "Persistent relative underperformance against Nifty 50.",
-      "transition_score": -1.45
+      "transition_score": -1.5
     },
     {
       "symbol": "^CNXPSE",
       "name": "Nifty PSE",
       "short_name": "PSE",
       "icon": "shield",
-      "current_price": 9556.55,
+      "current_price": 9467.0,
       "returns": {
-        "1W": -4.03,
-        "1M": -6.19,
-        "3M": -9.74,
-        "6M": -2.2,
-        "1Y": -5.94
+        "1W": -4.93,
+        "1M": -7.07,
+        "3M": -10.59,
+        "6M": -3.11,
+        "1Y": -6.83
       },
       "alphas": {
-        "1W": -2.14,
-        "1M": -1.94,
-        "3M": -6.99,
-        "6M": 0.05,
-        "1Y": -0.24
+        "1W": -2.15,
+        "1M": -1.95,
+        "3M": -6.96,
+        "6M": 0.03,
+        "1Y": -0.27
       },
       "quadrant": "Lagging",
       "quadrant_code": "lagging",
       "quadrant_color": "rose",
       "quadrant_reason": "Persistent relative underperformance against Nifty 50.",
-      "transition_score": 0.74
+      "transition_score": 0.71
     }
   ]
 }

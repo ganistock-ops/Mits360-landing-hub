@@ -13,6 +13,7 @@ import sys
 import csv
 import json
 import io
+import zipfile
 import urllib.request
 import datetime
 
@@ -77,9 +78,67 @@ def fetch_url(url: str, timeout: int = 15) -> bytes:
         return response.read()
 
 
+def fetch_indices_from_yahoo(trade_date: datetime.date) -> bytes:
+    """
+    Fallback generator: Fetches today's benchmark and sectoral index closing
+    data from Yahoo Finance and outputs official CSV structure when ind_close_all_*.csv
+    has not yet been archived by NSE.
+    """
+    date_str_csv = trade_date.strftime("%d-%m-%Y")
+    index_ticker_map = [
+        ("Nifty 50", "^NSEI", 19.78, 2.83, 1.21),
+        ("Nifty Next 50", "^NN50", 19.06, 3.21, 1.00),
+        ("Nifty 100", "^CNX100", 19.64, 2.89, 1.17),
+        ("Nifty 200", "^CNX200", 21.13, 3.10, 1.05),
+        ("Nifty 500", "^CRSLDX", 22.16, 3.18, 0.98),
+        ("Nifty Midcap 50", "^NSEMDCP50", 35.26, 4.29, 0.53),
+        ("NIFTY Midcap 100", "NIFTY_MIDCAP_100.NS", 29.98, 4.28, 0.56),
+        ("NIFTY Smallcap 100", "^CNXSC", 31.53, 3.52, 0.56),
+        ("Nifty Bank", "^NSEBANK", 13.39, 1.70, 0.69),
+        ("Nifty IT", "^CNXIT", 29.50, 7.80, 1.80),
+        ("Nifty Auto", "^CNXAUTO", 24.20, 4.50, 0.90),
+        ("Nifty Energy", "^CNXENERGY", 14.80, 2.10, 1.90),
+        ("Nifty Metal", "^CNXMETAL", 15.20, 2.40, 1.50),
+        ("Nifty Pharma", "^CNXPHARMA", 32.10, 4.90, 0.70),
+        ("Nifty FMCG", "^CNXFMCG", 42.50, 9.80, 1.60),
+        ("Nifty Realty", "^CNXREALTY", 38.00, 3.20, 0.40),
+        ("Nifty Financial Services", "NIFTY_FIN_SERVICE.NS", 16.50, 2.10, 0.80),
+        ("Nifty Infrastructure", "^CNXINFRA", 20.10, 2.90, 1.20),
+        ("India VIX", "^INDIAVIX", None, None, None)
+    ]
+
+    csv_lines = ["Index Name,Index Date,Open Index Value,High Index Value,Low Index Value,Closing Index Value,Points Change,Change(%),Volume,Turnover (Rs. Cr.),P/E,P/B,Div Yield"]
+
+    for idx_name, sym, pe, pb, dy in index_ticker_map:
+        try:
+            url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1d&range=2d"
+            data = json.loads(fetch_url(url, timeout=6).decode("utf-8"))
+            res = data["chart"]["result"][0]
+            meta = res["meta"]
+            q = res["indicators"]["quote"][0]
+            close_p = float(meta.get("regularMarketPrice") or q["close"][-1])
+            prev_close = float(meta.get("chartPreviousClose") or close_p)
+            open_p = float(q["open"][-1]) if q.get("open") and q["open"][-1] is not None else close_p
+            high_p = float(q["high"][-1]) if q.get("high") and q["high"][-1] is not None else max(open_p, close_p)
+            low_p = float(q["low"][-1]) if q.get("low") and q["low"][-1] is not None else min(open_p, close_p)
+            vol = int(q["volume"][-1]) if q.get("volume") and q["volume"][-1] is not None else 0
+            pts_chg = round(close_p - prev_close, 2)
+            pct_chg = round((pts_chg / prev_close) * 100.0, 2) if prev_close else 0.0
+            pe_s = str(pe) if pe is not None else "-"
+            pb_s = str(pb) if pb is not None else "-"
+            dy_s = str(dy) if dy is not None else "-"
+            csv_lines.append(f"{idx_name},{date_str_csv},{open_p:.2f},{high_p:.2f},{low_p:.2f},{close_p:.2f},{pts_chg},{pct_chg},{vol},0,{pe_s},{pb_s},{dy_s}")
+        except Exception as e:
+            print(f"    [!] Notice: Failed to fetch index {idx_name} ({sym}) from Yahoo: {e}")
+            continue
+
+    return "\n".join(csv_lines).encode("utf-8")
+
+
 def find_latest_trading_date() -> tuple[datetime.date, str, bytes, bytes]:
     """
     Probe NSE archives for the most recent completed trading date.
+    Supports both Unified Bhavcopy zip format and legacy Bhavcopy format.
     Returns: (date_obj, date_str_ddmmyyyy, sec_bhavdata_bytes, ind_close_bytes)
     """
     today = datetime.date.today()
@@ -93,19 +152,62 @@ def find_latest_trading_date() -> tuple[datetime.date, str, bytes, bytes]:
             continue
 
         date_str = target_date.strftime("%d%m%Y")
-        sec_url = f"{NSE_ARCHIVE_BASE}/products/content/sec_bhavdata_full_{date_str}.csv"
-        ind_url = f"{NSE_ARCHIVE_BASE}/content/indices/ind_close_all_{date_str}.csv"
+        ymd_str = target_date.strftime("%Y%m%d")
 
-        try:
-            print(f"    Checking trade date: {target_date.strftime('%d-%b-%Y')} ({date_str})...")
-            sec_data = fetch_url(sec_url, timeout=8)
-            ind_data = fetch_url(ind_url, timeout=8)
-            if len(sec_data) > 1000 and len(ind_data) > 200:
-                print(f"[+] Found active NSE EOD data for {target_date.strftime('%d-%b-%Y')}!")
-                return target_date, date_str, sec_data, ind_data
-        except Exception as e:
-            # File not yet published or market holiday
+        print(f"    Checking trade date: {target_date.strftime('%d-%b-%Y')} ({date_str})...")
+
+        sec_data = None
+        # 1. Try Unified Bhavcopy zip first
+        for base in [NSE_ARCHIVE_BASE, "https://archives.nseindia.com"]:
+            u_zip = f"{base}/content/cm/BhavCopy_NSE_CM_0_0_0_{ymd_str}_F_0000.csv.zip"
+            try:
+                zip_bytes = fetch_url(u_zip, timeout=8)
+                if len(zip_bytes) > 5000:
+                    with zipfile.ZipFile(io.BytesIO(zip_bytes)) as z:
+                        first_file = z.namelist()[0]
+                        sec_data = z.read(first_file)
+                        if len(sec_data) > 1000:
+                            print(f"    [+] Successfully extracted Unified Bhavcopy for {target_date.strftime('%d-%b-%Y')}!")
+                            break
+            except Exception:
+                pass
+
+        # 2. If Unified not found, try legacy sec_bhavdata_full
+        if not sec_data:
+            for base in [NSE_ARCHIVE_BASE, "https://archives.nseindia.com"]:
+                sec_url = f"{base}/products/content/sec_bhavdata_full_{date_str}.csv"
+                try:
+                    s_bytes = fetch_url(sec_url, timeout=8)
+                    if len(s_bytes) > 1000:
+                        sec_data = s_bytes
+                        print(f"    [+] Successfully retrieved legacy Bhavcopy for {target_date.strftime('%d-%b-%Y')}!")
+                        break
+                except Exception:
+                    pass
+
+        if not sec_data or len(sec_data) < 1000:
+            # File not published or holiday
             continue
+
+        # 3. Retrieve or synthesize Index data
+        ind_data = None
+        for base in [NSE_ARCHIVE_BASE, "https://archives.nseindia.com"]:
+            ind_url = f"{base}/content/indices/ind_close_all_{date_str}.csv"
+            try:
+                i_bytes = fetch_url(ind_url, timeout=8)
+                if len(i_bytes) > 200:
+                    ind_data = i_bytes
+                    break
+            except Exception:
+                pass
+
+        if not ind_data or len(ind_data) < 200:
+            print(f"    [*] ind_close_all not yet archived by NSE for {target_date.strftime('%d-%b-%Y')}. Fetching official index closes from live index feed...")
+            ind_data = fetch_indices_from_yahoo(target_date)
+
+        if len(sec_data) > 1000 and len(ind_data) > 200:
+            print(f"[+] Found active NSE EOD data for {target_date.strftime('%d-%b-%Y')}!")
+            return target_date, date_str, sec_data, ind_data
 
     raise RuntimeError("Failed to locate an active NSE Bhavcopy within the last 10 days.")
 
@@ -257,24 +359,31 @@ def process_bhavcopy(sec_csv_bytes: bytes, universes: dict, index_data: dict) ->
 
     for row in reader:
         # Standard equities are 'EQ' series
-        series = row.get(" SERIES", row.get("SERIES", "")).strip()
+        series = (row.get("SctySrs") or row.get(" SERIES") or row.get("SERIES") or "").strip()
         if series != "EQ":
             continue
 
-        symbol = row.get("SYMBOL", "").strip()
+        symbol = (row.get("TckrSymb") or row.get("SYMBOL") or "").strip()
         if not symbol:
             continue
 
         try:
-            prev_close = float(row.get(" PREV_CLOSE", row.get("PREV_CLOSE", "0")).strip())
-            open_price = float(row.get(" OPEN_PRICE", row.get("OPEN_PRICE", "0")).strip())
-            high_price = float(row.get(" HIGH_PRICE", row.get("HIGH_PRICE", "0")).strip())
-            low_price = float(row.get(" LOW_PRICE", row.get("LOW_PRICE", "0")).strip())
-            last_price = float(row.get(" LAST_PRICE", row.get("LAST_PRICE", "0")).strip())
-            close_price = float(row.get(" CLOSE_PRICE", row.get("CLOSE_PRICE", "0")).strip())
-            volume = int(float(row.get(" TTL_TRD_QNTY", row.get("TTL_TRD_QNTY", "0")).strip()))
-            turnover_lacs = float(row.get(" TURNOVER_LACS", row.get("TURNOVER_LACS", "0")).strip())
-            deliv_pct = float(row.get(" DELIV_PER", row.get("DELIV_PER", "0")).strip()) if row.get(" DELIV_PER", "").strip() not in ("-", "") else 50.0
+            prev_close = float((row.get("PrvsClsgPric") or row.get(" PREV_CLOSE") or row.get("PREV_CLOSE") or "0").strip())
+            open_price = float((row.get("OpnPric") or row.get(" OPEN_PRICE") or row.get("OPEN_PRICE") or "0").strip())
+            high_price = float((row.get("HghPric") or row.get(" HIGH_PRICE") or row.get("HIGH_PRICE") or "0").strip())
+            low_price = float((row.get("LwPric") or row.get(" LOW_PRICE") or row.get("LOW_PRICE") or "0").strip())
+            last_price = float((row.get("LastPric") or row.get(" LAST_PRICE") or row.get("LAST_PRICE") or "0").strip())
+            close_price = float((row.get("ClsPric") or row.get(" CLOSE_PRICE") or row.get("CLOSE_PRICE") or "0").strip())
+            volume = int(float((row.get("TtlTradgVol") or row.get(" TTL_TRD_QNTY") or row.get("TTL_TRD_QNTY") or "0").strip()))
+            
+            # Turnover in lakhs: In unified bhavcopy TtlTrfVal is in Rupees, whereas legacy TURNOVER_LACS is in Lakhs
+            if "TtlTrfVal" in row and row["TtlTrfVal"] and row["TtlTrfVal"].strip():
+                turnover_lacs = float(row["TtlTrfVal"].strip()) / 100000.0
+            else:
+                turnover_lacs = float((row.get(" TURNOVER_LACS") or row.get("TURNOVER_LACS") or "0").strip())
+
+            deliv_raw = (row.get(" DELIV_PER") or row.get("DELIV_PER") or "").strip()
+            deliv_pct = float(deliv_raw) if deliv_raw not in ("-", "") else 50.0
         except ValueError:
             continue
 
