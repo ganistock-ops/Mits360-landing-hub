@@ -890,6 +890,14 @@ def main():
         # 7. Generate Nifty View & Bank Nifty View Technical Analytics
         calculate_nifty_view_analytics(trade_date, index_data, output_dir)
         calculate_banknifty_view_analytics(trade_date, index_data, output_dir)
+
+        # 8. Generate Auto Event Calendar Intelligence
+        try:
+            from scripts.event_calendar_pipeline import generate_market_events_data
+            generate_market_events_data(output_dir)
+        except Exception as ev_err:
+            print(f"[!] Warning: Could not generate event calendar data: {ev_err}")
+
         print("=" * 70)
 
     except Exception as e:
