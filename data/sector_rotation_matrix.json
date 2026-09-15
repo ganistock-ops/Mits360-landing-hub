@@ -1,0 +1,2273 @@
+{
+  "meta": {
+    "generated_at": "2026-09-15T07:39:50.286034+00:00",
+    "market_date": "15-Sep-2026",
+    "market_regime": "Bear Market / Defensive",
+    "market_regime_desc": "Supply overhead below 200 DMA; favoring defensive relative strength.",
+    "primary_benchmark": "Nifty 50 (^NSEI)",
+    "primary_benchmark_price": 23294.25,
+    "broad_benchmark": "Nifty 500 (^CRSLDX)",
+    "total_sectors_evaluated": 15,
+    "status": "FINALIZED"
+  },
+  "spotlights": {
+    "top_early_rotation": {
+      "name": "Nifty Metal",
+      "symbol": "^CNXMETAL",
+      "rotation_score": 58.7,
+      "confidence": 84,
+      "phase": "IMPROVING",
+      "signal_tier": "B",
+      "rationale": "Short-term relative strength accelerating rapidly (+1.22% vs Nifty 50). Daily momentum indicators (RSI & MACD histogram) pivoting upward prior to breakout.",
+      "headline": "Early Rotation Surge: Nifty Metal",
+      "alpha_5d": 3.52,
+      "rsi": 52.9
+    },
+    "top_confirmed_leader": {
+      "name": "Nifty Metal",
+      "symbol": "^CNXMETAL",
+      "rotation_score": 58.7,
+      "confidence": 84,
+      "phase": "IMPROVING",
+      "signal_tier": "B",
+      "rationale": "Short-term relative strength accelerating rapidly (+1.22% vs Nifty 50). Daily momentum indicators (RSI & MACD histogram) pivoting upward prior to breakout.",
+      "headline": "Confirmed Sector Leader: Nifty Metal",
+      "alpha_5d": 3.52,
+      "breadth_pct": 0.0
+    },
+    "top_outflow_warning": {
+      "name": "Nifty FMCG",
+      "symbol": "^CNXFMCG",
+      "rotation_score": 24.6,
+      "confidence": 60,
+      "phase": "LAGGING",
+      "signal_tier": "D",
+      "rationale": "Consolidated performance tracking within benchmark corridor.",
+      "headline": "Capital Outflow Alert: Nifty FMCG",
+      "alpha_5d": -5.2
+    }
+  },
+  "quadrant_counts": {
+    "leading": 0,
+    "improving": 2,
+    "weakening": 8,
+    "lagging": 5
+  },
+  "sectors": [
+    {
+      "symbol": "^CNXMETAL",
+      "name": "Nifty Metal",
+      "short_name": "Metal",
+      "icon": "layers",
+      "current_price": 12788.1,
+      "rotation_score": 58.7,
+      "confidence_score": 84,
+      "phase": "IMPROVING",
+      "phase_code": "improving",
+      "phase_color": "cyan",
+      "signal_tier": "B",
+      "primary_alert": {
+        "type": "DISTRIBUTION",
+        "label": "Capital Outflow / Dist.",
+        "badge": "badge-bear"
+      },
+      "all_alerts": [
+        {
+          "type": "DISTRIBUTION",
+          "label": "Capital Outflow / Dist.",
+          "badge": "badge-bear"
+        }
+      ],
+      "factors": {
+        "relative_strength": 98.0,
+        "momentum": 64.7,
+        "breadth": 38.8,
+        "volume": 37.5,
+        "structure": 60.0,
+        "accumulation": 11.4,
+        "trend": 80.0,
+        "acceleration": 57.1
+      },
+      "metrics": {
+        "rs_trend": "RS Breakout",
+        "rs_accel": 1.22,
+        "alphas": {
+          "5D": 3.52,
+          "10D": 3.78,
+          "20D": 2.3,
+          "50D": 1.78,
+          "100D": 11.14,
+          "200D": 38.15
+        },
+        "alphas_n500": {
+          "5D": 3.56,
+          "10D": 3.82,
+          "20D": 1.99,
+          "50D": 0.37,
+          "100D": 8.07,
+          "200D": 32.94
+        },
+        "rsi": 52.9,
+        "roc_5d": 1.48,
+        "adx": 31.5,
+        "breadth_pct": 0.0,
+        "rvol": 0.5,
+        "structure": "Base Accumulation / Range",
+        "cmf": -0.138,
+        "stage": "Stage 5: Established Bullish Uptrend",
+        "stage_num": 5,
+        "dist_200dma": 9.55
+      },
+      "explainable_reasons": [
+        "Short-term relative strength accelerating rapidly (+1.22% vs Nifty 50).",
+        "Daily momentum indicators (RSI & MACD histogram) pivoting upward prior to breakout."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "NSLNISP",
+          "name": "NMDC Steel Ltd.",
+          "price": 43.66,
+          "change": -0.46,
+          "vol_mul": 1.25,
+          "turnover_cr": 15.41,
+          "dist_52h": -13.4,
+          "score": 54.3,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "ADANIENT",
+          "name": "Adani Enterprises Ltd.",
+          "price": 3060.0,
+          "change": -0.56,
+          "vol_mul": 1.25,
+          "turnover_cr": 550.88,
+          "dist_52h": -13.2,
+          "score": 54.2,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "GMDCLTD",
+          "name": "Gujarat Mineral Development Corporation Ltd.",
+          "price": 575.35,
+          "change": -0.87,
+          "vol_mul": 1.25,
+          "turnover_cr": 38.24,
+          "dist_52h": -13.4,
+          "score": 52.7,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "LLOYDSME",
+          "name": "Lloyds Metals And Energy Ltd.",
+          "price": 1799.6,
+          "change": -0.81,
+          "vol_mul": 1.25,
+          "turnover_cr": 72.19,
+          "dist_52h": -14.0,
+          "score": 52.0,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "JSL",
+          "name": "Jindal Stainless Ltd.",
+          "price": 756.1,
+          "change": -0.79,
+          "vol_mul": 1.25,
+          "turnover_cr": 122.9,
+          "dist_52h": -14.2,
+          "score": 51.8,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "JINDALSTEL",
+          "name": "Jindal Steel Ltd.",
+          "price": 1120.5,
+          "change": -1.45,
+          "vol_mul": 1.25,
+          "turnover_cr": 61.21,
+          "dist_52h": -13.2,
+          "score": 50.7,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        },
+        {
+          "symbol": "VEDL",
+          "name": "Vedanta Ltd.",
+          "price": 263.7,
+          "change": -1.99,
+          "vol_mul": 1.25,
+          "turnover_cr": 310.56,
+          "dist_52h": -13.4,
+          "score": 48.2,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        },
+        {
+          "symbol": "GRAVITA",
+          "name": "Gravita India Ltd.",
+          "price": 1668.2,
+          "change": -1.8,
+          "vol_mul": 1.25,
+          "turnover_cr": 19.01,
+          "dist_52h": -14.1,
+          "score": 47.9,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "^CNXMEDIA",
+      "name": "Nifty Media",
+      "short_name": "Media",
+      "icon": "film",
+      "current_price": 1525.15,
+      "rotation_score": 56.6,
+      "confidence_score": 84,
+      "phase": "WEAKENING",
+      "phase_code": "weakening",
+      "phase_color": "amber",
+      "signal_tier": "C",
+      "primary_alert": {
+        "type": "NORMAL",
+        "label": "Weakening",
+        "badge": "badge-amber"
+      },
+      "all_alerts": [
+        {
+          "type": "NORMAL",
+          "label": "Weakening",
+          "badge": "badge-amber"
+        }
+      ],
+      "factors": {
+        "relative_strength": 58.0,
+        "momentum": 57.7,
+        "breadth": 50.0,
+        "volume": 35.0,
+        "structure": 75.0,
+        "accumulation": 50.0,
+        "trend": 90.0,
+        "acceleration": 42.8
+      },
+      "metrics": {
+        "rs_trend": "RS Falling",
+        "rs_accel": -2.04,
+        "alphas": {
+          "5D": 2.69,
+          "10D": 5.08,
+          "20D": 4.73,
+          "50D": 8.25,
+          "100D": 8.67,
+          "200D": 4.36
+        },
+        "alphas_n500": {
+          "5D": 2.73,
+          "10D": 5.12,
+          "20D": 4.42,
+          "50D": 6.84,
+          "100D": 5.6,
+          "200D": -0.85
+        },
+        "rsi": 58.5,
+        "roc_5d": 0.65,
+        "adx": 24.1,
+        "breadth_pct": 50.0,
+        "rvol": 0.4,
+        "structure": "Higher High / Higher Low",
+        "cmf": 0.0,
+        "stage": "Stage 3/4: 200 DMA Base Flattening & Breakout",
+        "stage_num": 4,
+        "dist_200dma": 5.57
+      },
+      "explainable_reasons": [
+        "Favorable stage inflection: Stage 3/4: 200 DMA Base Flattening & Breakout."
+      ],
+      "top_stocks": [],
+      "rank": 2
+    },
+    {
+      "symbol": "^CNXPHARMA",
+      "name": "Nifty Pharma",
+      "short_name": "Pharma",
+      "icon": "activity",
+      "current_price": 26354.0,
+      "rotation_score": 55.9,
+      "confidence_score": 84,
+      "phase": "WEAKENING",
+      "phase_code": "weakening",
+      "phase_color": "amber",
+      "signal_tier": "C",
+      "primary_alert": {
+        "type": "NORMAL",
+        "label": "Weakening",
+        "badge": "badge-amber"
+      },
+      "all_alerts": [
+        {
+          "type": "NORMAL",
+          "label": "Weakening",
+          "badge": "badge-amber"
+        }
+      ],
+      "factors": {
+        "relative_strength": 72.3,
+        "momentum": 44.2,
+        "breadth": 55.5,
+        "volume": 37.5,
+        "structure": 30.0,
+        "accumulation": 80.8,
+        "trend": 80.0,
+        "acceleration": 34.9
+      },
+      "metrics": {
+        "rs_trend": "RS Falling",
+        "rs_accel": -3.31,
+        "alphas": {
+          "5D": 0.83,
+          "10D": 0.2,
+          "20D": 4.14,
+          "50D": 6.54,
+          "100D": 21.81,
+          "200D": 26.8
+        },
+        "alphas_n500": {
+          "5D": 0.87,
+          "10D": 0.25,
+          "20D": 3.82,
+          "50D": 5.13,
+          "100D": 18.74,
+          "200D": 21.59
+        },
+        "rsi": 45.3,
+        "roc_5d": -1.21,
+        "adx": 18.9,
+        "breadth_pct": 33.3,
+        "rvol": 0.5,
+        "structure": "Lower High / Lower Low",
+        "cmf": 0.253,
+        "stage": "Stage 5: Established Bullish Uptrend",
+        "stage_num": 5,
+        "dist_200dma": 10.17
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "CONCORDBIO",
+          "name": "Concord Biotech Ltd.",
+          "price": 1505.7,
+          "change": 3.64,
+          "vol_mul": 1.25,
+          "turnover_cr": 55.43,
+          "dist_52h": -14.4,
+          "score": 69.2,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "ONESOURCE",
+          "name": "Onesource Specialty Pharma Ltd.",
+          "price": 1592.2,
+          "change": 3.26,
+          "vol_mul": 1.25,
+          "turnover_cr": 147.14,
+          "dist_52h": -14.8,
+          "score": 67.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "MANKIND",
+          "name": "Mankind Pharma Ltd.",
+          "price": 2280.0,
+          "change": 1.86,
+          "vol_mul": 1.25,
+          "turnover_cr": 119.68,
+          "dist_52h": -13.0,
+          "score": 64.2,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "DRREDDY",
+          "name": "Dr. Reddy's Laboratories Ltd.",
+          "price": 1165.5,
+          "change": 1.97,
+          "vol_mul": 1.25,
+          "turnover_cr": 280.48,
+          "dist_52h": -14.3,
+          "score": 62.7,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "ABBOTINDIA",
+          "name": "Abbott India Ltd.",
+          "price": 25550.0,
+          "change": 1.15,
+          "vol_mul": 1.25,
+          "turnover_cr": 24.35,
+          "dist_52h": -13.3,
+          "score": 60.9,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "LAURUSLABS",
+          "name": "Laurus Labs Ltd.",
+          "price": 1969.0,
+          "change": 1.23,
+          "vol_mul": 1.25,
+          "turnover_cr": 446.69,
+          "dist_52h": -13.6,
+          "score": 60.8,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "GRANULES",
+          "name": "Granules India Ltd.",
+          "price": 909.3,
+          "change": 1.12,
+          "vol_mul": 1.25,
+          "turnover_cr": 702.97,
+          "dist_52h": -13.6,
+          "score": 60.3,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "AUROPHARMA",
+          "name": "Aurobindo Pharma Ltd.",
+          "price": 1679.8,
+          "change": 0.68,
+          "vol_mul": 1.25,
+          "turnover_cr": 82.67,
+          "dist_52h": -13.1,
+          "score": 59.3,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "^CNXAUTO",
+      "name": "Nifty Auto",
+      "short_name": "Auto",
+      "icon": "car",
+      "current_price": 27106.15,
+      "rotation_score": 54.5,
+      "confidence_score": 84,
+      "phase": "WEAKENING",
+      "phase_code": "weakening",
+      "phase_color": "amber",
+      "signal_tier": "C",
+      "primary_alert": {
+        "type": "DISTRIBUTION",
+        "label": "Capital Outflow / Dist.",
+        "badge": "badge-bear"
+      },
+      "all_alerts": [
+        {
+          "type": "DISTRIBUTION",
+          "label": "Capital Outflow / Dist.",
+          "badge": "badge-bear"
+        }
+      ],
+      "factors": {
+        "relative_strength": 66.1,
+        "momentum": 57.9,
+        "breadth": 53.4,
+        "volume": 37.5,
+        "structure": 75.0,
+        "accumulation": 26.0,
+        "trend": 70.0,
+        "acceleration": 36.4
+      },
+      "metrics": {
+        "rs_trend": "RS Improving",
+        "rs_accel": -3.56,
+        "alphas": {
+          "5D": 2.5,
+          "10D": 2.36,
+          "20D": 6.06,
+          "50D": 3.8,
+          "100D": 0.13,
+          "200D": 10.46
+        },
+        "alphas_n500": {
+          "5D": 2.54,
+          "10D": 2.4,
+          "20D": 5.74,
+          "50D": 2.39,
+          "100D": -2.93,
+          "200D": 5.25
+        },
+        "rsi": 56.4,
+        "roc_5d": 0.46,
+        "adx": 24.3,
+        "breadth_pct": 28.9,
+        "rvol": 0.5,
+        "structure": "Higher High / Higher Low",
+        "cmf": -0.101,
+        "stage": "Stage 3: 50 DMA Slope Positive",
+        "stage_num": 3,
+        "dist_200dma": 0.99
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "JBMA",
+          "name": "JBM Auto Ltd.",
+          "price": 620.3,
+          "change": 2.66,
+          "vol_mul": 1.25,
+          "turnover_cr": 53.07,
+          "dist_52h": -14.8,
+          "score": 64.7,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "ASAHIINDIA",
+          "name": "Asahi India Glass Ltd.",
+          "price": 985.8,
+          "change": 0.98,
+          "vol_mul": 1.25,
+          "turnover_cr": 20.17,
+          "dist_52h": -13.6,
+          "score": 59.8,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "ZFCVINDIA",
+          "name": "ZF Commercial Vehicle Control Systems India Ltd.",
+          "price": 2548.2,
+          "change": 0.78,
+          "vol_mul": 1.25,
+          "turnover_cr": 12.58,
+          "dist_52h": -13.4,
+          "score": 59.3,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "MOTHERSON",
+          "name": "Samvardhana Motherson International Ltd.",
+          "price": 164.45,
+          "change": 0.77,
+          "vol_mul": 1.25,
+          "turnover_cr": 216.46,
+          "dist_52h": -13.6,
+          "score": 58.9,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "MINDACORP",
+          "name": "Minda Corporation Ltd.",
+          "price": 705.45,
+          "change": 0.33,
+          "vol_mul": 1.25,
+          "turnover_cr": 7.73,
+          "dist_52h": -13.4,
+          "score": 57.5,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "SCHAEFFLER",
+          "name": "Schaeffler India Ltd.",
+          "price": 3950.5,
+          "change": 0.26,
+          "vol_mul": 1.25,
+          "turnover_cr": 7.21,
+          "dist_52h": -13.4,
+          "score": 57.2,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "GABRIEL",
+          "name": "Gabriel India Ltd.",
+          "price": 1346.4,
+          "change": 0.58,
+          "vol_mul": 1.25,
+          "turnover_cr": 15.61,
+          "dist_52h": -14.5,
+          "score": 56.8,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "TVSMOTOR",
+          "name": "TVS Motor Company Ltd.",
+          "price": 4125.0,
+          "change": 0.08,
+          "vol_mul": 1.25,
+          "turnover_cr": 187.23,
+          "dist_52h": -13.6,
+          "score": 56.2,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "^CNXIT",
+      "name": "Nifty IT",
+      "short_name": "IT",
+      "icon": "cpu",
+      "current_price": 29747.85,
+      "rotation_score": 53.7,
+      "confidence_score": 84,
+      "phase": "WEAKENING",
+      "phase_code": "weakening",
+      "phase_color": "amber",
+      "signal_tier": "C",
+      "primary_alert": {
+        "type": "NORMAL",
+        "label": "Weakening",
+        "badge": "badge-amber"
+      },
+      "all_alerts": [
+        {
+          "type": "NORMAL",
+          "label": "Weakening",
+          "badge": "badge-amber"
+        }
+      ],
+      "factors": {
+        "relative_strength": 67.2,
+        "momentum": 40.0,
+        "breadth": 61.0,
+        "volume": 37.5,
+        "structure": 60.0,
+        "accumulation": 39.4,
+        "trend": 70.0,
+        "acceleration": 51.0
+      },
+      "metrics": {
+        "rs_trend": "RS Improving",
+        "rs_accel": 0.56,
+        "alphas": {
+          "5D": 1.21,
+          "10D": -1.36,
+          "20D": 0.65,
+          "50D": 13.71,
+          "100D": 1.99,
+          "200D": -8.71
+        },
+        "alphas_n500": {
+          "5D": 1.26,
+          "10D": -1.32,
+          "20D": 0.34,
+          "50D": 12.3,
+          "100D": -1.08,
+          "200D": -13.92
+        },
+        "rsi": 45.4,
+        "roc_5d": -0.82,
+        "adx": 2.4,
+        "breadth_pct": 44.4,
+        "rvol": 0.5,
+        "structure": "Base Accumulation / Range",
+        "cmf": -0.033,
+        "stage": "Stage 3: 50 DMA Slope Positive",
+        "stage_num": 3,
+        "dist_200dma": -6.95
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "SONATSOFTW",
+          "name": "Sonata Software Ltd.",
+          "price": 265.85,
+          "change": 2.21,
+          "vol_mul": 1.25,
+          "turnover_cr": 36.55,
+          "dist_52h": -13.8,
+          "score": 64.4,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "BSOFT",
+          "name": "Birlasoft Ltd.",
+          "price": 281.65,
+          "change": 2.12,
+          "vol_mul": 1.25,
+          "turnover_cr": 128.9,
+          "dist_52h": -14.0,
+          "score": 63.7,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "SAGILITY",
+          "name": "Sagility Ltd.",
+          "price": 45.2,
+          "change": 1.78,
+          "vol_mul": 1.25,
+          "turnover_cr": 109.06,
+          "dist_52h": -13.6,
+          "score": 63.0,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "TECHM",
+          "name": "Tech Mahindra Ltd.",
+          "price": 1541.0,
+          "change": 1.0,
+          "vol_mul": 1.25,
+          "turnover_cr": 309.86,
+          "dist_52h": -14.0,
+          "score": 59.2,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "WIPRO",
+          "name": "Wipro Ltd.",
+          "price": 167.4,
+          "change": 0.66,
+          "vol_mul": 1.25,
+          "turnover_cr": 141.64,
+          "dist_52h": -13.2,
+          "score": 59.1,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "COFORGE",
+          "name": "Coforge Ltd.",
+          "price": 1846.5,
+          "change": 0.73,
+          "vol_mul": 1.25,
+          "turnover_cr": 494.55,
+          "dist_52h": -13.6,
+          "score": 58.8,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "KPITTECH",
+          "name": "KPIT Technologies Ltd.",
+          "price": 553.75,
+          "change": 0.51,
+          "vol_mul": 1.25,
+          "turnover_cr": 47.43,
+          "dist_52h": -13.4,
+          "score": 58.2,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "OFSS",
+          "name": "Oracle Financial Services Software Ltd.",
+          "price": 11763.0,
+          "change": 0.32,
+          "vol_mul": 1.25,
+          "turnover_cr": 289.38,
+          "dist_52h": -13.5,
+          "score": 57.3,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "symbol": "NIFTY_MIDCAP_100.NS",
+      "name": "Nifty Midcap 100",
+      "short_name": "Midcap",
+      "icon": "trending-up",
+      "current_price": 61522.9,
+      "rotation_score": 46.9,
+      "confidence_score": 66,
+      "phase": "IMPROVING",
+      "phase_code": "improving",
+      "phase_color": "cyan",
+      "signal_tier": "C",
+      "primary_alert": {
+        "type": "NORMAL",
+        "label": "Improving",
+        "badge": "badge-cyan"
+      },
+      "all_alerts": [
+        {
+          "type": "NORMAL",
+          "label": "Improving",
+          "badge": "badge-cyan"
+        }
+      ],
+      "factors": {
+        "relative_strength": 52.6,
+        "momentum": 38.9,
+        "breadth": 50.0,
+        "volume": 35.0,
+        "structure": 30.0,
+        "accumulation": 50.0,
+        "trend": 80.0,
+        "acceleration": 34.9
+      },
+      "metrics": {
+        "rs_trend": "RS Falling",
+        "rs_accel": -2.87,
+        "alphas": {
+          "5D": -0.37,
+          "10D": 1.75,
+          "20D": 2.5,
+          "50D": 3.88,
+          "100D": 6.67,
+          "200D": 15.45
+        },
+        "alphas_n500": {
+          "5D": -0.33,
+          "10D": 1.79,
+          "20D": 2.19,
+          "50D": 2.47,
+          "100D": 3.6,
+          "200D": 10.24
+        },
+        "rsi": 45.4,
+        "roc_5d": -2.41,
+        "adx": 25.9,
+        "breadth_pct": 50.0,
+        "rvol": 0.4,
+        "structure": "Lower High / Lower Low",
+        "cmf": 0.0,
+        "stage": "Stage 5: Established Bullish Uptrend",
+        "stage_num": 5,
+        "dist_200dma": 3.26
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [],
+      "rank": 6
+    },
+    {
+      "symbol": "NIFTY_PVT_BANK.NS",
+      "name": "Nifty Private Bank",
+      "short_name": "Pvt Bank",
+      "icon": "vault",
+      "current_price": 27230.0,
+      "rotation_score": 45.1,
+      "confidence_score": 72,
+      "phase": "LAGGING",
+      "phase_code": "lagging",
+      "phase_color": "rose",
+      "signal_tier": "C",
+      "primary_alert": {
+        "type": "NORMAL",
+        "label": "Lagging",
+        "badge": "badge-rose"
+      },
+      "all_alerts": [
+        {
+          "type": "NORMAL",
+          "label": "Lagging",
+          "badge": "badge-rose"
+        }
+      ],
+      "factors": {
+        "relative_strength": 45.1,
+        "momentum": 34.1,
+        "breadth": 57.8,
+        "volume": 37.5,
+        "structure": 30.0,
+        "accumulation": 50.0,
+        "trend": 70.0,
+        "acceleration": 33.2
+      },
+      "metrics": {
+        "rs_trend": "RS Falling",
+        "rs_accel": -2.96,
+        "alphas": {
+          "5D": -1.24,
+          "10D": -0.68,
+          "20D": 1.72,
+          "50D": 6.32,
+          "100D": -2.26,
+          "200D": 11.81
+        },
+        "alphas_n500": {
+          "5D": -1.2,
+          "10D": -0.63,
+          "20D": 1.4,
+          "50D": 4.91,
+          "100D": -5.33,
+          "200D": 6.6
+        },
+        "rsi": 43.1,
+        "roc_5d": -3.28,
+        "adx": 9.8,
+        "breadth_pct": 37.6,
+        "rvol": 0.5,
+        "structure": "Lower High / Lower Low",
+        "cmf": 0.0,
+        "stage": "Stage 3: 50 DMA Slope Positive",
+        "stage_num": 3,
+        "dist_200dma": -1.4
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "PINELABS",
+          "name": "Pine Labs Ltd.",
+          "price": 202.17,
+          "change": 16.75,
+          "vol_mul": 1.25,
+          "turnover_cr": 5309.31,
+          "dist_52h": -14.8,
+          "score": 98.0,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "AIIL",
+          "name": "Authum Investment & Infrastructure Ltd.",
+          "price": 544.35,
+          "change": 6.26,
+          "vol_mul": 1.25,
+          "turnover_cr": 325.51,
+          "dist_52h": -15.2,
+          "score": 78.5,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "YESBANK",
+          "name": "Yes Bank Ltd.",
+          "price": 23.48,
+          "change": 5.29,
+          "vol_mul": 1.25,
+          "turnover_cr": 547.0,
+          "dist_52h": -14.7,
+          "score": 75.4,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "FIVESTAR",
+          "name": "Five-Star Business Finance Ltd.",
+          "price": 551.05,
+          "change": 3.84,
+          "vol_mul": 1.25,
+          "turnover_cr": 107.61,
+          "dist_52h": -13.9,
+          "score": 70.8,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "PAYTM",
+          "name": "One 97 Communications Ltd.",
+          "price": 1807.5,
+          "change": 3.94,
+          "vol_mul": 1.25,
+          "turnover_cr": 1662.89,
+          "dist_52h": -14.6,
+          "score": 70.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "ANGELONE",
+          "name": "Angel One Ltd.",
+          "price": 305.0,
+          "change": 2.59,
+          "vol_mul": 1.25,
+          "turnover_cr": 177.1,
+          "dist_52h": -13.7,
+          "score": 66.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "BSE",
+          "name": "BSE Ltd.",
+          "price": 3384.0,
+          "change": 2.36,
+          "vol_mul": 1.25,
+          "turnover_cr": 1408.44,
+          "dist_52h": -13.3,
+          "score": 65.7,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "GROWW",
+          "name": "Billionbrains Garage Ventures Ltd.",
+          "price": 200.24,
+          "change": 2.25,
+          "vol_mul": 1.25,
+          "turnover_cr": 615.48,
+          "dist_52h": -13.3,
+          "score": 65.3,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "symbol": "^NSEBANK",
+      "name": "Nifty Bank",
+      "short_name": "Bank",
+      "icon": "landmark",
+      "current_price": 56158.95,
+      "rotation_score": 44.4,
+      "confidence_score": 72,
+      "phase": "WEAKENING",
+      "phase_code": "weakening",
+      "phase_color": "amber",
+      "signal_tier": "D",
+      "primary_alert": {
+        "type": "NORMAL",
+        "label": "Weakening",
+        "badge": "badge-amber"
+      },
+      "all_alerts": [
+        {
+          "type": "NORMAL",
+          "label": "Weakening",
+          "badge": "badge-amber"
+        }
+      ],
+      "factors": {
+        "relative_strength": 61.9,
+        "momentum": 34.2,
+        "breadth": 57.8,
+        "volume": 37.5,
+        "structure": 30.0,
+        "accumulation": 50.0,
+        "trend": 25.0,
+        "acceleration": 42.2
+      },
+      "metrics": {
+        "rs_trend": "RS Improving",
+        "rs_accel": -1.35,
+        "alphas": {
+          "5D": 0.41,
+          "10D": 0.05,
+          "20D": 1.76,
+          "50D": 0.99,
+          "100D": 2.76,
+          "200D": 6.04
+        },
+        "alphas_n500": {
+          "5D": 0.45,
+          "10D": 0.09,
+          "20D": 1.45,
+          "50D": -0.42,
+          "100D": -0.31,
+          "200D": 0.82
+        },
+        "rsi": 36.3,
+        "roc_5d": -1.63,
+        "adx": 18.3,
+        "breadth_pct": 37.6,
+        "rvol": 0.5,
+        "structure": "Lower High / Lower Low",
+        "cmf": 0.023,
+        "stage": "Stage 1: Structural Downtrend (< 200 DMA)",
+        "stage_num": 1,
+        "dist_200dma": -2.09
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "PINELABS",
+          "name": "Pine Labs Ltd.",
+          "price": 202.17,
+          "change": 16.75,
+          "vol_mul": 1.25,
+          "turnover_cr": 5309.31,
+          "dist_52h": -14.8,
+          "score": 98.0,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "AIIL",
+          "name": "Authum Investment & Infrastructure Ltd.",
+          "price": 544.35,
+          "change": 6.26,
+          "vol_mul": 1.25,
+          "turnover_cr": 325.51,
+          "dist_52h": -15.2,
+          "score": 78.5,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "YESBANK",
+          "name": "Yes Bank Ltd.",
+          "price": 23.48,
+          "change": 5.29,
+          "vol_mul": 1.25,
+          "turnover_cr": 547.0,
+          "dist_52h": -14.7,
+          "score": 75.4,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "FIVESTAR",
+          "name": "Five-Star Business Finance Ltd.",
+          "price": 551.05,
+          "change": 3.84,
+          "vol_mul": 1.25,
+          "turnover_cr": 107.61,
+          "dist_52h": -13.9,
+          "score": 70.8,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "PAYTM",
+          "name": "One 97 Communications Ltd.",
+          "price": 1807.5,
+          "change": 3.94,
+          "vol_mul": 1.25,
+          "turnover_cr": 1662.89,
+          "dist_52h": -14.6,
+          "score": 70.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "ANGELONE",
+          "name": "Angel One Ltd.",
+          "price": 305.0,
+          "change": 2.59,
+          "vol_mul": 1.25,
+          "turnover_cr": 177.1,
+          "dist_52h": -13.7,
+          "score": 66.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "BSE",
+          "name": "BSE Ltd.",
+          "price": 3384.0,
+          "change": 2.36,
+          "vol_mul": 1.25,
+          "turnover_cr": 1408.44,
+          "dist_52h": -13.3,
+          "score": 65.7,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "GROWW",
+          "name": "Billionbrains Garage Ventures Ltd.",
+          "price": 200.24,
+          "change": 2.25,
+          "vol_mul": 1.25,
+          "turnover_cr": 615.48,
+          "dist_52h": -13.3,
+          "score": 65.3,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "symbol": "^CNXENERGY",
+      "name": "Nifty Energy",
+      "short_name": "Energy",
+      "icon": "zap",
+      "current_price": 37443.5,
+      "rotation_score": 42.8,
+      "confidence_score": 72,
+      "phase": "WEAKENING",
+      "phase_code": "weakening",
+      "phase_color": "amber",
+      "signal_tier": "D",
+      "primary_alert": {
+        "type": "DISTRIBUTION",
+        "label": "Capital Outflow / Dist.",
+        "badge": "badge-bear"
+      },
+      "all_alerts": [
+        {
+          "type": "DISTRIBUTION",
+          "label": "Capital Outflow / Dist.",
+          "badge": "badge-bear"
+        }
+      ],
+      "factors": {
+        "relative_strength": 68.4,
+        "momentum": 14.1,
+        "breadth": 47.7,
+        "volume": 37.5,
+        "structure": 20.0,
+        "accumulation": 18.7,
+        "trend": 80.0,
+        "acceleration": 47.5
+      },
+      "metrics": {
+        "rs_trend": "RS Rising",
+        "rs_accel": 1.08,
+        "alphas": {
+          "5D": -2.49,
+          "10D": -1.9,
+          "20D": -3.57,
+          "50D": -4.34,
+          "100D": 6.98,
+          "200D": 14.67
+        },
+        "alphas_n500": {
+          "5D": -2.45,
+          "10D": -1.85,
+          "20D": -3.88,
+          "50D": -5.75,
+          "100D": 3.92,
+          "200D": 9.46
+        },
+        "rsi": 28.1,
+        "roc_5d": -4.53,
+        "adx": 55.9,
+        "breadth_pct": 17.6,
+        "rvol": 0.5,
+        "structure": "Bearish Breakdown",
+        "cmf": -0.084,
+        "stage": "Stage 5: Established Bullish Uptrend",
+        "stage_num": 5,
+        "dist_200dma": 1.25
+      },
+      "explainable_reasons": [
+        "Short-term relative strength accelerating rapidly (+1.08% vs Nifty 50)."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "ACMESOLAR",
+          "name": "ACME Solar Holdings Ltd.",
+          "price": 402.3,
+          "change": 1.27,
+          "vol_mul": 1.25,
+          "turnover_cr": 49.55,
+          "dist_52h": -14.2,
+          "score": 60.0,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "TORNTPOWER",
+          "name": "Torrent Power Ltd.",
+          "price": 1297.6,
+          "change": 0.1,
+          "vol_mul": 1.25,
+          "turnover_cr": 25.17,
+          "dist_52h": -13.2,
+          "score": 56.9,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "NHPC",
+          "name": "NHPC Ltd.",
+          "price": 76.38,
+          "change": 0.04,
+          "vol_mul": 1.25,
+          "turnover_cr": 92.33,
+          "dist_52h": -14.2,
+          "score": 55.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "NTPC",
+          "name": "NTPC Ltd.",
+          "price": 333.4,
+          "change": -0.48,
+          "vol_mul": 1.25,
+          "turnover_cr": 166.18,
+          "dist_52h": -13.8,
+          "score": 53.6,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "JSWENERGY",
+          "name": "JSW Energy Ltd.",
+          "price": 526.45,
+          "change": -0.75,
+          "vol_mul": 1.25,
+          "turnover_cr": 30.63,
+          "dist_52h": -13.1,
+          "score": 53.6,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "TATAPOWER",
+          "name": "Tata Power Co. Ltd.",
+          "price": 364.65,
+          "change": -0.64,
+          "vol_mul": 1.25,
+          "turnover_cr": 88.66,
+          "dist_52h": -13.7,
+          "score": 53.1,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "NTPCGREEN",
+          "name": "NTPC Green Energy Ltd.",
+          "price": 86.94,
+          "change": -0.89,
+          "vol_mul": 1.25,
+          "turnover_cr": 10.68,
+          "dist_52h": -13.8,
+          "score": 52.0,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "NAVA",
+          "name": "Nava Ltd.",
+          "price": 551.85,
+          "change": -1.16,
+          "vol_mul": 1.25,
+          "turnover_cr": 9.31,
+          "dist_52h": -13.5,
+          "score": 51.4,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "symbol": "^CNXPSUBANK",
+      "name": "Nifty PSU Bank",
+      "short_name": "PSU Bank",
+      "icon": "building-2",
+      "current_price": 8229.0,
+      "rotation_score": 38.4,
+      "confidence_score": 72,
+      "phase": "WEAKENING",
+      "phase_code": "weakening",
+      "phase_color": "amber",
+      "signal_tier": "D",
+      "primary_alert": {
+        "type": "DISTRIBUTION",
+        "label": "Capital Outflow / Dist.",
+        "badge": "badge-bear"
+      },
+      "all_alerts": [
+        {
+          "type": "DISTRIBUTION",
+          "label": "Capital Outflow / Dist.",
+          "badge": "badge-bear"
+        }
+      ],
+      "factors": {
+        "relative_strength": 55.3,
+        "momentum": 30.8,
+        "breadth": 57.8,
+        "volume": 37.5,
+        "structure": 30.0,
+        "accumulation": 5.0,
+        "trend": 25.0,
+        "acceleration": 49.1
+      },
+      "metrics": {
+        "rs_trend": "RS Neutral",
+        "rs_accel": 0.8,
+        "alphas": {
+          "5D": -0.7,
+          "10D": 2.01,
+          "20D": -1.5,
+          "50D": -0.07,
+          "100D": -10.06,
+          "200D": 22.28
+        },
+        "alphas_n500": {
+          "5D": -0.66,
+          "10D": 2.05,
+          "20D": -1.82,
+          "50D": -1.48,
+          "100D": -13.13,
+          "200D": 17.07
+        },
+        "rsi": 43.5,
+        "roc_5d": -2.74,
+        "adx": 25.1,
+        "breadth_pct": 37.6,
+        "rvol": 0.5,
+        "structure": "Lower High / Lower Low",
+        "cmf": -0.21,
+        "stage": "Stage 1: Structural Downtrend (< 200 DMA)",
+        "stage_num": 1,
+        "dist_200dma": -2.89
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "PINELABS",
+          "name": "Pine Labs Ltd.",
+          "price": 202.17,
+          "change": 16.75,
+          "vol_mul": 1.25,
+          "turnover_cr": 5309.31,
+          "dist_52h": -14.8,
+          "score": 98.0,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "AIIL",
+          "name": "Authum Investment & Infrastructure Ltd.",
+          "price": 544.35,
+          "change": 6.26,
+          "vol_mul": 1.25,
+          "turnover_cr": 325.51,
+          "dist_52h": -15.2,
+          "score": 78.5,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "YESBANK",
+          "name": "Yes Bank Ltd.",
+          "price": 23.48,
+          "change": 5.29,
+          "vol_mul": 1.25,
+          "turnover_cr": 547.0,
+          "dist_52h": -14.7,
+          "score": 75.4,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "FIVESTAR",
+          "name": "Five-Star Business Finance Ltd.",
+          "price": 551.05,
+          "change": 3.84,
+          "vol_mul": 1.25,
+          "turnover_cr": 107.61,
+          "dist_52h": -13.9,
+          "score": 70.8,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "PAYTM",
+          "name": "One 97 Communications Ltd.",
+          "price": 1807.5,
+          "change": 3.94,
+          "vol_mul": 1.25,
+          "turnover_cr": 1662.89,
+          "dist_52h": -14.6,
+          "score": 70.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "ANGELONE",
+          "name": "Angel One Ltd.",
+          "price": 305.0,
+          "change": 2.59,
+          "vol_mul": 1.25,
+          "turnover_cr": 177.1,
+          "dist_52h": -13.7,
+          "score": 66.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "BSE",
+          "name": "BSE Ltd.",
+          "price": 3384.0,
+          "change": 2.36,
+          "vol_mul": 1.25,
+          "turnover_cr": 1408.44,
+          "dist_52h": -13.3,
+          "score": 65.7,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "GROWW",
+          "name": "Billionbrains Garage Ventures Ltd.",
+          "price": 200.24,
+          "change": 2.25,
+          "vol_mul": 1.25,
+          "turnover_cr": 615.48,
+          "dist_52h": -13.3,
+          "score": 65.3,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "symbol": "^CNXPSE",
+      "name": "Nifty PSE",
+      "short_name": "PSE",
+      "icon": "shield",
+      "current_price": 9546.2,
+      "rotation_score": 37.2,
+      "confidence_score": 66,
+      "phase": "WEAKENING",
+      "phase_code": "weakening",
+      "phase_color": "amber",
+      "signal_tier": "D",
+      "primary_alert": {
+        "type": "NORMAL",
+        "label": "Weakening",
+        "badge": "badge-amber"
+      },
+      "all_alerts": [
+        {
+          "type": "NORMAL",
+          "label": "Weakening",
+          "badge": "badge-amber"
+        }
+      ],
+      "factors": {
+        "relative_strength": 55.0,
+        "momentum": 17.2,
+        "breadth": 50.0,
+        "volume": 35.0,
+        "structure": 20.0,
+        "accumulation": 42.1,
+        "trend": 25.0,
+        "acceleration": 43.9
+      },
+      "metrics": {
+        "rs_trend": "RS Rising",
+        "rs_accel": 0.02,
+        "alphas": {
+          "5D": -2.1,
+          "10D": -1.55,
+          "20D": -2.12,
+          "50D": -6.67,
+          "100D": -3.82,
+          "200D": 7.64
+        },
+        "alphas_n500": {
+          "5D": -2.06,
+          "10D": -1.51,
+          "20D": -2.44,
+          "50D": -8.08,
+          "100D": -6.89,
+          "200D": 2.43
+        },
+        "rsi": 28.1,
+        "roc_5d": -4.14,
+        "adx": 46.7,
+        "breadth_pct": 50.0,
+        "rvol": 0.4,
+        "structure": "Bearish Breakdown",
+        "cmf": -0.061,
+        "stage": "Stage 1: Structural Downtrend (< 200 DMA)",
+        "stage_num": 1,
+        "dist_200dma": -4.93
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [],
+      "rank": 11
+    },
+    {
+      "symbol": "^CNXINFRA",
+      "name": "Nifty Infra",
+      "short_name": "Infra",
+      "icon": "truck",
+      "current_price": 8988.8,
+      "rotation_score": 36.3,
+      "confidence_score": 66,
+      "phase": "LAGGING",
+      "phase_code": "lagging",
+      "phase_color": "rose",
+      "signal_tier": "D",
+      "primary_alert": {
+        "type": "DISTRIBUTION",
+        "label": "Capital Outflow / Dist.",
+        "badge": "badge-bear"
+      },
+      "all_alerts": [
+        {
+          "type": "DISTRIBUTION",
+          "label": "Capital Outflow / Dist.",
+          "badge": "badge-bear"
+        }
+      ],
+      "factors": {
+        "relative_strength": 38.2,
+        "momentum": 20.7,
+        "breadth": 54.3,
+        "volume": 37.5,
+        "structure": 20.0,
+        "accumulation": 7.4,
+        "trend": 70.0,
+        "acceleration": 40.8
+      },
+      "metrics": {
+        "rs_trend": "RS Falling",
+        "rs_accel": -0.73,
+        "alphas": {
+          "5D": -2.14,
+          "10D": -2.32,
+          "20D": -1.41,
+          "50D": -0.86,
+          "100D": -3.2,
+          "200D": 8.25
+        },
+        "alphas_n500": {
+          "5D": -2.1,
+          "10D": -2.27,
+          "20D": -1.72,
+          "50D": -2.27,
+          "100D": -6.27,
+          "200D": 3.04
+        },
+        "rsi": 32.3,
+        "roc_5d": -4.18,
+        "adx": 54.9,
+        "breadth_pct": 30.9,
+        "rvol": 0.5,
+        "structure": "Bearish Breakdown",
+        "cmf": -0.16,
+        "stage": "Stage 3: 50 DMA Slope Positive",
+        "stage_num": 3,
+        "dist_200dma": -3.72
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "PWL",
+          "name": "Physicswallah Ltd.",
+          "price": 136.1,
+          "change": 7.39,
+          "vol_mul": 1.25,
+          "turnover_cr": 552.04,
+          "dist_52h": -13.7,
+          "score": 85.3,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "PTCIL",
+          "name": "PTC Industries Ltd.",
+          "price": 23630.0,
+          "change": 5.56,
+          "vol_mul": 1.25,
+          "turnover_cr": 153.32,
+          "dist_52h": -14.6,
+          "score": 76.6,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "INDUSTOWER",
+          "name": "Indus Towers Ltd.",
+          "price": 388.0,
+          "change": 4.3,
+          "vol_mul": 1.25,
+          "turnover_cr": 642.86,
+          "dist_52h": -13.7,
+          "score": 72.9,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "SUNTV",
+          "name": "Sun TV Network Ltd.",
+          "price": 476.0,
+          "change": 4.49,
+          "vol_mul": 1.25,
+          "turnover_cr": 157.52,
+          "dist_52h": -14.7,
+          "score": 72.2,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "AEGISLOG",
+          "name": "Aegis Logistics Ltd.",
+          "price": 1353.6,
+          "change": 3.52,
+          "vol_mul": 1.25,
+          "turnover_cr": 162.93,
+          "dist_52h": -13.7,
+          "score": 69.8,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "INDIAMART",
+          "name": "Indiamart Intermesh Ltd.",
+          "price": 1695.0,
+          "change": 3.5,
+          "vol_mul": 1.25,
+          "turnover_cr": 23.55,
+          "dist_52h": -14.1,
+          "score": 69.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "WAAREEENER",
+          "name": "Waaree Energies Ltd.",
+          "price": 2625.0,
+          "change": 3.02,
+          "vol_mul": 1.25,
+          "turnover_cr": 275.45,
+          "dist_52h": -13.4,
+          "score": 68.2,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "SCHNEIDER",
+          "name": "Schneider Electric Infrastructure Ltd.",
+          "price": 1227.0,
+          "change": 2.69,
+          "vol_mul": 1.25,
+          "turnover_cr": 31.8,
+          "dist_52h": -13.7,
+          "score": 66.5,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "symbol": "^CNXREALTY",
+      "name": "Nifty Realty",
+      "short_name": "Realty",
+      "icon": "home",
+      "current_price": 826.9,
+      "rotation_score": 35.6,
+      "confidence_score": 72,
+      "phase": "LAGGING",
+      "phase_code": "lagging",
+      "phase_color": "rose",
+      "signal_tier": "D",
+      "primary_alert": {
+        "type": "NORMAL",
+        "label": "Lagging",
+        "badge": "badge-rose"
+      },
+      "all_alerts": [
+        {
+          "type": "NORMAL",
+          "label": "Lagging",
+          "badge": "badge-rose"
+        }
+      ],
+      "factors": {
+        "relative_strength": 11.0,
+        "momentum": 19.1,
+        "breadth": 38.1,
+        "volume": 37.5,
+        "structure": 30.0,
+        "accumulation": 89.6,
+        "trend": 70.0,
+        "acceleration": 5.0
+      },
+      "metrics": {
+        "rs_trend": "RS Neutral",
+        "rs_accel": -15.67,
+        "alphas": {
+          "5D": -9.73,
+          "10D": -5.56,
+          "20D": 5.94,
+          "50D": 4.58,
+          "100D": 2.97,
+          "200D": 0.37
+        },
+        "alphas_n500": {
+          "5D": -9.68,
+          "10D": -5.52,
+          "20D": 5.62,
+          "50D": 3.17,
+          "100D": -0.1,
+          "200D": -4.84
+        },
+        "rsi": 42.9,
+        "roc_5d": -11.76,
+        "adx": 0.0,
+        "breadth_pct": 0.0,
+        "rvol": 0.5,
+        "structure": "Lower High / Lower Low",
+        "cmf": 0.177,
+        "stage": "Stage 3: 50 DMA Slope Positive",
+        "stage_num": 3,
+        "dist_200dma": -0.78
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "PHOENIXLTD",
+          "name": "Phoenix Mills Ltd.",
+          "price": 1890.0,
+          "change": 0.0,
+          "vol_mul": 1.25,
+          "turnover_cr": 135.91,
+          "dist_52h": -14.0,
+          "score": 55.2,
+          "role": "Participant",
+          "badge_cls": "badge-neutral"
+        },
+        {
+          "symbol": "SOBHA",
+          "name": "Sobha Ltd.",
+          "price": 1216.8,
+          "change": -1.53,
+          "vol_mul": 1.25,
+          "turnover_cr": 11.67,
+          "dist_52h": -14.3,
+          "score": 48.7,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        },
+        {
+          "symbol": "ANANTRAJ",
+          "name": "Anant Raj Ltd.",
+          "price": 598.35,
+          "change": -1.72,
+          "vol_mul": 1.25,
+          "turnover_cr": 121.1,
+          "dist_52h": -13.9,
+          "score": 48.5,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        },
+        {
+          "symbol": "DLF",
+          "name": "DLF Ltd.",
+          "price": 644.5,
+          "change": -1.73,
+          "vol_mul": 1.25,
+          "turnover_cr": 287.28,
+          "dist_52h": -14.0,
+          "score": 48.3,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        },
+        {
+          "symbol": "SIGNATURE",
+          "name": "Signatureglobal (India) Ltd.",
+          "price": 760.85,
+          "change": -1.49,
+          "vol_mul": 1.25,
+          "turnover_cr": 15.9,
+          "dist_52h": -15.2,
+          "score": 47.5,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        },
+        {
+          "symbol": "BRIGADE",
+          "name": "Brigade Enterprises Ltd.",
+          "price": 638.65,
+          "change": -1.92,
+          "vol_mul": 1.25,
+          "turnover_cr": 24.22,
+          "dist_52h": -14.6,
+          "score": 46.7,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        },
+        {
+          "symbol": "OBEROIRLTY",
+          "name": "Oberoi Realty Ltd.",
+          "price": 1741.1,
+          "change": -2.84,
+          "vol_mul": 1.25,
+          "turnover_cr": 94.12,
+          "dist_52h": -14.9,
+          "score": 42.5,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        },
+        {
+          "symbol": "PRESTIGE",
+          "name": "Prestige Estates Projects Ltd.",
+          "price": 1498.0,
+          "change": -2.95,
+          "vol_mul": 1.25,
+          "turnover_cr": 110.94,
+          "dist_52h": -14.9,
+          "score": 42.1,
+          "role": "Lagging Stock",
+          "badge_cls": "badge-bear"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "symbol": "NIFTY_FIN_SERVICE.NS",
+      "name": "Nifty Financial Services",
+      "short_name": "Fin Services",
+      "icon": "credit-card",
+      "current_price": 25261.55,
+      "rotation_score": 35.2,
+      "confidence_score": 72,
+      "phase": "LAGGING",
+      "phase_code": "lagging",
+      "phase_color": "rose",
+      "signal_tier": "D",
+      "primary_alert": {
+        "type": "DISTRIBUTION",
+        "label": "Capital Outflow / Dist.",
+        "badge": "badge-bear"
+      },
+      "all_alerts": [
+        {
+          "type": "DISTRIBUTION",
+          "label": "Capital Outflow / Dist.",
+          "badge": "badge-bear"
+        }
+      ],
+      "factors": {
+        "relative_strength": 24.4,
+        "momentum": 20.3,
+        "breadth": 57.8,
+        "volume": 37.5,
+        "structure": 30.0,
+        "accumulation": 16.4,
+        "trend": 70.0,
+        "acceleration": 27.2
+      },
+      "metrics": {
+        "rs_trend": "RS Breakdown",
+        "rs_accel": -3.5,
+        "alphas": {
+          "5D": -3.83,
+          "10D": -3.15,
+          "20D": -0.33,
+          "50D": 0.16,
+          "100D": -6.8,
+          "200D": 5.87
+        },
+        "alphas_n500": {
+          "5D": -3.79,
+          "10D": -3.11,
+          "20D": -0.65,
+          "50D": -1.25,
+          "100D": -9.87,
+          "200D": 0.65
+        },
+        "rsi": 36.0,
+        "roc_5d": -5.87,
+        "adx": 34.1,
+        "breadth_pct": 37.6,
+        "rvol": 0.5,
+        "structure": "Lower High / Lower Low",
+        "cmf": -0.146,
+        "stage": "Stage 3: 50 DMA Slope Positive",
+        "stage_num": 3,
+        "dist_200dma": -5.44
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "PINELABS",
+          "name": "Pine Labs Ltd.",
+          "price": 202.17,
+          "change": 16.75,
+          "vol_mul": 1.25,
+          "turnover_cr": 5309.31,
+          "dist_52h": -14.8,
+          "score": 98.0,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "AIIL",
+          "name": "Authum Investment & Infrastructure Ltd.",
+          "price": 544.35,
+          "change": 6.26,
+          "vol_mul": 1.25,
+          "turnover_cr": 325.51,
+          "dist_52h": -15.2,
+          "score": 78.5,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "YESBANK",
+          "name": "Yes Bank Ltd.",
+          "price": 23.48,
+          "change": 5.29,
+          "vol_mul": 1.25,
+          "turnover_cr": 547.0,
+          "dist_52h": -14.7,
+          "score": 75.4,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "FIVESTAR",
+          "name": "Five-Star Business Finance Ltd.",
+          "price": 551.05,
+          "change": 3.84,
+          "vol_mul": 1.25,
+          "turnover_cr": 107.61,
+          "dist_52h": -13.9,
+          "score": 70.8,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "PAYTM",
+          "name": "One 97 Communications Ltd.",
+          "price": 1807.5,
+          "change": 3.94,
+          "vol_mul": 1.25,
+          "turnover_cr": 1662.89,
+          "dist_52h": -14.6,
+          "score": 70.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "ANGELONE",
+          "name": "Angel One Ltd.",
+          "price": 305.0,
+          "change": 2.59,
+          "vol_mul": 1.25,
+          "turnover_cr": 177.1,
+          "dist_52h": -13.7,
+          "score": 66.1,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "BSE",
+          "name": "BSE Ltd.",
+          "price": 3384.0,
+          "change": 2.36,
+          "vol_mul": 1.25,
+          "turnover_cr": 1408.44,
+          "dist_52h": -13.3,
+          "score": 65.7,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "GROWW",
+          "name": "Billionbrains Garage Ventures Ltd.",
+          "price": 200.24,
+          "change": 2.25,
+          "vol_mul": 1.25,
+          "turnover_cr": 615.48,
+          "dist_52h": -13.3,
+          "score": 65.3,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "symbol": "^CNXFMCG",
+      "name": "Nifty FMCG",
+      "short_name": "FMCG",
+      "icon": "shopping-bag",
+      "current_price": 45275.35,
+      "rotation_score": 24.6,
+      "confidence_score": 60,
+      "phase": "LAGGING",
+      "phase_code": "lagging",
+      "phase_color": "rose",
+      "signal_tier": "D",
+      "primary_alert": {
+        "type": "DISTRIBUTION",
+        "label": "Capital Outflow / Dist.",
+        "badge": "badge-bear"
+      },
+      "all_alerts": [
+        {
+          "type": "DISTRIBUTION",
+          "label": "Capital Outflow / Dist.",
+          "badge": "badge-bear"
+        }
+      ],
+      "factors": {
+        "relative_strength": 20.9,
+        "momentum": 5.0,
+        "breadth": 48.0,
+        "volume": 37.5,
+        "structure": 20.0,
+        "accumulation": 5.0,
+        "trend": 25.0,
+        "acceleration": 36.5
+      },
+      "metrics": {
+        "rs_trend": "RS Neutral",
+        "rs_accel": -0.65,
+        "alphas": {
+          "5D": -5.2,
+          "10D": -6.54,
+          "20D": -4.55,
+          "50D": -6.69,
+          "100D": -9.16,
+          "200D": -8.52
+        },
+        "alphas_n500": {
+          "5D": -5.16,
+          "10D": -6.5,
+          "20D": -4.87,
+          "50D": -8.1,
+          "100D": -12.23,
+          "200D": -13.73
+        },
+        "rsi": 24.1,
+        "roc_5d": -7.24,
+        "adx": 51.3,
+        "breadth_pct": 18.2,
+        "rvol": 0.5,
+        "structure": "Bearish Breakdown",
+        "cmf": -0.212,
+        "stage": "Stage 1: Structural Downtrend (< 200 DMA)",
+        "stage_num": 1,
+        "dist_200dma": -12.58
+      },
+      "explainable_reasons": [
+        "Consolidated performance tracking within benchmark corridor."
+      ],
+      "top_stocks": [
+        {
+          "symbol": "ABDL",
+          "name": "Allied Blenders and Distillers Ltd.",
+          "price": 632.5,
+          "change": 3.44,
+          "vol_mul": 1.25,
+          "turnover_cr": 35.09,
+          "dist_52h": -13.6,
+          "score": 69.6,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "BLUESTARCO",
+          "name": "Blue Star Ltd.",
+          "price": 1558.0,
+          "change": 2.91,
+          "vol_mul": 1.25,
+          "turnover_cr": 206.57,
+          "dist_52h": -13.4,
+          "score": 67.8,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "VBL",
+          "name": "Varun Beverages Ltd.",
+          "price": 416.5,
+          "change": 1.46,
+          "vol_mul": 1.25,
+          "turnover_cr": 400.72,
+          "dist_52h": -13.2,
+          "score": 62.3,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "PGEL",
+          "name": "PG Electroplast Ltd.",
+          "price": 545.0,
+          "change": 0.55,
+          "vol_mul": 1.25,
+          "turnover_cr": 45.88,
+          "dist_52h": -13.0,
+          "score": 59.0,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "VOLTAS",
+          "name": "Voltas Ltd.",
+          "price": 1165.0,
+          "change": 0.56,
+          "vol_mul": 1.25,
+          "turnover_cr": 88.37,
+          "dist_52h": -13.3,
+          "score": 58.5,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "PATANJALI",
+          "name": "Patanjali Foods Ltd.",
+          "price": 341.0,
+          "change": 0.37,
+          "vol_mul": 1.25,
+          "turnover_cr": 67.33,
+          "dist_52h": -13.0,
+          "score": 58.2,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "CROMPTON",
+          "name": "Crompton Greaves Consumer Electricals Ltd.",
+          "price": 231.0,
+          "change": 0.43,
+          "vol_mul": 1.25,
+          "turnover_cr": 24.75,
+          "dist_52h": -13.3,
+          "score": 58.0,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        },
+        {
+          "symbol": "ITC",
+          "name": "ITC Ltd.",
+          "price": 259.85,
+          "change": 0.21,
+          "vol_mul": 1.25,
+          "turnover_cr": 289.53,
+          "dist_52h": -13.6,
+          "score": 56.7,
+          "role": "Emerging Leader",
+          "badge_cls": "badge-cyan"
+        }
+      ],
+      "rank": 15
+    }
+  ]
+}
