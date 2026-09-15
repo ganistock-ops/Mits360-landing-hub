@@ -114,19 +114,26 @@ def calculate_sector_rotation(trade_date: datetime.date = None, index_data: dict
     os.makedirs(output_dir, exist_ok=True)
 
     print(f"[*] Executing Sector Rotation Analytics for trade date: {trade_date}...")
+    from concurrent.futures import ThreadPoolExecutor
 
-    # 1. Fetch Benchmark (Nifty 50)
-    try:
-        bench_candles = fetch_candles(BENCHMARK_DEFINITION["symbol"])
-        bench_curr = index_data.get("Nifty 50", {}).get("close") if index_data else None
-        if bench_curr is None and bench_candles:
-            bench_curr = bench_candles[-1]["close"]
-        bench_returns = calculate_returns(bench_candles, bench_curr)
-    except Exception as e:
-        print(f"    [!] Error fetching Nifty 50 benchmark: {e}")
-        bench_candles = []
-        bench_curr = 23400.0
-        bench_returns = {"1W": -2.09, "1M": -4.39, "3M": 1.02, "6M": -1.96, "1Y": -6.43}
+    all_symbols = [BENCHMARK_DEFINITION["symbol"]] + [s["symbol"] for s in SECTOR_DEFINITIONS]
+    candles_by_sym = {}
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        future_map = {executor.submit(fetch_candles, sym): sym for sym in all_symbols}
+        for future in future_map:
+            sym = future_map[future]
+            try:
+                candles_by_sym[sym] = future.result()
+            except Exception as e:
+                print(f"    [!] Warning: Failed Yahoo fetch for {sym}: {e}")
+                candles_by_sym[sym] = []
+
+    # 1. Benchmark (Nifty 50)
+    bench_candles = candles_by_sym.get(BENCHMARK_DEFINITION["symbol"], [])
+    bench_curr = index_data.get("Nifty 50", {}).get("close") if index_data else None
+    if bench_curr is None and bench_candles:
+        bench_curr = bench_candles[-1]["close"]
+    bench_returns = calculate_returns(bench_candles, bench_curr) if bench_candles else {"1W": -2.09, "1M": -4.39, "3M": 1.02, "6M": -1.96, "1Y": -6.43}
 
     # 2. Process each Sector
     sectors_output = []
@@ -137,16 +144,12 @@ def calculate_sector_rotation(trade_date: datetime.date = None, index_data: dict
         if index_data and s["nse_name"] in index_data:
             curr_price = index_data[s["nse_name"]]["close"]
 
-        try:
-            c_list = fetch_candles(sym)
-            if curr_price is None and c_list:
-                curr_price = c_list[-1]["close"]
-            ret = calculate_returns(c_list, curr_price)
-        except Exception as err:
-            print(f"    [!] Warning: Failed Yahoo fetch for {name} ({err}), using baseline.")
-            c_list = []
+        c_list = candles_by_sym.get(sym, [])
+        if curr_price is None and c_list:
+            curr_price = c_list[-1]["close"]
+        if curr_price is None:
             curr_price = 50000.0
-            ret = {"1W": 0.0, "1M": 0.0, "3M": 0.0, "6M": 0.0, "1Y": 0.0}
+        ret = calculate_returns(c_list, curr_price) if c_list else {"1W": 0.0, "1M": 0.0, "3M": 0.0, "6M": 0.0, "1Y": 0.0}
 
         # Calculate Relative Alphas (Sector Return - Benchmark Return)
         alphas = {}

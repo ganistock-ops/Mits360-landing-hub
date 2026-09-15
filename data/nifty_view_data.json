@@ -1,19 +1,17 @@
 {
   "meta": {
-    "generated_at": "2026-09-15T12:03:15.311188+00:00",
+    "generated_at": "2026-09-15T12:30:08.397632+00:00",
     "market_date": "15-Sep-2026",
     "index_name": "NIFTY 50",
     "current_price": 23118.6,
-    "points_change": -279.5,
-    "change_pct": -1.19,
     "open": 23576.15,
     "high": 23592.85,
     "low": 23118.6,
-    "prev_close": 23398.1,
-    "pe": 19.78,
-    "pb": 2.83,
-    "div_yield": 1.21,
-    "source": "NSE Official EOD Bhavcopy & Historical Indexes",
+    "points_change": -279.5,
+    "change_pct": -1.19,
+    "pe": 19.54,
+    "pb": 2.8,
+    "div_yield": 1.23,
     "status": "FINALIZED"
   },
   "returns_matrix": [
@@ -39,9 +37,9 @@
       "period": "1 Month",
       "old_price": 24366.0,
       "return_pct": -5.12,
-      "period_high": 24378.6,
+      "period_high": 24405.2,
       "period_low": 23118.6,
-      "high_date": "26-Aug-2026",
+      "high_date": "14-Aug-2026",
       "low_date": "15-Sep-2026"
     },
     {
@@ -90,214 +88,145 @@
       "low_date": "17-Jun-2022"
     }
   ],
-  "pivots": [
+  "moving_averages": [
     {
-      "type": "Standard",
-      "s4": 22012.02,
-      "s3": 22486.27,
-      "s2": 22802.43,
-      "s1": 22960.52,
-      "pivot": 23276.68,
-      "r1": 23434.77,
-      "r2": 23750.93,
-      "r3": 23909.02,
-      "r4": 24383.27
+      "name": "5 DMA",
+      "type": "SMA",
+      "period": 5,
+      "value": 23412.22,
+      "distance": -293.62,
+      "percent": -1.25,
+      "status": "Bearish"
     },
     {
-      "type": "Camarilla",
-      "s4": 22857.76,
-      "s3": 22988.18,
-      "s2": 23031.65,
-      "s1": 23075.13,
-      "pivot": 23276.68,
-      "r1": 23162.07,
-      "r2": 23205.55,
-      "r3": 23249.02,
-      "r4": 23379.44
+      "name": "10 DMA",
+      "type": "SMA",
+      "period": 10,
+      "value": 23658.16,
+      "distance": -539.56,
+      "percent": -2.28,
+      "status": "Bearish"
     },
     {
-      "type": "Fibonacci",
-      "s4": 22509.35,
-      "s3": 22802.43,
-      "s2": 22983.6,
-      "s1": 23095.52,
-      "pivot": 23276.68,
-      "r1": 23457.85,
-      "r2": 23569.77,
-      "r3": 23750.93,
-      "r4": 24044.02
+      "name": "20 DMA",
+      "type": "SMA",
+      "period": 20,
+      "value": 23920.35,
+      "distance": -801.75,
+      "percent": -3.35,
+      "status": "Bearish"
     },
     {
-      "type": "Woodie's",
-      "s4": 21932.97,
-      "s3": 22407.22,
-      "s2": 22762.91,
-      "s1": 22881.47,
-      "pivot": 23237.16,
-      "r1": 23355.72,
-      "r2": 23711.41,
-      "r3": 23829.97,
-      "r4": 24304.22
+      "name": "50 DMA",
+      "type": "SMA",
+      "period": 50,
+      "value": 24127.18,
+      "distance": -1008.58,
+      "percent": -4.18,
+      "status": "Bearish"
+    },
+    {
+      "name": "100 DMA",
+      "type": "SMA",
+      "period": 100,
+      "value": 23975.51,
+      "distance": -856.91,
+      "percent": -3.57,
+      "status": "Bearish"
+    },
+    {
+      "name": "200 DMA",
+      "type": "SMA",
+      "period": 200,
+      "value": 24535.34,
+      "distance": -1416.74,
+      "percent": -5.77,
+      "status": "Bearish"
+    },
+    {
+      "name": "5 EMA",
+      "type": "EMA",
+      "period": 5,
+      "value": 23401.76,
+      "distance": -283.16,
+      "percent": -1.21,
+      "status": "Bearish"
+    },
+    {
+      "name": "10 EMA",
+      "type": "EMA",
+      "period": 10,
+      "value": 23599.97,
+      "distance": -481.37,
+      "percent": -2.04,
+      "status": "Bearish"
+    },
+    {
+      "name": "20 EMA",
+      "type": "EMA",
+      "period": 20,
+      "value": 23823.83,
+      "distance": -705.23,
+      "percent": -2.96,
+      "status": "Bearish"
+    },
+    {
+      "name": "50 EMA",
+      "type": "EMA",
+      "period": 50,
+      "value": 24003.38,
+      "distance": -884.78,
+      "percent": -3.69,
+      "status": "Bearish"
+    },
+    {
+      "name": "100 EMA",
+      "type": "EMA",
+      "period": 100,
+      "value": 24101.43,
+      "distance": -982.83,
+      "percent": -4.08,
+      "status": "Bearish"
+    },
+    {
+      "name": "200 EMA",
+      "type": "EMA",
+      "period": 200,
+      "value": 24297.64,
+      "distance": -1179.04,
+      "percent": -4.85,
+      "status": "Bearish"
     }
   ],
-  "moving_averages": {
-    "sma": [
-      {
-        "period": 5,
-        "period_label": "5 SMA",
-        "value": 23412.22,
-        "signal": "Mild Bearish",
-        "signal_badge": "bear-mild",
-        "crossover": "-293.62 pts (-1.25%)",
-        "diff_pts": -293.62,
-        "diff_pct": -1.25,
-        "analysis": "Mild supply overhead. Index is trading marginally below the 5-period SMA."
-      },
-      {
-        "period": 10,
-        "period_label": "10 SMA",
-        "value": 23658.16,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-539.56 pts (-2.28%)",
-        "diff_pts": -539.56,
-        "diff_pct": -2.28,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 10-period SMA."
-      },
-      {
-        "period": 15,
-        "period_label": "15 SMA",
-        "value": 23831.39,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-712.79 pts (-2.99%)",
-        "diff_pts": -712.79,
-        "diff_pct": -2.99,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 15-period SMA."
-      },
-      {
-        "period": 20,
-        "period_label": "20 SMA",
-        "value": 23920.35,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-801.75 pts (-3.35%)",
-        "diff_pts": -801.75,
-        "diff_pct": -3.35,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 20-period SMA."
-      },
-      {
-        "period": 50,
-        "period_label": "50 SMA",
-        "value": 24127.18,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-1,008.58 pts (-4.18%)",
-        "diff_pts": -1008.58,
-        "diff_pct": -4.18,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 50-period SMA."
-      },
-      {
-        "period": 100,
-        "period_label": "100 SMA",
-        "value": 23975.51,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-856.91 pts (-3.57%)",
-        "diff_pts": -856.91,
-        "diff_pct": -3.57,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 100-period SMA."
-      },
-      {
-        "period": 200,
-        "period_label": "200 SMA",
-        "value": 24535.34,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-1,416.74 pts (-5.77%)",
-        "diff_pts": -1416.74,
-        "diff_pct": -5.77,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 200-period SMA."
-      }
-    ],
-    "ema": [
-      {
-        "period": 5,
-        "period_label": "5 EMA",
-        "value": 23401.76,
-        "signal": "Mild Bearish",
-        "signal_badge": "bear-mild",
-        "crossover": "-283.16 pts (-1.21%)",
-        "diff_pts": -283.16,
-        "diff_pct": -1.21,
-        "analysis": "Mild supply overhead. Index is trading marginally below the 5-period EMA."
-      },
-      {
-        "period": 10,
-        "period_label": "10 EMA",
-        "value": 23599.97,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-481.37 pts (-2.04%)",
-        "diff_pts": -481.37,
-        "diff_pct": -2.04,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 10-period EMA."
-      },
-      {
-        "period": 15,
-        "period_label": "15 EMA",
-        "value": 23732.83,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-614.23 pts (-2.59%)",
-        "diff_pts": -614.23,
-        "diff_pct": -2.59,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 15-period EMA."
-      },
-      {
-        "period": 20,
-        "period_label": "20 EMA",
-        "value": 23823.83,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-705.23 pts (-2.96%)",
-        "diff_pts": -705.23,
-        "diff_pct": -2.96,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 20-period EMA."
-      },
-      {
-        "period": 50,
-        "period_label": "50 EMA",
-        "value": 24003.38,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-884.78 pts (-3.69%)",
-        "diff_pts": -884.78,
-        "diff_pct": -3.69,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 50-period EMA."
-      },
-      {
-        "period": 100,
-        "period_label": "100 EMA",
-        "value": 24101.43,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-982.83 pts (-4.08%)",
-        "diff_pts": -982.83,
-        "diff_pct": -4.08,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 100-period EMA."
-      },
-      {
-        "period": 200,
-        "period_label": "200 EMA",
-        "value": 24297.64,
-        "signal": "Strong Bearish",
-        "signal_badge": "bear-strong",
-        "crossover": "-1,179.04 pts (-4.85%)",
-        "diff_pts": -1179.04,
-        "diff_pct": -4.85,
-        "analysis": "Persistent distribution. Price remains extended below the key institutional 200-period EMA."
-      }
-    ]
+  "pivots": {
+    "standard": {
+      "pivot": 23276.68,
+      "r1": 23434.77,
+      "s1": 22960.52,
+      "r2": 23750.93,
+      "s2": 22802.43,
+      "r3": 23909.02,
+      "s3": 22486.27
+    },
+    "fibonacci": {
+      "pivot": 23276.68,
+      "r1": 23457.85,
+      "s1": 23095.52,
+      "r2": 23569.77,
+      "s2": 22983.6,
+      "r3": 23750.93,
+      "s3": 22802.43
+    },
+    "camarilla": {
+      "pivot": 23276.68,
+      "r1": 23162.07,
+      "s1": 23075.13,
+      "r2": 23205.55,
+      "s2": 23031.65,
+      "r3": 23249.02,
+      "s3": 22988.18,
+      "r4": 23379.44,
+      "s4": 22857.76
+    }
   }
 }

@@ -645,10 +645,23 @@ def execute_sector_rotation_scanner(
         except Exception as e:
             print(f"[!] Warning reading market_summary.json: {e}")
 
-    # 2. Fetch Benchmarks
-    print("[*] Fetching Benchmark index candles...")
-    bench_nifty50_candles = fetch_candles(BENCHMARK_NIFTY50["symbol"])
-    bench_nifty500_candles = fetch_candles(BENCHMARK_NIFTY500["symbol"])
+    # 2. Fetch Benchmarks and Sector candles concurrently
+    print("[*] Fetching Benchmark and Sector index candles concurrently...")
+    from concurrent.futures import ThreadPoolExecutor
+    all_syms = [BENCHMARK_NIFTY50["symbol"], BENCHMARK_NIFTY500["symbol"]] + [item["symbol"] for item in SECTOR_REGISTRY]
+    candles_by_sym = {}
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        future_to_sym = {executor.submit(fetch_candles, s): s for s in all_syms}
+        for future in future_to_sym:
+            s = future_to_sym[future]
+            try:
+                candles_by_sym[s] = future.result()
+            except Exception as e:
+                print(f"    [!] Error fetching candles for {s}: {e}")
+                candles_by_sym[s] = []
+
+    bench_nifty50_candles = candles_by_sym.get(BENCHMARK_NIFTY50["symbol"], [])
+    bench_nifty500_candles = candles_by_sym.get(BENCHMARK_NIFTY500["symbol"], [])
 
     # Determine Market Regime via Nifty 50
     b_closes = [c["close"] for c in bench_nifty50_candles]
@@ -678,7 +691,7 @@ def execute_sector_rotation_scanner(
         sec_id = item["sector_id"]
 
         print(f"    Evaluating {name} ({sym})...")
-        candles = fetch_candles(sym)
+        candles = candles_by_sym.get(sym, [])
         if not candles:
             print(f"    [!] Skipping {name}: no candle data.")
             continue
