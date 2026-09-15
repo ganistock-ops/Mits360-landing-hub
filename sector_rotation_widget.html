@@ -1,0 +1,1227 @@
+<!-- ==========================================================================
+     MITS 360 Market Intelligence - Standalone Institutional Sector Rotation Widget
+     Theme: Institutional Dark Slate (Base #080B10, Card #121824, Border #1E293B)
+     Usage: Embed directly into WordPress Elementor HTML Block (Full-Bleed Breakout)
+     ========================================================================== -->
+
+<!-- Google Fonts Preconnect & Loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* Defensive Host Page Resets to Prevent Horizontal Scroll on Full-Bleed Breakout */
+html, body {
+  overflow-x: hidden !important;
+  background: #080B10 !important;
+}
+
+/* ==========================================================================
+   SCOPED MITS 360 SECTOR ROTATION WIDGET STYLING
+   All styles strictly isolated under #mits360-sector-rotation-root to prevent
+   theme bleeding in WordPress, Elementor, Divi, or Gutenberg.
+   ========================================================================== */
+
+#mits360-sector-rotation-root {
+  /* Color Tokens */
+  --sr-bg-core: #080B10;
+  --sr-bg-surface: #121824;
+  --sr-bg-surface-elevated: #162032;
+  --sr-bg-card: rgba(18, 24, 36, 0.85);
+  --sr-bg-card-hover: rgba(24, 34, 52, 0.98);
+
+  --sr-border-subtle: #1e293b;
+  --sr-border-medium: rgba(56, 189, 248, 0.22);
+  --sr-border-focus: #00f2fe;
+
+  --sr-cyan: #00f2fe;
+  --sr-cyan-glow: rgba(0, 242, 254, 0.25);
+  --sr-cyan-dark: rgba(0, 242, 254, 0.08);
+
+  --sr-emerald: #10b981;
+  --sr-emerald-bright: #00e676;
+  --sr-emerald-glow: rgba(16, 185, 129, 0.22);
+  --sr-emerald-dark: rgba(16, 185, 129, 0.12);
+
+  --sr-rose: #f43f5e;
+  --sr-rose-bright: #ff3366;
+  --sr-rose-glow: rgba(244, 63, 94, 0.22);
+  --sr-rose-dark: rgba(244, 63, 94, 0.12);
+
+  --sr-amber: #f59e0b;
+  --sr-amber-bright: #fbbf24;
+  --sr-amber-glow: rgba(245, 158, 11, 0.22);
+  --sr-amber-dark: rgba(245, 158, 11, 0.12);
+
+  --sr-text-primary: #f8fafc;
+  --sr-text-secondary: #94a3b8;
+  --sr-text-muted: #64748b;
+
+  --sr-font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --sr-font-mono: 'JetBrains Mono', monospace;
+  --sr-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Full Viewport Width Breakout for WordPress / Elementor */
+  all: initial;
+  display: block;
+  width: 100vw !important;
+  position: relative !important;
+  left: 50% !important;
+  right: 50% !important;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  box-sizing: border-box !important;
+  background: #080B10 !important;
+  color: var(--sr-text-primary);
+  font-family: var(--sr-font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  background-image: 
+    radial-gradient(circle at 15% 5%, rgba(0, 242, 254, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(245, 158, 11, 0.04) 0%, transparent 50%),
+    linear-gradient(180deg, #080B10 0%, #05070a 100%) !important;
+  padding: 24px 0 60px 0;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow-x: hidden;
+}
+
+/* Universal Box-Sizing and WordPress Resets */
+#mits360-sector-rotation-root *,
+#mits360-sector-rotation-root *::before,
+#mits360-sector-rotation-root *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#mits360-sector-rotation-root p,
+#mits360-sector-rotation-root h1,
+#mits360-sector-rotation-root h2,
+#mits360-sector-rotation-root h3,
+#mits360-sector-rotation-root h4,
+#mits360-sector-rotation-root ul,
+#mits360-sector-rotation-root li,
+#mits360-sector-rotation-root button,
+#mits360-sector-rotation-root a,
+#mits360-sector-rotation-root table,
+#mits360-sector-rotation-root th,
+#mits360-sector-rotation-root td {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+#mits360-sector-rotation-root .font-mono {
+  font-family: var(--sr-font-mono) !important;
+}
+
+/* Inner Centered Container */
+#mits360-sector-rotation-root .sr-inner-container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ==========================================================================
+   Header & Live Telemetry Strip
+   ========================================================================== */
+#mits360-sector-rotation-root .sr-header-card {
+  background: linear-gradient(135deg, rgba(18, 24, 36, 0.9) 0%, rgba(14, 20, 30, 0.95) 100%);
+  border: 1px solid var(--sr-border-subtle);
+  border-radius: 16px;
+  padding: 24px 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+#mits360-sector-rotation-root .sr-header-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--sr-cyan), var(--sr-emerald), var(--sr-amber), transparent);
+}
+
+#mits360-sector-rotation-root .sr-header-top-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+#mits360-sector-rotation-root .sr-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--sr-cyan-dark);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  font-family: var(--sr-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--sr-cyan);
+}
+
+#mits360-sector-rotation-root .sr-radar-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--sr-cyan);
+  box-shadow: 0 0 10px var(--sr-cyan);
+  animation: sr-radar-pulse 2s infinite ease-in-out;
+}
+
+@keyframes sr-radar-pulse {
+  0% { transform: scale(0.85); opacity: 0.8; }
+  50% { transform: scale(1.35); opacity: 1; box-shadow: 0 0 14px var(--sr-cyan); }
+  100% { transform: scale(0.85); opacity: 0.8; }
+}
+
+#mits360-sector-rotation-root .sr-telemetry-status {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+#mits360-sector-rotation-root .sr-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--sr-emerald-dark);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  font-family: var(--sr-font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--sr-emerald-bright);
+}
+
+#mits360-sector-rotation-root .sr-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--sr-emerald-bright);
+  box-shadow: 0 0 8px var(--sr-emerald-bright);
+}
+
+#mits360-sector-rotation-root .sr-live-clock {
+  font-family: var(--sr-font-mono);
+  font-size: 12px;
+  color: var(--sr-text-secondary);
+}
+
+#mits360-sector-rotation-root .sr-header-title {
+  font-family: var(--sr-font-display);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--sr-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#mits360-sector-rotation-root .sr-header-title span.accent-gradient {
+  background: linear-gradient(135deg, #00f2fe 0%, #10b981 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#mits360-sector-rotation-root .sr-header-subtitle {
+  font-size: 13px;
+  color: var(--sr-text-secondary);
+  max-width: 900px;
+  line-height: 1.6;
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   Top Summary Spotlight Ribbon: Next Rotation Sector
+   ========================================================================== */
+#mits360-sector-rotation-root .sr-spotlight-ribbon {
+  background: linear-gradient(135deg, rgba(16, 24, 39, 0.95) 0%, rgba(18, 30, 48, 0.9) 100%);
+  border: 1px solid rgba(0, 242, 254, 0.35);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 242, 254, 0.1);
+}
+
+#mits360-sector-rotation-root .sr-spotlight-ribbon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(180deg, var(--sr-cyan) 0%, var(--sr-emerald) 100%);
+}
+
+#mits360-sector-rotation-root .sr-spotlight-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding-right: 20px;
+}
+
+#mits360-sector-rotation-root .sr-spotlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(0, 242, 254, 0.15);
+  border: 1px solid var(--sr-cyan);
+  font-family: var(--sr-font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--sr-cyan);
+  width: fit-content;
+}
+
+#mits360-sector-rotation-root .sr-spotlight-target-name {
+  font-family: var(--sr-font-display);
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#mits360-sector-rotation-root .sr-spotlight-price-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--sr-font-mono);
+  font-size: 13px;
+}
+
+#mits360-sector-rotation-root .sr-spotlight-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#mits360-sector-rotation-root .sr-spotlight-headline {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--sr-text-primary);
+  line-height: 1.3;
+}
+
+#mits360-sector-rotation-root .sr-spotlight-rationale {
+  font-size: 13px;
+  color: var(--sr-text-secondary);
+  line-height: 1.5;
+}
+
+#mits360-sector-rotation-root .sr-spotlight-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+#mits360-sector-rotation-root .sr-spotlight-chip {
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: var(--sr-font-mono);
+  font-size: 11px;
+}
+
+/* ==========================================================================
+   Section 1: 4-Quadrant Status Cards Grid
+   ========================================================================== */
+#mits360-sector-rotation-root .sr-section-title-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: -10px;
+}
+
+#mits360-sector-rotation-root .sr-section-title {
+  font-family: var(--sr-font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--sr-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#mits360-sector-rotation-root .sr-section-tag {
+  font-family: var(--sr-font-mono);
+  font-size: 11px;
+  color: var(--sr-text-muted);
+}
+
+#mits360-sector-rotation-root .sr-quadrants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+#mits360-sector-rotation-root .sr-quadrant-card {
+  background: var(--sr-bg-surface);
+  border: 1px solid var(--sr-border-subtle);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s ease;
+}
+
+#mits360-sector-rotation-root .sr-quadrant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+#mits360-sector-rotation-root .sr-quadrant-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--q-color);
+}
+
+#mits360-sector-rotation-root .card-leading { --q-color: var(--sr-emerald-bright); }
+#mits360-sector-rotation-root .card-improving { --q-color: var(--sr-cyan); }
+#mits360-sector-rotation-root .card-weakening { --q-color: var(--sr-amber-bright); }
+#mits360-sector-rotation-root .card-lagging { --q-color: var(--sr-rose-bright); }
+
+#mits360-sector-rotation-root .sr-q-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 10px;
+}
+
+#mits360-sector-rotation-root .sr-q-title-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#mits360-sector-rotation-root .sr-q-badge {
+  font-family: var(--sr-font-mono);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+#mits360-sector-rotation-root .card-leading .sr-q-badge { background: var(--sr-emerald-dark); color: var(--sr-emerald-bright); border: 1px solid rgba(16, 185, 129, 0.3); }
+#mits360-sector-rotation-root .card-improving .sr-q-badge { background: var(--sr-cyan-dark); color: var(--sr-cyan); border: 1px solid rgba(0, 242, 254, 0.3); }
+#mits360-sector-rotation-root .card-weakening .sr-q-badge { background: var(--sr-amber-dark); color: var(--sr-amber-bright); border: 1px solid rgba(245, 158, 11, 0.3); }
+#mits360-sector-rotation-root .card-lagging .sr-q-badge { background: var(--sr-rose-dark); color: var(--sr-rose-bright); border: 1px solid rgba(244, 63, 94, 0.3); }
+
+#mits360-sector-rotation-root .sr-q-count {
+  font-family: var(--sr-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--sr-text-muted);
+}
+
+#mits360-sector-rotation-root .sr-q-condition {
+  font-family: var(--sr-font-mono);
+  font-size: 10px;
+  color: var(--sr-text-muted);
+  line-height: 1.3;
+}
+
+#mits360-sector-rotation-root .sr-q-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 120px;
+}
+
+#mits360-sector-rotation-root .sr-q-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(10, 15, 25, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.2s ease;
+}
+
+#mits360-sector-rotation-root .sr-q-item:hover {
+  background: rgba(22, 32, 50, 0.9);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#mits360-sector-rotation-root .sr-q-item-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#mits360-sector-rotation-root .sr-q-item-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--sr-text-primary);
+}
+
+#mits360-sector-rotation-root .sr-q-item-price {
+  font-family: var(--sr-font-mono);
+  font-size: 11px;
+  color: var(--sr-text-muted);
+}
+
+#mits360-sector-rotation-root .sr-q-item-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#mits360-sector-rotation-root .sr-alpha-tag {
+  font-family: var(--sr-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+#mits360-sector-rotation-root .alpha-pos {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--sr-emerald-bright);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+#mits360-sector-rotation-root .alpha-neg {
+  background: rgba(244, 63, 94, 0.15);
+  color: var(--sr-rose-bright);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+}
+
+#mits360-sector-rotation-root .alpha-zero {
+  background: rgba(100, 116, 139, 0.15);
+  color: var(--sr-text-muted);
+  border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+/* ==========================================================================
+   Section 2: Outperformance / Underperformance Multi-Horizon Matrix
+   ========================================================================== */
+#mits360-sector-rotation-root .sr-matrix-card {
+  background: var(--sr-bg-surface);
+  border: 1px solid var(--sr-border-subtle);
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+#mits360-sector-rotation-root .sr-matrix-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+#mits360-sector-rotation-root .sr-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+#mits360-sector-rotation-root .sr-filter-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--sr-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#mits360-sector-rotation-root .sr-filter-btn:hover {
+  color: #fff;
+  background: rgba(30, 41, 59, 0.9);
+}
+
+#mits360-sector-rotation-root .sr-filter-btn.active {
+  background: var(--sr-cyan-dark);
+  border-color: var(--sr-cyan);
+  color: var(--sr-cyan);
+}
+
+#mits360-sector-rotation-root .sr-table-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--sr-border-subtle);
+  border-radius: 10px;
+}
+
+#mits360-sector-rotation-root .sr-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+  min-width: 900px;
+}
+
+#mits360-sector-rotation-root .sr-matrix-table th {
+  background: #0d121c;
+  padding: 12px 14px;
+  font-family: var(--sr-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--sr-text-secondary);
+  border-bottom: 2px solid var(--sr-border-subtle);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+#mits360-sector-rotation-root .sr-matrix-table th:hover {
+  color: var(--sr-cyan);
+}
+
+#mits360-sector-rotation-root .sr-matrix-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  white-space: nowrap;
+}
+
+#mits360-sector-rotation-root .sr-matrix-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Benchmark Row Highlight */
+#mits360-sector-rotation-root .sr-benchmark-row td {
+  background: rgba(0, 242, 254, 0.05) !important;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(0, 242, 254, 0.2) !important;
+}
+
+#mits360-sector-rotation-root .sr-col-sticky {
+  position: sticky;
+  left: 0;
+  background: #121824;
+  z-index: 2;
+  font-weight: 700;
+  color: #fff;
+  border-right: 1px solid var(--sr-border-subtle);
+}
+
+#mits360-sector-rotation-root .sr-benchmark-row .sr-col-sticky {
+  background: #0d1726 !important;
+  color: var(--sr-cyan) !important;
+}
+
+#mits360-sector-rotation-root .sr-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-family: var(--sr-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#mits360-sector-rotation-root .status-leading { background: var(--sr-emerald-dark); color: var(--sr-emerald-bright); border: 1px solid rgba(16, 185, 129, 0.3); }
+#mits360-sector-rotation-root .status-improving { background: var(--sr-cyan-dark); color: var(--sr-cyan); border: 1px solid rgba(0, 242, 254, 0.3); }
+#mits360-sector-rotation-root .status-weakening { background: var(--sr-amber-dark); color: var(--sr-amber-bright); border: 1px solid rgba(245, 158, 11, 0.3); }
+#mits360-sector-rotation-root .status-lagging { background: var(--sr-rose-dark); color: var(--sr-rose-bright); border: 1px solid rgba(244, 63, 94, 0.3); }
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+@media (max-width: 900px) {
+  #mits360-sector-rotation-root .sr-spotlight-ribbon {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  #mits360-sector-rotation-root .sr-spotlight-left {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-right: 0;
+    padding-bottom: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  #mits360-sector-rotation-root .sr-header-title {
+    font-size: 22px;
+  }
+}
+</style>
+
+<!-- Root Isolated Container -->
+<div id="mits360-sector-rotation-root">
+  <div class="sr-inner-container">
+
+    <!-- Header & Live Telemetry Strip -->
+    <header class="sr-header-card">
+      <div class="sr-header-top-row">
+        <div class="sr-brand-badge">
+          <div class="sr-radar-dot"></div>
+          <span>MITS 360 Quantitative Telemetry</span>
+          <span style="opacity: 0.4;">|</span>
+          <span style="color: var(--sr-emerald-bright);">SECTOR ROTATION ENGINE</span>
+        </div>
+
+        <div class="sr-telemetry-status">
+          <div class="sr-status-pill">
+            <div class="sr-status-dot"></div>
+            <span>PURE MATH TELEMETRY</span>
+          </div>
+          <div class="sr-live-clock font-mono" id="srLiveClock">12:00:00 PM IST</div>
+        </div>
+      </div>
+
+      <h1 class="sr-header-title">
+        Institutional Sector Rotation &amp; <span class="accent-gradient">Predictive Rotation Tracker</span>
+      </h1>
+      <p class="sr-header-subtitle">
+        Mathematical relative alpha telemetry computed across strict trading sessions (1W: 5 bars, 1M: 21 bars, 3M: 63 bars, 6M: 126 bars, 1Y: 252 bars) against Nifty 50. Classifying sectors into institutional rotation quadrants.
+      </p>
+    </header>
+
+    <!-- Top Summary Spotlight Ribbon: Next Potential Rotation Sector -->
+    <section class="sr-spotlight-ribbon" id="srSpotlightRibbon">
+      <div class="sr-spotlight-left">
+        <div class="sr-spotlight-badge">
+          <span>⚡</span>
+          <span>Next Potential Rotation Candidate</span>
+        </div>
+        <div class="sr-spotlight-target-name">
+          <span id="spotlightSectorIcon">📈</span>
+          <span id="spotlightSectorName">Nifty IT</span>
+        </div>
+        <div class="sr-spotlight-price-row">
+          <span style="color: var(--sr-text-muted);">Current:</span>
+          <span style="color: #fff; font-weight: 700;" id="spotlightCurrentPrice">₹29,851.80</span>
+          <span class="sr-alpha-tag alpha-pos" id="spotlightAlpha1WPill">+1.41% 1W Alpha</span>
+        </div>
+      </div>
+
+      <div class="sr-spotlight-right">
+        <div class="sr-spotlight-headline" id="spotlightHeadline">
+          Early Stage Reversal: Emerging Short-Term Alpha Acceleration
+        </div>
+        <div class="sr-spotlight-rationale" id="spotlightRationale">
+          Shift from Lagging to Improving: Emerging 1-Week Alpha of +1.41% vs Nifty 50, demonstrating institutional bottom-accumulation reversal against a 3-month baseline (+7.24%).
+        </div>
+        <div class="sr-spotlight-chips" id="spotlightChips">
+          <div class="sr-spotlight-chip">1W Alpha: <span style="color: var(--sr-cyan);" id="chipAlpha1W">+1.41%</span></div>
+          <div class="sr-spotlight-chip">1M Alpha: <span style="color: #fda4af;" id="chipAlpha1M">-0.55%</span></div>
+          <div class="sr-spotlight-chip">3M Alpha: <span style="color: var(--sr-emerald-bright);" id="chipAlpha3M">+7.24%</span></div>
+          <div class="sr-spotlight-chip">Quadrant: <span style="color: var(--sr-cyan); font-weight: 700;" id="chipQuadrant">Improving</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: 4-Quadrant Status Cards -->
+    <div class="sr-section-title-group">
+      <h2 class="sr-section-title">
+        <span>🧭</span>
+        <span>Institutional 4-Quadrant Rotation Matrix</span>
+      </h2>
+      <span class="sr-section-tag">Pure Algorithmic Classification (No Speculation)</span>
+    </div>
+
+    <section class="sr-quadrants-grid">
+      <!-- Quadrant 1: Leading -->
+      <div class="sr-quadrant-card card-leading">
+        <div class="sr-q-header">
+          <div class="sr-q-title-box">
+            <span class="sr-q-badge">LEADING</span>
+          </div>
+          <span class="sr-q-count font-mono" id="countLeading">0 Sectors</span>
+        </div>
+        <div class="sr-q-condition">Alpha: 1W &gt; 0 &bull; 1M &gt; 0 &bull; 3M &gt; 0 (Sustained Outperformance)</div>
+        <div class="sr-q-list" id="listLeading">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+
+      <!-- Quadrant 2: Improving -->
+      <div class="sr-quadrant-card card-improving">
+        <div class="sr-q-header">
+          <div class="sr-q-title-box">
+            <span class="sr-q-badge">IMPROVING (EARLY STAGE)</span>
+          </div>
+          <span class="sr-q-count font-mono" id="countImproving">0 Sectors</span>
+        </div>
+        <div class="sr-q-condition">Alpha: 3M &le; 0 &bull; 1W &gt; 0 &bull; 1M &gt; 3M (Bottom Reversal / Fresh Momentum)</div>
+        <div class="sr-q-list" id="listImproving">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+
+      <!-- Quadrant 3: Weakening -->
+      <div class="sr-quadrant-card card-weakening">
+        <div class="sr-q-header">
+          <div class="sr-q-title-box">
+            <span class="sr-q-badge">WEAKENING</span>
+          </div>
+          <span class="sr-q-count font-mono" id="countWeakening">0 Sectors</span>
+        </div>
+        <div class="sr-q-condition">Alpha: 3M &gt; 0 &bull; 1W &lt; 0 (Losing short-term momentum from top)</div>
+        <div class="sr-q-list" id="listWeakening">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+
+      <!-- Quadrant 4: Lagging -->
+      <div class="sr-quadrant-card card-lagging">
+        <div class="sr-q-header">
+          <div class="sr-q-title-box">
+            <span class="sr-q-badge">LAGGING (WEAK)</span>
+          </div>
+          <span class="sr-q-count font-mono" id="countLagging">0 Sectors</span>
+        </div>
+        <div class="sr-q-condition">Alpha: 1W &lt; 0 &bull; 1M &lt; 0 (Persistent relative underperformance)</div>
+        <div class="sr-q-list" id="listLagging">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Outperformance / Underperformance Multi-Horizon Matrix Table -->
+    <section class="sr-matrix-card">
+      <div class="sr-matrix-controls">
+        <div class="sr-section-title-group" style="margin-bottom: 0;">
+          <h2 class="sr-section-title">
+            <span>📊</span>
+            <span>Multi-Horizon Alpha &amp; Performance Matrix</span>
+          </h2>
+        </div>
+
+        <div class="sr-filter-buttons">
+          <button class="sr-filter-btn active" data-filter="ALL" id="btnFilterAll">All Sectors (10)</button>
+          <button class="sr-filter-btn" data-filter="leading" id="btnFilterLeading">Leading</button>
+          <button class="sr-filter-btn" data-filter="improving" id="btnFilterImproving">Improving</button>
+          <button class="sr-filter-btn" data-filter="weakening" id="btnFilterWeakening">Weakening</button>
+          <button class="sr-filter-btn" data-filter="lagging" id="btnFilterLagging">Lagging</button>
+        </div>
+      </div>
+
+      <div class="sr-table-scroll-wrapper">
+        <table class="sr-matrix-table" id="srMatrixTable">
+          <thead>
+            <tr>
+              <th class="sr-col-sticky" data-sort="name">Sector Name ⬍</th>
+              <th data-sort="price">Current Price ⬍</th>
+              <th data-sort="alpha1w">1W Alpha (5b) ⬍</th>
+              <th data-sort="alpha1m">1M Alpha (21b) ⬍</th>
+              <th data-sort="alpha3m">3M Alpha (63b) ⬍</th>
+              <th data-sort="alpha6m">6M Alpha (126b) ⬍</th>
+              <th data-sort="return1y">1Y Return (252b) ⬍</th>
+              <th data-sort="quadrant">Rotation Status ⬍</th>
+            </tr>
+          </thead>
+          <tbody id="srMatrixBody">
+            <!-- Injected dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ==========================================================================
+     MITS 360 SECTOR ROTATION ENGINE LOGIC & TELEMETRY
+     ========================================================================== -->
+<script>
+(function() {
+  'use strict';
+
+  // --- Embedded Baseline Fallback Dataset ---
+  const DEFAULT_DATA = {
+    "meta": {
+      "generated_at": "2026-09-15T07:20:52Z",
+      "market_date": "15-Sep-2026",
+      "benchmark": "Nifty 50 (^NSEI)",
+      "benchmark_price": 23330.25,
+      "benchmark_returns": { "1W": -1.89, "1M": -4.25, "3M": -2.75, "6M": -2.25, "1Y": -5.70 },
+      "total_sectors_tracked": 10
+    },
+    "rotation_spotlight": {
+      "symbol": "^CNXIT",
+      "name": "Nifty IT",
+      "short_name": "IT",
+      "current_price": 29851.80,
+      "alpha_1w": 1.41,
+      "alpha_1m": -0.55,
+      "alpha_3m": 7.24,
+      "return_1w": -0.48,
+      "quadrant": "Improving",
+      "quadrant_code": "improving",
+      "quadrant_color": "cyan",
+      "headline": "Top Potential Rotation: Nifty IT",
+      "rationale": "Shift from Lagging to Improving: Emerging 1-Week Alpha of +1.41% vs Nifty 50, demonstrating institutional bottom-accumulation reversal against a 3-month baseline (+7.24%).",
+      "transition_score": -2.27
+    },
+    "quadrants": {
+      "leading_count": 4,
+      "improving_count": 1,
+      "weakening_count": 1,
+      "lagging_count": 4,
+      "groups": {
+        "leading": [
+          { "symbol": "^NSEBANK", "name": "Nifty Bank", "current_price": 56226.80, "returns": { "1W": -1.51, "1M": -2.20, "3M": -1.87, "6M": 0.88, "1Y": 3.90 }, "alphas": { "1W": 0.38, "1M": 2.05, "3M": 0.88, "6M": 3.13, "1Y": 9.60 }, "quadrant": "Leading", "quadrant_code": "leading" },
+          { "symbol": "^CNXAUTO", "name": "Nifty Auto", "current_price": 27131.70, "returns": { "1W": 0.56, "1M": 1.44, "3M": 2.64, "6M": -3.40, "1Y": 13.75 }, "alphas": { "1W": 2.45, "1M": 5.69, "3M": 5.39, "6M": -1.15, "1Y": 19.45 }, "quadrant": "Leading", "quadrant_code": "leading" },
+          { "symbol": "^CNXMETAL", "name": "Nifty Metal", "current_price": 12811.35, "returns": { "1W": 1.67, "1M": -1.53, "3M": -0.53, "6M": -1.50, "1Y": 14.28 }, "alphas": { "1W": 3.56, "1M": 2.72, "3M": 2.22, "6M": 0.75, "1Y": 19.98 }, "quadrant": "Leading", "quadrant_code": "leading" },
+          { "symbol": "^CNXPHARMA", "name": "Nifty Pharma", "current_price": 22442.20, "returns": { "1W": -1.12, "1M": -0.26, "3M": 9.18, "6M": 6.84, "1Y": 8.78 }, "alphas": { "1W": 0.77, "1M": 3.99, "3M": 11.93, "6M": 9.09, "1Y": 14.48 }, "quadrant": "Leading", "quadrant_code": "leading" }
+        ],
+        "improving": [
+          { "symbol": "^CNXIT", "name": "Nifty IT", "current_price": 29851.80, "returns": { "1W": -0.48, "1M": -4.80, "3M": 4.49, "6M": -5.10, "1Y": -8.12 }, "alphas": { "1W": 1.41, "1M": -0.55, "3M": 7.24, "6M": -2.85, "1Y": -2.42 }, "quadrant": "Improving", "quadrant_code": "improving" }
+        ],
+        "weakening": [
+          { "symbol": "^CNXREALTY", "name": "Nifty Realty", "current_price": 1054.40, "returns": { "1W": -11.54, "1M": 1.07, "3M": 5.35, "6M": 4.12, "1Y": 16.50 }, "alphas": { "1W": -9.65, "1M": 5.32, "3M": 8.10, "6M": 6.37, "1Y": 22.20 }, "quadrant": "Weakening", "quadrant_code": "weakening" }
+        ],
+        "lagging": [
+          { "symbol": "^CNXFMCG", "name": "Nifty FMCG", "current_price": 57102.10, "returns": { "1W": -7.17, "1M": -8.74, "3M": -8.75, "6M": 2.15, "1Y": -5.40 }, "alphas": { "1W": -5.28, "1M": -4.49, "3M": -6.00, "6M": 4.40, "1Y": 0.30 }, "quadrant": "Lagging", "quadrant_code": "lagging" },
+          { "symbol": "^CNXENERGY", "name": "Nifty Energy", "current_price": 38402.50, "returns": { "1W": -4.40, "1M": -7.32, "3M": -3.57, "6M": -8.15, "1Y": -1.25 }, "alphas": { "1W": -2.51, "1M": -3.07, "3M": -0.82, "6M": -5.90, "1Y": 4.45 }, "quadrant": "Lagging", "quadrant_code": "lagging" },
+          { "symbol": "^CNXINFRA", "name": "Nifty Infra", "current_price": 8950.20, "returns": { "1W": -4.03, "1M": -5.23, "3M": -3.31, "6M": -4.10, "1Y": 5.12 }, "alphas": { "1W": -2.14, "1M": -0.98, "3M": -0.56, "6M": -1.85, "1Y": 10.82 }, "quadrant": "Lagging", "quadrant_code": "lagging" },
+          { "symbol": "^CNXPSE", "name": "Nifty PSE", "current_price": 9820.10, "returns": { "1W": -4.03, "1M": -6.19, "3M": -9.74, "6M": -7.30, "1Y": 11.20 }, "alphas": { "1W": -2.14, "1M": -1.94, "3M": -6.99, "6M": -5.05, "1Y": 16.90 }, "quadrant": "Lagging", "quadrant_code": "lagging" }
+        ]
+      }
+    },
+    "sectors": []
+  };
+
+  let activeData = DEFAULT_DATA;
+  let activeFilter = 'ALL';
+  let sortKey = 'alpha1w';
+  let sortAsc = false;
+
+  function $(id) {
+    return document.getElementById(id);
+  }
+
+  function formatNum(val, dec = 2) {
+    if (val === undefined || val === null || isNaN(val)) return '--';
+    return Number(val).toLocaleString('en-IN', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  }
+
+  function formatAlphaPill(val) {
+    if (val === undefined || val === null || isNaN(val)) return '<span class="sr-alpha-tag alpha-zero">--</span>';
+    const num = Number(val);
+    const sign = num > 0 ? '+' : '';
+    const cls = num > 0 ? 'alpha-pos' : num < 0 ? 'alpha-neg' : 'alpha-zero';
+    return `<span class="sr-alpha-tag ${cls}">${sign}${num.toFixed(2)}%</span>`;
+  }
+
+  function formatReturn(val) {
+    if (val === undefined || val === null || isNaN(val)) return '--';
+    const num = Number(val);
+    const sign = num > 0 ? '+' : '';
+    const color = num > 0 ? '#6ee7b7' : num < 0 ? '#fda4af' : '#94a3b8';
+    return `<span style="color: ${color}; font-weight: 600;">${sign}${num.toFixed(2)}%</span>`;
+  }
+
+  function updateLiveClock() {
+    const clock = $('srLiveClock');
+    if (!clock) return;
+    const now = new Date();
+    const opts = { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+    clock.textContent = now.toLocaleTimeString('en-US', opts) + ' IST';
+  }
+
+  // Render Spotlight Ribbon
+  function renderSpotlight() {
+    const sp = activeData.rotation_spotlight;
+    if (!sp) return;
+
+    if ($('spotlightSectorName')) $('spotlightSectorName').textContent = sp.name;
+    if ($('spotlightCurrentPrice')) $('spotlightCurrentPrice').textContent = '₹' + formatNum(sp.current_price);
+    if ($('spotlightHeadline')) $('spotlightHeadline').textContent = sp.headline || `Top Potential Rotation: ${sp.name}`;
+    if ($('spotlightRationale')) $('spotlightRationale').textContent = sp.rationale || '';
+
+    const alphaPill = $('spotlightAlpha1WPill');
+    if (alphaPill) {
+      const sign = sp.alpha_1w > 0 ? '+' : '';
+      alphaPill.textContent = `${sign}${Number(sp.alpha_1w).toFixed(2)}% 1W Alpha`;
+      alphaPill.className = `sr-alpha-tag ${sp.alpha_1w >= 0 ? 'alpha-pos' : 'alpha-neg'}`;
+    }
+
+    if ($('chipAlpha1W')) {
+      const sign = sp.alpha_1w > 0 ? '+' : '';
+      $('chipAlpha1W').textContent = `${sign}${Number(sp.alpha_1w).toFixed(2)}%`;
+      $('chipAlpha1W').style.color = sp.alpha_1w >= 0 ? 'var(--sr-cyan)' : '#fda4af';
+    }
+
+    if ($('chipAlpha1M')) {
+      const sign = sp.alpha_1m > 0 ? '+' : '';
+      $('chipAlpha1M').textContent = `${sign}${Number(sp.alpha_1m).toFixed(2)}%`;
+      $('chipAlpha1M').style.color = sp.alpha_1m >= 0 ? 'var(--sr-emerald-bright)' : '#fda4af';
+    }
+
+    if ($('chipAlpha3M')) {
+      const sign = sp.alpha_3m > 0 ? '+' : '';
+      $('chipAlpha3M').textContent = `${sign}${Number(sp.alpha_3m).toFixed(2)}%`;
+      $('chipAlpha3M').style.color = sp.alpha_3m >= 0 ? 'var(--sr-emerald-bright)' : '#fda4af';
+    }
+
+    if ($('chipQuadrant')) {
+      $('chipQuadrant').textContent = sp.quadrant;
+    }
+  }
+
+  // Render 4-Quadrant Cards
+  function renderQuadrants() {
+    const qData = activeData.quadrants;
+    if (!qData || !qData.groups) return;
+
+    if ($('countLeading')) $('countLeading').textContent = `${qData.leading_count || 0} Sectors`;
+    if ($('countImproving')) $('countImproving').textContent = `${qData.improving_count || 0} Sectors`;
+    if ($('countWeakening')) $('countWeakening').textContent = `${qData.weakening_count || 0} Sectors`;
+    if ($('countLagging')) $('countLagging').textContent = `${qData.lagging_count || 0} Sectors`;
+
+    const renderList = (items, targetId) => {
+      const el = $(targetId);
+      if (!el) return;
+      if (!items || items.length === 0) {
+        el.innerHTML = '<div style="color: var(--sr-text-muted); font-size: 12px; padding: 12px 0;">None currently in this quadrant.</div>';
+        return;
+      }
+      el.innerHTML = items.map(it => `
+        <div class="sr-q-item">
+          <div class="sr-q-item-left">
+            <span class="sr-q-item-name">${it.name}</span>
+            <span class="sr-q-item-price">₹${formatNum(it.current_price)}</span>
+          </div>
+          <div class="sr-q-item-right">
+            ${formatAlphaPill(it.alphas ? it.alphas['1W'] : 0)}
+          </div>
+        </div>
+      `).join('');
+    };
+
+    renderList(qData.groups.leading, 'listLeading');
+    renderList(qData.groups.improving, 'listImproving');
+    renderList(qData.groups.weakening, 'listWeakening');
+    renderList(qData.groups.lagging, 'listLagging');
+  }
+
+  // Render Matrix Table
+  function renderMatrix() {
+    const tbody = $('srMatrixBody');
+    if (!tbody) return;
+
+    let sectors = [...(activeData.sectors || [])];
+    if (sectors.length === 0 && activeData.quadrants && activeData.quadrants.groups) {
+      // Flatten from groups if sectors array empty
+      sectors = [
+        ...activeData.quadrants.groups.leading,
+        ...activeData.quadrants.groups.improving,
+        ...activeData.quadrants.groups.weakening,
+        ...activeData.quadrants.groups.lagging
+      ];
+    }
+
+    // Filter by quadrant
+    if (activeFilter !== 'ALL') {
+      sectors = sectors.filter(s => s.quadrant_code === activeFilter);
+    }
+
+    // Sort
+    sectors.sort((a, b) => {
+      let va = 0, vb = 0;
+      if (sortKey === 'name') {
+        va = a.name.toLowerCase();
+        vb = b.name.toLowerCase();
+        return sortAsc ? (va > vb ? 1 : -1) : (va < vb ? 1 : -1);
+      } else if (sortKey === 'price') {
+        va = a.current_price || 0;
+        vb = b.current_price || 0;
+      } else if (sortKey === 'alpha1w') {
+        va = a.alphas ? a.alphas['1W'] : 0;
+        vb = b.alphas ? b.alphas['1W'] : 0;
+      } else if (sortKey === 'alpha1m') {
+        va = a.alphas ? a.alphas['1M'] : 0;
+        vb = b.alphas ? b.alphas['1M'] : 0;
+      } else if (sortKey === 'alpha3m') {
+        va = a.alphas ? a.alphas['3M'] : 0;
+        vb = b.alphas ? b.alphas['3M'] : 0;
+      } else if (sortKey === 'alpha6m') {
+        va = a.alphas ? a.alphas['6M'] : 0;
+        vb = b.alphas ? b.alphas['6M'] : 0;
+      } else if (sortKey === 'return1y') {
+        va = a.returns ? a.returns['1Y'] : 0;
+        vb = b.returns ? b.returns['1Y'] : 0;
+      } else if (sortKey === 'quadrant') {
+        va = a.quadrant || '';
+        vb = b.quadrant || '';
+        return sortAsc ? (va > vb ? 1 : -1) : (va < vb ? 1 : -1);
+      }
+      return sortAsc ? (va - vb) : (vb - va);
+    });
+
+    const bench = activeData.meta || {};
+    const bRet = bench.benchmark_returns || { "1W": 0, "1M": 0, "3M": 0, "6M": 0, "1Y": 0 };
+
+    let html = `
+      <!-- Benchmark Reference Row -->
+      <tr class="sr-benchmark-row">
+        <td class="sr-col-sticky" style="color: var(--sr-cyan) !important;">
+          <span>📌 Nifty 50 (Benchmark)</span>
+        </td>
+        <td class="font-mono">₹${formatNum(bench.benchmark_price || 23330.25)}</td>
+        <td class="font-mono" style="color: var(--sr-text-secondary);">${formatReturn(bRet['1W'])}</td>
+        <td class="font-mono" style="color: var(--sr-text-secondary);">${formatReturn(bRet['1M'])}</td>
+        <td class="font-mono" style="color: var(--sr-text-secondary);">${formatReturn(bRet['3M'])}</td>
+        <td class="font-mono" style="color: var(--sr-text-secondary);">${formatReturn(bRet['6M'])}</td>
+        <td class="font-mono">${formatReturn(bRet['1Y'])}</td>
+        <td><span class="sr-status-badge" style="background: rgba(0, 242, 254, 0.15); color: var(--sr-cyan); border: 1px solid rgba(0, 242, 254, 0.3);">BASE BENCHMARK</span></td>
+      </tr>
+    `;
+
+    sectors.forEach(s => {
+      const qCls = `status-${s.quadrant_code || 'lagging'}`;
+      html += `
+        <tr>
+          <td class="sr-col-sticky">
+            <span>${s.name}</span>
+          </td>
+          <td class="font-mono">₹${formatNum(s.current_price)}</td>
+          <td>${formatAlphaPill(s.alphas ? s.alphas['1W'] : 0)}</td>
+          <td>${formatAlphaPill(s.alphas ? s.alphas['1M'] : 0)}</td>
+          <td>${formatAlphaPill(s.alphas ? s.alphas['3M'] : 0)}</td>
+          <td>${formatAlphaPill(s.alphas ? s.alphas['6M'] : 0)}</td>
+          <td class="font-mono">${formatReturn(s.returns ? s.returns['1Y'] : 0)}</td>
+          <td><span class="sr-status-badge ${qCls}">${s.quadrant}</span></td>
+        </tr>
+      `;
+    });
+
+    tbody.innerHTML = html;
+  }
+
+  // Setup Interaction Controls
+  function setupControls() {
+    // 1. Filter Buttons
+    const btns = document.querySelectorAll('#mits360-sector-rotation-root .sr-filter-btn');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.getAttribute('data-filter') || 'ALL';
+        renderMatrix();
+      });
+    });
+
+    // 2. Table Sorting Headers
+    const ths = document.querySelectorAll('#mits360-sector-rotation-root .sr-matrix-table th');
+    ths.forEach(th => {
+      th.addEventListener('click', () => {
+        const key = th.getAttribute('data-sort');
+        if (!key) return;
+        if (sortKey === key) {
+          sortAsc = !sortAsc;
+        } else {
+          sortKey = key;
+          sortAsc = false;
+        }
+        renderMatrix();
+      });
+    });
+  }
+
+  // Live Data Ingestion
+  async function fetchLiveRotationData() {
+    const endpoints = [
+      'data/sector_rotation_data.json',
+      '/wp-content/uploads/data/sector_rotation_data.json',
+      'https://raw.githubusercontent.com/ganistock-ops/Mits360-landing-hub/main/data/sector_rotation_data.json'
+    ];
+
+    for (const url of endpoints) {
+      try {
+        const resp = await fetch(url + '?t=' + Date.now());
+        if (resp.ok) {
+          const json = await resp.json();
+          if (json && json.meta && json.rotation_spotlight) {
+            console.log('[MITS 360] Sector Rotation data successfully ingested from:', url);
+            activeData = json;
+            renderSpotlight();
+            renderQuadrants();
+            renderMatrix();
+            return;
+          }
+        }
+      } catch (err) {
+        // probe next endpoint
+      }
+    }
+  }
+
+  // Initialize
+  function init() {
+    updateLiveClock();
+    setInterval(updateLiveClock, 1000);
+    renderSpotlight();
+    renderQuadrants();
+    renderMatrix();
+    setupControls();
+    fetchLiveRotationData();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>

@@ -898,6 +898,13 @@ def main():
         except Exception as ev_err:
             print(f"[!] Warning: Could not generate event calendar data: {ev_err}")
 
+        # 9. Generate Institutional Sector Rotation & Predictive Tracker
+        try:
+            from scripts.sector_rotation_pipeline import calculate_sector_rotation
+            calculate_sector_rotation(trade_date, index_data, output_dir)
+        except Exception as rot_err:
+            print(f"[!] Warning: Could not calculate sector rotation analytics: {rot_err}")
+
         print("=" * 70)
 
     except Exception as e:
