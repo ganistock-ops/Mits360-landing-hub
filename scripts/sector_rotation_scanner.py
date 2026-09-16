@@ -517,7 +517,21 @@ def evaluate_accumulation_distribution(candles: List[Dict[str, Any]]) -> Dict[st
 def evaluate_trend_regime_and_stages(candles: List[Dict[str, Any]], market_regime: str) -> Dict[str, Any]:
     """Dimension 7: Moving Average Transition Stage 1 to 6 (10% Weight)."""
     if len(candles) < 205:
-        return {"score": 50.0, "stage": "Stage 2: EMA Transition", "stage_num": 2, "overextended": False}
+        closes = [c["close"] for c in candles] if candles else [100.0]
+        c_curr = closes[-1]
+        ema20 = compute_ema(closes, min(20, len(closes)))
+        dma_len = min(len(closes), 200)
+        dma200 = compute_sma(closes, dma_len) if dma_len > 0 else c_curr
+        dist_200 = ((c_curr - dma200) / dma200) * 100.0 if dma200 > 0 else 0.0
+        dist_20 = ((c_curr - ema20) / ema20) * 100.0 if ema20 > 0 else 0.0
+        return {
+            "score": 50.0,
+            "stage": "Stage 2: EMA Transition",
+            "stage_num": 2,
+            "overextended": False,
+            "dist_200dma": round(dist_200, 2),
+            "dist_20ema": round(dist_20, 2)
+        }
 
     closes = [c["close"] for c in candles]
     c_curr = closes[-1]
@@ -811,7 +825,7 @@ def execute_sector_rotation_scanner(
             reasons.append("Quiet institutional accumulation detected: money flow rising amidst price consolidation.")
         if trend_res["stage_num"] in (2, 4):
             reasons.append(f"Favorable stage inflection: {trend_res['stage']}.")
-        if trend_res["overextended"]:
+        if trend_res.get("overextended") and trend_res.get("dist_200dma") is not None:
             reasons.append(f"Caution: Extended {trend_res['dist_200dma']}% above 200 DMA.")
 
         if not reasons:
@@ -861,7 +875,7 @@ def execute_sector_rotation_scanner(
                 "cmf": acc_res["cmf"],
                 "stage": trend_res["stage"],
                 "stage_num": trend_res["stage_num"],
-                "dist_200dma": trend_res["dist_200dma"]
+                "dist_200dma": trend_res.get("dist_200dma", 0.0)
             },
             "explainable_reasons": reasons,
             "top_stocks": stock_drill[:8]
