@@ -4,8 +4,7 @@ MITS 360 Market Intelligence - Automated Ultra-Fast Consolidated EOD Pipeline
 Author: MITS 360 Architecture Team
 Description: Downloads official daily NSE Bhavcopy in a single HTTP request directly
              into an in-memory Pandas DataFrame, executes vectorized Advance/Decline,
-             Market Breadth, Index metrics, Technical Pivots, and Sector Rotation
-             calculations in under 30 seconds.
+             Market Breadth, Index metrics, and Technical Pivots calculations in under 15 seconds.
 """
 
 import os
@@ -923,22 +922,9 @@ def main():
         calculate_nifty_view_analytics(trade_date, index_data, output_dir)
         calculate_banknifty_view_analytics(trade_date, index_data, output_dir)
 
-        # 7. Sector Rotation & Predictive SRS Matrix
-        try:
-            from scripts.sector_rotation_pipeline import calculate_sector_rotation
-            calculate_sector_rotation(trade_date, index_data, output_dir)
-        except Exception as rot_err:
-            print(f"[!] Warning: Could not calculate sector rotation: {rot_err}")
-
-        try:
-            from scripts.sector_rotation_scanner import execute_sector_rotation_scanner
-            execute_sector_rotation_scanner(trade_date, output_dir)
-        except Exception as scan_err:
-            print(f"[!] Warning: Could not execute sector rotation scanner: {scan_err}")
-
         elapsed = time.time() - t_start
         print("=" * 70)
-        print(f"[OK] PIPELINE EXECUTION COMPLETED IN {elapsed:.2f} SECONDS (< 30s target)!")
+        print(f"[OK] STREAMLINED PIPELINE EXECUTION COMPLETED IN {elapsed:.2f} SECONDS (< 15s target)!")
         print("=" * 70)
 
     except Exception as e:

@@ -37,7 +37,7 @@ jobs:
 
       - name: Verify Generated JSON Payloads
         run: |
-          for f in data/market_summary.json data/advance_decline_data.json data/nifty_view_data.json data/banknifty_view_data.json data/sector_rotation_matrix.json data/sector_rotation_data.json; do
+          for f in data/market_summary.json data/advance_decline_data.json data/nifty_view_data.json data/banknifty_view_data.json; do
             if [ ! -f "$f" ]; then
               echo "::error ::Required payload $f was not generated!"
               exit 1
