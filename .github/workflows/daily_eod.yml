@@ -2,33 +2,35 @@ name: Daily NSE EOD Auto Ingestion
 
 on:
   schedule:
-    - cron: '30 11 * * 1-5'  # Every Monday to Friday at 5:00 PM IST (11:30 AM UTC)
-  workflow_dispatch: {}           # Allows one-click manual run from GitHub Actions UI anytime
-
-permissions:
-  contents: write
+    - cron: '0 12 * * 1-5'
+    - cron: '30 12 * * 1-5'
+    - cron: '0 13 * * 1-5'
+  workflow_dispatch:
 
 jobs:
-  daily-eod:
+  build-and-push:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.10
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
-        run: pip install pandas requests numpy
+      - name: Install Dependencies
+        run: pip install pandas requests
 
-      - name: Execute pipeline
+      - name: Execute Ultra-Fast EOD Pipeline
         run: python eod_pipeline.py
 
-      - name: Check for data changes and auto-commit
+      - name: Commit & Push Daily EOD Data
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add data/
-          git diff --staged --quiet || (git commit -m "chore(data): auto-update daily NSE EOD data [skip ci]" && git push origin main)
+          git diff --quiet && git diff --staged --quiet || (git commit -m 'auto: daily EOD update [skip ci]' && git push)
