@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-21T11:49:03.399731+00:00",
+    "generated_at": "2026-09-21T17:56:36.620250+00:00",
     "market_date": "21-Sep-2026",
     "index_name": "NIFTY 50",
     "current_price": 23414.3,
@@ -9,7 +9,7 @@
     "low": 23314.8,
     "points_change": 67.9,
     "change_pct": 0.29,
-    "pe": 19.78,
+    "pe": 19.79,
     "pb": 2.83,
     "div_yield": 1.21,
     "status": "FINALIZED"
