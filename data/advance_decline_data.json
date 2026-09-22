@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-22T17:07:12.687170+00:00",
+    "generated_at": "2026-09-22T17:32:41.081159+00:00",
     "market_date": "22-Sep-2026",
     "market_date_iso": "2026-09-22",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -6533,6 +6533,26 @@
       ]
     },
     {
+      "symbol": "BALRAMCHIN",
+      "name": "Balrampur Chini Mills Ltd.",
+      "sector": "fmcg",
+      "price": 661.05,
+      "change": -0.39,
+      "volume": "1.3M",
+      "vol_raw": 1293003,
+      "volMul": 1.25,
+      "high": 668.4,
+      "low": 651.3,
+      "high52": 768.66,
+      "low52": 488.48,
+      "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 85.34,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "BOSCHLTD",
       "name": "Bosch Ltd.",
       "sector": "auto",
@@ -6552,26 +6572,6 @@
         "nifty100",
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "BALRAMCHIN",
-      "name": "Balrampur Chini Mills Ltd.",
-      "sector": "fmcg",
-      "price": 661.05,
-      "change": -0.39,
-      "volume": "1.3M",
-      "vol_raw": 1293003,
-      "volMul": 1.25,
-      "high": 668.4,
-      "low": 651.3,
-      "high52": 768.66,
-      "low52": 488.48,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 85.34,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -8639,26 +8639,6 @@
       ]
     },
     {
-      "symbol": "HOMEFIRST",
-      "name": "Home First Finance Company India Ltd.",
-      "sector": "banking",
-      "price": 1212.5,
-      "change": -3.59,
-      "volume": "308.9K",
-      "vol_raw": 308917,
-      "volMul": 1.25,
-      "high": 1255.0,
-      "low": 1190.0,
-      "high52": 1443.25,
-      "low52": 892.5,
-      "pe": 18.5,
-      "delivery": "50.0%",
-      "turnover_cr": 37.47,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "COLPAL",
       "name": "Colgate Palmolive (India) Ltd.",
       "sector": "fmcg",
@@ -8677,6 +8657,26 @@
       "universes": [
         "nifty500",
         "fno"
+      ]
+    },
+    {
+      "symbol": "HOMEFIRST",
+      "name": "Home First Finance Company India Ltd.",
+      "sector": "banking",
+      "price": 1212.5,
+      "change": -3.59,
+      "volume": "308.9K",
+      "vol_raw": 308917,
+      "volMul": 1.25,
+      "high": 1255.0,
+      "low": 1190.0,
+      "high52": 1443.25,
+      "low52": 892.5,
+      "pe": 18.5,
+      "delivery": "50.0%",
+      "turnover_cr": 37.47,
+      "universes": [
+        "nifty500"
       ]
     },
     {
@@ -10211,26 +10211,6 @@
       ]
     },
     {
-      "symbol": "MSUMI",
-      "name": "Motherson Sumi Wiring India Ltd.",
-      "sector": "auto",
-      "price": 35.15,
-      "change": -1.26,
-      "volume": "5.6M",
-      "vol_raw": 5632984,
-      "volMul": 1.25,
-      "high": 35.74,
-      "low": 35.1,
-      "high52": 41.1,
-      "low52": 26.33,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 19.9,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "MRF",
       "name": "MRF Ltd.",
       "sector": "auto",
@@ -10243,6 +10223,26 @@
       "low": 124635.0,
       "high52": 144618.25,
       "low52": 93476.25,
+      "pe": 27.4,
+      "delivery": "50.0%",
+      "turnover_cr": 19.9,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "MSUMI",
+      "name": "Motherson Sumi Wiring India Ltd.",
+      "sector": "auto",
+      "price": 35.15,
+      "change": -1.26,
+      "volume": "5.6M",
+      "vol_raw": 5632984,
+      "volMul": 1.25,
+      "high": 35.74,
+      "low": 35.1,
+      "high52": 41.1,
+      "low52": 26.33,
       "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 19.9,
@@ -10573,26 +10573,6 @@
       ]
     },
     {
-      "symbol": "SCHNEIDER",
-      "name": "Schneider Electric Infrastructure Ltd.",
-      "sector": "infra",
-      "price": 1214.2,
-      "change": -1.7,
-      "volume": "136.9K",
-      "vol_raw": 136911,
-      "volMul": 1.25,
-      "high": 1254.1,
-      "low": 1210.0,
-      "high52": 1442.21,
-      "low52": 907.5,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.78,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "HUDCO",
       "name": "Housing & Urban Development Corporation Ltd.",
       "sector": "banking",
@@ -10606,6 +10586,26 @@
       "high52": 200.66,
       "low52": 128.99,
       "pe": 18.5,
+      "delivery": "50.0%",
+      "turnover_cr": 16.78,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "SCHNEIDER",
+      "name": "Schneider Electric Infrastructure Ltd.",
+      "sector": "infra",
+      "price": 1214.2,
+      "change": -1.7,
+      "volume": "136.9K",
+      "vol_raw": 136911,
+      "volMul": 1.25,
+      "high": 1254.1,
+      "low": 1210.0,
+      "high52": 1442.21,
+      "low52": 907.5,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 16.78,
       "universes": [
@@ -10653,26 +10653,6 @@
       ]
     },
     {
-      "symbol": "SOBHA",
-      "name": "Sobha Ltd.",
-      "sector": "realty",
-      "price": 1230.9,
-      "change": 1.39,
-      "volume": "133.7K",
-      "vol_raw": 133744,
-      "volMul": 1.25,
-      "high": 1260.0,
-      "low": 1217.9,
-      "high52": 1449.0,
-      "low52": 913.42,
-      "pe": 42.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.55,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AADHARHFC",
       "name": "Aadhar Housing Finance Ltd.",
       "sector": "banking",
@@ -10686,6 +10666,26 @@
       "high52": 539.52,
       "low52": 340.09,
       "pe": 18.5,
+      "delivery": "50.0%",
+      "turnover_cr": 16.55,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "SOBHA",
+      "name": "Sobha Ltd.",
+      "sector": "realty",
+      "price": 1230.9,
+      "change": 1.39,
+      "volume": "133.7K",
+      "vol_raw": 133744,
+      "volMul": 1.25,
+      "high": 1260.0,
+      "low": 1217.9,
+      "high52": 1449.0,
+      "low52": 913.42,
+      "pe": 42.0,
       "delivery": "50.0%",
       "turnover_cr": 16.55,
       "universes": [
@@ -11293,26 +11293,6 @@
       ]
     },
     {
-      "symbol": "TIMKEN",
-      "name": "Timken India Ltd.",
-      "sector": "infra",
-      "price": 3178.5,
-      "change": 1.33,
-      "volume": "38.1K",
-      "vol_raw": 38073,
-      "volMul": 1.25,
-      "high": 3194.9,
-      "low": 3115.0,
-      "high52": 3674.14,
-      "low52": 2336.25,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 12.03,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "BIKAJI",
       "name": "Bikaji Foods International Ltd.",
       "sector": "fmcg",
@@ -11326,6 +11306,26 @@
       "high52": 645.72,
       "low52": 414.0,
       "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 12.03,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "TIMKEN",
+      "name": "Timken India Ltd.",
+      "sector": "infra",
+      "price": 3178.5,
+      "change": 1.33,
+      "volume": "38.1K",
+      "vol_raw": 38073,
+      "volMul": 1.25,
+      "high": 3194.9,
+      "low": 3115.0,
+      "high52": 3674.14,
+      "low52": 2336.25,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 12.03,
       "universes": [
@@ -11513,26 +11513,6 @@
       ]
     },
     {
-      "symbol": "SPLPETRO",
-      "name": "Supreme Petrochem Ltd.",
-      "sector": "infra",
-      "price": 864.75,
-      "change": -0.1,
-      "volume": "126.0K",
-      "vol_raw": 126025,
-      "volMul": 1.25,
-      "high": 871.0,
-      "low": 852.35,
-      "high52": 1001.65,
-      "low52": 639.26,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 10.9,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "VTL",
       "name": "Vardhman Textiles Ltd.",
       "sector": "infra",
@@ -11545,6 +11525,26 @@
       "low": 549.05,
       "high52": 643.83,
       "low52": 411.79,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 10.9,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "SPLPETRO",
+      "name": "Supreme Petrochem Ltd.",
+      "sector": "infra",
+      "price": 864.75,
+      "change": -0.1,
+      "volume": "126.0K",
+      "vol_raw": 126025,
+      "volMul": 1.25,
+      "high": 871.0,
+      "low": 852.35,
+      "high52": 1001.65,
+      "low52": 639.26,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 10.9,
@@ -11733,26 +11733,6 @@
       ]
     },
     {
-      "symbol": "NSLNISP",
-      "name": "NMDC Steel Ltd.",
-      "sector": "metals",
-      "price": 42.51,
-      "change": 0.16,
-      "volume": "2.2M",
-      "vol_raw": 2214252,
-      "volMul": 1.25,
-      "high": 43.08,
-      "low": 42.4,
-      "high52": 49.54,
-      "low52": 31.8,
-      "pe": 18.0,
-      "delivery": "50.0%",
-      "turnover_cr": 9.44,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ELECON",
       "name": "Elecon Engineering Co. Ltd.",
       "sector": "infra",
@@ -11766,6 +11746,26 @@
       "high52": 488.69,
       "low52": 310.31,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 9.44,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "NSLNISP",
+      "name": "NMDC Steel Ltd.",
+      "sector": "metals",
+      "price": 42.51,
+      "change": 0.16,
+      "volume": "2.2M",
+      "vol_raw": 2214252,
+      "volMul": 1.25,
+      "high": 43.08,
+      "low": 42.4,
+      "high52": 49.54,
+      "low52": 31.8,
+      "pe": 18.0,
       "delivery": "50.0%",
       "turnover_cr": 9.44,
       "universes": [
