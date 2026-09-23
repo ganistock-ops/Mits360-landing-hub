@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-23T17:20:09.121532+00:00",
+    "generated_at": "2026-09-23T17:44:42.049600+00:00",
     "market_date": "23-Sep-2026",
     "market_date_iso": "2026-09-23",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -7753,27 +7753,6 @@
       ]
     },
     {
-      "symbol": "TATAELXSI",
-      "name": "Tata Elxsi Ltd.",
-      "sector": "it",
-      "price": 3212.0,
-      "change": -0.25,
-      "volume": "159.9K",
-      "vol_raw": 159930,
-      "volMul": 1.25,
-      "high": 3253.0,
-      "low": 3210.0,
-      "high52": 3740.95,
-      "low52": 2407.5,
-      "pe": 29.2,
-      "delivery": "50.0%",
-      "turnover_cr": 51.63,
-      "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "SIEMENS",
       "name": "Siemens Ltd.",
       "sector": "infra",
@@ -7791,6 +7770,27 @@
       "turnover_cr": 51.63,
       "universes": [
         "nifty100",
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "TATAELXSI",
+      "name": "Tata Elxsi Ltd.",
+      "sector": "it",
+      "price": 3212.0,
+      "change": -0.25,
+      "volume": "159.9K",
+      "vol_raw": 159930,
+      "volMul": 1.25,
+      "high": 3253.0,
+      "low": 3210.0,
+      "high52": 3740.95,
+      "low52": 2407.5,
+      "pe": 29.2,
+      "delivery": "50.0%",
+      "turnover_cr": 51.63,
+      "universes": [
         "nifty500",
         "fno"
       ]
@@ -10469,26 +10469,6 @@
       ]
     },
     {
-      "symbol": "IGL",
-      "name": "Indraprastha Gas Ltd.",
-      "sector": "infra",
-      "price": 147.09,
-      "change": 0.28,
-      "volume": "1.2M",
-      "vol_raw": 1211876,
-      "volMul": 1.25,
-      "high": 148.65,
-      "low": 146.23,
-      "high52": 170.95,
-      "low52": 109.67,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 17.87,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "TIMKEN",
       "name": "Timken India Ltd.",
       "sector": "infra",
@@ -10501,6 +10481,26 @@
       "low": 3133.6,
       "high52": 3793.85,
       "low52": 2350.2,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 17.87,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "IGL",
+      "name": "Indraprastha Gas Ltd.",
+      "sector": "infra",
+      "price": 147.09,
+      "change": 0.28,
+      "volume": "1.2M",
+      "vol_raw": 1211876,
+      "volMul": 1.25,
+      "high": 148.65,
+      "low": 146.23,
+      "high52": 170.95,
+      "low52": 109.67,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 17.87,
