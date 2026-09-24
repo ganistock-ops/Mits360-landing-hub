@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-24T16:37:39.036116+00:00",
+    "generated_at": "2026-09-24T17:25:15.973964+00:00",
     "market_date": "24-Sep-2026",
     "market_date_iso": "2026-09-24",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -9308,27 +9308,6 @@
       ]
     },
     {
-      "symbol": "PIIND",
-      "name": "PI Industries Ltd.",
-      "sector": "infra",
-      "price": 2393.5,
-      "change": 0.31,
-      "volume": "115.6K",
-      "vol_raw": 115568,
-      "volMul": 1.25,
-      "high": 2410.0,
-      "low": 2365.3,
-      "high52": 2771.5,
-      "low52": 1773.98,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 27.6,
-      "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "IREDA",
       "name": "Indian Renewable Energy Development Agency Ltd.",
       "sector": "banking",
@@ -9342,6 +9321,27 @@
       "high52": 127.19,
       "low52": 81.8,
       "pe": 18.5,
+      "delivery": "50.0%",
+      "turnover_cr": 27.6,
+      "universes": [
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "PIIND",
+      "name": "PI Industries Ltd.",
+      "sector": "infra",
+      "price": 2393.5,
+      "change": 0.31,
+      "volume": "115.6K",
+      "vol_raw": 115568,
+      "volMul": 1.25,
+      "high": 2410.0,
+      "low": 2365.3,
+      "high52": 2771.5,
+      "low52": 1773.98,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 27.6,
       "universes": [
@@ -9550,26 +9550,6 @@
       ]
     },
     {
-      "symbol": "ARE&M",
-      "name": "Amara Raja Energy & Mobility Ltd.",
-      "sector": "auto",
-      "price": 795.4,
-      "change": -2.15,
-      "volume": "302.6K",
-      "vol_raw": 302626,
-      "volMul": 1.25,
-      "high": 809.05,
-      "low": 793.0,
-      "high52": 930.41,
-      "low52": 594.75,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 24.21,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "PTCIL",
       "name": "PTC Industries Ltd.",
       "sector": "infra",
@@ -9583,6 +9563,26 @@
       "high52": 25731.25,
       "low52": 16222.5,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 24.21,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ARE&M",
+      "name": "Amara Raja Energy & Mobility Ltd.",
+      "sector": "auto",
+      "price": 795.4,
+      "change": -2.15,
+      "volume": "302.6K",
+      "vol_raw": 302626,
+      "volMul": 1.25,
+      "high": 809.05,
+      "low": 793.0,
+      "high52": 930.41,
+      "low52": 594.75,
+      "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 24.21,
       "universes": [
@@ -10794,26 +10794,6 @@
       ]
     },
     {
-      "symbol": "J&KBANK",
-      "name": "Jammu & Kashmir Bank Ltd.",
-      "sector": "banking",
-      "price": 147.07,
-      "change": -1.46,
-      "volume": "897.5K",
-      "vol_raw": 897539,
-      "volMul": 1.25,
-      "high": 149.0,
-      "low": 146.7,
-      "high52": 171.35,
-      "low52": 110.02,
-      "pe": 18.5,
-      "delivery": "50.0%",
-      "turnover_cr": 13.27,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "DEVYANI",
       "name": "Devyani International Ltd.",
       "sector": "infra",
@@ -10827,6 +10807,26 @@
       "high52": 160.22,
       "low52": 101.86,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 13.27,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "J&KBANK",
+      "name": "Jammu & Kashmir Bank Ltd.",
+      "sector": "banking",
+      "price": 147.07,
+      "change": -1.46,
+      "volume": "897.5K",
+      "vol_raw": 897539,
+      "volMul": 1.25,
+      "high": 149.0,
+      "low": 146.7,
+      "high52": 171.35,
+      "low52": 110.02,
+      "pe": 18.5,
       "delivery": "50.0%",
       "turnover_cr": 13.27,
       "universes": [
@@ -10914,26 +10914,6 @@
       ]
     },
     {
-      "symbol": "MMTC",
-      "name": "MMTC Ltd.",
-      "sector": "infra",
-      "price": 57.97,
-      "change": -4.13,
-      "volume": "2.1M",
-      "vol_raw": 2102337,
-      "volMul": 1.25,
-      "high": 60.6,
-      "low": 57.45,
-      "high52": 69.69,
-      "low52": 43.09,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 12.35,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "FSL",
       "name": "Firstsource Solutions Ltd.",
       "sector": "infra",
@@ -10946,6 +10926,26 @@
       "low": 261.0,
       "high52": 308.14,
       "low52": 195.75,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 12.35,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "MMTC",
+      "name": "MMTC Ltd.",
+      "sector": "infra",
+      "price": 57.97,
+      "change": -4.13,
+      "volume": "2.1M",
+      "vol_raw": 2102337,
+      "volMul": 1.25,
+      "high": 60.6,
+      "low": 57.45,
+      "high52": 69.69,
+      "low52": 43.09,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 12.35,
@@ -12074,26 +12074,6 @@
       ]
     },
     {
-      "symbol": "UCOBANK",
-      "name": "UCO Bank",
-      "sector": "banking",
-      "price": 23.74,
-      "change": -1.25,
-      "volume": "2.4M",
-      "vol_raw": 2411463,
-      "volMul": 1.25,
-      "high": 23.99,
-      "low": 23.65,
-      "high52": 27.59,
-      "low52": 17.74,
-      "pe": 18.5,
-      "delivery": "50.0%",
-      "turnover_cr": 5.73,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "SOBHA",
       "name": "Sobha Ltd.",
       "sector": "realty",
@@ -12107,6 +12087,26 @@
       "high52": 1435.66,
       "low52": 916.35,
       "pe": 42.0,
+      "delivery": "50.0%",
+      "turnover_cr": 5.73,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "UCOBANK",
+      "name": "UCO Bank",
+      "sector": "banking",
+      "price": 23.74,
+      "change": -1.25,
+      "volume": "2.4M",
+      "vol_raw": 2411463,
+      "volMul": 1.25,
+      "high": 23.99,
+      "low": 23.65,
+      "high52": 27.59,
+      "low52": 17.74,
+      "pe": 18.5,
       "delivery": "50.0%",
       "turnover_cr": 5.73,
       "universes": [
@@ -12274,26 +12274,6 @@
       ]
     },
     {
-      "symbol": "GODREJIND",
-      "name": "Godrej Industries Ltd.",
-      "sector": "infra",
-      "price": 1099.0,
-      "change": -0.63,
-      "volume": "38.1K",
-      "vol_raw": 38073,
-      "volMul": 1.25,
-      "high": 1109.1,
-      "low": 1085.3,
-      "high52": 1275.46,
-      "low52": 813.97,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 4.19,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "BHARTIHEXA",
       "name": "Bharti Hexacom Ltd.",
       "sector": "infra",
@@ -12306,6 +12286,26 @@
       "low": 1496.8,
       "high52": 1747.88,
       "low52": 1122.6,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 4.19,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "GODREJIND",
+      "name": "Godrej Industries Ltd.",
+      "sector": "infra",
+      "price": 1099.0,
+      "change": -0.63,
+      "volume": "38.1K",
+      "vol_raw": 38073,
+      "volMul": 1.25,
+      "high": 1109.1,
+      "low": 1085.3,
+      "high52": 1275.46,
+      "low52": 813.97,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 4.19,
