@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-25T13:08:14.579912+00:00",
+    "generated_at": "2026-09-25T16:43:23.080106+00:00",
     "market_date": "25-Sep-2026",
     "market_date_iso": "2026-09-25",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -84,14 +84,14 @@
       "value": "24,307.55",
       "change": "+0.38%",
       "delta": "+91.35",
-      "adv": 68,
-      "dec": 31,
-      "unch": 1,
-      "total": 100,
-      "adr": 2.19,
-      "totalValueCr": "₹25,938 Cr",
-      "high52": 22,
-      "low52": 3
+      "adv": 0,
+      "dec": 0,
+      "unch": 0,
+      "total": 0,
+      "adr": 0.0,
+      "totalValueCr": "₹0 Cr",
+      "high52": 1,
+      "low52": 0
     },
     "nifty500": {
       "name": "NIFTY500",
@@ -142,14 +142,14 @@
       "value": "24,307.55",
       "change": "+0.38%",
       "delta": "+91.35",
-      "adv": 68,
-      "dec": 31,
-      "unch": 1,
-      "total": 100,
-      "adr": 2.19,
-      "totalValueCr": "₹25,938 Cr",
-      "high52": 22,
-      "low52": 3
+      "adv": 0,
+      "dec": 0,
+      "unch": 0,
+      "total": 0,
+      "adr": 0.0,
+      "totalValueCr": "₹0 Cr",
+      "high52": 1,
+      "low52": 0
     },
     "nifty500": {
       "name": "NIFTY500",
@@ -238,7 +238,6 @@
           "turnover_cr": 839.25,
           "universes": [
             "nifty50",
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -503,7 +502,6 @@
           "turnover_cr": 196.99,
           "universes": [
             "nifty50",
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -641,7 +639,6 @@
           "delivery": "50.0%",
           "turnover_cr": 326.9,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -663,7 +660,6 @@
           "delivery": "50.0%",
           "turnover_cr": 232.51,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -706,7 +702,6 @@
           "turnover_cr": 626.47,
           "universes": [
             "nifty50",
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -728,7 +723,6 @@
           "delivery": "50.0%",
           "turnover_cr": 169.65,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -793,7 +787,6 @@
           "turnover_cr": 660.68,
           "universes": [
             "nifty50",
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -869,7 +862,6 @@
           "delivery": "50.0%",
           "turnover_cr": 324.58,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -891,7 +883,6 @@
           "delivery": "50.0%",
           "turnover_cr": 125.17,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -914,7 +905,6 @@
           "turnover_cr": 167.62,
           "universes": [
             "nifty50",
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -936,7 +926,6 @@
           "delivery": "50.0%",
           "turnover_cr": 63.18,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -1134,7 +1123,6 @@
           "delivery": "50.0%",
           "turnover_cr": 49.06,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -1157,7 +1145,6 @@
           "turnover_cr": 166.6,
           "universes": [
             "nifty50",
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -1336,7 +1323,6 @@
           "delivery": "50.0%",
           "turnover_cr": 238.45,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -1378,7 +1364,6 @@
           "delivery": "50.0%",
           "turnover_cr": 191.9,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -1444,7 +1429,6 @@
           "turnover_cr": 194.18,
           "universes": [
             "nifty50",
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -1757,7 +1741,6 @@
           "delivery": "50.0%",
           "turnover_cr": 242.27,
           "universes": [
-            "nifty100",
             "nifty500",
             "fno"
           ]
@@ -2240,7 +2223,6 @@
       "turnover_cr": 1603.51,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2263,7 +2245,6 @@
       "turnover_cr": 1456.54,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2286,7 +2267,6 @@
       "turnover_cr": 1438.15,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2330,7 +2310,6 @@
       "turnover_cr": 1022.13,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2374,7 +2353,6 @@
       "turnover_cr": 854.16,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2397,7 +2375,6 @@
       "turnover_cr": 839.25,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2420,7 +2397,6 @@
       "turnover_cr": 819.38,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2504,7 +2480,6 @@
       "turnover_cr": 733.44,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2547,7 +2522,6 @@
       "turnover_cr": 692.7,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2570,7 +2544,6 @@
       "turnover_cr": 660.68,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2593,7 +2566,6 @@
       "turnover_cr": 626.47,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2657,7 +2629,6 @@
       "turnover_cr": 541.35,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2721,7 +2692,6 @@
       "delivery": "50.0%",
       "turnover_cr": 475.88,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2744,7 +2714,6 @@
       "turnover_cr": 475.18,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2850,7 +2819,6 @@
       "turnover_cr": 389.44,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2872,7 +2840,6 @@
       "delivery": "50.0%",
       "turnover_cr": 373.01,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2916,7 +2883,6 @@
       "turnover_cr": 368.74,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2939,7 +2905,6 @@
       "turnover_cr": 341.29,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2961,7 +2926,6 @@
       "delivery": "50.0%",
       "turnover_cr": 326.9,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -2983,7 +2947,6 @@
       "delivery": "50.0%",
       "turnover_cr": 324.58,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3066,7 +3029,6 @@
       "turnover_cr": 299.6,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3108,7 +3070,6 @@
       "delivery": "50.0%",
       "turnover_cr": 291.42,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3194,7 +3155,6 @@
       "turnover_cr": 282.0,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3216,7 +3176,6 @@
       "delivery": "50.0%",
       "turnover_cr": 276.64,
       "universes": [
-        "nifty100",
         "nifty500"
       ]
     },
@@ -3238,7 +3197,6 @@
       "turnover_cr": 268.35,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3384,7 +3342,6 @@
       "turnover_cr": 250.76,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3428,7 +3385,6 @@
       "turnover_cr": 246.08,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3450,7 +3406,6 @@
       "delivery": "50.0%",
       "turnover_cr": 242.27,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3473,7 +3428,6 @@
       "turnover_cr": 241.37,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3495,7 +3449,6 @@
       "delivery": "50.0%",
       "turnover_cr": 238.45,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3518,7 +3471,6 @@
       "turnover_cr": 238.33,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3540,7 +3492,6 @@
       "delivery": "50.0%",
       "turnover_cr": 236.94,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3562,7 +3513,6 @@
       "delivery": "50.0%",
       "turnover_cr": 232.51,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3584,7 +3534,6 @@
       "delivery": "50.0%",
       "turnover_cr": 232.28,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3628,7 +3577,6 @@
       "turnover_cr": 226.37,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3651,7 +3599,6 @@
       "turnover_cr": 212.28,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3694,7 +3641,6 @@
       "delivery": "50.0%",
       "turnover_cr": 204.16,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3717,7 +3663,6 @@
       "turnover_cr": 203.98,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3740,7 +3685,6 @@
       "turnover_cr": 201.18,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3783,7 +3727,6 @@
       "delivery": "50.0%",
       "turnover_cr": 197.83,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3806,7 +3749,6 @@
       "turnover_cr": 197.81,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3829,7 +3771,6 @@
       "turnover_cr": 196.99,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3852,7 +3793,6 @@
       "turnover_cr": 194.18,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3874,7 +3814,6 @@
       "delivery": "50.0%",
       "turnover_cr": 191.9,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -3938,7 +3877,6 @@
       "delivery": "50.0%",
       "turnover_cr": 184.09,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4002,7 +3940,6 @@
       "turnover_cr": 178.63,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4025,7 +3962,6 @@
       "turnover_cr": 177.91,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4068,7 +4004,6 @@
       "turnover_cr": 175.56,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4153,7 +4088,6 @@
       "delivery": "50.0%",
       "turnover_cr": 169.65,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4176,7 +4110,6 @@
       "turnover_cr": 167.62,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4199,7 +4132,6 @@
       "turnover_cr": 167.18,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4221,7 +4153,6 @@
       "delivery": "50.0%",
       "turnover_cr": 166.92,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4244,7 +4175,6 @@
       "turnover_cr": 166.6,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4309,7 +4239,6 @@
       "turnover_cr": 163.72,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4394,7 +4323,6 @@
       "turnover_cr": 160.12,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4438,7 +4366,6 @@
       "turnover_cr": 158.55,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4561,7 +4488,6 @@
       "delivery": "50.0%",
       "turnover_cr": 152.25,
       "universes": [
-        "nifty100",
         "nifty500"
       ]
     },
@@ -4645,7 +4571,6 @@
       "turnover_cr": 147.63,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4668,7 +4593,6 @@
       "turnover_cr": 145.21,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4753,7 +4677,6 @@
       "turnover_cr": 141.25,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4839,7 +4762,6 @@
       "turnover_cr": 137.08,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4943,7 +4865,6 @@
       "turnover_cr": 131.6,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5007,7 +4928,6 @@
       "turnover_cr": 126.37,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5029,7 +4949,6 @@
       "delivery": "50.0%",
       "turnover_cr": 125.17,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5051,7 +4970,6 @@
       "delivery": "50.0%",
       "turnover_cr": 122.32,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5073,7 +4991,6 @@
       "delivery": "50.0%",
       "turnover_cr": 120.98,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5096,7 +5013,6 @@
       "turnover_cr": 120.31,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5119,7 +5035,6 @@
       "turnover_cr": 119.48,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5183,7 +5098,6 @@
       "delivery": "50.0%",
       "turnover_cr": 116.14,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5246,7 +5160,6 @@
       "delivery": "50.0%",
       "turnover_cr": 113.33,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5330,7 +5243,6 @@
       "delivery": "50.0%",
       "turnover_cr": 111.55,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5478,7 +5390,6 @@
       "delivery": "50.0%",
       "turnover_cr": 105.69,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5500,7 +5411,6 @@
       "delivery": "50.0%",
       "turnover_cr": 104.47,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5523,7 +5433,6 @@
       "turnover_cr": 103.72,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5627,7 +5536,6 @@
       "delivery": "50.0%",
       "turnover_cr": 100.18,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5752,7 +5660,6 @@
       "delivery": "50.0%",
       "turnover_cr": 94.84,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5774,7 +5681,6 @@
       "delivery": "50.0%",
       "turnover_cr": 94.25,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5796,7 +5702,6 @@
       "delivery": "50.0%",
       "turnover_cr": 94.18,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5838,7 +5743,6 @@
       "delivery": "50.0%",
       "turnover_cr": 93.71,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -5941,7 +5845,6 @@
       "delivery": "50.0%",
       "turnover_cr": 90.71,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -6047,7 +5950,6 @@
       "delivery": "50.0%",
       "turnover_cr": 88.29,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -6090,7 +5992,6 @@
       "turnover_cr": 87.11,
       "universes": [
         "nifty50",
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -6153,7 +6054,6 @@
       "delivery": "50.0%",
       "turnover_cr": 86.38,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -6196,7 +6096,6 @@
       "delivery": "50.0%",
       "turnover_cr": 85.37,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -6443,7 +6342,6 @@
       "delivery": "50.0%",
       "turnover_cr": 75.87,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -6873,7 +6771,6 @@
       "delivery": "50.0%",
       "turnover_cr": 63.18,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -7016,7 +6913,6 @@
       "delivery": "50.0%",
       "turnover_cr": 58.63,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -7038,7 +6934,6 @@
       "delivery": "50.0%",
       "turnover_cr": 58.25,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -7122,7 +7017,6 @@
       "delivery": "50.0%",
       "turnover_cr": 57.11,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -7266,7 +7160,6 @@
       "delivery": "50.0%",
       "turnover_cr": 52.9,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -7352,6 +7245,28 @@
       ]
     },
     {
+      "symbol": "NESTLEIND",
+      "name": "Nestle India Ltd.",
+      "sector": "fmcg",
+      "price": 1362.6,
+      "change": 0.86,
+      "volume": "382.9K",
+      "vol_raw": 382857,
+      "volMul": 1.25,
+      "high": 1362.6,
+      "low": 1348.3,
+      "high52": 1566.99,
+      "low52": 1011.22,
+      "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 51.92,
+      "universes": [
+        "nifty50",
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
       "symbol": "ICICIPRULI",
       "name": "ICICI Prudential Life Insurance Company Ltd.",
       "sector": "banking",
@@ -7373,29 +7288,6 @@
       ]
     },
     {
-      "symbol": "NESTLEIND",
-      "name": "Nestle India Ltd.",
-      "sector": "fmcg",
-      "price": 1362.6,
-      "change": 0.86,
-      "volume": "382.9K",
-      "vol_raw": 382857,
-      "volMul": 1.25,
-      "high": 1362.6,
-      "low": 1348.3,
-      "high52": 1566.99,
-      "low52": 1011.22,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 51.92,
-      "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "UNITDSPR",
       "name": "United Spirits Ltd.",
       "sector": "fmcg",
@@ -7412,7 +7304,6 @@
       "delivery": "50.0%",
       "turnover_cr": 51.7,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -7494,7 +7385,6 @@
       "delivery": "50.0%",
       "turnover_cr": 50.04,
       "universes": [
-        "nifty100",
         "nifty500"
       ]
     },
@@ -7578,7 +7468,6 @@
       "delivery": "50.0%",
       "turnover_cr": 49.06,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -7783,7 +7672,6 @@
       "delivery": "50.0%",
       "turnover_cr": 45.38,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -7805,7 +7693,6 @@
       "delivery": "50.0%",
       "turnover_cr": 45.27,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -8255,7 +8142,6 @@
       "delivery": "50.0%",
       "turnover_cr": 37.4,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -8642,7 +8528,6 @@
       "delivery": "50.0%",
       "turnover_cr": 30.98,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -9087,7 +8972,6 @@
       "delivery": "50.0%",
       "turnover_cr": 25.27,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -9516,26 +9400,6 @@
       ]
     },
     {
-      "symbol": "TITAGARH",
-      "name": "Titagarh Rail Systems Ltd.",
-      "sector": "infra",
-      "price": 822.6,
-      "change": 0.41,
-      "volume": "277.0K",
-      "vol_raw": 277001,
-      "volMul": 1.25,
-      "high": 825.0,
-      "low": 811.15,
-      "high52": 948.75,
-      "low52": 608.36,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 22.63,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ACE",
       "name": "Action Construction Equipment Ltd.",
       "sector": "infra",
@@ -9548,6 +9412,26 @@
       "low": 1212.1,
       "high52": 1437.5,
       "low52": 909.08,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 22.63,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "TITAGARH",
+      "name": "Titagarh Rail Systems Ltd.",
+      "sector": "infra",
+      "price": 822.6,
+      "change": 0.41,
+      "volume": "277.0K",
+      "vol_raw": 277001,
+      "volMul": 1.25,
+      "high": 825.0,
+      "low": 811.15,
+      "high52": 948.75,
+      "low52": 608.36,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 22.63,
@@ -9572,7 +9456,6 @@
       "delivery": "50.0%",
       "turnover_cr": 22.58,
       "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -10240,26 +10123,6 @@
       ]
     },
     {
-      "symbol": "JUBLPHARMA",
-      "name": "Jubilant Pharmova Ltd.",
-      "sector": "pharma",
-      "price": 1071.95,
-      "change": 0.76,
-      "volume": "156.3K",
-      "vol_raw": 156277,
-      "volMul": 1.25,
-      "high": 1078.0,
-      "low": 1049.2,
-      "high52": 1239.7,
-      "low52": 786.9,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.71,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "FLUOROCHEM",
       "name": "Gujarat Fluorochemicals Ltd.",
       "sector": "infra",
@@ -10273,6 +10136,26 @@
       "high52": 5182.93,
       "low52": 3324.75,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 16.71,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "JUBLPHARMA",
+      "name": "Jubilant Pharmova Ltd.",
+      "sector": "pharma",
+      "price": 1071.95,
+      "change": 0.76,
+      "volume": "156.3K",
+      "vol_raw": 156277,
+      "volMul": 1.25,
+      "high": 1078.0,
+      "low": 1049.2,
+      "high52": 1239.7,
+      "low52": 786.9,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 16.71,
       "universes": [
@@ -11862,26 +11745,6 @@
       ]
     },
     {
-      "symbol": "CHALET",
-      "name": "Chalet Hotels Ltd.",
-      "sector": "infra",
-      "price": 881.35,
-      "change": -1.51,
-      "volume": "71.1K",
-      "vol_raw": 71076,
-      "volMul": 1.25,
-      "high": 896.1,
-      "low": 876.1,
-      "high52": 1030.51,
-      "low52": 657.08,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 6.32,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "PFIZER",
       "name": "Pfizer Ltd.",
       "sector": "pharma",
@@ -11895,6 +11758,26 @@
       "high52": 4675.9,
       "low52": 2991.0,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 6.32,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CHALET",
+      "name": "Chalet Hotels Ltd.",
+      "sector": "infra",
+      "price": 881.35,
+      "change": -1.51,
+      "volume": "71.1K",
+      "vol_raw": 71076,
+      "volMul": 1.25,
+      "high": 896.1,
+      "low": 876.1,
+      "high52": 1030.51,
+      "low52": 657.08,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 6.32,
       "universes": [
