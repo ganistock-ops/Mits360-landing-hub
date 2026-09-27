@@ -557,59 +557,315 @@ html, body {
 }
 
 /* ==========================================================================
-   Section 3: Moving Average Suite Specifics
+   Section 3: Daily Range & Session Structure Dynamics Specifics
    ========================================================================== */
-#mits360-nifty-view-root .signal-tag {
+#mits360-nifty-view-root .nv-range-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+#mits360-nifty-view-root .nv-metric-tile {
+  background: rgba(14, 20, 30, 0.75);
+  border: 1px solid var(--nv-border-subtle);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  position: relative;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(12px);
+}
+
+#mits360-nifty-view-root .nv-metric-tile:hover {
+  border-color: rgba(0, 242, 254, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+#mits360-nifty-view-root .nv-tile-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#mits360-nifty-view-root .nv-tile-tag {
   font-family: var(--nv-font-mono);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   padding: 3px 8px;
   border-radius: 5px;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+  text-transform: uppercase;
 }
 
-#mits360-nifty-view-root .bull-strong {
-  background: rgba(16, 185, 129, 0.2);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.4);
+#mits360-nifty-view-root .tag-cyan {
+  background: rgba(0, 242, 254, 0.12);
+  color: var(--nv-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.3);
 }
 
-#mits360-nifty-view-root .bull-mild {
-  background: rgba(16, 185, 129, 0.1);
-  color: #6ee7b7;
-  border: 1px solid rgba(16, 185, 129, 0.25);
+#mits360-nifty-view-root .tag-blue {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
 }
 
-#mits360-nifty-view-root .neutral {
+#mits360-nifty-view-root .tag-purple {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+#mits360-nifty-view-root .tag-amber {
   background: rgba(245, 158, 11, 0.12);
   color: #fbbf24;
   border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
-#mits360-nifty-view-root .bear-mild {
-  background: rgba(244, 63, 94, 0.12);
-  color: #fda4af;
-  border: 1px solid rgba(244, 63, 94, 0.3);
+#mits360-nifty-view-root .nv-tile-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--nv-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  text-align: right;
 }
 
-#mits360-nifty-view-root .bear-strong {
-  background: rgba(244, 63, 94, 0.2);
+#mits360-nifty-view-root .nv-tile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#mits360-nifty-view-root .nv-tile-val {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+#mits360-nifty-view-root .nv-tile-subval {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--nv-text-secondary);
+}
+
+#mits360-nifty-view-root .nv-tile-footer {
+  font-size: 11.5px;
+  color: var(--nv-text-muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 10px;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* Badges */
+#mits360-nifty-view-root .nv-pill-badge {
+  font-family: var(--nv-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.3px;
+  width: fit-content;
+}
+
+#mits360-nifty-view-root .nv-pill-bull {
+  background: rgba(16, 185, 129, 0.16);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.12);
+}
+
+#mits360-nifty-view-root .nv-pill-bear {
+  background: rgba(244, 63, 94, 0.16);
   color: #fb7185;
   border: 1px solid rgba(244, 63, 94, 0.4);
+  box-shadow: 0 0 10px rgba(244, 63, 94, 0.12);
 }
 
-#mits360-nifty-view-root .ma-analysis-text {
-  font-family: var(--nv-font-body);
-  font-size: 12.5px;
-  color: var(--nv-text-secondary);
-  white-space: normal;
-  min-width: 280px;
-  max-width: 360px;
-  line-height: 1.45;
+#mits360-nifty-view-root .nv-pill-neutral {
+  background: rgba(148, 163, 184, 0.12);
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Progress Track & Expansion Meter */
+#mits360-nifty-view-root .nv-progress-track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+#mits360-nifty-view-root .nv-fill-cyan {
+  height: 100%;
+  background: linear-gradient(90deg, #00f2fe, #38bdf8);
+  border-radius: 4px;
+}
+
+/* 3-Zone Range Anatomy Track */
+#mits360-nifty-view-root .nv-zone-meter-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+#mits360-nifty-view-root .nv-zone-track {
+  height: 8px;
+  display: flex;
+  border-radius: 4px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#mits360-nifty-view-root .nv-zone {
+  height: 100%;
+}
+
+#mits360-nifty-view-root .nv-zone-bear {
+  width: 30%;
+  background: rgba(244, 63, 94, 0.35);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#mits360-nifty-view-root .nv-zone-neutral {
+  width: 40%;
+  background: rgba(148, 163, 184, 0.2);
+}
+
+#mits360-nifty-view-root .nv-zone-bull {
+  width: 30%;
+  background: rgba(16, 185, 129, 0.35);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#mits360-nifty-view-root .nv-zone-thumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid var(--nv-cyan);
+  box-shadow: 0 0 10px var(--nv-cyan);
+  transition: left 0.3s ease;
+}
+
+#mits360-nifty-view-root .nv-zone-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--nv-text-muted);
+}
+
+/* Wick Analysis Breakdown & Stacked Candlestick Bar */
+#mits360-nifty-view-root .nv-wick-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#mits360-nifty-view-root .nv-wick-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+#mits360-nifty-view-root .tag-wick-upper {
+  color: #fda4af;
+}
+
+#mits360-nifty-view-root .tag-wick-lower {
+  color: #6ee7b7;
+}
+
+#mits360-nifty-view-root .nv-wick-data {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#mits360-nifty-view-root .nv-wick-stacked-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+#mits360-nifty-view-root .nv-wick-stacked-bar {
+  height: 10px;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#mits360-nifty-view-root .nv-bar-lower {
+  background: #10b981;
+  transition: width 0.3s ease;
+}
+
+#mits360-nifty-view-root .nv-bar-body {
+  background: #00f2fe;
+  transition: width 0.3s ease;
+}
+
+#mits360-nifty-view-root .nv-bar-upper {
+  background: #f43f5e;
+  transition: width 0.3s ease;
+}
+
+#mits360-nifty-view-root .nv-wick-legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--nv-text-muted);
+}
+
+#mits360-nifty-view-root .nv-wick-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#mits360-nifty-view-root .dot-lower {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  display: inline-block;
+}
+
+#mits360-nifty-view-root .dot-body {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00f2fe;
+  display: inline-block;
+}
+
+#mits360-nifty-view-root .dot-upper {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f43f5e;
+  display: inline-block;
 }
 
 /* Mobile Scroll Indicator Pill */
@@ -640,6 +896,12 @@ html, body {
 #mits360-nifty-view-root .nv-footer-brand {
   color: var(--nv-cyan);
   font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  #mits360-nifty-view-root .nv-range-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ==========================================================================
@@ -686,6 +948,19 @@ html, body {
     font-size: 18px;
   }
 
+  #mits360-nifty-view-root .nv-range-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  #mits360-nifty-view-root .nv-metric-tile {
+    padding: 16px;
+  }
+
+  #mits360-nifty-view-root .nv-tile-val {
+    font-size: 22px;
+  }
+
   #mits360-nifty-view-root .nv-scroll-cue {
     display: flex;
   }
@@ -715,7 +990,7 @@ html, body {
         <div>
           <h1 class="nv-main-title">Nifty 50 <span>Technical Telemetry</span></h1>
           <p class="nv-card-desc" style="margin-top:4px;">
-            Highs &amp; Lows returns matrix, multi-model daily pivots, and moving average momentum suite.
+            Highs &amp; Lows returns matrix, multi-model daily pivots, and daily session structure dynamics.
           </p>
         </div>
 
@@ -980,49 +1255,131 @@ html, body {
     </section>
 
     <!-- ==================================================================
-         4. Section 3: Moving Average Suite (Interactive SMA & EMA Tabs)
+         4. Section 3: Daily Range & Session Structure Dynamics
          ================================================================== -->
-    <section class="nv-section-card" aria-label="Moving Average Suite">
+    <section class="nv-section-card" aria-label="Daily Range & Session Structure Dynamics">
       <div class="nv-card-header">
         <div class="nv-header-left">
           <h2 class="nv-card-title">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--nv-cyan);">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--nv-cyan);">
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+              <rect x="7" y="6" width="10" height="12" rx="2" fill="rgba(0,242,254,0.15)"></rect>
+              <line x1="3" y1="12" x2="7" y2="12"></line>
+              <line x1="17" y1="12" x2="21" y2="12"></line>
             </svg>
-            Moving Average Suite (Trend &amp; Momentum Spectrum)
+            Daily Range &amp; Session Structure Dynamics
           </h2>
           <p class="nv-card-desc">
-            Multi-timeframe dynamic trendline tracking with distance percentages and quantitative crossover signals.
+            Quantitative Intraday Volatility, Candle Range &amp; Close Location
           </p>
         </div>
 
-        <!-- Interactive SMA & EMA Toggle Tabs -->
-        <div class="nv-tab-group" role="tablist">
-          <button class="nv-tab-btn active" id="btnTabSma" data-mode="sma" role="tab" aria-selected="true">
-            Simple (SMA)
-          </button>
-          <button class="nv-tab-btn" id="btnTabEma" data-mode="ema" role="tab" aria-selected="false">
-            Exponential (EMA)
-          </button>
+        <div class="nv-badge-pill" style="font-size: 11px;">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>100% ZERO-HISTORY &bull; SINGLE-SESSION OHLC</span>
         </div>
       </div>
 
-      <div class="nv-table-scroll-wrap">
-        <table class="nv-table" id="m360MaTable">
-          <thead>
-            <tr>
-              <th class="sticky-col">Period</th>
-              <th>Value</th>
-              <th>Quantitative Signal</th>
-              <th>Crossover / Distance</th>
-              <th>Institutional Analysis Summary</th>
-            </tr>
-          </thead>
-          <tbody id="m360MaBody">
-            <!-- Dynamic Injected Rows -->
-          </tbody>
-        </table>
-      </div>
+      <!-- 4-Card Responsive Grid -->
+      <div class="nv-range-grid">
+
+        <!-- Card 1: Day Range Spread (High - Low) -->
+        <div class="nv-metric-tile">
+          <div class="nv-tile-head">
+            <span class="nv-tile-tag tag-cyan">EXPANSION</span>
+            <span class="nv-tile-label">Day Range Spread</span>
+          </div>
+          <div class="nv-tile-body">
+            <div class="nv-tile-val font-mono" id="m360RangeSpreadVal">₹216.70</div>
+            <div class="nv-tile-subval font-mono" id="m360RangeSpreadPct">0.93% Range</div>
+            <div class="nv-progress-track" title="Intraday Volatility Spread">
+              <div class="nv-fill-cyan" id="m360RangeSpreadBar" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="nv-tile-footer">Total Intraday Expansion</div>
+        </div>
+
+        <!-- Card 2: Close Location Within Range (%) -->
+        <div class="nv-metric-tile">
+          <div class="nv-tile-head">
+            <span class="nv-tile-tag tag-blue">CLOSE ANATOMY</span>
+            <span class="nv-tile-label">Close Location in Range</span>
+          </div>
+          <div class="nv-tile-body">
+            <div class="nv-tile-val font-mono" id="m360CloseLocVal">76.9%</div>
+            <!-- Dynamic Pill Badge -->
+            <div id="m360CloseLocBadge" class="nv-pill-badge nv-pill-bull">
+              Strong Bullish Close / Top 30% Range
+            </div>
+            <!-- Range Bar with 3 Zones and Marker Thumb -->
+            <div class="nv-zone-meter-wrap">
+              <div class="nv-zone-track">
+                <div class="nv-zone nv-zone-bear" title="Bottom 30% (Bearish)"></div>
+                <div class="nv-zone nv-zone-neutral" title="Mid 40% (Neutral)"></div>
+                <div class="nv-zone nv-zone-bull" title="Top 30% (Bullish)"></div>
+                <div class="nv-zone-thumb" id="m360CloseLocThumb" style="left: 76.9%;"></div>
+              </div>
+              <div class="nv-zone-labels font-mono">
+                <span>0% Low</span>
+                <span>50%</span>
+                <span>100% High</span>
+              </div>
+            </div>
+          </div>
+          <div class="nv-tile-footer">Formula: ((Close &minus; Low) / (High &minus; Low)) &times; 100</div>
+        </div>
+
+        <!-- Card 3: Open-to-Close Drift (Net Session Movement) -->
+        <div class="nv-metric-tile">
+          <div class="nv-tile-head">
+            <span class="nv-tile-tag tag-purple">SESSION DRIFT</span>
+            <span class="nv-tile-label">Open-to-Close Drift</span>
+          </div>
+          <div class="nv-tile-body">
+            <div class="nv-tile-val font-mono" id="m360DriftPoints">+127.80 pts</div>
+            <div class="nv-tile-subval font-mono" id="m360DriftPct">+0.55% from Open</div>
+            <div id="m360DriftBadge" class="nv-pill-badge nv-pill-bull">
+              ▲ Bullish Session Momentum
+            </div>
+          </div>
+          <div class="nv-tile-footer">Net Session Movement: Close &minus; Open</div>
+        </div>
+
+        <!-- Card 4: Tail / Rejection Analysis (Micro-Bar) -->
+        <div class="nv-metric-tile">
+          <div class="nv-tile-head">
+            <span class="nv-tile-tag tag-amber">ABSORPTION</span>
+            <span class="nv-tile-label">Tail / Rejection Analysis</span>
+          </div>
+          <div class="nv-tile-body">
+            <div class="nv-wick-stats font-mono">
+              <div class="nv-wick-row">
+                <span class="tag-wick-upper">Upper Wick:</span>
+                <span class="nv-wick-data" id="m360UpperWick">₹50.00 (23.1%)</span>
+              </div>
+              <div class="nv-wick-row">
+                <span class="tag-wick-lower">Lower Wick:</span>
+                <span class="nv-wick-data" id="m360LowerWick">₹38.90 (18.0%)</span>
+              </div>
+            </div>
+            <!-- Micro-bar stacked candlestick breakdown -->
+            <div class="nv-wick-stacked-wrap">
+              <div class="nv-wick-stacked-bar">
+                <div class="nv-bar-lower" id="m360BarLower" style="width: 18%;" title="Lower Wick (Demand)"></div>
+                <div class="nv-bar-body" id="m360BarBody" style="width: 59%;" title="Real Body (Session)"></div>
+                <div class="nv-bar-upper" id="m360BarUpper" style="width: 23%;" title="Upper Wick (Supply)"></div>
+              </div>
+              <div class="nv-wick-legend font-mono">
+                <span><i class="dot-lower"></i>Lower</span>
+                <span><i class="dot-body"></i>Body</span>
+                <span><i class="dot-upper"></i>Upper</span>
+              </div>
+            </div>
+          </div>
+          <div class="nv-tile-footer" id="m360AbsorptionText">Identifies top or bottom price absorption for the session.</div>
+        </div>
+
+      </div><!-- /.nv-range-grid -->
     </section>
 
     <!-- ==================================================================
@@ -1074,55 +1431,37 @@ html, body {
       { type: "Camarilla Equation", s4: 23278.92, s3: 23338.51, s2: 23358.37, s1: 23378.24, pivot: 23359.20, r1: 23417.96, r2: 23437.83, r3: 23457.69, r4: 23517.28 },
       { type: "Fibonacci Ratio", s4: 23008.58, s3: 23142.50, s2: 23225.28, s1: 23276.42, pivot: 23359.20, r1: 23441.98, r2: 23493.12, r3: 23575.90, r4: 23709.82 },
       { type: "Woodie's Model", s4: 22856.35, s3: 23073.05, s2: 23152.23, s1: 23289.75, pivot: 23368.92, r1: 23506.45, r2: 23585.62, r3: 23723.15, r4: 23939.85 }
-    ],
-    moving_averages: {
-      sma: [
-        { period: 5, period_label: "5 SMA", value: 23544.33, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-146.23 pts (-0.62%)", analysis: "Mild supply overhead. Index is trading marginally below the 5-period SMA." },
-        { period: 10, period_label: "10 SMA", value: 23754.34, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-356.24 pts (-1.50%)", analysis: "Persistent distribution. Price remains extended below the key institutional 10-period SMA." },
-        { period: 15, period_label: "15 SMA", value: 23904.75, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-506.65 pts (-2.12%)", analysis: "Short-term moving average resistance rejecting recent counter-trend pullback attempts." },
-        { period: 20, period_label: "20 SMA", value: 23978.80, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-580.70 pts (-2.42%)", analysis: "Price trading below the 20-day mean, signaling persistent monthly consolidation." },
-        { period: 50, period_label: "50 SMA", value: 24153.42, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-755.32 pts (-3.13%)", analysis: "Intermediate structural trendline acting as major overhead supply ceiling." },
-        { period: 100, period_label: "100 SMA", value: 23988.10, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-590.00 pts (-2.46%)", analysis: "Below the 100-day institutional accumulator mark. Expect range-bound absorption." },
-        { period: 200, period_label: "200 SMA", value: 24550.08, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-1,151.98 pts (-4.69%)", analysis: "Long-term institutional baseline. Watch for base formation around major historical demand." }
-      ],
-      ema: [
-        { period: 5, period_label: "5 EMA", value: 23543.35, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-145.25 pts (-0.62%)", analysis: "Immediate short-term momentum is subdued below the weighted 5-day EMA." },
-        { period: 10, period_label: "10 EMA", value: 23706.94, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-308.84 pts (-1.30%)", analysis: "Fast-reacting exponential average indicating active selling pressure on intraday rallies." },
-        { period: 15, period_label: "15 EMA", value: 23820.58, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-422.48 pts (-1.77%)", analysis: "Medium-short exponential barrier preventing continuation breakouts." },
-        { period: 20, period_label: "20 EMA", value: 23898.06, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-499.96 pts (-2.09%)", analysis: "Key dynamic swing benchmark. A sustained reclaim above 20 EMA is required for trend reversal." },
-        { period: 50, period_label: "50 EMA", value: 24039.49, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-641.39 pts (-2.67%)", analysis: "Medium-term exponential trend remains negative as institutional sellers dominate pullbacks." },
-        { period: 100, period_label: "100 EMA", value: 24121.29, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-723.19 pts (-3.00%)", analysis: "Quarterly institutional hedge band remains overhead." },
-        { period: 200, period_label: "200 EMA", value: 24309.49, signal: "Strong Bearish", signal_badge: "bear-strong", crossover: "-911.39 pts (-3.75%)", analysis: "Critical macro institutional threshold. Long-term risk posture is defensive." }
-      ]
-    }
+    ]
   };
 
   let activeData = DEFAULT_DATA;
-  let activeMaMode = 'sma';
 
   const $ = (id) => document.getElementById(id);
   const formatNum = (num, decimals = 2) => Number(num).toLocaleString('en-IN', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
 
   function renderHeader(meta) {
     if (!meta) return;
-    if ($('m360TradeDate')) $('m360TradeDate').textContent = `DATE: ${meta.market_date.toUpperCase()}`;
-    if ($('m360CurrentPrice')) $('m360CurrentPrice').textContent = formatNum(meta.current_price);
+    if ($('m360TradeDate')) $('m360TradeDate').textContent = `DATE: ${meta.market_date ? meta.market_date.toUpperCase() : 'N/A'}`;
+    if ($('m360CurrentPrice')) $('m360CurrentPrice').textContent = formatNum(meta.current_price !== undefined ? meta.current_price : meta.close);
     
-    const sign = meta.points_change >= 0 ? '+' : '';
+    const pointsChange = meta.points_change !== undefined ? meta.points_change : 0;
+    const changePct = meta.change_pct !== undefined ? meta.change_pct : 0;
+    const sign = pointsChange >= 0 ? '+' : '';
     const deltaEl = $('m360PriceDelta');
     if (deltaEl) {
-      deltaEl.textContent = `${sign}${formatNum(meta.points_change)} (${sign}${Number(meta.change_pct).toFixed(2)}%)`;
-      deltaEl.className = `nv-quote-delta ${meta.points_change >= 0 ? 'delta-pos' : 'delta-neg'}`;
+      deltaEl.textContent = `${sign}${formatNum(pointsChange)} (${sign}${Number(changePct).toFixed(2)}%)`;
+      deltaEl.className = `nv-quote-delta ${pointsChange >= 0 ? 'delta-pos' : 'delta-neg'}`;
     }
 
     if ($('m360DayLow')) $('m360DayLow').textContent = `₹${formatNum(meta.low)}`;
     if ($('m360DayHigh')) $('m360DayHigh').textContent = `₹${formatNum(meta.high)}`;
 
     // Calculate day range fill percentage
-    const dayRng = meta.high - meta.low;
+    const curPrice = Number(meta.current_price !== undefined ? meta.current_price : meta.close) || 0;
+    const dayRng = (meta.high || 0) - (meta.low || 0);
     let pct = 50;
     if (dayRng > 0) {
-      pct = Math.max(0, Math.min(100, ((meta.current_price - meta.low) / dayRng) * 100));
+      pct = Math.max(0, Math.min(100, ((curPrice - meta.low) / dayRng) * 100));
     }
     if ($('m360RangeFill')) $('m360RangeFill').style.width = `${pct}%`;
     if ($('m360RangeThumb')) $('m360RangeThumb').style.left = `${pct}%`;
@@ -1134,7 +1473,7 @@ html, body {
 
   function renderReturns(returnsList) {
     const tbody = $('m360ReturnsBody');
-    if (!tbody || !returnsList) return;
+    if (!tbody || !returnsList || !Array.isArray(returnsList)) return;
 
     tbody.innerHTML = returnsList.map(item => {
       const isPos = item.return_pct >= 0;
@@ -1155,7 +1494,7 @@ html, body {
 
   function renderPivots(pivotsList) {
     const tbody = $('m360PivotsBody');
-    if (!tbody || !pivotsList) return;
+    if (!tbody || !pivotsList || !Array.isArray(pivotsList)) return;
 
     tbody.innerHTML = pivotsList.map(item => {
       const typeLabel = item.type.includes('Standard') ? 'Standard (Classic)' : 
@@ -1179,52 +1518,113 @@ html, body {
     }).join('');
   }
 
-  function renderMovingAverages() {
-    const tbody = $('m360MaBody');
-    if (!tbody || !activeData.moving_averages) return;
+  // --- 100% Zero-History Daily Range & Session Structure Dynamics ---
+  function renderDailyRangeDynamics(meta) {
+    if (!meta) return;
 
-    const list = activeData.moving_averages[activeMaMode] || [];
-    tbody.innerHTML = list.map(item => {
-      return `
-        <tr>
-          <td class="sticky-col" style="font-weight:700;color:var(--nv-cyan);">${item.period_label || (item.period + ' ' + activeMaMode.toUpperCase())}</td>
-          <td>₹${formatNum(item.value)}</td>
-          <td><span class="signal-tag ${item.signal_badge || 'neutral'}">${item.signal}</span></td>
-          <td style="color:${item.diff_pts >= 0 ? '#6ee7b7' : '#fda4af'};">${item.crossover}</td>
-          <td class="ma-analysis-text">${item.analysis}</td>
-        </tr>
-      `;
-    }).join('');
-  }
+    const open = Number(meta.open) || 0;
+    const high = Number(meta.high) || 0;
+    const low = Number(meta.low) || 0;
+    const close = Number(meta.current_price !== undefined ? meta.current_price : (meta.close !== undefined ? meta.close : meta.cmp)) || 0;
 
-  function setupTabs() {
-    const btnSma = $('btnTabSma');
-    const btnEma = $('btnTabEma');
+    // Metric 1: Day Range Spread (High - Low)
+    const rangeSpread = Math.max(0, high - low);
+    const rangeSpreadPct = open > 0 ? ((rangeSpread / open) * 100) : 0;
 
-    if (btnSma) {
-      btnSma.addEventListener('click', () => {
-        activeMaMode = 'sma';
-        btnSma.classList.add('active');
-        btnSma.setAttribute('aria-selected', 'true');
-        if (btnEma) {
-          btnEma.classList.remove('active');
-          btnEma.setAttribute('aria-selected', 'false');
-        }
-        renderMovingAverages();
-      });
+    if ($('m360RangeSpreadVal')) $('m360RangeSpreadVal').textContent = `₹${formatNum(rangeSpread)}`;
+    if ($('m360RangeSpreadPct')) $('m360RangeSpreadPct').textContent = `${rangeSpreadPct.toFixed(2)}% of Open`;
+    if ($('m360RangeSpreadBar')) $('m360RangeSpreadBar').style.width = '100%';
+
+    // Metric 2: Close Location Within Range (%)
+    // Formula: ((Close - Low) / (High - Low)) * 100
+    let closeLocationPct = 50;
+    if (rangeSpread > 0) {
+      closeLocationPct = ((close - low) / rangeSpread) * 100;
+      closeLocationPct = Math.max(0, Math.min(100, closeLocationPct));
     }
 
-    if (btnEma) {
-      btnEma.addEventListener('click', () => {
-        activeMaMode = 'ema';
-        btnEma.classList.add('active');
-        btnEma.setAttribute('aria-selected', 'true');
-        if (btnSma) {
-          btnSma.classList.remove('active');
-          btnSma.setAttribute('aria-selected', 'false');
-        }
-        renderMovingAverages();
-      });
+    if ($('m360CloseLocVal')) $('m360CloseLocVal').textContent = `${closeLocationPct.toFixed(1)}%`;
+    if ($('m360CloseLocThumb')) $('m360CloseLocThumb').style.left = `${closeLocationPct.toFixed(1)}%`;
+
+    const closeBadgeEl = $('m360CloseLocBadge');
+    if (closeBadgeEl) {
+      if (closeLocationPct > 70) {
+        closeBadgeEl.textContent = 'Strong Bullish Close / Top 30% Range';
+        closeBadgeEl.className = 'nv-pill-badge nv-pill-bull';
+      } else if (closeLocationPct < 30) {
+        closeBadgeEl.textContent = 'Bearish Close / Bottom 30% Range';
+        closeBadgeEl.className = 'nv-pill-badge nv-pill-bear';
+      } else {
+        closeBadgeEl.textContent = 'Balanced / Mid-Range Neutral Close';
+        closeBadgeEl.className = 'nv-pill-badge nv-pill-neutral';
+      }
+    }
+
+    // Metric 3: Open-to-Close Drift (Net Session Movement)
+    // Formula: Close - Open
+    const driftPts = close - open;
+    const driftPct = open > 0 ? ((driftPts / open) * 100) : 0;
+    const isDriftPos = driftPts > 0.001;
+    const isDriftZero = Math.abs(driftPts) < 0.01;
+    const driftSign = isDriftPos ? '+' : (driftPts < -0.001 ? '-' : '');
+    const absDriftPts = Math.abs(driftPts);
+    const absDriftPct = Math.abs(driftPct);
+
+    const driftValEl = $('m360DriftPoints');
+    if (driftValEl) {
+      driftValEl.textContent = `${driftSign}${formatNum(absDriftPts)} pts`;
+      driftValEl.style.color = isDriftZero ? '#ffffff' : (isDriftPos ? 'var(--nv-green-bright)' : 'var(--nv-red-bright)');
+    }
+
+    const driftPctEl = $('m360DriftPct');
+    if (driftPctEl) {
+      driftPctEl.textContent = `${driftSign}${absDriftPct.toFixed(2)}% from Open`;
+      driftPctEl.style.color = isDriftZero ? 'var(--nv-text-secondary)' : (isDriftPos ? '#6ee7b7' : '#fda4af');
+    }
+
+    const driftBadgeEl = $('m360DriftBadge');
+    if (driftBadgeEl) {
+      if (isDriftZero) {
+        driftBadgeEl.textContent = '◆ Neutral Session Drift';
+        driftBadgeEl.className = 'nv-pill-badge nv-pill-neutral';
+      } else if (isDriftPos) {
+        driftBadgeEl.textContent = `▲ Bullish Session Momentum (+${absDriftPct.toFixed(2)}%)`;
+        driftBadgeEl.className = 'nv-pill-badge nv-pill-bull';
+      } else {
+        driftBadgeEl.textContent = `▼ Bearish Session Drift (-${absDriftPct.toFixed(2)}%)`;
+        driftBadgeEl.className = 'nv-pill-badge nv-pill-bear';
+      }
+    }
+
+    // Metric 4: Tail / Rejection Analysis (Optional Micro-Bar)
+    // Upper Wick: High - max(Open, Close)
+    // Lower Wick: min(Open, Close) - Low
+    const upperWick = Math.max(0, high - Math.max(open, close));
+    const lowerWick = Math.max(0, Math.min(open, close) - low);
+    const bodySize = Math.abs(close - open);
+
+    const upperWickPct = rangeSpread > 0 ? ((upperWick / rangeSpread) * 100) : 0;
+    const lowerWickPct = rangeSpread > 0 ? ((lowerWick / rangeSpread) * 100) : 0;
+    const bodyPct = rangeSpread > 0 ? ((bodySize / rangeSpread) * 100) : 0;
+
+    if ($('m360UpperWick')) $('m360UpperWick').textContent = `₹${formatNum(upperWick)} (${upperWickPct.toFixed(1)}%)`;
+    if ($('m360LowerWick')) $('m360LowerWick').textContent = `₹${formatNum(lowerWick)} (${lowerWickPct.toFixed(1)}%)`;
+
+    if ($('m360BarLower')) $('m360BarLower').style.width = `${lowerWickPct.toFixed(1)}%`;
+    if ($('m360BarBody')) $('m360BarBody').style.width = `${bodyPct.toFixed(1)}%`;
+    if ($('m360BarUpper')) $('m360BarUpper').style.width = `${upperWickPct.toFixed(1)}%`;
+
+    const absorptionEl = $('m360AbsorptionText');
+    if (absorptionEl) {
+      if (lowerWick > upperWick * 1.35 && lowerWickPct >= 18) {
+        absorptionEl.textContent = 'Active Buyer Absorption at lows (Demand defense).';
+      } else if (upperWick > lowerWick * 1.35 && upperWickPct >= 18) {
+        absorptionEl.textContent = 'Overhead Seller Supply rejection at highs.';
+      } else if (bodyPct >= 65) {
+        absorptionEl.textContent = 'High directional conviction (Expanding session body).';
+      } else {
+        absorptionEl.textContent = 'Identifies top or bottom price absorption for the session.';
+      }
     }
   }
 
@@ -1233,7 +1633,8 @@ html, body {
     const endpoints = [
       'data/nifty_view_data.json',
       '/wp-content/uploads/data/nifty_view_data.json',
-      'https://raw.githubusercontent.com/ganistock-ops/Mits360-landing-hub/main/data/nifty_view_data.json'
+      'https://raw.githubusercontent.com/ganistock-ops/Mits360-landing-hub/main/data/nifty_view_data.json',
+      'data/market_summary.json'
     ];
 
     for (const url of endpoints) {
@@ -1241,13 +1642,13 @@ html, body {
         const resp = await fetch(url + '?t=' + Date.now());
         if (resp.ok) {
           const json = await resp.json();
-          if (json && json.meta && json.returns_matrix) {
+          if (json && json.meta) {
             console.log('[MITS 360] Nifty View live telemetry successfully ingested from:', url);
             activeData = json;
             renderHeader(activeData.meta);
-            renderReturns(activeData.returns_matrix);
-            renderPivots(activeData.pivots);
-            renderMovingAverages();
+            if (activeData.returns_matrix) renderReturns(activeData.returns_matrix);
+            if (activeData.pivots) renderPivots(activeData.pivots);
+            renderDailyRangeDynamics(activeData.meta);
             return;
           }
         }
@@ -1262,8 +1663,7 @@ html, body {
     renderHeader(activeData.meta);
     renderReturns(activeData.returns_matrix);
     renderPivots(activeData.pivots);
-    renderMovingAverages();
-    setupTabs();
+    renderDailyRangeDynamics(activeData.meta);
     fetchLivePipelineData();
   }
 
