@@ -331,13 +331,38 @@ html, body {
   gap: 6px;
 }
 
+#mits360-home-root .mapp-headline-gold-box {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.08), rgba(245, 158, 11, 0.03));
+  border: 1px solid rgba(255, 193, 7, 0.5);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.22), inset 0 0 15px rgba(255, 193, 7, 0.05);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin: 2px 0 4px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#mits360-home-root .mapp-headline-gold-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.8), transparent);
+}
+
 #mits360-home-root .mapp-hero-headline {
   font-family: var(--m360-font-display);
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 800;
   line-height: 1.25;
-  color: #ffffff;
+  color: #fffdfa;
+  background: linear-gradient(135deg, #ffffff 40%, #fbd38d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: -0.3px;
+  margin: 0;
 }
 
 #mits360-home-root .mapp-sub-identity {
@@ -855,7 +880,10 @@ html, body {
   #mits360-home-root .hero-headline {
     font-size: 26px;
   }
+  #mits360-home-root .mapp-headline-gold-box {
+    padding: 8px 12px;
+  }
   #mits360-home-root .mapp-hero-headline {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
