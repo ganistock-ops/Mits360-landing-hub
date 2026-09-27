@@ -264,17 +264,18 @@ html, body {
   border-radius: 8px;
 }
 
-/* Hero Right: MAPP Program Foundation Admission CTA Card */
+/* Hero Right: Refactored Compact High-Impact MAPP Admission CTA Card */
 #mits360-home-root .hero-mapp-cta-card {
-  background: rgba(18, 24, 36, 0.85);
-  backdrop-filter: blur(14px);
-  border: 1px solid var(--m360-border-medium);
+  background: rgba(16, 20, 31, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 242, 254, 0.2);
   border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.04);
+  padding: 22px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 242, 254, 0.03);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   position: relative;
   overflow: hidden;
 }
@@ -286,117 +287,150 @@ html, body {
   left: 15%;
   right: 15%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--m360-cyan), var(--m360-green), transparent);
+  background: linear-gradient(90deg, transparent, rgba(0, 242, 254, 0.8), rgba(0, 230, 118, 0.8), transparent);
 }
 
 #mits360-home-root .mapp-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--m360-border-subtle);
   flex-wrap: wrap;
   gap: 8px;
 }
 
-#mits360-home-root .mapp-card-badge {
+#mits360-home-root .mapp-zero-badge {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  background: rgba(0, 230, 118, 0.12);
+  color: var(--m360-green);
+  border: 1px solid rgba(0, 230, 118, 0.35);
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.18);
+  border-radius: 999px;
+  padding: 4px 11px;
   font-family: var(--m360-font-mono);
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 700;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--m360-cyan);
 }
 
 #mits360-home-root .mapp-batch-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-family: var(--m360-font-mono);
-  font-size: 10px;
+  font-size: 10.5px;
   font-weight: 700;
   color: var(--m360-green);
-  background: var(--m360-green-dark);
-  border: 1px solid var(--m360-border-green);
-  padding: 3px 8px;
-  border-radius: 4px;
+  background: rgba(0, 230, 118, 0.08);
+  border: 1px solid rgba(0, 230, 118, 0.25);
+  padding: 3px 9px;
+  border-radius: 999px;
   letter-spacing: 0.5px;
+}
+
+#mits360-home-root .mapp-batch-tag .pulse-radar-dot {
+  width: 6px;
+  height: 6px;
 }
 
 #mits360-home-root .mapp-card-body-block {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
-#mits360-home-root .mapp-card-title {
+#mits360-home-root .mapp-hero-headline {
   font-family: var(--m360-font-display);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 800;
-  line-height: 1.3;
+  line-height: 1.25;
   color: #ffffff;
   letter-spacing: -0.3px;
 }
 
-#mits360-home-root .mapp-card-sub {
-  font-size: 13px;
+#mits360-home-root .mapp-sub-identity {
+  font-family: var(--m360-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--m360-cyan);
+  letter-spacing: 0.3px;
+}
+
+#mits360-home-root .mapp-core-hook {
+  font-size: 12.5px;
   color: var(--m360-text-secondary);
-  line-height: 1.55;
+  line-height: 1.48;
 }
 
-#mits360-home-root .mapp-highlights-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-#mits360-home-root .mapp-highlight-item {
-  background: rgba(11, 14, 20, 0.7);
-  border: 1px solid var(--m360-border-subtle);
-  border-radius: 8px;
-  padding: 10px 12px;
+#mits360-home-root .mapp-micro-strip {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 6px;
 }
 
-#mits360-home-root .mapp-highlight-label {
-  font-size: 10px;
-  font-family: var(--m360-font-mono);
-  color: var(--m360-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+#mits360-home-root .mapp-micro-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 9px;
+  background: rgba(11, 15, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #e2e8f0;
 }
 
-#mits360-home-root .mapp-highlight-val {
-  font-family: var(--m360-font-mono);
-  font-size: 13px;
-  font-weight: 700;
-  color: #ffffff;
+#mits360-home-root .mapp-micro-item .micro-icon {
+  font-size: 12px;
+  line-height: 1;
+  flex-shrink: 0;
 }
-
-#mits360-home-root .mapp-highlight-val.accent-cyan { color: var(--m360-cyan); }
-#mits360-home-root .mapp-highlight-val.accent-green { color: var(--m360-green); }
-#mits360-home-root .mapp-highlight-val.accent-gold { color: var(--m360-amber); }
 
 #mits360-home-root .mapp-card-action {
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
-#mits360-home-root .mapp-cta-btn {
+#mits360-home-root .mapp-pill-btn {
   width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #00c853 0%, #00b4d8 100%);
+  color: #ffffff !important;
+  font-family: var(--m360-font-display);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 18px rgba(0, 200, 83, 0.3), 0 0 12px rgba(0, 180, 216, 0.2);
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: border-box;
   text-align: center;
+}
+
+#mits360-home-root .mapp-pill-btn:hover {
+  background: linear-gradient(135deg, #00e676 0%, #00f0ff 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(0, 230, 118, 0.45), 0 0 20px rgba(0, 240, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 #mits360-home-root .mapp-card-footnote {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 5px;
   font-family: var(--m360-font-mono);
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--m360-text-muted);
 }
 
@@ -833,8 +867,8 @@ html, body {
   #mits360-home-root .hero-headline {
     font-size: 26px;
   }
-  #mits360-home-root .mapp-highlights-grid {
-    grid-template-columns: 1fr;
+  #mits360-home-root .mapp-hero-headline {
+    font-size: 18px;
   }
 }
 </style>
@@ -880,56 +914,46 @@ html, body {
       </div>
     </div>
 
-    <!-- Hero Right: MAPP Program Foundation Admission CTA Card -->
+    <!-- Hero Right: Refactored Compact High-Impact MAPP Admission CTA Card -->
     <div class="hero-mapp-cta-card" aria-label="MAPP Program Foundation Admission">
       <div class="mapp-card-header">
-        <div class="mapp-card-badge">
+        <span class="mapp-zero-badge">ZERO-FEE INITIATIVE</span>
+        <span class="mapp-batch-tag">
           <span class="pulse-radar-dot" aria-hidden="true"></span>
-          <span>FOUNDATION SPONSORED</span>
-        </div>
-        <div class="mapp-batch-tag">BATCH ADMISSION OPEN</div>
+          BATCH ADMISSION OPEN
+        </span>
       </div>
 
       <div class="mapp-card-body-block">
-        <h2 class="mapp-card-title">MAPP &mdash; Market Analysis &amp; Price Action Programme</h2>
-        <p class="mapp-card-sub">
-          Zero to Professional Quantitative &amp; Price Action Market Analysis. Sponsored financial education and structured mentorship by MITS 360 Wealth Foundation.
+        <h2 class="mapp-hero-headline">India's First 40-Hour Pure Zero-Fee Live Market Program</h2>
+        <div class="mapp-sub-identity">MAPP &mdash; Market Analysis &amp; Price Action Program</div>
+        <p class="mapp-core-hook">
+          A rigorous 4-week live market training program engineered for serious learners. 100% Foundation-sponsored, zero tuition fees.
         </p>
       </div>
 
-      <div class="mapp-highlights-grid">
-        <div class="mapp-highlight-item">
-          <span class="mapp-highlight-label">Curriculum Scope</span>
-          <span class="mapp-highlight-val accent-cyan">4-Week Masterclass</span>
+      <div class="mapp-micro-strip">
+        <div class="mapp-micro-item">
+          <span class="micro-icon" aria-hidden="true">⚡</span>
+          <span>4-Week Live Intensive (40 Hours)</span>
         </div>
-        <div class="mapp-highlight-item">
-          <span class="mapp-highlight-label">Analytical Core</span>
-          <span class="mapp-highlight-val accent-green">Market Structure &amp; VCP</span>
+        <div class="mapp-micro-item">
+          <span class="micro-icon" aria-hidden="true">🛡️</span>
+          <span>Pure Institutional Price Action &amp; Risk Control</span>
         </div>
-        <div class="mapp-highlight-item">
-          <span class="mapp-highlight-label">Mentorship</span>
-          <span class="mapp-highlight-val" style="color: #ffffff;">Guided Case Studies</span>
-        </div>
-        <div class="mapp-highlight-item">
-          <span class="mapp-highlight-label">Delivery Mode</span>
-          <span class="mapp-highlight-val accent-gold">Bilingual / Direct</span>
+        <div class="mapp-micro-item">
+          <span class="micro-icon" aria-hidden="true">🎓</span>
+          <span>Zero Tuition Fees &bull; Foundation Backed</span>
         </div>
       </div>
 
       <div class="mapp-card-action">
-        <a href="https://foundation.mits360.co.in/" target="_blank" rel="noopener noreferrer" class="btn-primary-action mapp-cta-btn" id="m360MappHeroCtaBtn">
-          <span>Apply for MAPP Admission</span>
-          <svg class="action-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
+        <a href="https://foundation.mits360.co.in/" target="_blank" rel="noopener noreferrer" class="mapp-pill-btn" id="m360MappHeroCtaBtn">
+          <span>Apply for MAPP Admission &rarr;</span>
         </a>
       </div>
 
       <div class="mapp-card-footnote">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--m360-green);">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-        </svg>
         <span>Direct Screening Form &bull; foundation.mits360.co.in</span>
       </div>
     </div>
