@@ -252,41 +252,54 @@ html, body {
   border-radius: 8px;
 }
 
-/* Hero Right: Institutional Telemetry Snapshot Board */
-#mits360-home-root .hero-telemetry-board {
+/* Hero Right: MAPP Program Foundation Admission CTA Card */
+#mits360-home-root .hero-mapp-cta-card {
   background: rgba(18, 24, 36, 0.85);
   backdrop-filter: blur(14px);
-  border: 1px solid var(--m360-border-subtle);
+  border: 1px solid var(--m360-border-medium);
   border-radius: 16px;
-  padding: 22px;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.02);
+  padding: 24px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.04);
   display: flex;
   flex-direction: column;
   gap: 16px;
   position: relative;
+  overflow: hidden;
 }
 
-#mits360-home-root .board-top-header {
+#mits360-home-root .hero-mapp-cta-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--m360-cyan), var(--m360-green), transparent);
+}
+
+#mits360-home-root .mapp-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--m360-border-subtle);
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-#mits360-home-root .board-title {
-  display: flex;
+#mits360-home-root .mapp-card-badge {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   font-family: var(--m360-font-mono);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: var(--m360-text-secondary);
+  letter-spacing: 1px;
+  color: var(--m360-cyan);
 }
 
-#mits360-home-root .board-live-tag {
+#mits360-home-root .mapp-batch-tag {
   font-family: var(--m360-font-mono);
   font-size: 10px;
   font-weight: 700;
@@ -295,61 +308,84 @@ html, body {
   border: 1px solid var(--m360-border-green);
   padding: 3px 8px;
   border-radius: 4px;
+  letter-spacing: 0.5px;
 }
 
-#mits360-home-root .telemetry-metrics-grid {
+#mits360-home-root .mapp-card-body-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#mits360-home-root .mapp-card-title {
+  font-family: var(--m360-font-display);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+#mits360-home-root .mapp-card-sub {
+  font-size: 13px;
+  color: var(--m360-text-secondary);
+  line-height: 1.55;
+}
+
+#mits360-home-root .mapp-highlights-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-#mits360-home-root .telemetry-card {
+#mits360-home-root .mapp-highlight-item {
   background: rgba(11, 14, 20, 0.7);
   border: 1px solid var(--m360-border-subtle);
-  border-radius: 10px;
-  padding: 12px;
+  border-radius: 8px;
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
 }
 
-#mits360-home-root .telemetry-label {
-  font-size: 11px;
+#mits360-home-root .mapp-highlight-label {
+  font-size: 10px;
+  font-family: var(--m360-font-mono);
   color: var(--m360-text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
 }
 
-#mits360-home-root .telemetry-val {
+#mits360-home-root .mapp-highlight-val {
   font-family: var(--m360-font-mono);
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
   color: #ffffff;
 }
 
-#mits360-home-root .telemetry-val.accent-green { color: var(--m360-green); }
-#mits360-home-root .telemetry-val.accent-cyan { color: var(--m360-cyan); }
-#mits360-home-root .telemetry-val.accent-gold { color: var(--m360-amber); }
+#mits360-home-root .mapp-highlight-val.accent-cyan { color: var(--m360-cyan); }
+#mits360-home-root .mapp-highlight-val.accent-green { color: var(--m360-green); }
+#mits360-home-root .mapp-highlight-val.accent-gold { color: var(--m360-amber); }
 
-#mits360-home-root .board-terminal-preview {
-  background: #090d13;
-  border: 1px solid var(--m360-border-subtle);
-  border-radius: 8px;
-  padding: 12px;
+#mits360-home-root .mapp-card-action {
+  margin-top: 4px;
+}
+
+#mits360-home-root .mapp-cta-btn {
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#mits360-home-root .mapp-card-footnote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   font-family: var(--m360-font-mono);
   font-size: 11px;
-  line-height: 1.7;
-}
-
-#mits360-home-root .telemetry-log-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--m360-text-secondary);
-}
-
-#mits360-home-root .log-tag {
-  color: var(--m360-cyan);
+  color: var(--m360-text-muted);
 }
 
 /* ==========================================================================
@@ -785,7 +821,7 @@ html, body {
   #mits360-home-root .hero-headline {
     font-size: 26px;
   }
-  #mits360-home-root .telemetry-metrics-grid {
+  #mits360-home-root .mapp-highlights-grid {
     grid-template-columns: 1fr;
   }
 }
