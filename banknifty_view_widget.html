@@ -487,84 +487,316 @@ html, body {
   letter-spacing: 0.2px;
 }
 
-/* Moving Average Interactive Controls */
-#mits360-banknifty-view-root .ma-toggle-pills {
-  display: inline-flex;
-  background: rgba(15, 23, 42, 0.8);
-  padding: 3px;
-  border-radius: 8px;
-  border: 1px solid var(--bn-border-subtle);
-  gap: 3px;
+/* ==========================================================================
+   Section 3: Bank Nifty Daily Range & Session Dynamics Specifics
+   ========================================================================== */
+#mits360-banknifty-view-root .bn-range-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 
-#mits360-banknifty-view-root .ma-pill-btn {
-  padding: 6px 14px;
+#mits360-banknifty-view-root .bn-metric-tile {
+  background: rgba(14, 20, 30, 0.75);
+  border: 1px solid var(--bn-border-subtle);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  position: relative;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(12px);
+}
+
+#mits360-banknifty-view-root .bn-metric-tile:hover {
+  border-color: rgba(0, 242, 254, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+#mits360-banknifty-view-root .bn-tile-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#mits360-banknifty-view-root .bn-tile-tag {
+  font-family: var(--bn-font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#mits360-banknifty-view-root .tag-cyan {
+  background: rgba(0, 242, 254, 0.12);
+  color: var(--bn-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+}
+
+#mits360-banknifty-view-root .tag-blue {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+#mits360-banknifty-view-root .tag-purple {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+#mits360-banknifty-view-root .tag-amber {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+#mits360-banknifty-view-root .bn-tile-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--bn-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  text-align: right;
+}
+
+#mits360-banknifty-view-root .bn-tile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#mits360-banknifty-view-root .bn-tile-val {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+#mits360-banknifty-view-root .bn-tile-subval {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--bn-text-secondary);
+}
+
+#mits360-banknifty-view-root .bn-tile-footer {
+  font-size: 11.5px;
+  color: var(--bn-text-muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 10px;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* Badges */
+#mits360-banknifty-view-root .bn-pill-badge {
   font-family: var(--bn-font-mono);
   font-size: 11px;
   font-weight: 700;
+  padding: 5px 10px;
   border-radius: 6px;
-  color: var(--bn-text-secondary);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  user-select: none;
-}
-
-#mits360-banknifty-view-root .ma-pill-btn:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-#mits360-banknifty-view-root .ma-pill-btn.active {
-  background: var(--bn-cyan);
-  color: #080B10;
-  box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
-}
-
-#mits360-banknifty-view-root .signal-tag {
   display: inline-flex;
   align-items: center;
-  padding: 3px 8px;
-  border-radius: 4px;
-  font-family: var(--bn-font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
+  gap: 6px;
+  letter-spacing: 0.3px;
+  width: fit-content;
 }
 
-#mits360-banknifty-view-root .signal-tag.bull-strong {
-  background: rgba(16, 185, 129, 0.18);
-  color: var(--bn-green-bright);
+#mits360-banknifty-view-root .bn-pill-bull {
+  background: rgba(16, 185, 129, 0.16);
+  color: #34d399;
   border: 1px solid rgba(16, 185, 129, 0.4);
-}
-#mits360-banknifty-view-root .signal-tag.bull-mild {
-  background: rgba(16, 185, 129, 0.1);
-  color: #6ee7b7;
-  border: 1px solid rgba(16, 185, 129, 0.25);
-}
-#mits360-banknifty-view-root .signal-tag.neutral {
-  background: rgba(148, 163, 184, 0.1);
-  color: #cbd5e1;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-}
-#mits360-banknifty-view-root .signal-tag.bear-mild {
-  background: rgba(244, 63, 94, 0.1);
-  color: #fda4af;
-  border: 1px solid rgba(244, 63, 94, 0.25);
-}
-#mits360-banknifty-view-root .signal-tag.bear-strong {
-  background: rgba(244, 63, 94, 0.18);
-  color: var(--bn-red-bright);
-  border: 1px solid rgba(244, 63, 94, 0.4);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.12);
 }
 
-#mits360-banknifty-view-root .ma-analysis-text {
-  font-family: var(--bn-font-body) !important;
-  font-size: 12px !important;
-  color: var(--bn-text-secondary) !important;
-  font-weight: 400 !important;
-  white-space: normal !important;
-  max-width: 420px;
+#mits360-banknifty-view-root .bn-pill-bear {
+  background: rgba(244, 63, 94, 0.16);
+  color: #fb7185;
+  border: 1px solid rgba(244, 63, 94, 0.4);
+  box-shadow: 0 0 10px rgba(244, 63, 94, 0.12);
+}
+
+#mits360-banknifty-view-root .bn-pill-neutral {
+  background: rgba(148, 163, 184, 0.12);
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Progress Track & Expansion Meter */
+#mits360-banknifty-view-root .bn-progress-track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+#mits360-banknifty-view-root .bn-fill-cyan {
+  height: 100%;
+  background: linear-gradient(90deg, #00f2fe, #38bdf8);
+  border-radius: 4px;
+}
+
+/* 3-Zone Range Anatomy Track */
+#mits360-banknifty-view-root .bn-zone-meter-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+#mits360-banknifty-view-root .bn-zone-track {
+  height: 8px;
+  display: flex;
+  border-radius: 4px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#mits360-banknifty-view-root .bn-zone {
+  height: 100%;
+}
+
+#mits360-banknifty-view-root .bn-zone-bear {
+  width: 30%;
+  background: rgba(244, 63, 94, 0.35);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#mits360-banknifty-view-root .bn-zone-neutral {
+  width: 40%;
+  background: rgba(148, 163, 184, 0.2);
+}
+
+#mits360-banknifty-view-root .bn-zone-bull {
+  width: 30%;
+  background: rgba(16, 185, 129, 0.35);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#mits360-banknifty-view-root .bn-zone-thumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid var(--bn-cyan);
+  box-shadow: 0 0 10px var(--bn-cyan);
+  transition: left 0.3s ease;
+}
+
+#mits360-banknifty-view-root .bn-zone-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--bn-text-muted);
+}
+
+/* Wick Analysis Breakdown & Stacked Candlestick Bar */
+#mits360-banknifty-view-root .bn-wick-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#mits360-banknifty-view-root .bn-wick-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+#mits360-banknifty-view-root .tag-wick-upper {
+  color: #fda4af;
+}
+
+#mits360-banknifty-view-root .tag-wick-lower {
+  color: #6ee7b7;
+}
+
+#mits360-banknifty-view-root .bn-wick-data {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#mits360-banknifty-view-root .bn-wick-stacked-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+#mits360-banknifty-view-root .bn-wick-stacked-bar {
+  height: 10px;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#mits360-banknifty-view-root .bn-bar-lower {
+  background: #10b981;
+  transition: width 0.3s ease;
+}
+
+#mits360-banknifty-view-root .bn-bar-body {
+  background: #00f2fe;
+  transition: width 0.3s ease;
+}
+
+#mits360-banknifty-view-root .bn-bar-upper {
+  background: #f43f5e;
+  transition: width 0.3s ease;
+}
+
+#mits360-banknifty-view-root .bn-wick-legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--bn-text-muted);
+}
+
+#mits360-banknifty-view-root .bn-wick-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#mits360-banknifty-view-root .dot-lower {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  display: inline-block;
+}
+
+#mits360-banknifty-view-root .dot-body {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00f2fe;
+  display: inline-block;
+}
+
+#mits360-banknifty-view-root .dot-upper {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f43f5e;
+  display: inline-block;
 }
 
 /* Footer Stamp */
@@ -587,8 +819,14 @@ html, body {
 }
 
 /* ==========================================================================
-   Responsive Breakpoints (<768px and <600px)
+   Responsive Breakpoints (<900px and <600px)
    ========================================================================== */
+@media (max-width: 1024px) {
+  #mits360-banknifty-view-root .bn-range-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   #mits360-banknifty-view-root .bn-telemetry-card {
     grid-template-columns: repeat(2, 1fr);
@@ -596,6 +834,19 @@ html, body {
   }
   #mits360-banknifty-view-root .telemetry-prime-stat {
     grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  #mits360-banknifty-view-root .bn-range-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  #mits360-banknifty-view-root .bn-metric-tile {
+    padding: 16px;
+  }
+  #mits360-banknifty-view-root .bn-tile-val {
+    font-size: 22px;
   }
 }
 
@@ -760,40 +1011,131 @@ html, body {
     </section>
 
     <!-- ==================================================================
-         4. Section 3: Moving Average Suite (Interactive SMA & EMA Tabs)
+         4. Section 3: Bank Nifty Daily Range & Session Dynamics
          ================================================================== -->
-    <section class="nv-section-card">
+    <section class="nv-section-card" aria-label="Bank Nifty Daily Range &amp; Session Dynamics">
       <div class="nv-card-header">
         <div class="nv-card-title-group">
-          <div class="nv-card-icon-pill">📈</div>
+          <div class="nv-card-icon-pill">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--bn-cyan);">
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+              <rect x="7" y="6" width="10" height="12" rx="2" fill="rgba(0,242,254,0.15)"></rect>
+              <line x1="3" y1="12" x2="7" y2="12"></line>
+              <line x1="17" y1="12" x2="21" y2="12"></line>
+            </svg>
+          </div>
           <div>
-            <h2 class="nv-card-title">Moving Average Suite</h2>
-            <p class="nv-card-subtitle">Institutional trend trajectory &amp; dynamic support / resistance bands</p>
+            <h2 class="nv-card-title">Bank Nifty Daily Range &amp; Session Dynamics</h2>
+            <p class="nv-card-subtitle">Quantitative Volatility, Intraday Spread &amp; Candle Close Location</p>
           </div>
         </div>
 
-        <div class="ma-toggle-pills" role="tablist">
-          <button class="ma-pill-btn active" id="bnBtnTabSma" role="tab" aria-selected="true">SMA Mode</button>
-          <button class="ma-pill-btn" id="bnBtnTabEma" role="tab" aria-selected="false">EMA Mode</button>
+        <div class="bn-badge-pill" style="font-size: 11px;">
+          <div class="bn-radar-dot" aria-hidden="true"></div>
+          <span>100% ZERO-HISTORY &bull; SINGLE-SESSION OHLC</span>
         </div>
       </div>
 
-      <div class="table-responsive-wrapper">
-        <table class="nv-data-table" id="bnMaTable">
-          <thead>
-            <tr>
-              <th class="sticky-col">Indicator</th>
-              <th>Calculated Value</th>
-              <th>Technical Signal</th>
-              <th>Crossover Ticks</th>
-              <th>Structural Analysis Summary</th>
-            </tr>
-          </thead>
-          <tbody id="bnMaBody">
-            <!-- Dynamic Injected Rows -->
-          </tbody>
-        </table>
-      </div>
+      <!-- 4-Card Responsive Grid -->
+      <div class="bn-range-grid">
+
+        <!-- Card 1: Day Range Spread (Points & %) -->
+        <div class="bn-metric-tile">
+          <div class="bn-tile-head">
+            <span class="bn-tile-tag tag-cyan">EXPANSION</span>
+            <span class="bn-tile-label">Day Range Spread</span>
+          </div>
+          <div class="bn-tile-body">
+            <div class="bn-tile-val font-mono" id="bnRangeSpreadVal">₹946.40</div>
+            <div class="bn-tile-subval font-mono" id="bnRangeSpreadPct">1.69% Range</div>
+            <div class="bn-progress-track" title="Intraday Volatility Spread">
+              <div class="bn-fill-cyan" id="bnRangeSpreadBar" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="bn-tile-footer">Total Intraday Expansion (High &minus; Low)</div>
+        </div>
+
+        <!-- Card 2: Close Location Within Range (%) -->
+        <div class="bn-metric-tile">
+          <div class="bn-tile-head">
+            <span class="bn-tile-tag tag-blue">CLOSE ANATOMY</span>
+            <span class="bn-tile-label">Close Location in Range</span>
+          </div>
+          <div class="bn-tile-body">
+            <div class="bn-tile-val font-mono" id="bnCloseLocVal">95.8%</div>
+            <!-- Dynamic Pill Badge -->
+            <div id="bnCloseLocBadge" class="bn-pill-badge bn-pill-bull">
+              Strong Bullish Close / Top 30% Range
+            </div>
+            <!-- Range Bar with 3 Zones and Marker Thumb -->
+            <div class="bn-zone-meter-wrap">
+              <div class="bn-zone-track">
+                <div class="bn-zone bn-zone-bear" title="Bottom 30% (Bearish)"></div>
+                <div class="bn-zone bn-zone-neutral" title="Mid 40% (Neutral)"></div>
+                <div class="bn-zone bn-zone-bull" title="Top 30% (Bullish)"></div>
+                <div class="bn-zone-thumb" id="bnCloseLocThumb" style="left: 95.8%;"></div>
+              </div>
+              <div class="bn-zone-labels font-mono">
+                <span>0% Low</span>
+                <span>50%</span>
+                <span>100% High</span>
+              </div>
+            </div>
+          </div>
+          <div class="bn-tile-footer">Formula: ((Close &minus; Low) / (High &minus; Low)) &times; 100</div>
+        </div>
+
+        <!-- Card 3: Open-to-Close Drift (Net Session Movement) -->
+        <div class="bn-metric-tile">
+          <div class="bn-tile-head">
+            <span class="bn-tile-tag tag-purple">SESSION DRIFT</span>
+            <span class="bn-tile-label">Open-to-Close Drift</span>
+          </div>
+          <div class="bn-tile-body">
+            <div class="bn-tile-val font-mono" id="bnDriftPoints">+636.40 pts</div>
+            <div class="bn-tile-subval font-mono" id="bnDriftPct">+1.14% from Open</div>
+            <div id="bnDriftBadge" class="bn-pill-badge bn-pill-bull">
+              ▲ Bullish Session Momentum
+            </div>
+          </div>
+          <div class="bn-tile-footer">Net Session Movement: Close &minus; Open</div>
+        </div>
+
+        <!-- Card 4: Absorption / Wick Spread -->
+        <div class="bn-metric-tile">
+          <div class="bn-tile-head">
+            <span class="bn-tile-tag tag-amber">ABSORPTION</span>
+            <span class="bn-tile-label">Absorption / Wick Spread</span>
+          </div>
+          <div class="bn-tile-body">
+            <div class="bn-wick-stats font-mono">
+              <div class="bn-wick-row">
+                <span class="tag-wick-upper">Upper Rejection:</span>
+                <span class="bn-wick-data" id="bnUpperWick">₹39.30 (4.2%)</span>
+              </div>
+              <div class="bn-wick-row">
+                <span class="tag-wick-lower">Lower Support:</span>
+                <span class="bn-wick-data" id="bnLowerWick">₹270.70 (28.6%)</span>
+              </div>
+            </div>
+            <!-- Micro-bar stacked candlestick breakdown -->
+            <div class="bn-wick-stacked-wrap">
+              <div class="bn-wick-stacked-bar">
+                <div class="bn-bar-lower" id="bnBarLower" style="width: 29%;" title="Lower Support (Demand)"></div>
+                <div class="bn-bar-body" id="bnBarBody" style="width: 67%;" title="Real Body (Session)"></div>
+                <div class="bn-bar-upper" id="bnBarUpper" style="width: 4%;" title="Upper Rejection (Supply)"></div>
+              </div>
+              <div class="bn-wick-legend font-mono">
+                <span><i class="dot-lower"></i>Lower</span>
+                <span><i class="dot-body"></i>Body</span>
+                <span><i class="dot-upper"></i>Upper</span>
+              </div>
+            </div>
+          </div>
+          <div class="bn-tile-footer" id="bnAbsorptionText">Identifies top or bottom price absorption for the session.</div>
+        </div>
+
+      </div><!-- /.bn-range-grid -->
     </section>
 
     <!-- ==================================================================
@@ -845,31 +1187,10 @@ html, body {
       { type: "Camarilla Equation", s4: 56086.03, s3: 56346.29, s2: 56433.04, s1: 56519.80, pivot: 56317.28, r1: 56693.30, r2: 56780.06, r3: 56866.81, r4: 57127.07 },
       { type: "Fibonacci Ratio", s4: 54786.01, s3: 55370.88, s2: 55732.41, s1: 55955.76, pivot: 56317.28, r1: 56678.81, r2: 56902.16, r3: 57263.68, r4: 57848.56 },
       { type: "Woodie's Model", s4: 54240.55, s3: 55186.95, s2: 55443.20, s1: 56133.35, pivot: 56389.60, r1: 57079.75, r2: 57336.00, r3: 58026.15, r4: 58972.55 }
-    ],
-    moving_averages: {
-      sma: [
-        { period: 5, period_label: "5 SMA", value: 56647.98, signal: "Neutral", signal_badge: "neutral", crossover: "-41.43 pts (-0.07%)", analysis: "Price is consolidating directly at the 5-period SMA inflection band (56,647.98)." },
-        { period: 10, period_label: "10 SMA", value: 57059.67, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-453.12 pts (-0.79%)", analysis: "Mild supply overhead. Index is trading marginally below the 10-period SMA." },
-        { period: 15, period_label: "15 SMA", value: 57228.46, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-621.91 pts (-1.09%)", analysis: "Mild supply overhead. Index is trading marginally below the 15-period SMA." },
-        { period: 20, period_label: "20 SMA", value: 57284.23, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-677.68 pts (-1.18%)", analysis: "Mild supply overhead. Index is trading marginally below the 20-period SMA." },
-        { period: 50, period_label: "50 SMA", value: 57463.55, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-857.00 pts (-1.49%)", analysis: "Mild supply overhead. Index is trading marginally below the 50-period SMA." },
-        { period: 100, period_label: "100 SMA", value: 56533.15, signal: "Neutral", signal_badge: "neutral", crossover: "+73.40 pts (+0.13%)", analysis: "Price is consolidating directly at the 100-period SMA inflection band (56,533.15)." },
-        { period: 200, period_label: "200 SMA", value: 57373.56, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-767.01 pts (-1.34%)", analysis: "Mild supply overhead. Index is trading marginally below the 200-period SMA." }
-      ],
-      ema: [
-        { period: 5, period_label: "5 EMA", value: 56685.48, signal: "Neutral", signal_badge: "neutral", crossover: "-78.93 pts (-0.14%)", analysis: "Price is consolidating directly at the 5-period EMA inflection band (56,685.48)." },
-        { period: 10, period_label: "10 EMA", value: 56922.27, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-315.72 pts (-0.55%)", analysis: "Mild supply overhead. Index is trading marginally below the 10-period EMA." },
-        { period: 15, period_label: "15 EMA", value: 57068.39, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-461.84 pts (-0.81%)", analysis: "Mild supply overhead. Index is trading marginally below the 15-period EMA." },
-        { period: 20, period_label: "20 EMA", value: 57158.33, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-551.78 pts (-0.97%)", analysis: "Mild supply overhead. Index is trading marginally below the 20-period EMA." },
-        { period: 50, period_label: "50 EMA", value: 57194.01, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-587.46 pts (-1.03%)", analysis: "Mild supply overhead. Index is trading marginally below the 50-period EMA." },
-        { period: 100, period_label: "100 EMA", value: 57007.76, signal: "Mild Bearish", signal_badge: "bear-mild", crossover: "-401.21 pts (-0.70%)", analysis: "Mild supply overhead. Index is trading marginally below the 100-period EMA." },
-        { period: 200, period_label: "200 EMA", value: 56754.51, signal: "Neutral", signal_badge: "neutral", crossover: "-147.96 pts (-0.26%)", analysis: "Price is consolidating directly at the 200-period EMA inflection band (56,754.51)." }
-      ]
-    }
+    ]
   };
 
   let activeData = DEFAULT_DATA;
-  let activeMaMode = 'sma'; // 'sma' | 'ema'
 
   // --- Helper Utilities ---
   function $(id) {
@@ -890,13 +1211,15 @@ html, body {
   function renderHeader(meta) {
     if (!meta) return;
     if ($('bnMarketDateVal')) $('bnMarketDateVal').textContent = meta.market_date || '--';
-    if ($('bnLtpHero')) $('bnLtpHero').textContent = '₹' + formatINR(meta.current_price);
+    if ($('bnLtpHero')) $('bnLtpHero').textContent = '₹' + formatINR(meta.current_price !== undefined ? meta.current_price : meta.close);
 
-    const isPos = Number(meta.points_change) >= 0;
+    const pointsChange = meta.points_change !== undefined ? meta.points_change : 0;
+    const changePct = meta.change_pct !== undefined ? meta.change_pct : 0;
+    const isPos = Number(pointsChange) >= 0;
     const sign = isPos ? '+' : '';
 
-    if ($('bnPointsDelta')) $('bnPointsDelta').textContent = `${sign}${formatNum(meta.points_change)}`;
-    if ($('bnPctDelta')) $('bnPctDelta').textContent = `(${sign}${Number(meta.change_pct).toFixed(2)}%)`;
+    if ($('bnPointsDelta')) $('bnPointsDelta').textContent = `${sign}${formatNum(pointsChange)}`;
+    if ($('bnPctDelta')) $('bnPctDelta').textContent = `(${sign}${Number(changePct).toFixed(2)}%)`;
 
     const badge = $('bnDeltaBadge');
     if (badge) {
@@ -918,7 +1241,7 @@ html, body {
 
   function renderReturns(returnsList) {
     const tbody = $('bnReturnsBody');
-    if (!tbody || !returnsList) return;
+    if (!tbody || !returnsList || !Array.isArray(returnsList)) return;
 
     tbody.innerHTML = returnsList.map(item => {
       const isPos = Number(item.return_pct) >= 0;
@@ -944,7 +1267,7 @@ html, body {
 
   function renderPivots(pivotsList) {
     const tbody = $('bnPivotsBody');
-    if (!tbody || !pivotsList) return;
+    if (!tbody || !pivotsList || !Array.isArray(pivotsList)) return;
 
     tbody.innerHTML = pivotsList.map(item => {
       const typeLabel = item.type.includes('Standard') ? 'Standard (Classic)' : 
@@ -968,52 +1291,114 @@ html, body {
     }).join('');
   }
 
-  function renderMovingAverages() {
-    const tbody = $('bnMaBody');
-    if (!tbody || !activeData.moving_averages) return;
+  // --- 100% Zero-History Bank Nifty Daily Range & Session Dynamics ---
+  function renderDailyRangeDynamics(meta) {
+    if (!meta) return;
 
-    const list = activeData.moving_averages[activeMaMode] || [];
-    tbody.innerHTML = list.map(item => {
-      return `
-        <tr>
-          <td class="sticky-col" style="font-weight:700; color:var(--bn-cyan);">${item.period_label || (item.period + ' ' + activeMaMode.toUpperCase())}</td>
-          <td>₹${formatNum(item.value)}</td>
-          <td><span class="signal-tag ${item.signal_badge || 'neutral'}">${item.signal}</span></td>
-          <td style="color:${item.diff_pts >= 0 ? '#6ee7b7' : '#fda4af'};">${item.crossover}</td>
-          <td class="ma-analysis-text">${item.analysis}</td>
-        </tr>
-      `;
-    }).join('');
-  }
+    const open = Number(meta.open) || 0;
+    const high = Number(meta.high) || 0;
+    const low = Number(meta.low) || 0;
+    const close = Number(meta.current_price !== undefined ? meta.current_price : (meta.close !== undefined ? meta.close : meta.cmp)) || 0;
 
-  function setupTabs() {
-    const btnSma = $('bnBtnTabSma');
-    const btnEma = $('bnBtnTabEma');
+    // Metric 1: Day Range Spread (Points & %)
+    // Formula: High - Low points, and percentage: ((High - Low) / Open) * 100
+    const rangeSpread = Math.max(0, high - low);
+    const rangeSpreadPct = open > 0 ? ((rangeSpread / open) * 100) : 0;
 
-    if (btnSma) {
-      btnSma.addEventListener('click', () => {
-        activeMaMode = 'sma';
-        btnSma.classList.add('active');
-        btnSma.setAttribute('aria-selected', 'true');
-        if (btnEma) {
-          btnEma.classList.remove('active');
-          btnEma.setAttribute('aria-selected', 'false');
-        }
-        renderMovingAverages();
-      });
+    if ($('bnRangeSpreadVal')) $('bnRangeSpreadVal').textContent = `₹${formatNum(rangeSpread)}`;
+    if ($('bnRangeSpreadPct')) $('bnRangeSpreadPct').textContent = `${rangeSpreadPct.toFixed(2)}% of Open`;
+    if ($('bnRangeSpreadBar')) $('bnRangeSpreadBar').style.width = '100%';
+
+    // Metric 2: Close Location Within Range (%)
+    // Formula: ((Close - Low) / (High - Low)) * 100
+    let closeLocationPct = 50;
+    if (rangeSpread > 0) {
+      closeLocationPct = ((close - low) / rangeSpread) * 100;
+      closeLocationPct = Math.max(0, Math.min(100, closeLocationPct));
     }
 
-    if (btnEma) {
-      btnEma.addEventListener('click', () => {
-        activeMaMode = 'ema';
-        btnEma.classList.add('active');
-        btnEma.setAttribute('aria-selected', 'true');
-        if (btnSma) {
-          btnSma.classList.remove('active');
-          btnSma.setAttribute('aria-selected', 'false');
-        }
-        renderMovingAverages();
-      });
+    if ($('bnCloseLocVal')) $('bnCloseLocVal').textContent = `${closeLocationPct.toFixed(1)}%`;
+    if ($('bnCloseLocThumb')) $('bnCloseLocThumb').style.left = `${closeLocationPct.toFixed(1)}%`;
+
+    const closeBadgeEl = $('bnCloseLocBadge');
+    if (closeBadgeEl) {
+      if (closeLocationPct > 70) {
+        closeBadgeEl.textContent = 'Strong Bullish Close / Top 30% Range';
+        closeBadgeEl.className = 'bn-pill-badge bn-pill-bull';
+      } else if (closeLocationPct < 30) {
+        closeBadgeEl.textContent = 'Bearish Close / Bottom 30% Range';
+        closeBadgeEl.className = 'bn-pill-badge bn-pill-bear';
+      } else {
+        closeBadgeEl.textContent = 'Balanced / Mid-Range Neutral Close';
+        closeBadgeEl.className = 'bn-pill-badge bn-pill-neutral';
+      }
+    }
+
+    // Metric 3: Open-to-Close Drift (Net Session Movement)
+    // Formula: Close - Open
+    const driftPts = close - open;
+    const driftPct = open > 0 ? ((driftPts / open) * 100) : 0;
+    const isDriftPos = driftPts > 0.001;
+    const isDriftZero = Math.abs(driftPts) < 0.01;
+    const driftSign = isDriftPos ? '+' : (driftPts < -0.001 ? '-' : '');
+    const absDriftPts = Math.abs(driftPts);
+    const absDriftPct = Math.abs(driftPct);
+
+    const driftValEl = $('bnDriftPoints');
+    if (driftValEl) {
+      driftValEl.textContent = `${driftSign}${formatNum(absDriftPts)} pts`;
+      driftValEl.style.color = isDriftZero ? '#ffffff' : (isDriftPos ? 'var(--bn-green-bright)' : 'var(--bn-red-bright)');
+    }
+
+    const driftPctEl = $('bnDriftPct');
+    if (driftPctEl) {
+      driftPctEl.textContent = `${driftSign}${absDriftPct.toFixed(2)}% from Open`;
+      driftPctEl.style.color = isDriftZero ? 'var(--bn-text-secondary)' : (isDriftPos ? '#6ee7b7' : '#fda4af');
+    }
+
+    const driftBadgeEl = $('bnDriftBadge');
+    if (driftBadgeEl) {
+      if (isDriftZero) {
+        driftBadgeEl.textContent = '◆ Neutral Session Drift';
+        driftBadgeEl.className = 'bn-pill-badge bn-pill-neutral';
+      } else if (isDriftPos) {
+        driftBadgeEl.textContent = `▲ Bullish Session Momentum (+${absDriftPct.toFixed(2)}%)`;
+        driftBadgeEl.className = 'bn-pill-badge bn-pill-bull';
+      } else {
+        driftBadgeEl.textContent = `▼ Bearish Session Drift (-${absDriftPct.toFixed(2)}%)`;
+        driftBadgeEl.className = 'bn-pill-badge bn-pill-bear';
+      }
+    }
+
+    // Metric 4: Absorption / Wick Spread
+    // Upper Rejection: High - max(Open, Close)
+    // Lower Support/Absorption: min(Open, Close) - Low
+    const upperWick = Math.max(0, high - Math.max(open, close));
+    const lowerWick = Math.max(0, Math.min(open, close) - low);
+    const bodySize = Math.abs(close - open);
+
+    const upperWickPct = rangeSpread > 0 ? ((upperWick / rangeSpread) * 100) : 0;
+    const lowerWickPct = rangeSpread > 0 ? ((lowerWick / rangeSpread) * 100) : 0;
+    const bodyPct = rangeSpread > 0 ? ((bodySize / rangeSpread) * 100) : 0;
+
+    if ($('bnUpperWick')) $('bnUpperWick').textContent = `₹${formatNum(upperWick)} (${upperWickPct.toFixed(1)}%)`;
+    if ($('bnLowerWick')) $('bnLowerWick').textContent = `₹${formatNum(lowerWick)} (${lowerWickPct.toFixed(1)}%)`;
+
+    if ($('bnBarLower')) $('bnBarLower').style.width = `${lowerWickPct.toFixed(1)}%`;
+    if ($('bnBarBody')) $('bnBarBody').style.width = `${bodyPct.toFixed(1)}%`;
+    if ($('bnBarUpper')) $('bnBarUpper').style.width = `${upperWickPct.toFixed(1)}%`;
+
+    const absorptionEl = $('bnAbsorptionText');
+    if (absorptionEl) {
+      if (lowerWick > upperWick * 1.35 && lowerWickPct >= 18) {
+        absorptionEl.textContent = 'Active Buyer Absorption at lows (Demand defense).';
+      } else if (upperWick > lowerWick * 1.35 && upperWickPct >= 18) {
+        absorptionEl.textContent = 'Overhead Seller Supply rejection at highs.';
+      } else if (bodyPct >= 65) {
+        absorptionEl.textContent = 'High directional conviction (Expanding session body).';
+      } else {
+        absorptionEl.textContent = 'Identifies top or bottom price absorption for the session.';
+      }
     }
   }
 
@@ -1022,7 +1407,8 @@ html, body {
     const endpoints = [
       'data/banknifty_view_data.json',
       '/wp-content/uploads/data/banknifty_view_data.json',
-      'https://raw.githubusercontent.com/ganistock-ops/Mits360-landing-hub/main/data/banknifty_view_data.json'
+      'https://raw.githubusercontent.com/ganistock-ops/Mits360-landing-hub/main/data/banknifty_view_data.json',
+      'data/market_summary.json'
     ];
 
     for (const url of endpoints) {
@@ -1030,13 +1416,13 @@ html, body {
         const resp = await fetch(url + '?t=' + Date.now());
         if (resp.ok) {
           const json = await resp.json();
-          if (json && json.meta && json.returns_matrix) {
+          if (json && json.meta) {
             console.log('[MITS 360] Bank Nifty View live telemetry successfully ingested from:', url);
             activeData = json;
             renderHeader(activeData.meta);
-            renderReturns(activeData.returns_matrix);
-            renderPivots(activeData.pivots);
-            renderMovingAverages();
+            if (activeData.returns_matrix) renderReturns(activeData.returns_matrix);
+            if (activeData.pivots) renderPivots(activeData.pivots);
+            renderDailyRangeDynamics(activeData.meta);
             return;
           }
         }
@@ -1051,8 +1437,7 @@ html, body {
     renderHeader(activeData.meta);
     renderReturns(activeData.returns_matrix);
     renderPivots(activeData.pivots);
-    renderMovingAverages();
-    setupTabs();
+    renderDailyRangeDynamics(activeData.meta);
     fetchLivePipelineData();
   }
 
