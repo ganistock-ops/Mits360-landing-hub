@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-28T12:22:41.497949+00:00",
+    "generated_at": "2026-09-28T19:20:12.680149+00:00",
     "market_date": "28-Sep-2026",
     "market_date_iso": "2026-09-28",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -3015,27 +3015,6 @@
       ]
     },
     {
-      "symbol": "KAYNES",
-      "name": "Kaynes Technology India Ltd.",
-      "sector": "infra",
-      "price": 3658.0,
-      "change": 0.22,
-      "volume": "983.2K",
-      "vol_raw": 983180,
-      "volMul": 1.25,
-      "high": 3695.0,
-      "low": 3589.0,
-      "high52": 4249.25,
-      "low52": 2691.75,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 358.26,
-      "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "ADANIENT",
       "name": "Adani Enterprises Ltd.",
       "sector": "metals",
@@ -3054,6 +3033,27 @@
       "universes": [
         "nifty50",
         "nifty100",
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "KAYNES",
+      "name": "Kaynes Technology India Ltd.",
+      "sector": "infra",
+      "price": 3658.0,
+      "change": 0.22,
+      "volume": "983.2K",
+      "vol_raw": 983180,
+      "volMul": 1.25,
+      "high": 3695.0,
+      "low": 3589.0,
+      "high52": 4249.25,
+      "low52": 2691.75,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 358.26,
+      "universes": [
         "nifty500",
         "fno"
       ]
@@ -4351,6 +4351,27 @@
       ]
     },
     {
+      "symbol": "TMCV",
+      "name": "Tata Motors Ltd.",
+      "sector": "infra",
+      "price": 432.95,
+      "change": -1.94,
+      "volume": "4.5M",
+      "vol_raw": 4528303,
+      "volMul": 1.25,
+      "high": 441.5,
+      "low": 430.2,
+      "high52": 507.72,
+      "low52": 322.65,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 196.04,
+      "universes": [
+        "nifty100",
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "INDHOTEL",
       "name": "Indian Hotels Co. Ltd.",
       "sector": "infra",
@@ -4370,27 +4391,6 @@
         "nifty100",
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "TMCV",
-      "name": "Tata Motors Ltd.",
-      "sector": "infra",
-      "price": 432.95,
-      "change": -1.94,
-      "volume": "4.5M",
-      "vol_raw": 4528303,
-      "volMul": 1.25,
-      "high": 441.5,
-      "low": 430.2,
-      "high52": 507.72,
-      "low52": 322.65,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 196.04,
-      "universes": [
-        "nifty100",
-        "nifty500"
       ]
     },
     {
@@ -6513,26 +6513,6 @@
       ]
     },
     {
-      "symbol": "NUVAMA",
-      "name": "Nuvama Wealth Management Ltd.",
-      "sector": "banking",
-      "price": 1640.6,
-      "change": -2.43,
-      "volume": "516.5K",
-      "vol_raw": 516479,
-      "volMul": 1.25,
-      "high": 1668.9,
-      "low": 1605.1,
-      "high52": 1919.24,
-      "low52": 1203.82,
-      "pe": 18.5,
-      "delivery": "50.0%",
-      "turnover_cr": 84.29,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ANANDRATHI",
       "name": "Anand Rathi Wealth Ltd.",
       "sector": "banking",
@@ -6545,6 +6525,26 @@
       "low": 2112.0,
       "high52": 2488.71,
       "low52": 1584.0,
+      "pe": 18.5,
+      "delivery": "50.0%",
+      "turnover_cr": 84.29,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "NUVAMA",
+      "name": "Nuvama Wealth Management Ltd.",
+      "sector": "banking",
+      "price": 1640.6,
+      "change": -2.43,
+      "volume": "516.5K",
+      "vol_raw": 516479,
+      "volMul": 1.25,
+      "high": 1668.9,
+      "low": 1605.1,
+      "high52": 1919.24,
+      "low52": 1203.82,
       "pe": 18.5,
       "delivery": "50.0%",
       "turnover_cr": 84.29,
@@ -10298,26 +10298,6 @@
       ]
     },
     {
-      "symbol": "RHIM",
-      "name": "RHI MAGNESITA INDIA LTD.",
-      "sector": "infra",
-      "price": 386.6,
-      "change": 0.04,
-      "volume": "431.6K",
-      "vol_raw": 431637,
-      "volMul": 1.25,
-      "high": 391.65,
-      "low": 380.1,
-      "high52": 450.4,
-      "low52": 285.08,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.72,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CHAMBLFERT",
       "name": "Chambal Fertilizers & Chemicals Ltd.",
       "sector": "infra",
@@ -10330,6 +10310,26 @@
       "low": 415.5,
       "high52": 483.92,
       "low52": 311.62,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 16.72,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "RHIM",
+      "name": "RHI MAGNESITA INDIA LTD.",
+      "sector": "infra",
+      "price": 386.6,
+      "change": 0.04,
+      "volume": "431.6K",
+      "vol_raw": 431637,
+      "volMul": 1.25,
+      "high": 391.65,
+      "low": 380.1,
+      "high52": 450.4,
+      "low52": 285.08,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 16.72,
@@ -11578,26 +11578,6 @@
       ]
     },
     {
-      "symbol": "UCOBANK",
-      "name": "UCO Bank",
-      "sector": "banking",
-      "price": 23.33,
-      "change": -2.38,
-      "volume": "3.5M",
-      "vol_raw": 3548489,
-      "volMul": 1.25,
-      "high": 23.87,
-      "low": 23.23,
-      "high52": 27.45,
-      "low52": 17.42,
-      "pe": 18.5,
-      "delivery": "50.0%",
-      "turnover_cr": 8.32,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ZYDUSWELL",
       "name": "Zydus Wellness Ltd.",
       "sector": "fmcg",
@@ -11611,6 +11591,26 @@
       "high52": 604.21,
       "low52": 385.5,
       "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 8.32,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "UCOBANK",
+      "name": "UCO Bank",
+      "sector": "banking",
+      "price": 23.33,
+      "change": -2.38,
+      "volume": "3.5M",
+      "vol_raw": 3548489,
+      "volMul": 1.25,
+      "high": 23.87,
+      "low": 23.23,
+      "high52": 27.45,
+      "low52": 17.42,
+      "pe": 18.5,
       "delivery": "50.0%",
       "turnover_cr": 8.32,
       "universes": [
