@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-29T16:18:59.480132+00:00",
+    "generated_at": "2026-09-29T17:46:09.331940+00:00",
     "market_date": "29-Sep-2026",
     "market_date_iso": "2026-09-29",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -6009,27 +6009,6 @@
       ]
     },
     {
-      "symbol": "BLUESTARCO",
-      "name": "Blue Star Ltd.",
-      "sector": "fmcg",
-      "price": 1529.5,
-      "change": -2.91,
-      "volume": "1.0M",
-      "vol_raw": 1003421,
-      "volMul": 1.25,
-      "high": 1578.5,
-      "low": 1526.9,
-      "high52": 1815.28,
-      "low52": 1145.18,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 155.48,
-      "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "MAZDOCK",
       "name": "Mazagoan Dock Shipbuilders Ltd.",
       "sector": "infra",
@@ -6047,6 +6026,27 @@
       "turnover_cr": 155.48,
       "universes": [
         "nifty100",
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "BLUESTARCO",
+      "name": "Blue Star Ltd.",
+      "sector": "fmcg",
+      "price": 1529.5,
+      "change": -2.91,
+      "volume": "1.0M",
+      "vol_raw": 1003421,
+      "volMul": 1.25,
+      "high": 1578.5,
+      "low": 1526.9,
+      "high52": 1815.28,
+      "low52": 1145.18,
+      "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 155.48,
+      "universes": [
         "nifty500",
         "fno"
       ]
@@ -7323,26 +7323,6 @@
       ]
     },
     {
-      "symbol": "GRSE",
-      "name": "Garden Reach Shipbuilders & Engineers Ltd.",
-      "sector": "infra",
-      "price": 2206.1,
-      "change": -1.75,
-      "volume": "429.0K",
-      "vol_raw": 428953,
-      "volMul": 1.25,
-      "high": 2242.7,
-      "low": 2191.9,
-      "high52": 2579.1,
-      "low52": 1643.93,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 94.82,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "TIINDIA",
       "name": "Tube Investments of India Ltd.",
       "sector": "auto",
@@ -7361,6 +7341,26 @@
       "universes": [
         "nifty500",
         "fno"
+      ]
+    },
+    {
+      "symbol": "GRSE",
+      "name": "Garden Reach Shipbuilders & Engineers Ltd.",
+      "sector": "infra",
+      "price": 2206.1,
+      "change": -1.75,
+      "volume": "429.0K",
+      "vol_raw": 428953,
+      "volMul": 1.25,
+      "high": 2242.7,
+      "low": 2191.9,
+      "high52": 2579.1,
+      "low52": 1643.93,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 94.82,
+      "universes": [
+        "nifty500"
       ]
     },
     {
