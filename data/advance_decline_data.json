@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T13:04:08.207643+00:00",
+    "generated_at": "2026-09-30T17:41:51.825179+00:00",
     "market_date": "30-Sep-2026",
     "market_date_iso": "2026-09-30",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8437,27 +8437,6 @@
       ]
     },
     {
-      "symbol": "CONCOR",
-      "name": "Container Corporation of India Ltd.",
-      "sector": "infra",
-      "price": 447.5,
-      "change": 0.9,
-      "volume": "1.1M",
-      "vol_raw": 1094966,
-      "volMul": 1.25,
-      "high": 454.6,
-      "low": 445.3,
-      "high52": 522.79,
-      "low52": 333.98,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 49.42,
-      "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "COLPAL",
       "name": "Colgate Palmolive (India) Ltd.",
       "sector": "fmcg",
@@ -8471,6 +8450,27 @@
       "high52": 2079.89,
       "low52": 1322.48,
       "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 49.42,
+      "universes": [
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "CONCOR",
+      "name": "Container Corporation of India Ltd.",
+      "sector": "infra",
+      "price": 447.5,
+      "change": 0.9,
+      "volume": "1.1M",
+      "vol_raw": 1094966,
+      "volMul": 1.25,
+      "high": 454.6,
+      "low": 445.3,
+      "high52": 522.79,
+      "low52": 333.98,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 49.42,
       "universes": [
@@ -10036,26 +10036,6 @@
       ]
     },
     {
-      "symbol": "ONESOURCE",
-      "name": "Onesource Specialty Pharma Ltd.",
-      "sector": "pharma",
-      "price": 1521.6,
-      "change": -3.9,
-      "volume": "194.9K",
-      "vol_raw": 194917,
-      "volMul": 1.25,
-      "high": 1600.0,
-      "low": 1506.1,
-      "high52": 1840.0,
-      "low52": 1129.57,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 30.14,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "SCHNEIDER",
       "name": "Schneider Electric Infrastructure Ltd.",
       "sector": "infra",
@@ -10069,6 +10049,26 @@
       "high52": 1410.82,
       "low52": 892.5,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 30.14,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ONESOURCE",
+      "name": "Onesource Specialty Pharma Ltd.",
+      "sector": "pharma",
+      "price": 1521.6,
+      "change": -3.9,
+      "volume": "194.9K",
+      "vol_raw": 194917,
+      "volMul": 1.25,
+      "high": 1600.0,
+      "low": 1506.1,
+      "high52": 1840.0,
+      "low52": 1129.57,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 30.14,
       "universes": [
@@ -12036,26 +12036,6 @@
       ]
     },
     {
-      "symbol": "AAVAS",
-      "name": "Aavas Financiers Ltd.",
-      "sector": "banking",
-      "price": 1211.9,
-      "change": -2.92,
-      "volume": "80.7K",
-      "vol_raw": 80671,
-      "volMul": 1.25,
-      "high": 1250.8,
-      "low": 1206.0,
-      "high52": 1438.42,
-      "low52": 904.5,
-      "pe": 18.5,
-      "delivery": "50.0%",
-      "turnover_cr": 9.87,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "KPIL",
       "name": "Kalpataru Projects International Ltd.",
       "sector": "infra",
@@ -12069,6 +12049,26 @@
       "high52": 1592.98,
       "low52": 1025.18,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 9.87,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AAVAS",
+      "name": "Aavas Financiers Ltd.",
+      "sector": "banking",
+      "price": 1211.9,
+      "change": -2.92,
+      "volume": "80.7K",
+      "vol_raw": 80671,
+      "volMul": 1.25,
+      "high": 1250.8,
+      "low": 1206.0,
+      "high52": 1438.42,
+      "low52": 904.5,
+      "pe": 18.5,
       "delivery": "50.0%",
       "turnover_cr": 9.87,
       "universes": [
