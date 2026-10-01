@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-01T18:07:50.091611+00:00",
+    "generated_at": "2026-10-01T18:30:15.443950+00:00",
     "market_date": "01-Oct-2026",
     "market_date_iso": "2026-10-01",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8687,6 +8687,26 @@
       ]
     },
     {
+      "symbol": "J&KBANK",
+      "name": "Jammu & Kashmir Bank Ltd.",
+      "sector": "banking",
+      "price": 139.98,
+      "change": 0.96,
+      "volume": "4.0M",
+      "vol_raw": 3955477,
+      "volMul": 1.25,
+      "high": 143.06,
+      "low": 136.8,
+      "high52": 164.52,
+      "low52": 102.6,
+      "pe": 18.5,
+      "delivery": "50.0%",
+      "turnover_cr": 55.41,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "BANKINDIA",
       "name": "Bank of India",
       "sector": "banking",
@@ -8705,26 +8725,6 @@
       "universes": [
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "J&KBANK",
-      "name": "Jammu & Kashmir Bank Ltd.",
-      "sector": "banking",
-      "price": 139.98,
-      "change": 0.96,
-      "volume": "4.0M",
-      "vol_raw": 3955477,
-      "volMul": 1.25,
-      "high": 143.06,
-      "low": 136.8,
-      "high52": 164.52,
-      "low52": 102.6,
-      "pe": 18.5,
-      "delivery": "50.0%",
-      "turnover_cr": 55.41,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -10563,26 +10563,6 @@
       ]
     },
     {
-      "symbol": "AFFLE",
-      "name": "Affle 3i Ltd.",
-      "sector": "it",
-      "price": 1449.6,
-      "change": -4.06,
-      "volume": "179.1K",
-      "vol_raw": 179131,
-      "volMul": 1.25,
-      "high": 1511.9,
-      "low": 1440.1,
-      "high52": 1738.68,
-      "low52": 1080.07,
-      "pe": 29.2,
-      "delivery": "50.0%",
-      "turnover_cr": 26.17,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CEMPRO",
       "name": "Cemindia Projects Ltd.",
       "sector": "infra",
@@ -10596,6 +10576,26 @@
       "high52": 1385.75,
       "low52": 870.22,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 26.17,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AFFLE",
+      "name": "Affle 3i Ltd.",
+      "sector": "it",
+      "price": 1449.6,
+      "change": -4.06,
+      "volume": "179.1K",
+      "vol_raw": 179131,
+      "volMul": 1.25,
+      "high": 1511.9,
+      "low": 1440.1,
+      "high52": 1738.68,
+      "low52": 1080.07,
+      "pe": 29.2,
       "delivery": "50.0%",
       "turnover_cr": 26.17,
       "universes": [
