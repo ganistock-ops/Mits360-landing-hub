@@ -1,33 +1,33 @@
 {
   "meta": {
-    "generated_at": "2026-10-01T18:43:18.326564+00:00",
-    "market_date": "01-Oct-2026",
+    "generated_at": "2026-10-02T17:33:45.985722+00:00",
+    "market_date": "02-Oct-2026",
     "index_name": "BANK NIFTY",
     "current_price": 54450.75,
-    "open": 54583.05,
-    "high": 55091.45,
-    "low": 54066.6,
-    "points_change": -182.3,
-    "change_pct": -0.33,
-    "pe": 12.91,
-    "pb": 1.64,
-    "div_yield": 0.73,
+    "open": 54450.75,
+    "high": 54450.75,
+    "low": 54450.75,
+    "points_change": 0.0,
+    "change_pct": 0.0,
+    "pe": 13.39,
+    "pb": 1.7,
+    "div_yield": 0.69,
     "status": "FINALIZED"
   },
   "returns_matrix": [
     {
       "period": "1 Week",
-      "old_price": 55438.5,
-      "return_pct": -1.78,
-      "period_high": 55918.4,
+      "old_price": 55580.4,
+      "return_pct": -2.03,
+      "period_high": 55762.6,
       "period_low": 53785.7,
-      "high_date": "24-Sep-2026",
+      "high_date": "25-Sep-2026",
       "low_date": "29-Sep-2026"
     },
     {
       "period": "2 Weeks",
-      "old_price": 56055.75,
-      "return_pct": -2.86,
+      "old_price": 56358.7,
+      "return_pct": -3.39,
       "period_high": 56671.1,
       "period_low": 53785.7,
       "high_date": "22-Sep-2026",
@@ -35,16 +35,16 @@
     },
     {
       "period": "1 Month",
-      "old_price": 57409.6,
-      "return_pct": -5.15,
-      "period_high": 57766.25,
+      "old_price": 57172.0,
+      "return_pct": -4.76,
+      "period_high": 57753.6,
       "period_low": 53785.7,
-      "high_date": "01-Sep-2026",
+      "high_date": "03-Sep-2026",
       "low_date": "29-Sep-2026"
     },
     {
       "period": "3 Months",
-      "old_price": 58033.05,
+      "old_price": 58031.65,
       "return_pct": -6.17,
       "period_high": 58596.85,
       "period_low": 53785.7,
@@ -53,8 +53,8 @@
     },
     {
       "period": "6 Months",
-      "old_price": 51448.65,
-      "return_pct": 5.84,
+      "old_price": 51548.75,
+      "return_pct": 5.63,
       "period_high": 58706.05,
       "period_low": 49954.85,
       "high_date": "25-Jun-2026",
@@ -80,8 +80,8 @@
     },
     {
       "period": "5 Years",
-      "old_price": 37225.9,
-      "return_pct": 46.27,
+      "old_price": 37579.65,
+      "return_pct": 44.89,
       "period_high": 61764.85,
       "period_low": 32155.35,
       "high_date": "03-Feb-2026",
@@ -200,33 +200,33 @@
   ],
   "pivots": {
     "standard": {
-      "pivot": 54536.27,
-      "r1": 55005.93,
-      "s1": 53981.08,
-      "r2": 55561.12,
-      "s2": 53511.42,
-      "r3": 56030.78,
-      "s3": 52956.23
+      "pivot": 54450.75,
+      "r1": 54450.75,
+      "s1": 54450.75,
+      "r2": 54450.75,
+      "s2": 54450.75,
+      "r3": 54450.75,
+      "s3": 54450.75
     },
     "fibonacci": {
-      "pivot": 54536.27,
-      "r1": 54927.76,
-      "s1": 54144.77,
-      "r2": 55169.62,
-      "s2": 53902.91,
-      "r3": 55561.12,
-      "s3": 53511.42
+      "pivot": 54450.75,
+      "r1": 54450.75,
+      "s1": 54450.75,
+      "r2": 54450.75,
+      "s2": 54450.75,
+      "r3": 54450.75,
+      "s3": 54450.75
     },
     "camarilla": {
-      "pivot": 54536.27,
-      "r1": 54544.69,
-      "s1": 54356.81,
-      "r2": 54638.64,
-      "s2": 54262.86,
-      "r3": 54732.58,
-      "s3": 54168.92,
-      "r4": 55014.42,
-      "s4": 53887.08
+      "pivot": 54450.75,
+      "r1": 54450.75,
+      "s1": 54450.75,
+      "r2": 54450.75,
+      "s2": 54450.75,
+      "r3": 54450.75,
+      "s3": 54450.75,
+      "r4": 54450.75,
+      "s4": 54450.75
     }
   }
 }
