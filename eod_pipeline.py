@@ -907,16 +907,20 @@ def main():
         os.makedirs(output_dir, exist_ok=True)
 
         market_summary_path = os.path.join(output_dir, "market_summary.json")
-        with open(market_summary_path, "w", encoding="utf-8") as f:
-            json.dump(payload, f, indent=2, ensure_ascii=False)
-
         adv_dec_path = os.path.join(output_dir, "advance_decline_data.json")
-        with open(adv_dec_path, "w", encoding="utf-8") as f:
-            json.dump(payload, f, indent=2, ensure_ascii=False)
 
-        print(f"\n[OK] SUCCESS: In-memory EOD Market Summary & Advance/Decline exported:")
-        print(f"    - {market_summary_path}")
-        print(f"    - {adv_dec_path}")
+        if len(processed["stocks"]) == 0:
+            print("\n[!] WARNING: Processed stocks count is 0! Skipping export to protect existing market data from being wiped.")
+        else:
+            with open(market_summary_path, "w", encoding="utf-8") as f:
+                json.dump(payload, f, indent=2, ensure_ascii=False)
+
+            with open(adv_dec_path, "w", encoding="utf-8") as f:
+                json.dump(payload, f, indent=2, ensure_ascii=False)
+
+            print(f"\n[OK] SUCCESS: In-memory EOD Market Summary & Advance/Decline exported:")
+            print(f"    - {market_summary_path}")
+            print(f"    - {adv_dec_path}")
 
         # 6. Technical Analytics for Nifty 50 & Bank Nifty
         calculate_nifty_view_analytics(trade_date, index_data, output_dir)
