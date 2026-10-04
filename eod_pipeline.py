@@ -46,7 +46,7 @@ SECTOR_DEFINITIONS = [
 ]
 
 INDUSTRY_SECTOR_MAP = {
-    "Financial Services": "banking",
+    "Financial Services": "finserv",
     "Banks": "banking",
     "Private Bank": "banking",
     "Public Sector Bank": "banking",
@@ -345,6 +345,8 @@ def find_latest_trading_bhavcopy() -> Tuple[datetime.date, str, pd.DataFrame, di
         else:
             # Legacy format
             df.columns = [c.strip() for c in df.columns]
+            if 'SERIES' in df.columns:
+                df['SERIES'] = df['SERIES'].astype(str).str.strip()
             df = df[df['SERIES'] == 'EQ'].copy()
             df.rename(columns={
                 'SYMBOL': 'symbol',
@@ -425,10 +427,25 @@ def process_bhavcopy_df(df: pd.DataFrame, universes: dict, index_data: dict) -> 
                 return u[sym]["name"], u[sym]["industry"]
         return sym, "Diversified"
 
+    BANK_SYMBOLS = {
+        'HDFCBANK', 'ICICIBANK', 'SBIN', 'KOTAKBANK', 'AXISBANK', 'INDUSINDBK',
+        'BANKBARODA', 'PNB', 'AUBANK', 'FEDERALBNK', 'IDFCFIRSTB', 'BANDHANBNK',
+        'CANBK', 'UNIONBANK', 'INDIANB', 'UCOBANK', 'CENTRALBK', 'MAHABANK',
+        'IOB', 'PSB', 'BANKINDIA', 'JKBANK', 'J&KBANK', 'KARURVYSYA', 'CITYUNIONB',
+        'RBLBANK', 'CUB', 'SOUTHBANK', 'CSBBANK', 'EQUITASBNK', 'UJJIVANSFB',
+        'ESAFSFB', 'UTKARSHBNK', 'SURYODAY'
+    }
+
+    def resolve_sector(sym: str, ind: str) -> str:
+        s_upper = str(sym).upper().strip()
+        if s_upper in BANK_SYMBOLS or s_upper.endswith('BANK') or s_upper.endswith('BNK') or 'BANK' in s_upper:
+            return "banking"
+        return INDUSTRY_SECTOR_MAP.get(ind, "infra")
+
     meta_tuples = [get_meta(s) for s in df['symbol']]
     df['company_name'] = [m[0] for m in meta_tuples]
     df['industry'] = [m[1] for m in meta_tuples]
-    df['sector'] = df['industry'].map(INDUSTRY_SECTOR_MAP).fillna("infra")
+    df['sector'] = [resolve_sector(s, ind) for s, ind in zip(df['symbol'], df['industry'])]
 
     # 52W High / Low approximations & PE benchmarks
     df['high52'] = (df['high'] * 1.15).round(2)

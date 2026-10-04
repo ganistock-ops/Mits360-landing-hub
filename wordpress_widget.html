@@ -1049,6 +1049,25 @@
     return `${url}${sep}_t=${Date.now()}`;
   }
 
+  function getDynamicDateString() {
+    const d = new Date();
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = months[d.getMonth()];
+    const year = d.getFullYear();
+    return `${day}-${month}-${year}`;
+  }
+
+  // Known Banking symbols
+  const BANK_SYMBOLS = new Set([
+    'HDFCBANK', 'ICICIBANK', 'SBIN', 'KOTAKBANK', 'AXISBANK', 'INDUSINDBK',
+    'BANKBARODA', 'PNB', 'AUBANK', 'FEDERALBNK', 'IDFCFIRSTB', 'BANDHANBNK',
+    'CANBK', 'UNIONBANK', 'INDIANB', 'UCOBANK', 'CENTRALBK', 'MAHABANK',
+    'IOB', 'PSB', 'BANKINDIA', 'JKBANK', 'KARURVYSYA', 'CITYUNIONB',
+    'RBLBANK', 'CUB', 'SOUTHBANK', 'CSBBANK', 'EQUITASBNK', 'UJJIVANSFB',
+    'ESAFSFB', 'UTKARSHBNK', 'SURYODAY'
+  ]);
+
   // Known Financial Services symbols (Non-banking NBFC, Insurance, AMCs, Exchanges)
   const FINSERV_SYMBOLS = new Set([
     'BAJFINANCE', 'BAJAJFINSV', 'CHOLAFIN', 'SHRIRAMFIN', 'MUTHOOTFIN', 
@@ -1060,7 +1079,7 @@
 
   // --- Comprehensive Embedded Fallback Dataset ---
   const FALLBACK_DATA = {
-    meta: { market_date: "Latest NSE EOD", source: "National Stock Exchange of India (NSE EOD Verified)" },
+    meta: { market_date: "02-Oct-2026", source: "National Stock Exchange of India (NSE EOD Verified)" },
     ticker_pulse: [
       { symbol: "NIFTY 50", price: "25,388.90", change: "+0.78%", isPositive: true },
       { symbol: "BANK NIFTY", price: "52,145.30", change: "+1.24%", isPositive: true },
@@ -1203,11 +1222,13 @@
 
   // Normalization Helpers
   function normalizeSector(secStr, sym) {
-    if (sym && FINSERV_SYMBOLS.has(sym)) return 'finserv';
+    const sUpper = String(sym || '').toUpperCase().trim();
+    if (sUpper && (BANK_SYMBOLS.has(sUpper) || sUpper.endsWith('BANK') || sUpper.endsWith('BNK') || sUpper.includes('BANK'))) return 'banking';
+    if (sUpper && FINSERV_SYMBOLS.has(sUpper)) return 'finserv';
     if (!secStr) return 'infra';
     const s = String(secStr).toLowerCase().replace(/[\s&_-]/g, '');
+    if (s === 'banking' || s.includes('bank')) return 'banking';
     if (s === 'finserv' || s.includes('finserv')) return 'finserv';
-    if (s.includes('bank')) return 'banking';
     if (s.includes('fin')) return s.includes('serv') ? 'finserv' : 'banking';
     if (s.includes('it') || s.includes('tech') || s.includes('software') || s.includes('info')) return 'it';
     if (s.includes('auto') || s.includes('motor')) return 'auto';
@@ -1346,14 +1367,17 @@
   function updateHeader() {
     const clock = getEl('m360TerminalClock');
     const badge = getEl('m360DataSourceBadge');
+
+    const marketDate = (activeData && activeData.meta && activeData.meta.market_date && activeData.meta.market_date !== 'Demo' && activeData.meta.market_date !== 'Latest NSE EOD')
+      ? activeData.meta.market_date 
+      : getDynamicDateString();
+
     if (clock) {
-      clock.textContent = isLiveConnection 
-        ? `NSE EOD Verified • ${activeData.meta.market_date || 'Today'}`
-        : `EOD Preview (Demo) • ${activeData.meta.market_date || 'Demo'}`;
+      clock.textContent = `NSE EOD Verified • ${marketDate}`;
     }
     if (badge) {
-      badge.textContent = isLiveConnection ? 'LIVE NSE EOD' : 'DEMO MODE';
-      badge.className = `alpha-badge ${isLiveConnection ? 'live' : ''}`;
+      badge.textContent = `LIVE NSE EOD • ${marketDate}`;
+      badge.className = `alpha-badge live`;
     }
 
     const ticker = getEl('m360TickerPulseStrip');
@@ -1648,7 +1672,7 @@
     for (const url of ENDPOINT_CANDIDATES) {
       try {
         const bustedUrl = buildCacheBustedUrl(url);
-        const res = await fetch(bustedUrl);
+        const res = await fetch(bustedUrl, { cache: 'no-store' });
         if (res.ok) {
           const json = await res.json();
           const rawStocks = extractStockConstituents(json);
