@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-06T18:00:26.747919+00:00",
+    "generated_at": "2026-10-06T18:31:25.094345+00:00",
     "market_date": "06-Oct-2026",
     "market_date_iso": "2026-10-06",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -7742,6 +7742,26 @@
       ]
     },
     {
+      "symbol": "ANANTRAJ",
+      "name": "Anant Raj Ltd.",
+      "sector": "realty",
+      "price": 608.9,
+      "change": 3.66,
+      "volume": "1.1M",
+      "vol_raw": 1142191,
+      "volMul": 1.25,
+      "high": 611.45,
+      "low": 587.8,
+      "high52": 703.17,
+      "low52": 440.85,
+      "pe": 42.0,
+      "delivery": "50.0%",
+      "turnover_cr": 68.52,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "APLAPOLLO",
       "name": "APL Apollo Tubes Ltd.",
       "sector": "infra",
@@ -7760,26 +7780,6 @@
       "universes": [
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "ANANTRAJ",
-      "name": "Anant Raj Ltd.",
-      "sector": "realty",
-      "price": 608.9,
-      "change": 3.66,
-      "volume": "1.1M",
-      "vol_raw": 1142191,
-      "volMul": 1.25,
-      "high": 611.45,
-      "low": 587.8,
-      "high52": 703.17,
-      "low52": 440.85,
-      "pe": 42.0,
-      "delivery": "50.0%",
-      "turnover_cr": 68.52,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -11257,26 +11257,6 @@
       ]
     },
     {
-      "symbol": "AFFLE",
-      "name": "Affle 3i Ltd.",
-      "sector": "it",
-      "price": 1450.2,
-      "change": 0.44,
-      "volume": "96.5K",
-      "vol_raw": 96528,
-      "volMul": 1.25,
-      "high": 1456.0,
-      "low": 1433.3,
-      "high52": 1674.4,
-      "low52": 1074.97,
-      "pe": 29.2,
-      "delivery": "50.0%",
-      "turnover_cr": 13.96,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "JBMA",
       "name": "JBM Auto Ltd.",
       "sector": "auto",
@@ -11290,6 +11270,26 @@
       "high52": 643.37,
       "low52": 408.26,
       "pe": 27.4,
+      "delivery": "50.0%",
+      "turnover_cr": 13.96,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AFFLE",
+      "name": "Affle 3i Ltd.",
+      "sector": "it",
+      "price": 1450.2,
+      "change": 0.44,
+      "volume": "96.5K",
+      "vol_raw": 96528,
+      "volMul": 1.25,
+      "high": 1456.0,
+      "low": 1433.3,
+      "high52": 1674.4,
+      "low52": 1074.97,
+      "pe": 29.2,
       "delivery": "50.0%",
       "turnover_cr": 13.96,
       "universes": [
@@ -11337,26 +11337,6 @@
       ]
     },
     {
-      "symbol": "ELECON",
-      "name": "Elecon Engineering Co. Ltd.",
-      "sector": "infra",
-      "price": 446.3,
-      "change": -0.01,
-      "volume": "307.8K",
-      "vol_raw": 307847,
-      "volMul": 1.25,
-      "high": 449.7,
-      "low": 440.4,
-      "high52": 517.16,
-      "low52": 330.3,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 13.67,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "TRIDENT",
       "name": "Trident Ltd.",
       "sector": "infra",
@@ -11369,6 +11349,26 @@
       "low": 21.84,
       "high52": 26.43,
       "low52": 16.38,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 13.67,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ELECON",
+      "name": "Elecon Engineering Co. Ltd.",
+      "sector": "infra",
+      "price": 446.3,
+      "change": -0.01,
+      "volume": "307.8K",
+      "vol_raw": 307847,
+      "volMul": 1.25,
+      "high": 449.7,
+      "low": 440.4,
+      "high52": 517.16,
+      "low52": 330.3,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 13.67,
@@ -11477,26 +11477,6 @@
       ]
     },
     {
-      "symbol": "MSUMI",
-      "name": "Motherson Sumi Wiring India Ltd.",
-      "sector": "auto",
-      "price": 33.31,
-      "change": 1.28,
-      "volume": "3.8M",
-      "vol_raw": 3809743,
-      "volMul": 1.25,
-      "high": 33.38,
-      "low": 32.81,
-      "high52": 38.39,
-      "low52": 24.61,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 12.62,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "RITES",
       "name": "RITES Ltd.",
       "sector": "infra",
@@ -11510,6 +11490,26 @@
       "high52": 237.89,
       "low52": 151.81,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 12.62,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "MSUMI",
+      "name": "Motherson Sumi Wiring India Ltd.",
+      "sector": "auto",
+      "price": 33.31,
+      "change": 1.28,
+      "volume": "3.8M",
+      "vol_raw": 3809743,
+      "volMul": 1.25,
+      "high": 33.38,
+      "low": 32.81,
+      "high52": 38.39,
+      "low52": 24.61,
+      "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 12.62,
       "universes": [
