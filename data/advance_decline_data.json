@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-07T18:31:56.415149+00:00",
+    "generated_at": "2026-10-07T19:01:08.813189+00:00",
     "market_date": "07-Oct-2026",
     "market_date_iso": "2026-10-07",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -6739,26 +6739,6 @@
       ]
     },
     {
-      "symbol": "HSCL",
-      "name": "Himadri Speciality Chemical Ltd.",
-      "sector": "infra",
-      "price": 672.95,
-      "change": 0.66,
-      "volume": "1.4M",
-      "vol_raw": 1404959,
-      "volMul": 1.25,
-      "high": 676.05,
-      "low": 664.05,
-      "high52": 777.46,
-      "low52": 498.04,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 94.27,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "SHREECEM",
       "name": "Shree Cement Ltd.",
       "sector": "infra",
@@ -6777,6 +6757,26 @@
       "universes": [
         "nifty500",
         "fno"
+      ]
+    },
+    {
+      "symbol": "HSCL",
+      "name": "Himadri Speciality Chemical Ltd.",
+      "sector": "infra",
+      "price": 672.95,
+      "change": 0.66,
+      "volume": "1.4M",
+      "vol_raw": 1404959,
+      "volMul": 1.25,
+      "high": 676.05,
+      "low": 664.05,
+      "high52": 777.46,
+      "low52": 498.04,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 94.27,
+      "universes": [
+        "nifty500"
       ]
     },
     {
@@ -9680,26 +9680,6 @@
       ]
     },
     {
-      "symbol": "CAPLIPOINT",
-      "name": "Caplin Point Laboratories Ltd.",
-      "sector": "pharma",
-      "price": 2649.1,
-      "change": -1.14,
-      "volume": "103.8K",
-      "vol_raw": 103774,
-      "volMul": 1.25,
-      "high": 2689.0,
-      "low": 2610.0,
-      "high52": 3092.35,
-      "low52": 1957.5,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 27.47,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "PRIVISCL",
       "name": "Privi Speciality Chemicals Ltd.",
       "sector": "infra",
@@ -9713,6 +9693,26 @@
       "high52": 4076.75,
       "low52": 2607.0,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 27.47,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CAPLIPOINT",
+      "name": "Caplin Point Laboratories Ltd.",
+      "sector": "pharma",
+      "price": 2649.1,
+      "change": -1.14,
+      "volume": "103.8K",
+      "vol_raw": 103774,
+      "volMul": 1.25,
+      "high": 2689.0,
+      "low": 2610.0,
+      "high52": 3092.35,
+      "low52": 1957.5,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 27.47,
       "universes": [
@@ -9820,26 +9820,6 @@
       ]
     },
     {
-      "symbol": "GABRIEL",
-      "name": "Gabriel India Ltd.",
-      "sector": "auto",
-      "price": 1346.9,
-      "change": -0.44,
-      "volume": "195.8K",
-      "vol_raw": 195774,
-      "volMul": 1.25,
-      "high": 1363.7,
-      "low": 1329.6,
-      "high52": 1568.26,
-      "low52": 997.2,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 26.47,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "OLECTRA",
       "name": "Olectra Greentech Ltd.",
       "sector": "auto",
@@ -9852,6 +9832,26 @@
       "low": 1079.0,
       "high52": 1266.15,
       "low52": 809.25,
+      "pe": 27.4,
+      "delivery": "50.0%",
+      "turnover_cr": 26.47,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "GABRIEL",
+      "name": "Gabriel India Ltd.",
+      "sector": "auto",
+      "price": 1346.9,
+      "change": -0.44,
+      "volume": "195.8K",
+      "vol_raw": 195774,
+      "volMul": 1.25,
+      "high": 1363.7,
+      "low": 1329.6,
+      "high52": 1568.26,
+      "low52": 997.2,
       "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 26.47,
@@ -11123,26 +11123,6 @@
       ]
     },
     {
-      "symbol": "ANTHEM",
-      "name": "Anthem Biosciences Ltd.",
-      "sector": "pharma",
-      "price": 887.05,
-      "change": -0.37,
-      "volume": "163.5K",
-      "vol_raw": 163476,
-      "volMul": 1.25,
-      "high": 892.9,
-      "low": 881.3,
-      "high52": 1026.83,
-      "low52": 660.97,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 14.49,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "SIGNATURE",
       "name": "Signatureglobal (India) Ltd.",
       "sector": "realty",
@@ -11156,6 +11136,26 @@
       "high52": 830.76,
       "low52": 532.58,
       "pe": 42.0,
+      "delivery": "50.0%",
+      "turnover_cr": 14.49,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ANTHEM",
+      "name": "Anthem Biosciences Ltd.",
+      "sector": "pharma",
+      "price": 887.05,
+      "change": -0.37,
+      "volume": "163.5K",
+      "vol_raw": 163476,
+      "volMul": 1.25,
+      "high": 892.9,
+      "low": 881.3,
+      "high52": 1026.83,
+      "low52": 660.97,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 14.49,
       "universes": [
@@ -11923,26 +11923,6 @@
       ]
     },
     {
-      "symbol": "FRACTAL",
-      "name": "Fractal Analytics Ltd.",
-      "sector": "it",
-      "price": 721.3,
-      "change": -2.81,
-      "volume": "114.2K",
-      "vol_raw": 114183,
-      "volMul": 1.25,
-      "high": 741.0,
-      "low": 718.0,
-      "high52": 852.15,
-      "low52": 538.5,
-      "pe": 29.2,
-      "delivery": "50.0%",
-      "turnover_cr": 8.31,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "DALBHARAT",
       "name": "Dalmia Bharat Ltd.",
       "sector": "infra",
@@ -11956,6 +11936,26 @@
       "high52": 1952.47,
       "low52": 1227.75,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 8.31,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "FRACTAL",
+      "name": "Fractal Analytics Ltd.",
+      "sector": "it",
+      "price": 721.3,
+      "change": -2.81,
+      "volume": "114.2K",
+      "vol_raw": 114183,
+      "volMul": 1.25,
+      "high": 741.0,
+      "low": 718.0,
+      "high52": 852.15,
+      "low52": 538.5,
+      "pe": 29.2,
       "delivery": "50.0%",
       "turnover_cr": 8.31,
       "universes": [
@@ -12023,26 +12023,6 @@
       ]
     },
     {
-      "symbol": "INDIACEM",
-      "name": "India Cements Ltd.",
-      "sector": "infra",
-      "price": 303.05,
-      "change": 2.64,
-      "volume": "252.8K",
-      "vol_raw": 252820,
-      "volMul": 1.25,
-      "high": 305.0,
-      "low": 289.2,
-      "high52": 350.75,
-      "low52": 216.9,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 7.55,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "EMCURE",
       "name": "Emcure Pharmaceuticals Ltd.",
       "sector": "pharma",
@@ -12056,6 +12036,26 @@
       "high52": 2222.84,
       "low52": 1425.9,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 7.55,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "INDIACEM",
+      "name": "India Cements Ltd.",
+      "sector": "infra",
+      "price": 303.05,
+      "change": 2.64,
+      "volume": "252.8K",
+      "vol_raw": 252820,
+      "volMul": 1.25,
+      "high": 305.0,
+      "low": 289.2,
+      "high52": 350.75,
+      "low52": 216.9,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 7.55,
       "universes": [
@@ -12263,26 +12263,6 @@
       ]
     },
     {
-      "symbol": "UBL",
-      "name": "United Breweries Ltd.",
-      "sector": "fmcg",
-      "price": 1185.7,
-      "change": 0.63,
-      "volume": "48.2K",
-      "vol_raw": 48162,
-      "volMul": 1.25,
-      "high": 1192.0,
-      "low": 1178.4,
-      "high52": 1370.8,
-      "low52": 883.8,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 5.71,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CRISIL",
       "name": "CRISIL Ltd.",
       "sector": "finserv",
@@ -12296,6 +12276,26 @@
       "high52": 5203.75,
       "low52": 3335.18,
       "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 5.71,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "UBL",
+      "name": "United Breweries Ltd.",
+      "sector": "fmcg",
+      "price": 1185.7,
+      "change": 0.63,
+      "volume": "48.2K",
+      "vol_raw": 48162,
+      "volMul": 1.25,
+      "high": 1192.0,
+      "low": 1178.4,
+      "high52": 1370.8,
+      "low52": 883.8,
+      "pe": 52.0,
       "delivery": "50.0%",
       "turnover_cr": 5.71,
       "universes": [
@@ -12343,26 +12343,6 @@
       ]
     },
     {
-      "symbol": "GALLANTT",
-      "name": "Gallantt Ispat Ltd.",
-      "sector": "infra",
-      "price": 514.55,
-      "change": -2.92,
-      "volume": "105.2K",
-      "vol_raw": 105150,
-      "volMul": 1.25,
-      "high": 530.0,
-      "low": 512.0,
-      "high52": 609.5,
-      "low52": 384.0,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 5.45,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "TRIDENT",
       "name": "Trident Ltd.",
       "sector": "infra",
@@ -12375,6 +12355,26 @@
       "low": 22.26,
       "high52": 26.08,
       "low52": 16.7,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 5.45,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "GALLANTT",
+      "name": "Gallantt Ispat Ltd.",
+      "sector": "infra",
+      "price": 514.55,
+      "change": -2.92,
+      "volume": "105.2K",
+      "vol_raw": 105150,
+      "volMul": 1.25,
+      "high": 530.0,
+      "low": 512.0,
+      "high52": 609.5,
+      "low52": 384.0,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 5.45,
