@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-08T18:56:45.512093+00:00",
+    "generated_at": "2026-10-08T19:10:13.961510+00:00",
     "market_date": "08-Oct-2026",
     "market_date_iso": "2026-10-08",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -3600,27 +3600,6 @@
       ]
     },
     {
-      "symbol": "COFORGE",
-      "name": "Coforge Ltd.",
-      "sector": "it",
-      "price": 1814.3,
-      "change": -0.43,
-      "volume": "1.8M",
-      "vol_raw": 1849205,
-      "volMul": 1.25,
-      "high": 1870.6,
-      "low": 1804.5,
-      "high52": 2151.19,
-      "low52": 1353.38,
-      "pe": 29.2,
-      "delivery": "50.0%",
-      "turnover_cr": 340.91,
-      "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "VEDL",
       "name": "Vedanta Ltd.",
       "sector": "metals",
@@ -3638,6 +3617,27 @@
       "turnover_cr": 340.91,
       "universes": [
         "nifty100",
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "COFORGE",
+      "name": "Coforge Ltd.",
+      "sector": "it",
+      "price": 1814.3,
+      "change": -0.43,
+      "volume": "1.8M",
+      "vol_raw": 1849205,
+      "volMul": 1.25,
+      "high": 1870.6,
+      "low": 1804.5,
+      "high52": 2151.19,
+      "low52": 1353.38,
+      "pe": 29.2,
+      "delivery": "50.0%",
+      "turnover_cr": 340.91,
+      "universes": [
         "nifty500",
         "fno"
       ]
@@ -8985,26 +8985,6 @@
       ]
     },
     {
-      "symbol": "NUVAMA",
-      "name": "Nuvama Wealth Management Ltd.",
-      "sector": "finserv",
-      "price": 1737.4,
-      "change": -4.85,
-      "volume": "245.4K",
-      "vol_raw": 245430,
-      "volMul": 1.25,
-      "high": 1813.1,
-      "low": 1721.1,
-      "high52": 2085.06,
-      "low52": 1290.82,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 43.37,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "NCC",
       "name": "NCC Ltd.",
       "sector": "infra",
@@ -9018,6 +8998,26 @@
       "high52": 145.91,
       "low52": 89.26,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 43.37,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "NUVAMA",
+      "name": "Nuvama Wealth Management Ltd.",
+      "sector": "finserv",
+      "price": 1737.4,
+      "change": -4.85,
+      "volume": "245.4K",
+      "vol_raw": 245430,
+      "volMul": 1.25,
+      "high": 1813.1,
+      "low": 1721.1,
+      "high52": 2085.06,
+      "low52": 1290.82,
+      "pe": 24.0,
       "delivery": "50.0%",
       "turnover_cr": 43.37,
       "universes": [
@@ -11734,26 +11734,6 @@
       ]
     },
     {
-      "symbol": "EMCURE",
-      "name": "Emcure Pharmaceuticals Ltd.",
-      "sector": "pharma",
-      "price": 1851.5,
-      "change": -3.47,
-      "volume": "65.7K",
-      "vol_raw": 65719,
-      "volMul": 1.25,
-      "high": 1919.5,
-      "low": 1838.0,
-      "high52": 2207.42,
-      "low52": 1378.5,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 12.27,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "MINDACORP",
       "name": "Minda Corporation Ltd.",
       "sector": "auto",
@@ -11767,6 +11747,26 @@
       "high52": 735.08,
       "low52": 471.75,
       "pe": 27.4,
+      "delivery": "50.0%",
+      "turnover_cr": 12.27,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "EMCURE",
+      "name": "Emcure Pharmaceuticals Ltd.",
+      "sector": "pharma",
+      "price": 1851.5,
+      "change": -3.47,
+      "volume": "65.7K",
+      "vol_raw": 65719,
+      "volMul": 1.25,
+      "high": 1919.5,
+      "low": 1838.0,
+      "high52": 2207.42,
+      "low52": 1378.5,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 12.27,
       "universes": [
@@ -11934,26 +11934,6 @@
       ]
     },
     {
-      "symbol": "AVANTIFEED",
-      "name": "Avanti Feeds Ltd.",
-      "sector": "fmcg",
-      "price": 698.65,
-      "change": -3.27,
-      "volume": "154.2K",
-      "vol_raw": 154178,
-      "volMul": 1.25,
-      "high": 724.8,
-      "low": 695.0,
-      "high52": 833.52,
-      "low52": 521.25,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 10.9,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "HONAUT",
       "name": "Honeywell Automation India Ltd.",
       "sector": "infra",
@@ -11967,6 +11947,26 @@
       "high52": 38680.25,
       "low52": 24135.0,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 10.9,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AVANTIFEED",
+      "name": "Avanti Feeds Ltd.",
+      "sector": "fmcg",
+      "price": 698.65,
+      "change": -3.27,
+      "volume": "154.2K",
+      "vol_raw": 154178,
+      "volMul": 1.25,
+      "high": 724.8,
+      "low": 695.0,
+      "high52": 833.52,
+      "low52": 521.25,
+      "pe": 52.0,
       "delivery": "50.0%",
       "turnover_cr": 10.9,
       "universes": [
