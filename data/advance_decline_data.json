@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-09T18:26:56.816240+00:00",
+    "generated_at": "2026-10-09T18:40:56.234229+00:00",
     "market_date": "09-Oct-2026",
     "market_date_iso": "2026-10-09",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -56,42 +56,42 @@
       "value": "22,520.45",
       "change": "+1.30%",
       "delta": "+288.65",
-      "adv": 46,
-      "dec": 4,
+      "adv": 0,
+      "dec": 0,
       "unch": 0,
-      "total": 50,
-      "adr": 11.5,
-      "totalValueCr": "₹26,129 Cr",
-      "high52": 15,
+      "total": 0,
+      "adr": 0.0,
+      "totalValueCr": "₹0 Cr",
+      "high52": 1,
       "low52": 0
     },
     "fno": {
       "name": "F&O STOCKS",
-      "value": "213 Active",
+      "value": "0 Active",
       "change": "+1.30%",
       "delta": "+288.65",
-      "adv": 181,
-      "dec": 32,
+      "adv": 0,
+      "dec": 0,
       "unch": 0,
-      "total": 213,
-      "adr": 5.66,
-      "totalValueCr": "₹51,241 Cr",
-      "high52": 60,
-      "low52": 4
+      "total": 0,
+      "adr": 0.0,
+      "totalValueCr": "₹0 Cr",
+      "high52": 1,
+      "low52": 0
     },
     "nifty100": {
       "name": "NIFTY100",
       "value": "23,547.90",
       "change": "+1.21%",
       "delta": "+281.15",
-      "adv": 85,
-      "dec": 15,
+      "adv": 0,
+      "dec": 0,
       "unch": 0,
-      "total": 100,
-      "adr": 5.67,
-      "totalValueCr": "₹34,937 Cr",
-      "high52": 28,
-      "low52": 1
+      "total": 0,
+      "adr": 0.0,
+      "totalValueCr": "₹0 Cr",
+      "high52": 1,
+      "low52": 0
     },
     "nifty500": {
       "name": "NIFTY500",
@@ -114,42 +114,42 @@
       "value": "22,520.45",
       "change": "+1.30%",
       "delta": "+288.65",
-      "adv": 46,
-      "dec": 4,
+      "adv": 0,
+      "dec": 0,
       "unch": 0,
-      "total": 50,
-      "adr": 11.5,
-      "totalValueCr": "₹26,129 Cr",
-      "high52": 15,
+      "total": 0,
+      "adr": 0.0,
+      "totalValueCr": "₹0 Cr",
+      "high52": 1,
       "low52": 0
     },
     "fno": {
       "name": "F&O STOCKS",
-      "value": "213 Active",
+      "value": "0 Active",
       "change": "+1.30%",
       "delta": "+288.65",
-      "adv": 181,
-      "dec": 32,
+      "adv": 0,
+      "dec": 0,
       "unch": 0,
-      "total": 213,
-      "adr": 5.66,
-      "totalValueCr": "₹51,241 Cr",
-      "high52": 60,
-      "low52": 4
+      "total": 0,
+      "adr": 0.0,
+      "totalValueCr": "₹0 Cr",
+      "high52": 1,
+      "low52": 0
     },
     "nifty100": {
       "name": "NIFTY100",
       "value": "23,547.90",
       "change": "+1.21%",
       "delta": "+281.15",
-      "adv": 85,
-      "dec": 15,
+      "adv": 0,
+      "dec": 0,
       "unch": 0,
-      "total": 100,
-      "adr": 5.67,
-      "totalValueCr": "₹34,937 Cr",
-      "high52": 28,
-      "low52": 1
+      "total": 0,
+      "adr": 0.0,
+      "totalValueCr": "₹0 Cr",
+      "high52": 1,
+      "low52": 0
     },
     "nifty500": {
       "name": "NIFTY500",
@@ -174,8 +174,8 @@
       "change": 1.36,
       "turnoverCr": 5696.93,
       "advCount": 24,
-      "decCount": 2,
-      "stockCount": 26,
+      "decCount": 1,
+      "stockCount": 25,
       "icon": "landmark",
       "gainers": [
         {
@@ -215,8 +215,7 @@
           "delivery": "50.0%",
           "turnover_cr": 156.64,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -256,8 +255,7 @@
           "delivery": "50.0%",
           "turnover_cr": 172.31,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -277,32 +275,11 @@
           "delivery": "50.0%",
           "turnover_cr": 120.93,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         }
       ],
       "losers": [
-        {
-          "symbol": "UJJIVANSFB",
-          "name": "UJJIVANSFB",
-          "sector": "banking",
-          "price": 61.45,
-          "change": -1.36,
-          "volume": "18.8M",
-          "vol_raw": 18832375,
-          "volMul": 1.25,
-          "high": 62.94,
-          "low": 61.1,
-          "high52": 72.38,
-          "low52": 45.82,
-          "pe": 18.5,
-          "delivery": "50.0%",
-          "turnover_cr": 116.45,
-          "universes": [
-            "fno"
-          ]
-        },
         {
           "symbol": "INDUSINDBK",
           "name": "IndusInd Bank Ltd.",
@@ -320,8 +297,7 @@
           "delivery": "50.0%",
           "turnover_cr": 97.7,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -341,8 +317,7 @@
           "delivery": "50.0%",
           "turnover_cr": 101.81,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -381,6 +356,26 @@
           "pe": 18.5,
           "delivery": "50.0%",
           "turnover_cr": 9.04,
+          "universes": [
+            "nifty500"
+          ]
+        },
+        {
+          "symbol": "ICICIBANK",
+          "name": "ICICI Bank Ltd.",
+          "sector": "banking",
+          "price": 1355.0,
+          "change": 0.44,
+          "volume": "5.5M",
+          "vol_raw": 5507667,
+          "volMul": 1.25,
+          "high": 1359.4,
+          "low": 1342.3,
+          "high52": 1563.31,
+          "low52": 1006.72,
+          "pe": 18.5,
+          "delivery": "50.0%",
+          "turnover_cr": 744.82,
           "universes": [
             "nifty500"
           ]
@@ -435,8 +430,7 @@
           "delivery": "50.0%",
           "turnover_cr": 438.09,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -496,8 +490,7 @@
           "delivery": "50.0%",
           "turnover_cr": 195.61,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         }
       ],
@@ -579,8 +572,7 @@
           "delivery": "50.0%",
           "turnover_cr": 222.29,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -633,10 +625,7 @@
           "delivery": "50.0%",
           "turnover_cr": 386.48,
           "universes": [
-            "nifty50",
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -656,10 +645,7 @@
           "delivery": "50.0%",
           "turnover_cr": 180.76,
           "universes": [
-            "nifty50",
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -679,8 +665,7 @@
           "delivery": "50.0%",
           "turnover_cr": 36.37,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -700,8 +685,7 @@
           "delivery": "50.0%",
           "turnover_cr": 526.12,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -803,8 +787,7 @@
           "delivery": "50.0%",
           "turnover_cr": 188.33,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -824,8 +807,7 @@
           "delivery": "50.0%",
           "turnover_cr": 171.96,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         }
       ]
@@ -898,9 +880,7 @@
           "delivery": "50.0%",
           "turnover_cr": 148.72,
           "universes": [
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -940,8 +920,7 @@
           "delivery": "50.0%",
           "turnover_cr": 36.25,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         }
       ],
@@ -1003,8 +982,7 @@
           "delivery": "50.0%",
           "turnover_cr": 47.06,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1077,9 +1055,7 @@
           "delivery": "50.0%",
           "turnover_cr": 302.32,
           "universes": [
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1099,8 +1075,7 @@
           "delivery": "50.0%",
           "turnover_cr": 732.13,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1140,9 +1115,7 @@
           "delivery": "50.0%",
           "turnover_cr": 109.33,
           "universes": [
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1224,7 +1197,6 @@
           "delivery": "50.0%",
           "turnover_cr": 403.27,
           "universes": [
-            "nifty100",
             "nifty500"
           ]
         },
@@ -1245,10 +1217,7 @@
           "delivery": "50.0%",
           "turnover_cr": 127.07,
           "universes": [
-            "nifty50",
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1301,10 +1270,7 @@
           "delivery": "50.0%",
           "turnover_cr": 1148.05,
           "universes": [
-            "nifty50",
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1324,8 +1290,7 @@
           "delivery": "50.0%",
           "turnover_cr": 93.52,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1385,8 +1350,7 @@
           "delivery": "50.0%",
           "turnover_cr": 287.46,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         }
       ],
@@ -1521,8 +1485,7 @@
           "delivery": "50.0%",
           "turnover_cr": 661.73,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1542,10 +1505,7 @@
           "delivery": "50.0%",
           "turnover_cr": 819.19,
           "universes": [
-            "nifty50",
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1565,8 +1525,7 @@
           "delivery": "50.0%",
           "turnover_cr": 134.09,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1586,8 +1545,7 @@
           "delivery": "50.0%",
           "turnover_cr": 85.58,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1607,8 +1565,7 @@
           "delivery": "50.0%",
           "turnover_cr": 150.43,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         }
       ],
@@ -1650,8 +1607,7 @@
           "delivery": "50.0%",
           "turnover_cr": 106.05,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1744,8 +1700,7 @@
           "delivery": "50.0%",
           "turnover_cr": 122.25,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1765,8 +1720,7 @@
           "delivery": "50.0%",
           "turnover_cr": 61.07,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1786,9 +1740,7 @@
           "delivery": "50.0%",
           "turnover_cr": 98.84,
           "universes": [
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1808,8 +1760,7 @@
           "delivery": "50.0%",
           "turnover_cr": 45.72,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1891,8 +1842,7 @@
           "delivery": "50.0%",
           "turnover_cr": 32.63,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1932,8 +1882,7 @@
           "delivery": "50.0%",
           "turnover_cr": 119.06,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         }
       ]
@@ -1966,8 +1915,7 @@
           "delivery": "50.0%",
           "turnover_cr": 259.69,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -1987,8 +1935,7 @@
           "delivery": "50.0%",
           "turnover_cr": 216.27,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -2008,8 +1955,7 @@
           "delivery": "50.0%",
           "turnover_cr": 148.6,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -2029,8 +1975,7 @@
           "delivery": "50.0%",
           "turnover_cr": 247.71,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -2072,8 +2017,7 @@
           "delivery": "50.0%",
           "turnover_cr": 223.98,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -2186,8 +2130,7 @@
           "delivery": "50.0%",
           "turnover_cr": 246.02,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -2247,8 +2190,7 @@
           "delivery": "50.0%",
           "turnover_cr": 587.7,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -2370,9 +2312,7 @@
           "delivery": "50.0%",
           "turnover_cr": 228.35,
           "universes": [
-            "nifty100",
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         }
       ]
@@ -2396,10 +2336,7 @@
       "delivery": "50.0%",
       "turnover_cr": 2535.72,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2419,10 +2356,7 @@
       "delivery": "50.0%",
       "turnover_cr": 1733.32,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2462,10 +2396,7 @@
       "delivery": "50.0%",
       "turnover_cr": 1440.46,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2485,10 +2416,7 @@
       "delivery": "50.0%",
       "turnover_cr": 1414.69,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2508,10 +2436,7 @@
       "delivery": "50.0%",
       "turnover_cr": 1397.38,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2531,10 +2456,7 @@
       "delivery": "50.0%",
       "turnover_cr": 1296.4,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2574,10 +2496,7 @@
       "delivery": "50.0%",
       "turnover_cr": 1148.05,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2597,10 +2516,7 @@
       "delivery": "50.0%",
       "turnover_cr": 1070.64,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2620,10 +2536,7 @@
       "delivery": "50.0%",
       "turnover_cr": 819.19,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2643,8 +2556,7 @@
       "delivery": "50.0%",
       "turnover_cr": 799.83,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2664,10 +2576,7 @@
       "delivery": "50.0%",
       "turnover_cr": 744.82,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2687,10 +2596,7 @@
       "delivery": "50.0%",
       "turnover_cr": 738.09,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2710,8 +2616,7 @@
       "delivery": "50.0%",
       "turnover_cr": 732.13,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2731,10 +2636,7 @@
       "delivery": "50.0%",
       "turnover_cr": 684.63,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2754,8 +2656,7 @@
       "delivery": "50.0%",
       "turnover_cr": 661.73,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2775,10 +2676,7 @@
       "delivery": "50.0%",
       "turnover_cr": 651.39,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2798,10 +2696,7 @@
       "delivery": "50.0%",
       "turnover_cr": 630.5,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2861,10 +2756,7 @@
       "delivery": "50.0%",
       "turnover_cr": 608.01,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2884,8 +2776,7 @@
       "delivery": "50.0%",
       "turnover_cr": 587.7,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2905,10 +2796,7 @@
       "delivery": "50.0%",
       "turnover_cr": 576.97,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2928,8 +2816,7 @@
       "delivery": "50.0%",
       "turnover_cr": 540.11,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2949,8 +2836,7 @@
       "delivery": "50.0%",
       "turnover_cr": 526.12,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -2970,10 +2856,7 @@
       "delivery": "50.0%",
       "turnover_cr": 493.67,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3013,10 +2896,7 @@
       "delivery": "50.0%",
       "turnover_cr": 480.95,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3056,8 +2936,7 @@
       "delivery": "50.0%",
       "turnover_cr": 475.64,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3097,10 +2976,7 @@
       "delivery": "50.0%",
       "turnover_cr": 464.81,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3120,8 +2996,7 @@
       "delivery": "50.0%",
       "turnover_cr": 438.09,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3141,8 +3016,7 @@
       "delivery": "50.0%",
       "turnover_cr": 429.23,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3162,10 +3036,7 @@
       "delivery": "50.0%",
       "turnover_cr": 422.77,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3185,10 +3056,7 @@
       "delivery": "50.0%",
       "turnover_cr": 418.85,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3208,9 +3076,7 @@
       "delivery": "50.0%",
       "turnover_cr": 418.06,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3230,7 +3096,6 @@
       "delivery": "50.0%",
       "turnover_cr": 403.27,
       "universes": [
-        "nifty100",
         "nifty500"
       ]
     },
@@ -3251,10 +3116,7 @@
       "delivery": "50.0%",
       "turnover_cr": 402.37,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3274,9 +3136,7 @@
       "delivery": "50.0%",
       "turnover_cr": 389.51,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3296,10 +3156,7 @@
       "delivery": "50.0%",
       "turnover_cr": 386.48,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3339,9 +3196,7 @@
       "delivery": "50.0%",
       "turnover_cr": 357.28,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3361,10 +3216,7 @@
       "delivery": "50.0%",
       "turnover_cr": 354.71,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3384,9 +3236,7 @@
       "delivery": "50.0%",
       "turnover_cr": 353.98,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3406,10 +3256,7 @@
       "delivery": "50.0%",
       "turnover_cr": 347.18,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3429,9 +3276,7 @@
       "delivery": "50.0%",
       "turnover_cr": 343.81,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3451,9 +3296,7 @@
       "delivery": "50.0%",
       "turnover_cr": 337.33,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3493,9 +3336,7 @@
       "delivery": "50.0%",
       "turnover_cr": 329.08,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3515,10 +3356,7 @@
       "delivery": "50.0%",
       "turnover_cr": 313.7,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3538,10 +3376,7 @@
       "delivery": "50.0%",
       "turnover_cr": 307.84,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3561,9 +3396,7 @@
       "delivery": "50.0%",
       "turnover_cr": 302.32,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3583,8 +3416,7 @@
       "delivery": "50.0%",
       "turnover_cr": 291.89,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3604,10 +3436,7 @@
       "delivery": "50.0%",
       "turnover_cr": 289.95,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3627,10 +3456,7 @@
       "delivery": "50.0%",
       "turnover_cr": 288.05,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3650,8 +3476,7 @@
       "delivery": "50.0%",
       "turnover_cr": 287.46,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3671,8 +3496,7 @@
       "delivery": "50.0%",
       "turnover_cr": 281.7,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3692,9 +3516,7 @@
       "delivery": "50.0%",
       "turnover_cr": 275.76,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3714,8 +3536,7 @@
       "delivery": "50.0%",
       "turnover_cr": 274.66,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3735,9 +3556,7 @@
       "delivery": "50.0%",
       "turnover_cr": 262.46,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3797,10 +3616,7 @@
       "delivery": "50.0%",
       "turnover_cr": 260.4,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3820,8 +3636,7 @@
       "delivery": "50.0%",
       "turnover_cr": 259.69,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3841,8 +3656,7 @@
       "delivery": "50.0%",
       "turnover_cr": 247.71,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3862,8 +3676,7 @@
       "delivery": "50.0%",
       "turnover_cr": 246.02,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3883,10 +3696,7 @@
       "delivery": "50.0%",
       "turnover_cr": 245.47,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3906,8 +3716,7 @@
       "delivery": "50.0%",
       "turnover_cr": 244.98,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3927,10 +3736,7 @@
       "delivery": "50.0%",
       "turnover_cr": 242.04,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3970,10 +3776,7 @@
       "delivery": "50.0%",
       "turnover_cr": 237.58,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -3993,9 +3796,7 @@
       "delivery": "50.0%",
       "turnover_cr": 234.38,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4015,10 +3816,7 @@
       "delivery": "50.0%",
       "turnover_cr": 229.86,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4038,8 +3836,7 @@
       "delivery": "50.0%",
       "turnover_cr": 229.49,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4059,9 +3856,7 @@
       "delivery": "50.0%",
       "turnover_cr": 228.35,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4081,9 +3876,7 @@
       "delivery": "50.0%",
       "turnover_cr": 226.83,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4103,10 +3896,7 @@
       "delivery": "50.0%",
       "turnover_cr": 226.18,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4126,8 +3916,7 @@
       "delivery": "50.0%",
       "turnover_cr": 223.98,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4167,8 +3956,7 @@
       "delivery": "50.0%",
       "turnover_cr": 222.29,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4188,10 +3976,7 @@
       "delivery": "50.0%",
       "turnover_cr": 220.86,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4211,10 +3996,7 @@
       "delivery": "50.0%",
       "turnover_cr": 219.42,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4234,8 +4016,7 @@
       "delivery": "50.0%",
       "turnover_cr": 216.27,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4255,8 +4036,7 @@
       "delivery": "50.0%",
       "turnover_cr": 213.71,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4276,9 +4056,7 @@
       "delivery": "50.0%",
       "turnover_cr": 212.37,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4298,8 +4076,7 @@
       "delivery": "50.0%",
       "turnover_cr": 211.08,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4319,8 +4096,7 @@
       "delivery": "50.0%",
       "turnover_cr": 209.07,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4340,8 +4116,7 @@
       "delivery": "50.0%",
       "turnover_cr": 208.44,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4361,9 +4136,7 @@
       "delivery": "50.0%",
       "turnover_cr": 206.76,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4403,10 +4176,7 @@
       "delivery": "50.0%",
       "turnover_cr": 203.81,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4426,8 +4196,7 @@
       "delivery": "50.0%",
       "turnover_cr": 203.72,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4487,9 +4256,7 @@
       "delivery": "50.0%",
       "turnover_cr": 197.29,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4509,8 +4276,7 @@
       "delivery": "50.0%",
       "turnover_cr": 195.61,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4530,8 +4296,7 @@
       "delivery": "50.0%",
       "turnover_cr": 194.53,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4551,8 +4316,7 @@
       "delivery": "50.0%",
       "turnover_cr": 193.6,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4572,7 +4336,6 @@
       "delivery": "50.0%",
       "turnover_cr": 189.81,
       "universes": [
-        "nifty100",
         "nifty500"
       ]
     },
@@ -4593,8 +4356,7 @@
       "delivery": "50.0%",
       "turnover_cr": 188.33,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4654,9 +4416,7 @@
       "delivery": "50.0%",
       "turnover_cr": 187.26,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4676,9 +4436,7 @@
       "delivery": "50.0%",
       "turnover_cr": 184.26,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4698,10 +4456,7 @@
       "delivery": "50.0%",
       "turnover_cr": 180.76,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4721,10 +4476,7 @@
       "delivery": "50.0%",
       "turnover_cr": 180.32,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4744,10 +4496,7 @@
       "delivery": "50.0%",
       "turnover_cr": 178.96,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4767,8 +4516,7 @@
       "delivery": "50.0%",
       "turnover_cr": 178.51,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4808,9 +4556,7 @@
       "delivery": "50.0%",
       "turnover_cr": 177.0,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4850,8 +4596,7 @@
       "delivery": "50.0%",
       "turnover_cr": 175.45,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4871,9 +4616,7 @@
       "delivery": "50.0%",
       "turnover_cr": 174.02,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4893,8 +4636,7 @@
       "delivery": "50.0%",
       "turnover_cr": 172.31,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4914,8 +4656,7 @@
       "delivery": "50.0%",
       "turnover_cr": 171.96,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4975,10 +4716,7 @@
       "delivery": "50.0%",
       "turnover_cr": 166.99,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -4998,8 +4736,7 @@
       "delivery": "50.0%",
       "turnover_cr": 164.88,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5019,10 +4756,7 @@
       "delivery": "50.0%",
       "turnover_cr": 164.19,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5042,8 +4776,7 @@
       "delivery": "50.0%",
       "turnover_cr": 161.81,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5063,9 +4796,7 @@
       "delivery": "50.0%",
       "turnover_cr": 158.51,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5085,9 +4816,7 @@
       "delivery": "50.0%",
       "turnover_cr": 157.59,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5107,8 +4836,7 @@
       "delivery": "50.0%",
       "turnover_cr": 156.64,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5128,10 +4856,7 @@
       "delivery": "50.0%",
       "turnover_cr": 151.29,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5151,8 +4876,7 @@
       "delivery": "50.0%",
       "turnover_cr": 150.43,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5172,8 +4896,7 @@
       "delivery": "50.0%",
       "turnover_cr": 150.25,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5193,9 +4916,7 @@
       "delivery": "50.0%",
       "turnover_cr": 149.06,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5215,9 +4936,7 @@
       "delivery": "50.0%",
       "turnover_cr": 148.72,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5237,8 +4956,7 @@
       "delivery": "50.0%",
       "turnover_cr": 148.6,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5258,9 +4976,7 @@
       "delivery": "50.0%",
       "turnover_cr": 147.93,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5300,9 +5016,7 @@
       "delivery": "50.0%",
       "turnover_cr": 141.2,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5362,10 +5076,7 @@
       "delivery": "50.0%",
       "turnover_cr": 134.14,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5385,8 +5096,7 @@
       "delivery": "50.0%",
       "turnover_cr": 134.09,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5406,9 +5116,7 @@
       "delivery": "50.0%",
       "turnover_cr": 132.14,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5448,9 +5156,7 @@
       "delivery": "50.0%",
       "turnover_cr": 127.46,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5470,10 +5176,7 @@
       "delivery": "50.0%",
       "turnover_cr": 127.07,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5493,9 +5196,7 @@
       "delivery": "50.0%",
       "turnover_cr": 126.66,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5515,9 +5216,7 @@
       "delivery": "50.0%",
       "turnover_cr": 126.12,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5537,8 +5236,7 @@
       "delivery": "50.0%",
       "turnover_cr": 122.25,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5558,9 +5256,7 @@
       "delivery": "50.0%",
       "turnover_cr": 121.1,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5580,8 +5276,7 @@
       "delivery": "50.0%",
       "turnover_cr": 120.93,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5601,9 +5296,7 @@
       "delivery": "50.0%",
       "turnover_cr": 120.51,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5643,8 +5336,7 @@
       "delivery": "50.0%",
       "turnover_cr": 119.06,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5684,8 +5376,7 @@
       "delivery": "50.0%",
       "turnover_cr": 119.01,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5705,8 +5396,7 @@
       "delivery": "50.0%",
       "turnover_cr": 117.53,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5726,8 +5416,7 @@
       "delivery": "50.0%",
       "turnover_cr": 117.45,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5748,26 +5437,6 @@
       "turnover_cr": 116.66,
       "universes": [
         "nifty500"
-      ]
-    },
-    {
-      "symbol": "UJJIVANSFB",
-      "name": "UJJIVANSFB",
-      "sector": "banking",
-      "price": 61.45,
-      "change": -1.36,
-      "volume": "18.8M",
-      "vol_raw": 18832375,
-      "volMul": 1.25,
-      "high": 62.94,
-      "low": 61.1,
-      "high52": 72.38,
-      "low52": 45.82,
-      "pe": 18.5,
-      "delivery": "50.0%",
-      "turnover_cr": 116.45,
-      "universes": [
-        "fno"
       ]
     },
     {
@@ -5807,9 +5476,7 @@
       "delivery": "50.0%",
       "turnover_cr": 115.1,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5889,9 +5556,7 @@
       "delivery": "50.0%",
       "turnover_cr": 109.33,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5931,8 +5596,7 @@
       "delivery": "50.0%",
       "turnover_cr": 106.73,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5952,8 +5616,7 @@
       "delivery": "50.0%",
       "turnover_cr": 106.05,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5973,29 +5636,7 @@
       "delivery": "50.0%",
       "turnover_cr": 103.29,
       "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
-      "symbol": "ANGELONE",
-      "name": "Angel One Ltd.",
-      "sector": "finserv",
-      "price": 292.0,
-      "change": -1.02,
-      "volume": "3.5M",
-      "vol_raw": 3482836,
-      "volMul": 1.25,
-      "high": 297.6,
-      "low": 288.1,
-      "high52": 342.24,
-      "low52": 216.08,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 101.81,
-      "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6015,8 +5656,27 @@
       "delivery": "50.0%",
       "turnover_cr": 101.81,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ANGELONE",
+      "name": "Angel One Ltd.",
+      "sector": "finserv",
+      "price": 292.0,
+      "change": -1.02,
+      "volume": "3.5M",
+      "vol_raw": 3482836,
+      "volMul": 1.25,
+      "high": 297.6,
+      "low": 288.1,
+      "high52": 342.24,
+      "low52": 216.08,
+      "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 101.81,
+      "universes": [
+        "nifty500"
       ]
     },
     {
@@ -6096,8 +5756,7 @@
       "delivery": "50.0%",
       "turnover_cr": 98.84,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6117,9 +5776,7 @@
       "delivery": "50.0%",
       "turnover_cr": 98.84,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6139,8 +5796,7 @@
       "delivery": "50.0%",
       "turnover_cr": 97.7,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6180,8 +5836,7 @@
       "delivery": "50.0%",
       "turnover_cr": 96.76,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6201,8 +5856,7 @@
       "delivery": "50.0%",
       "turnover_cr": 95.44,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6222,8 +5876,7 @@
       "delivery": "50.0%",
       "turnover_cr": 95.16,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6263,8 +5916,7 @@
       "delivery": "50.0%",
       "turnover_cr": 93.52,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6284,8 +5936,7 @@
       "delivery": "50.0%",
       "turnover_cr": 93.23,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6305,8 +5956,7 @@
       "delivery": "50.0%",
       "turnover_cr": 92.79,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6326,9 +5976,7 @@
       "delivery": "50.0%",
       "turnover_cr": 92.37,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6368,9 +6016,7 @@
       "delivery": "50.0%",
       "turnover_cr": 90.72,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6390,9 +6036,7 @@
       "delivery": "50.0%",
       "turnover_cr": 90.54,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6412,10 +6056,7 @@
       "delivery": "50.0%",
       "turnover_cr": 90.34,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6435,8 +6076,7 @@
       "delivery": "50.0%",
       "turnover_cr": 90.22,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6456,8 +6096,7 @@
       "delivery": "50.0%",
       "turnover_cr": 89.73,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6477,9 +6116,7 @@
       "delivery": "50.0%",
       "turnover_cr": 88.57,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6519,8 +6156,7 @@
       "delivery": "50.0%",
       "turnover_cr": 85.58,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6540,10 +6176,7 @@
       "delivery": "50.0%",
       "turnover_cr": 85.41,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6563,8 +6196,7 @@
       "delivery": "50.0%",
       "turnover_cr": 84.52,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6624,8 +6256,7 @@
       "delivery": "50.0%",
       "turnover_cr": 82.94,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6665,8 +6296,7 @@
       "delivery": "50.0%",
       "turnover_cr": 80.81,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6726,8 +6356,7 @@
       "delivery": "50.0%",
       "turnover_cr": 79.09,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6747,8 +6376,7 @@
       "delivery": "50.0%",
       "turnover_cr": 76.7,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6828,9 +6456,7 @@
       "delivery": "50.0%",
       "turnover_cr": 75.91,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6850,9 +6476,7 @@
       "delivery": "50.0%",
       "turnover_cr": 75.67,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6872,8 +6496,7 @@
       "delivery": "50.0%",
       "turnover_cr": 75.54,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6913,8 +6536,7 @@
       "delivery": "50.0%",
       "turnover_cr": 75.01,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6934,8 +6556,7 @@
       "delivery": "50.0%",
       "turnover_cr": 73.5,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6955,8 +6576,7 @@
       "delivery": "50.0%",
       "turnover_cr": 72.86,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -6976,8 +6596,7 @@
       "delivery": "50.0%",
       "turnover_cr": 72.73,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7037,8 +6656,7 @@
       "delivery": "50.0%",
       "turnover_cr": 71.52,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7058,8 +6676,7 @@
       "delivery": "50.0%",
       "turnover_cr": 70.9,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7099,8 +6716,7 @@
       "delivery": "50.0%",
       "turnover_cr": 69.25,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7120,8 +6736,7 @@
       "delivery": "50.0%",
       "turnover_cr": 69.03,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7141,8 +6756,7 @@
       "delivery": "50.0%",
       "turnover_cr": 68.5,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7162,9 +6776,7 @@
       "delivery": "50.0%",
       "turnover_cr": 68.22,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7204,8 +6816,7 @@
       "delivery": "50.0%",
       "turnover_cr": 67.76,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7265,8 +6876,7 @@
       "delivery": "50.0%",
       "turnover_cr": 65.69,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7286,8 +6896,7 @@
       "delivery": "50.0%",
       "turnover_cr": 65.45,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7307,27 +6916,6 @@
       "delivery": "50.0%",
       "turnover_cr": 65.27,
       "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
-      "symbol": "KIRLOSENG",
-      "name": "Kirloskar Oil Eng Ltd.",
-      "sector": "infra",
-      "price": 2210.4,
-      "change": 2.19,
-      "volume": "299.0K",
-      "vol_raw": 298993,
-      "volMul": 1.25,
-      "high": 2223.6,
-      "low": 2107.6,
-      "high52": 2557.14,
-      "low52": 1580.7,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 65.15,
-      "universes": [
         "nifty500"
       ]
     },
@@ -7344,6 +6932,26 @@
       "low": 1083.8,
       "high52": 1318.94,
       "low52": 812.85,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 65.15,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "KIRLOSENG",
+      "name": "Kirloskar Oil Eng Ltd.",
+      "sector": "infra",
+      "price": 2210.4,
+      "change": 2.19,
+      "volume": "299.0K",
+      "vol_raw": 298993,
+      "volMul": 1.25,
+      "high": 2223.6,
+      "low": 2107.6,
+      "high52": 2557.14,
+      "low52": 1580.7,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 65.15,
@@ -7388,10 +6996,7 @@
       "delivery": "50.0%",
       "turnover_cr": 64.18,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7451,8 +7056,7 @@
       "delivery": "50.0%",
       "turnover_cr": 63.41,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7472,8 +7076,7 @@
       "delivery": "50.0%",
       "turnover_cr": 63.4,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7493,8 +7096,7 @@
       "delivery": "50.0%",
       "turnover_cr": 63.03,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7514,8 +7116,7 @@
       "delivery": "50.0%",
       "turnover_cr": 62.29,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7555,8 +7156,7 @@
       "delivery": "50.0%",
       "turnover_cr": 61.65,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7596,8 +7196,7 @@
       "delivery": "50.0%",
       "turnover_cr": 61.07,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7617,8 +7216,7 @@
       "delivery": "50.0%",
       "turnover_cr": 60.8,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7718,9 +7316,7 @@
       "delivery": "50.0%",
       "turnover_cr": 59.21,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7740,8 +7336,7 @@
       "delivery": "50.0%",
       "turnover_cr": 59.0,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7761,10 +7356,7 @@
       "delivery": "50.0%",
       "turnover_cr": 58.39,
       "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7924,9 +7516,7 @@
       "delivery": "50.0%",
       "turnover_cr": 53.78,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8026,9 +7616,7 @@
       "delivery": "50.0%",
       "turnover_cr": 51.29,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8088,8 +7676,7 @@
       "delivery": "50.0%",
       "turnover_cr": 50.57,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8189,8 +7776,7 @@
       "delivery": "50.0%",
       "turnover_cr": 48.32,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8210,8 +7796,7 @@
       "delivery": "50.0%",
       "turnover_cr": 47.06,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8251,9 +7836,7 @@
       "delivery": "50.0%",
       "turnover_cr": 46.27,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8293,8 +7876,7 @@
       "delivery": "50.0%",
       "turnover_cr": 45.72,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8334,8 +7916,7 @@
       "delivery": "50.0%",
       "turnover_cr": 44.77,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8395,8 +7976,7 @@
       "delivery": "50.0%",
       "turnover_cr": 44.36,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8436,8 +8016,7 @@
       "delivery": "50.0%",
       "turnover_cr": 43.04,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8477,8 +8056,7 @@
       "delivery": "50.0%",
       "turnover_cr": 40.79,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8718,8 +8296,7 @@
       "delivery": "50.0%",
       "turnover_cr": 36.37,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8759,8 +8336,7 @@
       "delivery": "50.0%",
       "turnover_cr": 36.25,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -8844,6 +8420,26 @@
       ]
     },
     {
+      "symbol": "IEX",
+      "name": "Indian Energy Exchange Ltd.",
+      "sector": "finserv",
+      "price": 104.78,
+      "change": 0.99,
+      "volume": "3.4M",
+      "vol_raw": 3369146,
+      "volMul": 1.25,
+      "high": 105.55,
+      "low": 103.81,
+      "high52": 121.38,
+      "low52": 77.86,
+      "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 35.32,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "CHAMBLFERT",
       "name": "Chambal Fertilizers & Chemicals Ltd.",
       "sector": "infra",
@@ -8861,27 +8457,6 @@
       "turnover_cr": 35.32,
       "universes": [
         "nifty500"
-      ]
-    },
-    {
-      "symbol": "IEX",
-      "name": "Indian Energy Exchange Ltd.",
-      "sector": "finserv",
-      "price": 104.78,
-      "change": 0.99,
-      "volume": "3.4M",
-      "vol_raw": 3369146,
-      "volMul": 1.25,
-      "high": 105.55,
-      "low": 103.81,
-      "high52": 121.38,
-      "low52": 77.86,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 35.32,
-      "universes": [
-        "nifty500",
-        "fno"
       ]
     },
     {
@@ -9001,8 +8576,7 @@
       "delivery": "50.0%",
       "turnover_cr": 34.1,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9102,8 +8676,7 @@
       "delivery": "50.0%",
       "turnover_cr": 32.78,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9123,8 +8696,7 @@
       "delivery": "50.0%",
       "turnover_cr": 32.63,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9284,7 +8856,6 @@
       "delivery": "50.0%",
       "turnover_cr": 31.68,
       "universes": [
-        "nifty100",
         "nifty500"
       ]
     },
@@ -9325,8 +8896,7 @@
       "delivery": "50.0%",
       "turnover_cr": 30.91,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9366,8 +8936,7 @@
       "delivery": "50.0%",
       "turnover_cr": 30.79,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9567,8 +9136,7 @@
       "delivery": "50.0%",
       "turnover_cr": 27.76,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9608,8 +9176,7 @@
       "delivery": "50.0%",
       "turnover_cr": 27.64,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9649,8 +9216,7 @@
       "delivery": "50.0%",
       "turnover_cr": 27.36,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9770,8 +9336,7 @@
       "delivery": "50.0%",
       "turnover_cr": 26.4,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9811,8 +9376,7 @@
       "delivery": "50.0%",
       "turnover_cr": 26.2,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9912,8 +9476,7 @@
       "delivery": "50.0%",
       "turnover_cr": 25.29,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9953,8 +9516,7 @@
       "delivery": "50.0%",
       "turnover_cr": 24.61,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -9994,8 +9556,7 @@
       "delivery": "50.0%",
       "turnover_cr": 24.23,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -10215,8 +9776,7 @@
       "delivery": "50.0%",
       "turnover_cr": 21.79,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -11120,6 +10680,26 @@
       ]
     },
     {
+      "symbol": "BAJAJHLDNG",
+      "name": "Bajaj Holdings & Investment Ltd.",
+      "sector": "finserv",
+      "price": 10820.0,
+      "change": 2.08,
+      "volume": "11.7K",
+      "vol_raw": 11706,
+      "volMul": 1.25,
+      "high": 10820.0,
+      "low": 10596.0,
+      "high52": 12443.0,
+      "low52": 7947.0,
+      "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 12.54,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "AFFLE",
       "name": "Affle 3i Ltd.",
       "sector": "it",
@@ -11137,28 +10717,6 @@
       "turnover_cr": 12.54,
       "universes": [
         "nifty500"
-      ]
-    },
-    {
-      "symbol": "BAJAJHLDNG",
-      "name": "Bajaj Holdings & Investment Ltd.",
-      "sector": "finserv",
-      "price": 10820.0,
-      "change": 2.08,
-      "volume": "11.7K",
-      "vol_raw": 11706,
-      "volMul": 1.25,
-      "high": 10820.0,
-      "low": 10596.0,
-      "high52": 12443.0,
-      "low52": 7947.0,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 12.54,
-      "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
       ]
     },
     {
@@ -11802,26 +11360,6 @@
       ]
     },
     {
-      "symbol": "CEATLTD",
-      "name": "Ceat Ltd.",
-      "sector": "auto",
-      "price": 3262.3,
-      "change": 1.12,
-      "volume": "27.0K",
-      "vol_raw": 27040,
-      "volMul": 1.25,
-      "high": 3281.0,
-      "low": 3196.1,
-      "high52": 3773.15,
-      "low52": 2397.07,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 8.78,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "BRIGADE",
       "name": "Brigade Enterprises Ltd.",
       "sector": "realty",
@@ -11835,6 +11373,26 @@
       "high52": 635.78,
       "low52": 407.89,
       "pe": 42.0,
+      "delivery": "50.0%",
+      "turnover_cr": 8.78,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CEATLTD",
+      "name": "Ceat Ltd.",
+      "sector": "auto",
+      "price": 3262.3,
+      "change": 1.12,
+      "volume": "27.0K",
+      "vol_raw": 27040,
+      "volMul": 1.25,
+      "high": 3281.0,
+      "low": 3196.1,
+      "high52": 3773.15,
+      "low52": 2397.07,
+      "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 8.78,
       "universes": [
