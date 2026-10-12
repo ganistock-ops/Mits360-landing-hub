@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-12T20:59:08.028604+00:00",
+    "generated_at": "2026-10-12T21:20:59.285076+00:00",
     "market_date": "12-Oct-2026",
     "market_date_iso": "2026-10-12",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -6149,6 +6149,27 @@
       ]
     },
     {
+      "symbol": "CDSL",
+      "name": "Central Depository Services (India) Ltd.",
+      "sector": "finserv",
+      "price": 1266.0,
+      "change": 0.48,
+      "volume": "750.6K",
+      "vol_raw": 750601,
+      "volMul": 1.25,
+      "high": 1282.4,
+      "low": 1258.2,
+      "high52": 1474.76,
+      "low52": 943.65,
+      "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 95.3,
+      "universes": [
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
       "symbol": "HDFCLIFE",
       "name": "HDFC Life Insurance Company Ltd.",
       "sector": "finserv",
@@ -6167,27 +6188,6 @@
       "universes": [
         "nifty50",
         "nifty100",
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
-      "symbol": "CDSL",
-      "name": "Central Depository Services (India) Ltd.",
-      "sector": "finserv",
-      "price": 1266.0,
-      "change": 0.48,
-      "volume": "750.6K",
-      "vol_raw": 750601,
-      "volMul": 1.25,
-      "high": 1282.4,
-      "low": 1258.2,
-      "high52": 1474.76,
-      "low52": 943.65,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 95.3,
-      "universes": [
         "nifty500",
         "fno"
       ]
@@ -7816,6 +7816,26 @@
       ]
     },
     {
+      "symbol": "URBANCO",
+      "name": "Urban Company Ltd.",
+      "sector": "infra",
+      "price": 163.49,
+      "change": 2.33,
+      "volume": "3.4M",
+      "vol_raw": 3444668,
+      "volMul": 1.25,
+      "high": 165.7,
+      "low": 159.51,
+      "high52": 190.55,
+      "low52": 119.63,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 56.24,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "LTF",
       "name": "L&T Finance Ltd.",
       "sector": "finserv",
@@ -7834,26 +7854,6 @@
       "universes": [
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "URBANCO",
-      "name": "Urban Company Ltd.",
-      "sector": "infra",
-      "price": 163.49,
-      "change": 2.33,
-      "volume": "3.4M",
-      "vol_raw": 3444668,
-      "volMul": 1.25,
-      "high": 165.7,
-      "low": 159.51,
-      "high52": 190.55,
-      "low52": 119.63,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 56.24,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -7999,26 +7999,6 @@
       ]
     },
     {
-      "symbol": "GRAPHITE",
-      "name": "Graphite India Ltd.",
-      "sector": "infra",
-      "price": 807.4,
-      "change": 0.1,
-      "volume": "621.2K",
-      "vol_raw": 621214,
-      "volMul": 1.25,
-      "high": 812.9,
-      "low": 800.8,
-      "high52": 934.83,
-      "low52": 600.6,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 50.17,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ANANTRAJ",
       "name": "Anant Raj Ltd.",
       "sector": "realty",
@@ -8032,6 +8012,26 @@
       "high52": 674.36,
       "low52": 424.46,
       "pe": 42.0,
+      "delivery": "50.0%",
+      "turnover_cr": 50.17,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "GRAPHITE",
+      "name": "Graphite India Ltd.",
+      "sector": "infra",
+      "price": 807.4,
+      "change": 0.1,
+      "volume": "621.2K",
+      "vol_raw": 621214,
+      "volMul": 1.25,
+      "high": 812.9,
+      "low": 800.8,
+      "high52": 934.83,
+      "low52": 600.6,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 50.17,
       "universes": [
@@ -8831,26 +8831,6 @@
       ]
     },
     {
-      "symbol": "ANURAS",
-      "name": "Anupam Rasayan India Ltd.",
-      "sector": "infra",
-      "price": 1151.6,
-      "change": 1.7,
-      "volume": "316.2K",
-      "vol_raw": 316217,
-      "volMul": 1.25,
-      "high": 1175.0,
-      "low": 1133.2,
-      "high52": 1351.25,
-      "low52": 849.9,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 36.58,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "IRCTC",
       "name": "Indian Railway Catering And Tourism Corporation Ltd.",
       "sector": "infra",
@@ -8863,6 +8843,26 @@
       "low": 461.05,
       "high52": 541.65,
       "low52": 345.79,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 36.58,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ANURAS",
+      "name": "Anupam Rasayan India Ltd.",
+      "sector": "infra",
+      "price": 1151.6,
+      "change": 1.7,
+      "volume": "316.2K",
+      "vol_raw": 316217,
+      "volMul": 1.25,
+      "high": 1175.0,
+      "low": 1133.2,
+      "high52": 1351.25,
+      "low52": 849.9,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 36.58,
@@ -9481,6 +9481,26 @@
       ]
     },
     {
+      "symbol": "SHYAMMETL",
+      "name": "Shyam Metalics and Energy Ltd.",
+      "sector": "infra",
+      "price": 1088.5,
+      "change": 2.68,
+      "volume": "268.1K",
+      "vol_raw": 268135,
+      "volMul": 1.25,
+      "high": 1092.8,
+      "low": 1048.1,
+      "high52": 1256.72,
+      "low52": 786.08,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 29.02,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "GODREJCP",
       "name": "Godrej Consumer Products Ltd.",
       "sector": "fmcg",
@@ -9500,26 +9520,6 @@
         "nifty100",
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "SHYAMMETL",
-      "name": "Shyam Metalics and Energy Ltd.",
-      "sector": "infra",
-      "price": 1088.5,
-      "change": 2.68,
-      "volume": "268.1K",
-      "vol_raw": 268135,
-      "volMul": 1.25,
-      "high": 1092.8,
-      "low": 1048.1,
-      "high52": 1256.72,
-      "low52": 786.08,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 29.02,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -10971,26 +10971,6 @@
       ]
     },
     {
-      "symbol": "MINDACORP",
-      "name": "Minda Corporation Ltd.",
-      "sector": "auto",
-      "price": 650.45,
-      "change": 2.22,
-      "volume": "207.9K",
-      "vol_raw": 207852,
-      "volMul": 1.25,
-      "high": 653.9,
-      "low": 637.0,
-      "high52": 751.98,
-      "low52": 477.75,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 13.48,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "GPIL",
       "name": "Godawari Power & Ispat Ltd.",
       "sector": "infra",
@@ -11004,6 +10984,26 @@
       "high52": 244.71,
       "low52": 156.0,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 13.48,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "MINDACORP",
+      "name": "Minda Corporation Ltd.",
+      "sector": "auto",
+      "price": 650.45,
+      "change": 2.22,
+      "volume": "207.9K",
+      "vol_raw": 207852,
+      "volMul": 1.25,
+      "high": 653.9,
+      "low": 637.0,
+      "high52": 751.98,
+      "low52": 477.75,
+      "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 13.48,
       "universes": [
@@ -11091,26 +11091,6 @@
       ]
     },
     {
-      "symbol": "MGL",
-      "name": "Mahanagar Gas Ltd.",
-      "sector": "infra",
-      "price": 1020.6,
-      "change": -2.13,
-      "volume": "126.7K",
-      "vol_raw": 126669,
-      "volMul": 1.25,
-      "high": 1045.5,
-      "low": 1017.1,
-      "high52": 1202.32,
-      "low52": 762.82,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 13.03,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "KIMS",
       "name": "Krishna Institute of Medical Sciences Ltd.",
       "sector": "pharma",
@@ -11124,6 +11104,26 @@
       "high52": 816.44,
       "low52": 521.89,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 13.03,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "MGL",
+      "name": "Mahanagar Gas Ltd.",
+      "sector": "infra",
+      "price": 1020.6,
+      "change": -2.13,
+      "volume": "126.7K",
+      "vol_raw": 126669,
+      "volMul": 1.25,
+      "high": 1045.5,
+      "low": 1017.1,
+      "high52": 1202.32,
+      "low52": 762.82,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 13.03,
       "universes": [
