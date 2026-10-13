@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-13T19:25:17.079044+00:00",
+    "generated_at": "2026-10-13T19:46:16.414554+00:00",
     "market_date": "13-Oct-2026",
     "market_date_iso": "2026-10-13",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -5978,6 +5978,26 @@
       ]
     },
     {
+      "symbol": "AEGISLOG",
+      "name": "Aegis Logistics Ltd.",
+      "sector": "infra",
+      "price": 1392.0,
+      "change": -4.0,
+      "volume": "804.7K",
+      "vol_raw": 804735,
+      "volMul": 1.25,
+      "high": 1445.1,
+      "low": 1364.8,
+      "high52": 1661.86,
+      "low52": 1023.6,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 111.9,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "VBL",
       "name": "Varun Beverages Ltd.",
       "sector": "fmcg",
@@ -5997,26 +6017,6 @@
         "nifty100",
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "AEGISLOG",
-      "name": "Aegis Logistics Ltd.",
-      "sector": "infra",
-      "price": 1392.0,
-      "change": -4.0,
-      "volume": "804.7K",
-      "vol_raw": 804735,
-      "volMul": 1.25,
-      "high": 1445.1,
-      "low": 1364.8,
-      "high52": 1661.86,
-      "low52": 1023.6,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 111.9,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -9502,6 +9502,26 @@
       ]
     },
     {
+      "symbol": "ARE&M",
+      "name": "Amara Raja Energy & Mobility Ltd.",
+      "sector": "auto",
+      "price": 742.1,
+      "change": 1.29,
+      "volume": "381.3K",
+      "vol_raw": 381333,
+      "volMul": 1.25,
+      "high": 744.7,
+      "low": 725.05,
+      "high52": 856.4,
+      "low52": 543.79,
+      "pe": 27.4,
+      "delivery": "50.0%",
+      "turnover_cr": 28.0,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "SBICARD",
       "name": "SBI Cards and Payment Services Ltd.",
       "sector": "finserv",
@@ -9520,26 +9540,6 @@
       "universes": [
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "ARE&M",
-      "name": "Amara Raja Energy & Mobility Ltd.",
-      "sector": "auto",
-      "price": 742.1,
-      "change": 1.29,
-      "volume": "381.3K",
-      "vol_raw": 381333,
-      "volMul": 1.25,
-      "high": 744.7,
-      "low": 725.05,
-      "high52": 856.4,
-      "low52": 543.79,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 28.0,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -10950,26 +10950,6 @@
       ]
     },
     {
-      "symbol": "THANGAMAYL",
-      "name": "Thangamayil Jewellery Ltd.",
-      "sector": "fmcg",
-      "price": 4900.5,
-      "change": 0.2,
-      "volume": "26.8K",
-      "vol_raw": 26803,
-      "volMul": 1.25,
-      "high": 4950.0,
-      "low": 4810.0,
-      "high52": 5692.5,
-      "low52": 3607.5,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 13.04,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "SUNDARMFIN",
       "name": "Sundaram Finance Ltd.",
       "sector": "finserv",
@@ -10983,6 +10963,26 @@
       "high52": 4899.0,
       "low52": 3114.15,
       "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 13.04,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "THANGAMAYL",
+      "name": "Thangamayil Jewellery Ltd.",
+      "sector": "fmcg",
+      "price": 4900.5,
+      "change": 0.2,
+      "volume": "26.8K",
+      "vol_raw": 26803,
+      "volMul": 1.25,
+      "high": 4950.0,
+      "low": 4810.0,
+      "high52": 5692.5,
+      "low52": 3607.5,
+      "pe": 52.0,
       "delivery": "50.0%",
       "turnover_cr": 13.04,
       "universes": [
