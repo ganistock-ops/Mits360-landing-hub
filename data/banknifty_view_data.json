@@ -1,42 +1,42 @@
 {
   "meta": {
-    "generated_at": "2026-10-12T21:35:28.970565+00:00",
-    "market_date": "12-Oct-2026",
+    "generated_at": "2026-10-13T18:57:36.265503+00:00",
+    "market_date": "13-Oct-2026",
     "index_name": "BANK NIFTY",
-    "current_price": 54918.0,
-    "open": 55350.15,
-    "high": 55416.45,
-    "low": 54708.8,
-    "points_change": -338.65,
-    "change_pct": -0.61,
-    "pe": 13.02,
-    "pb": 1.65,
-    "div_yield": 1.14,
+    "current_price": 55481.05,
+    "open": 54907.55,
+    "high": 55551.75,
+    "low": 54735.95,
+    "points_change": 563.05,
+    "change_pct": 1.03,
+    "pe": 13.15,
+    "pb": 1.67,
+    "div_yield": 1.13,
     "status": "FINALIZED"
   },
   "returns_matrix": [
     {
       "period": "1 Week",
-      "old_price": 54714.1,
-      "return_pct": 0.37,
-      "period_high": 55419.3,
-      "period_low": 54370.6,
-      "high_date": "09-Oct-2026",
-      "low_date": "05-Oct-2026"
+      "old_price": 55128.4,
+      "return_pct": 0.64,
+      "period_high": 55551.75,
+      "period_low": 54383.15,
+      "high_date": "13-Oct-2026",
+      "low_date": "08-Oct-2026"
     },
     {
       "period": "2 Weeks",
-      "old_price": 54471.65,
-      "return_pct": 0.82,
-      "period_high": 55419.3,
+      "old_price": 54259.95,
+      "return_pct": 2.25,
+      "period_high": 55551.75,
       "period_low": 53785.7,
-      "high_date": "09-Oct-2026",
+      "high_date": "13-Oct-2026",
       "low_date": "29-Sep-2026"
     },
     {
       "period": "1 Month",
       "old_price": 56606.55,
-      "return_pct": -2.98,
+      "return_pct": -1.99,
       "period_high": 56996.35,
       "period_low": 53785.7,
       "high_date": "15-Sep-2026",
@@ -44,8 +44,8 @@
     },
     {
       "period": "3 Months",
-      "old_price": 58045.9,
-      "return_pct": -5.39,
+      "old_price": 58131.45,
+      "return_pct": -4.56,
       "period_high": 58596.85,
       "period_low": 53785.7,
       "high_date": "17-Jul-2026",
@@ -53,8 +53,8 @@
     },
     {
       "period": "6 Months",
-      "old_price": 55912.75,
-      "return_pct": -1.78,
+      "old_price": 55605.05,
+      "return_pct": -0.22,
       "period_high": 58706.05,
       "period_low": 52783.45,
       "high_date": "25-Jun-2026",
@@ -62,8 +62,8 @@
     },
     {
       "period": "1 Year",
-      "old_price": 56609.75,
-      "return_pct": -2.99,
+      "old_price": 56625.0,
+      "return_pct": -2.02,
       "period_high": 61764.85,
       "period_low": 49954.85,
       "high_date": "03-Feb-2026",
@@ -72,7 +72,7 @@
     {
       "period": "2 Years",
       "old_price": 51172.3,
-      "return_pct": 7.32,
+      "return_pct": 8.42,
       "period_high": 61764.85,
       "period_low": 47702.9,
       "high_date": "03-Feb-2026",
@@ -80,8 +80,8 @@
     },
     {
       "period": "5 Years",
-      "old_price": 38521.5,
-      "return_pct": 42.56,
+      "old_price": 38635.75,
+      "return_pct": 43.6,
       "period_high": 61764.85,
       "period_low": 32155.35,
       "high_date": "03-Feb-2026",
@@ -93,140 +93,140 @@
       "name": "5 DMA",
       "type": "SMA",
       "period": 5,
-      "value": 54974.73,
-      "distance": -56.73,
-      "percent": -0.1,
-      "status": "Bearish"
+      "value": 55045.26,
+      "distance": 435.79,
+      "percent": 0.79,
+      "status": "Bullish"
     },
     {
       "name": "10 DMA",
       "type": "SMA",
       "period": 10,
-      "value": 54740.31,
-      "distance": 177.69,
-      "percent": 0.32,
+      "value": 54841.26,
+      "distance": 639.79,
+      "percent": 1.17,
       "status": "Bullish"
     },
     {
       "name": "20 DMA",
       "type": "SMA",
       "period": 20,
-      "value": 55438.27,
-      "distance": -520.27,
-      "percent": -0.94,
-      "status": "Bearish"
+      "value": 55381.99,
+      "distance": 99.06,
+      "percent": 0.18,
+      "status": "Bullish"
     },
     {
       "name": "50 DMA",
       "type": "SMA",
       "period": 50,
-      "value": 56659.18,
-      "distance": -1741.18,
-      "percent": -3.07,
+      "value": 56623.5,
+      "distance": -1142.45,
+      "percent": -2.02,
       "status": "Bearish"
     },
     {
       "name": "100 DMA",
       "type": "SMA",
       "period": 100,
-      "value": 56610.21,
-      "distance": -1692.21,
-      "percent": -2.99,
+      "value": 56629.4,
+      "distance": -1148.35,
+      "percent": -2.03,
       "status": "Bearish"
     },
     {
       "name": "200 DMA",
       "type": "SMA",
       "period": 200,
-      "value": 57002.57,
-      "distance": -2084.57,
-      "percent": -3.66,
+      "value": 56985.42,
+      "distance": -1504.37,
+      "percent": -2.64,
       "status": "Bearish"
     },
     {
       "name": "5 EMA",
       "type": "EMA",
       "period": 5,
-      "value": 54937.54,
-      "distance": -19.54,
-      "percent": -0.04,
-      "status": "Bearish"
+      "value": 55118.71,
+      "distance": 362.34,
+      "percent": 0.66,
+      "status": "Bullish"
     },
     {
       "name": "10 EMA",
       "type": "EMA",
       "period": 10,
-      "value": 55026.75,
-      "distance": -108.75,
-      "percent": -0.2,
-      "status": "Bearish"
+      "value": 55109.35,
+      "distance": 371.7,
+      "percent": 0.67,
+      "status": "Bullish"
     },
     {
       "name": "20 EMA",
       "type": "EMA",
       "period": 20,
-      "value": 55424.95,
-      "distance": -506.95,
-      "percent": -0.91,
-      "status": "Bearish"
+      "value": 55430.29,
+      "distance": 50.76,
+      "percent": 0.09,
+      "status": "Bullish"
     },
     {
       "name": "50 EMA",
       "type": "EMA",
       "period": 50,
-      "value": 56165.66,
-      "distance": -1247.66,
-      "percent": -2.22,
+      "value": 56138.81,
+      "distance": -657.76,
+      "percent": -1.17,
       "status": "Bearish"
     },
     {
       "name": "100 EMA",
       "type": "EMA",
       "period": 100,
-      "value": 56473.59,
-      "distance": -1555.59,
-      "percent": -2.75,
+      "value": 56453.94,
+      "distance": -972.89,
+      "percent": -1.72,
       "status": "Bearish"
     },
     {
       "name": "200 EMA",
       "type": "EMA",
       "period": 200,
-      "value": 56510.98,
-      "distance": -1592.98,
-      "percent": -2.82,
+      "value": 56500.73,
+      "distance": -1019.68,
+      "percent": -1.8,
       "status": "Bearish"
     }
   ],
   "pivots": {
     "standard": {
-      "pivot": 55014.42,
-      "r1": 55320.03,
-      "s1": 54612.38,
-      "r2": 55722.07,
-      "s2": 54306.77,
-      "r3": 56027.68,
-      "s3": 53904.73
+      "pivot": 55256.25,
+      "r1": 55776.55,
+      "s1": 54960.75,
+      "r2": 56072.05,
+      "s2": 54440.45,
+      "r3": 56592.35,
+      "s3": 54144.95
     },
     "fibonacci": {
-      "pivot": 55014.42,
-      "r1": 55284.74,
-      "s1": 54744.09,
-      "r2": 55451.74,
-      "s2": 54577.09,
-      "r3": 55722.07,
-      "s3": 54306.77
+      "pivot": 55256.25,
+      "r1": 55567.89,
+      "s1": 54944.61,
+      "r2": 55760.41,
+      "s2": 54752.09,
+      "r3": 56072.05,
+      "s3": 54440.45
     },
     "camarilla": {
-      "pivot": 55014.42,
-      "r1": 54982.87,
-      "s1": 54853.13,
-      "r2": 55047.74,
-      "s2": 54788.26,
-      "r3": 55112.6,
-      "s3": 54723.4,
-      "r4": 55307.21,
-      "s4": 54528.79
+      "pivot": 55256.25,
+      "r1": 55555.83,
+      "s1": 55406.27,
+      "r2": 55630.61,
+      "s2": 55331.49,
+      "r3": 55705.4,
+      "s3": 55256.71,
+      "r4": 55929.74,
+      "s4": 55032.36
     }
   }
 }
