@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-14T12:44:10.264772+00:00",
+    "generated_at": "2026-10-14T16:40:40.533920+00:00",
     "market_date": "14-Oct-2026",
     "market_date_iso": "2026-10-14",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -11,6 +11,13 @@
       "symbol": "NIFTY 50",
       "price": "22,622.70",
       "change": "-0.44%",
+      "isPositive": false,
+      "isVix": false
+    },
+    {
+      "symbol": "NIFTY AUTO",
+      "price": "25,156.75",
+      "change": "-0.93%",
       "isPositive": false,
       "isVix": false
     },
@@ -29,13 +36,6 @@
       "isVix": false
     },
     {
-      "symbol": "NIFTY AUTO",
-      "price": "25,156.75",
-      "change": "-0.93%",
-      "isPositive": false,
-      "isVix": false
-    },
-    {
       "symbol": "NIFTY METAL",
       "price": "12,006.75",
       "change": "-0.67%",
@@ -48,13 +48,6 @@
       "change": "-0.86%",
       "isPositive": false,
       "isVix": false
-    },
-    {
-      "symbol": "INDIA VIX",
-      "price": "14.62",
-      "change": "+3.61%",
-      "isPositive": false,
-      "isVix": true
     }
   ],
   "market_breadth": {
@@ -179,7 +172,7 @@
       "name": "Nifty Bank",
       "code": "BANKING",
       "change": -0.3,
-      "turnoverCr": 0.0,
+      "turnoverCr": 9222.08,
       "advCount": 11,
       "decCount": 15,
       "stockCount": 26,
@@ -405,7 +398,7 @@
       "name": "Nifty IT",
       "code": "IT",
       "change": 1.14,
-      "turnoverCr": 0.0,
+      "turnoverCr": 8657.26,
       "advCount": 19,
       "decCount": 6,
       "stockCount": 25,
@@ -628,7 +621,7 @@
       "name": "Nifty Auto",
       "code": "AUTO",
       "change": -0.93,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3945.31,
       "advCount": 16,
       "decCount": 24,
       "stockCount": 40,
@@ -848,7 +841,7 @@
       "name": "Nifty Energy",
       "code": "ENERGY",
       "change": 1.47,
-      "turnoverCr": 0.0,
+      "turnoverCr": 9701.26,
       "advCount": 16,
       "decCount": 3,
       "stockCount": 19,
@@ -1072,7 +1065,7 @@
       "name": "Nifty Metal",
       "code": "METALS",
       "change": -0.67,
-      "turnoverCr": 0.0,
+      "turnoverCr": 2935.85,
       "advCount": 5,
       "decCount": 15,
       "stockCount": 20,
@@ -1300,7 +1293,7 @@
       "name": "Nifty Pharma",
       "code": "PHARMA",
       "change": -1.3,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3175.01,
       "advCount": 10,
       "decCount": 34,
       "stockCount": 44,
@@ -1517,7 +1510,7 @@
       "name": "Nifty FMCG",
       "code": "FMCG",
       "change": 1.21,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3324.03,
       "advCount": 31,
       "decCount": 13,
       "stockCount": 44,
@@ -1740,7 +1733,7 @@
       "name": "Nifty Realty",
       "code": "REALTY",
       "change": -0.86,
-      "turnoverCr": 0.0,
+      "turnoverCr": 771.21,
       "advCount": 4,
       "decCount": 7,
       "stockCount": 11,
@@ -1961,7 +1954,7 @@
       "name": "Nifty Fin Services",
       "code": "FINSERV",
       "change": -1.11,
-      "turnoverCr": 0.0,
+      "turnoverCr": 11517.39,
       "advCount": 17,
       "decCount": 56,
       "stockCount": 73,
@@ -2184,7 +2177,7 @@
       "name": "Nifty Infra",
       "code": "INFRA",
       "change": 0.02,
-      "turnoverCr": 0.0,
+      "turnoverCr": 9150.37,
       "advCount": 110,
       "decCount": 83,
       "stockCount": 193,
@@ -8946,27 +8939,6 @@
       ]
     },
     {
-      "symbol": "ALKEM",
-      "name": "Alkem Laboratories Ltd.",
-      "sector": "pharma",
-      "price": 5201.0,
-      "change": -0.93,
-      "volume": "79.8K",
-      "vol_raw": 79840,
-      "volMul": 1.25,
-      "high": 5270.5,
-      "low": 5171.0,
-      "high52": 6061.08,
-      "low52": 3878.25,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 41.56,
-      "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "OBEROIRLTY",
       "name": "Oberoi Realty Ltd.",
       "sector": "realty",
@@ -8980,6 +8952,27 @@
       "high52": 1989.61,
       "low52": 1272.75,
       "pe": 42.0,
+      "delivery": "50.0%",
+      "turnover_cr": 41.56,
+      "universes": [
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "ALKEM",
+      "name": "Alkem Laboratories Ltd.",
+      "sector": "pharma",
+      "price": 5201.0,
+      "change": -0.93,
+      "volume": "79.8K",
+      "vol_raw": 79840,
+      "volMul": 1.25,
+      "high": 5270.5,
+      "low": 5171.0,
+      "high52": 6061.08,
+      "low52": 3878.25,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 41.56,
       "universes": [
