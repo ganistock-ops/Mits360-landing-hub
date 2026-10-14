@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-14T16:40:40.533920+00:00",
+    "generated_at": "2026-10-14T17:25:14.647673+00:00",
     "market_date": "14-Oct-2026",
     "market_date_iso": "2026-10-14",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8939,27 +8939,6 @@
       ]
     },
     {
-      "symbol": "OBEROIRLTY",
-      "name": "Oberoi Realty Ltd.",
-      "sector": "realty",
-      "price": 1706.0,
-      "change": -0.81,
-      "volume": "242.8K",
-      "vol_raw": 242774,
-      "volMul": 1.25,
-      "high": 1730.1,
-      "low": 1697.0,
-      "high52": 1989.61,
-      "low52": 1272.75,
-      "pe": 42.0,
-      "delivery": "50.0%",
-      "turnover_cr": 41.56,
-      "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "ALKEM",
       "name": "Alkem Laboratories Ltd.",
       "sector": "pharma",
@@ -8973,6 +8952,27 @@
       "high52": 6061.08,
       "low52": 3878.25,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 41.56,
+      "universes": [
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "name": "Oberoi Realty Ltd.",
+      "sector": "realty",
+      "price": 1706.0,
+      "change": -0.81,
+      "volume": "242.8K",
+      "vol_raw": 242774,
+      "volMul": 1.25,
+      "high": 1730.1,
+      "low": 1697.0,
+      "high52": 1989.61,
+      "low52": 1272.75,
+      "pe": 42.0,
       "delivery": "50.0%",
       "turnover_cr": 41.56,
       "universes": [
