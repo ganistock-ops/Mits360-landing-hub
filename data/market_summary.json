@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-16T16:50:17.513891+00:00",
+    "generated_at": "2026-10-16T17:11:39.150898+00:00",
     "market_date": "16-Oct-2026",
     "market_date_iso": "2026-10-16",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -5951,6 +5951,26 @@
       ]
     },
     {
+      "symbol": "BSOFT",
+      "name": "Birlasoft Ltd.",
+      "sector": "it",
+      "price": 318.2,
+      "change": 2.81,
+      "volume": "3.9M",
+      "vol_raw": 3857192,
+      "volMul": 1.25,
+      "high": 320.95,
+      "low": 308.95,
+      "high52": 369.09,
+      "low52": 231.71,
+      "pe": 29.2,
+      "delivery": "50.0%",
+      "turnover_cr": 121.99,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "TATAPOWER",
       "name": "Tata Power Co. Ltd.",
       "sector": "energy",
@@ -5970,26 +5990,6 @@
         "nifty100",
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "BSOFT",
-      "name": "Birlasoft Ltd.",
-      "sector": "it",
-      "price": 318.2,
-      "change": 2.81,
-      "volume": "3.9M",
-      "vol_raw": 3857192,
-      "volMul": 1.25,
-      "high": 320.95,
-      "low": 308.95,
-      "high52": 369.09,
-      "low52": 231.71,
-      "pe": 29.2,
-      "delivery": "50.0%",
-      "turnover_cr": 121.99,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -8204,26 +8204,6 @@
       ]
     },
     {
-      "symbol": "DALBHARAT",
-      "name": "Dalmia Bharat Ltd.",
-      "sector": "infra",
-      "price": 1684.4,
-      "change": 4.62,
-      "volume": "317.7K",
-      "vol_raw": 317701,
-      "volMul": 1.25,
-      "high": 1709.0,
-      "low": 1595.0,
-      "high52": 1965.35,
-      "low52": 1196.25,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 53.11,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "BDL",
       "name": "Bharat Dynamics Ltd.",
       "sector": "infra",
@@ -8242,6 +8222,26 @@
       "universes": [
         "nifty500",
         "fno"
+      ]
+    },
+    {
+      "symbol": "DALBHARAT",
+      "name": "Dalmia Bharat Ltd.",
+      "sector": "infra",
+      "price": 1684.4,
+      "change": 4.62,
+      "volume": "317.7K",
+      "vol_raw": 317701,
+      "volMul": 1.25,
+      "high": 1709.0,
+      "low": 1595.0,
+      "high52": 1965.35,
+      "low52": 1196.25,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 53.11,
+      "universes": [
+        "nifty500"
       ]
     },
     {
@@ -9034,26 +9034,6 @@
       ]
     },
     {
-      "symbol": "TITAGARH",
-      "name": "Titagarh Rail Systems Ltd.",
-      "sector": "infra",
-      "price": 749.15,
-      "change": 0.09,
-      "volume": "500.1K",
-      "vol_raw": 500053,
-      "volMul": 1.25,
-      "high": 760.6,
-      "low": 735.65,
-      "high52": 874.69,
-      "low52": 551.74,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 37.25,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ITCHOTELS",
       "name": "ITC Hotels Ltd.",
       "sector": "infra",
@@ -9066,6 +9046,26 @@
       "low": 158.0,
       "high52": 187.45,
       "low52": 118.5,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 37.25,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "TITAGARH",
+      "name": "Titagarh Rail Systems Ltd.",
+      "sector": "infra",
+      "price": 749.15,
+      "change": 0.09,
+      "volume": "500.1K",
+      "vol_raw": 500053,
+      "volMul": 1.25,
+      "high": 760.6,
+      "low": 735.65,
+      "high52": 874.69,
+      "low52": 551.74,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 37.25,
@@ -11007,26 +11007,6 @@
       ]
     },
     {
-      "symbol": "FIVESTAR",
-      "name": "Five-Star Business Finance Ltd.",
-      "sector": "finserv",
-      "price": 506.15,
-      "change": -1.38,
-      "volume": "253.6K",
-      "vol_raw": 253590,
-      "volMul": 1.25,
-      "high": 513.4,
-      "low": 502.6,
-      "high52": 590.41,
-      "low52": 376.95,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 12.83,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AJANTPHARM",
       "name": "Ajanta Pharmaceuticals Ltd.",
       "sector": "pharma",
@@ -11040,6 +11020,26 @@
       "high52": 3888.15,
       "low52": 2481.23,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 12.83,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "FIVESTAR",
+      "name": "Five-Star Business Finance Ltd.",
+      "sector": "finserv",
+      "price": 506.15,
+      "change": -1.38,
+      "volume": "253.6K",
+      "vol_raw": 253590,
+      "volMul": 1.25,
+      "high": 513.4,
+      "low": 502.6,
+      "high52": 590.41,
+      "low52": 376.95,
+      "pe": 24.0,
       "delivery": "50.0%",
       "turnover_cr": 12.83,
       "universes": [
@@ -11207,26 +11207,6 @@
       ]
     },
     {
-      "symbol": "SCHAEFFLER",
-      "name": "Schaeffler India Ltd.",
-      "sector": "auto",
-      "price": 3669.2,
-      "change": 0.52,
-      "volume": "32.0K",
-      "vol_raw": 31956,
-      "volMul": 1.25,
-      "high": 3707.9,
-      "low": 3613.0,
-      "high52": 4264.08,
-      "low52": 2709.75,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 11.72,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "GILLETTE",
       "name": "Gillette India Ltd.",
       "sector": "fmcg",
@@ -11240,6 +11220,26 @@
       "high52": 8355.32,
       "low52": 5257.5,
       "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 11.72,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "SCHAEFFLER",
+      "name": "Schaeffler India Ltd.",
+      "sector": "auto",
+      "price": 3669.2,
+      "change": 0.52,
+      "volume": "32.0K",
+      "vol_raw": 31956,
+      "volMul": 1.25,
+      "high": 3707.9,
+      "low": 3613.0,
+      "high52": 4264.08,
+      "low52": 2709.75,
+      "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 11.72,
       "universes": [
@@ -11307,26 +11307,6 @@
       ]
     },
     {
-      "symbol": "IGL",
-      "name": "Indraprastha Gas Ltd.",
-      "sector": "infra",
-      "price": 143.06,
-      "change": -1.43,
-      "volume": "791.8K",
-      "vol_raw": 791803,
-      "volMul": 1.25,
-      "high": 145.28,
-      "low": 142.75,
-      "high52": 167.07,
-      "low52": 107.06,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 11.4,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "HONAUT",
       "name": "Honeywell Automation India Ltd.",
       "sector": "infra",
@@ -11339,6 +11319,26 @@
       "low": 31885.0,
       "high52": 37524.5,
       "low52": 23913.75,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 11.4,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "IGL",
+      "name": "Indraprastha Gas Ltd.",
+      "sector": "infra",
+      "price": 143.06,
+      "change": -1.43,
+      "volume": "791.8K",
+      "vol_raw": 791803,
+      "volMul": 1.25,
+      "high": 145.28,
+      "low": 142.75,
+      "high52": 167.07,
+      "low52": 107.06,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 11.4,
@@ -11907,26 +11907,6 @@
       ]
     },
     {
-      "symbol": "NUVOCO",
-      "name": "Nuvoco Vistas Corporation Ltd.",
-      "sector": "infra",
-      "price": 341.15,
-      "change": 1.56,
-      "volume": "221.2K",
-      "vol_raw": 221226,
-      "volMul": 1.25,
-      "high": 342.85,
-      "low": 331.4,
-      "high52": 394.28,
-      "low52": 248.55,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 7.49,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ESCORTS",
       "name": "Escorts Kubota Ltd.",
       "sector": "infra",
@@ -11939,6 +11919,26 @@
       "low": 2692.0,
       "high52": 3175.38,
       "low52": 2019.0,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 7.49,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "NUVOCO",
+      "name": "Nuvoco Vistas Corporation Ltd.",
+      "sector": "infra",
+      "price": 341.15,
+      "change": 1.56,
+      "volume": "221.2K",
+      "vol_raw": 221226,
+      "volMul": 1.25,
+      "high": 342.85,
+      "low": 331.4,
+      "high52": 394.28,
+      "low52": 248.55,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 7.49,
