@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-19T18:25:25.662163+00:00",
+    "generated_at": "2026-10-19T18:46:55.372215+00:00",
     "market_date": "19-Oct-2026",
     "market_date_iso": "2026-10-19",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -4691,29 +4691,6 @@
       ]
     },
     {
-      "symbol": "NESTLEIND",
-      "name": "Nestle India Ltd.",
-      "sector": "fmcg",
-      "price": 1242.7,
-      "change": -1.8,
-      "volume": "1.2M",
-      "vol_raw": 1187523,
-      "volMul": 1.25,
-      "high": 1264.9,
-      "low": 1238.5,
-      "high52": 1454.64,
-      "low52": 928.88,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 148.42,
-      "universes": [
-        "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "TMPV",
       "name": "Tata Motors Passenger Vehicles Ltd.",
       "sector": "auto",
@@ -4727,6 +4704,29 @@
       "high52": 328.73,
       "low52": 208.35,
       "pe": 27.4,
+      "delivery": "50.0%",
+      "turnover_cr": 148.42,
+      "universes": [
+        "nifty50",
+        "nifty100",
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "NESTLEIND",
+      "name": "Nestle India Ltd.",
+      "sector": "fmcg",
+      "price": 1242.7,
+      "change": -1.8,
+      "volume": "1.2M",
+      "vol_raw": 1187523,
+      "volMul": 1.25,
+      "high": 1264.9,
+      "low": 1238.5,
+      "high52": 1454.64,
+      "low52": 928.88,
+      "pe": 52.0,
       "delivery": "50.0%",
       "turnover_cr": 148.42,
       "universes": [
@@ -4843,26 +4843,6 @@
       ]
     },
     {
-      "symbol": "TATACHEM",
-      "name": "Tata Chemicals Ltd.",
-      "sector": "infra",
-      "price": 637.65,
-      "change": 0.71,
-      "volume": "2.2M",
-      "vol_raw": 2236583,
-      "volMul": 1.25,
-      "high": 647.05,
-      "low": 623.5,
-      "high52": 744.11,
-      "low52": 467.62,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 141.72,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "POWERINDIA",
       "name": "Hitachi Energy India Ltd.",
       "sector": "infra",
@@ -4882,6 +4862,26 @@
         "nifty100",
         "nifty500",
         "fno"
+      ]
+    },
+    {
+      "symbol": "TATACHEM",
+      "name": "Tata Chemicals Ltd.",
+      "sector": "infra",
+      "price": 637.65,
+      "change": 0.71,
+      "volume": "2.2M",
+      "vol_raw": 2236583,
+      "volMul": 1.25,
+      "high": 647.05,
+      "low": 623.5,
+      "high52": 744.11,
+      "low52": 467.62,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 141.72,
+      "universes": [
+        "nifty500"
       ]
     },
     {
@@ -10648,26 +10648,6 @@
       ]
     },
     {
-      "symbol": "RUBICON",
-      "name": "Rubicon Research Ltd.",
-      "sector": "pharma",
-      "price": 1486.7,
-      "change": -1.45,
-      "volume": "109.6K",
-      "vol_raw": 109636,
-      "volMul": 1.25,
-      "high": 1514.8,
-      "low": 1465.5,
-      "high52": 1742.02,
-      "low52": 1099.12,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.29,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "RAILTEL",
       "name": "Railtel Corporation Of India Ltd.",
       "sector": "infra",
@@ -10681,6 +10661,26 @@
       "high52": 300.44,
       "low52": 186.52,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 16.29,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "RUBICON",
+      "name": "Rubicon Research Ltd.",
+      "sector": "pharma",
+      "price": 1486.7,
+      "change": -1.45,
+      "volume": "109.6K",
+      "vol_raw": 109636,
+      "volMul": 1.25,
+      "high": 1514.8,
+      "low": 1465.5,
+      "high52": 1742.02,
+      "low52": 1099.12,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 16.29,
       "universes": [
@@ -11228,26 +11228,6 @@
       ]
     },
     {
-      "symbol": "AJANTPHARM",
-      "name": "Ajanta Pharmaceuticals Ltd.",
-      "sector": "pharma",
-      "price": 3298.9,
-      "change": -0.9,
-      "volume": "36.6K",
-      "vol_raw": 36644,
-      "volMul": 1.25,
-      "high": 3387.5,
-      "low": 3285.0,
-      "high52": 3895.62,
-      "low52": 2463.75,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 12.19,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AIAENG",
       "name": "AIA Engineering Ltd.",
       "sector": "infra",
@@ -11261,6 +11241,26 @@
       "high52": 4260.52,
       "low52": 2730.08,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 12.19,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AJANTPHARM",
+      "name": "Ajanta Pharmaceuticals Ltd.",
+      "sector": "pharma",
+      "price": 3298.9,
+      "change": -0.9,
+      "volume": "36.6K",
+      "vol_raw": 36644,
+      "volMul": 1.25,
+      "high": 3387.5,
+      "low": 3285.0,
+      "high52": 3895.62,
+      "low52": 2463.75,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 12.19,
       "universes": [
@@ -12368,26 +12368,6 @@
       ]
     },
     {
-      "symbol": "BERGEPAINT",
-      "name": "Berger Paints India Ltd.",
-      "sector": "fmcg",
-      "price": 470.0,
-      "change": -0.83,
-      "volume": "114.3K",
-      "vol_raw": 114310,
-      "volMul": 1.25,
-      "high": 473.95,
-      "low": 466.05,
-      "high52": 545.04,
-      "low52": 349.54,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 5.37,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "TRIDENT",
       "name": "Trident Ltd.",
       "sector": "infra",
@@ -12401,6 +12381,26 @@
       "high52": 25.81,
       "low52": 16.42,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 5.37,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "BERGEPAINT",
+      "name": "Berger Paints India Ltd.",
+      "sector": "fmcg",
+      "price": 470.0,
+      "change": -0.83,
+      "volume": "114.3K",
+      "vol_raw": 114310,
+      "volMul": 1.25,
+      "high": 473.95,
+      "low": 466.05,
+      "high52": 545.04,
+      "low52": 349.54,
+      "pe": 52.0,
       "delivery": "50.0%",
       "turnover_cr": 5.37,
       "universes": [
