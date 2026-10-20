@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-20T16:27:07.713832+00:00",
+    "generated_at": "2026-10-20T17:24:20.355903+00:00",
     "market_date": "20-Oct-2026",
     "market_date_iso": "2026-10-20",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -10655,26 +10655,6 @@
       ]
     },
     {
-      "symbol": "RUBICON",
-      "name": "Rubicon Research Ltd.",
-      "sector": "pharma",
-      "price": 1486.7,
-      "change": -1.45,
-      "volume": "109.6K",
-      "vol_raw": 109636,
-      "volMul": 1.25,
-      "high": 1514.8,
-      "low": 1465.5,
-      "high52": 1742.02,
-      "low52": 1099.12,
-      "pe": 34.0,
-      "delivery": "54.8%",
-      "turnover_cr": 16.29,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "RAILTEL",
       "name": "Railtel Corporation Of India Ltd.",
       "sector": "infra",
@@ -10689,6 +10669,26 @@
       "low52": 186.52,
       "pe": 31.0,
       "delivery": "31.3%",
+      "turnover_cr": 16.29,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "RUBICON",
+      "name": "Rubicon Research Ltd.",
+      "sector": "pharma",
+      "price": 1486.7,
+      "change": -1.45,
+      "volume": "109.6K",
+      "vol_raw": 109636,
+      "volMul": 1.25,
+      "high": 1514.8,
+      "low": 1465.5,
+      "high52": 1742.02,
+      "low52": 1099.12,
+      "pe": 34.0,
+      "delivery": "54.8%",
       "turnover_cr": 16.29,
       "universes": [
         "nifty500"
@@ -11235,26 +11235,6 @@
       ]
     },
     {
-      "symbol": "AJANTPHARM",
-      "name": "Ajanta Pharmaceuticals Ltd.",
-      "sector": "pharma",
-      "price": 3298.9,
-      "change": -0.9,
-      "volume": "36.6K",
-      "vol_raw": 36644,
-      "volMul": 1.25,
-      "high": 3387.5,
-      "low": 3285.0,
-      "high52": 3895.62,
-      "low52": 2463.75,
-      "pe": 34.0,
-      "delivery": "50.4%",
-      "turnover_cr": 12.19,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AIAENG",
       "name": "AIA Engineering Ltd.",
       "sector": "infra",
@@ -11269,6 +11249,26 @@
       "low52": 2730.08,
       "pe": 31.0,
       "delivery": "57.4%",
+      "turnover_cr": 12.19,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AJANTPHARM",
+      "name": "Ajanta Pharmaceuticals Ltd.",
+      "sector": "pharma",
+      "price": 3298.9,
+      "change": -0.9,
+      "volume": "36.6K",
+      "vol_raw": 36644,
+      "volMul": 1.25,
+      "high": 3387.5,
+      "low": 3285.0,
+      "high52": 3895.62,
+      "low52": 2463.75,
+      "pe": 34.0,
+      "delivery": "50.4%",
       "turnover_cr": 12.19,
       "universes": [
         "nifty500"
