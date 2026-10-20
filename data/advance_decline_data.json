@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-19T19:04:32.022582+00:00",
-    "market_date": "19-Oct-2026",
-    "market_date_iso": "2026-10-19",
+    "generated_at": "2026-10-20T16:27:07.713832+00:00",
+    "market_date": "20-Oct-2026",
+    "market_date_iso": "2026-10-20",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
     "status": "FINALIZED"
   },
@@ -11,13 +11,6 @@
       "symbol": "NIFTY 50",
       "price": "22,888.95",
       "change": "-1.11%",
-      "isPositive": false,
-      "isVix": false
-    },
-    {
-      "symbol": "NIFTY AUTO",
-      "price": "25,591.25",
-      "change": "-0.69%",
       "isPositive": false,
       "isVix": false
     },
@@ -36,6 +29,13 @@
       "isVix": false
     },
     {
+      "symbol": "NIFTY AUTO",
+      "price": "25,591.25",
+      "change": "-0.69%",
+      "isPositive": false,
+      "isVix": false
+    },
+    {
       "symbol": "NIFTY METAL",
       "price": "12,066.40",
       "change": "-0.55%",
@@ -48,6 +48,13 @@
       "change": "-1.20%",
       "isPositive": false,
       "isVix": false
+    },
+    {
+      "symbol": "INDIA VIX",
+      "price": "14.77",
+      "change": "+5.05%",
+      "isPositive": false,
+      "isVix": true
     }
   ],
   "market_breadth": {
@@ -172,7 +179,7 @@
       "name": "Nifty Bank",
       "code": "BANKING",
       "change": -0.64,
-      "turnoverCr": 13861.3,
+      "turnoverCr": 0.0,
       "advCount": 13,
       "decCount": 13,
       "stockCount": 26,
@@ -192,7 +199,7 @@
           "high52": 210.44,
           "low52": 129.32,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "29.0%",
           "turnover_cr": 821.84,
           "universes": [
             "nifty100",
@@ -214,7 +221,7 @@
           "high52": 144.0,
           "low52": 90.0,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "28.1%",
           "turnover_cr": 960.93,
           "universes": [
             "nifty100",
@@ -236,7 +243,7 @@
           "high52": 432.69,
           "low52": 266.59,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "25.4%",
           "turnover_cr": 514.69,
           "universes": [
             "nifty500"
@@ -256,7 +263,7 @@
           "high52": 161.31,
           "low52": 100.76,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "37.3%",
           "turnover_cr": 39.98,
           "universes": [
             "nifty500"
@@ -276,7 +283,7 @@
           "high52": 274.5,
           "low52": 172.31,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "47.4%",
           "turnover_cr": 322.27,
           "universes": [
             "nifty100",
@@ -300,7 +307,7 @@
           "high52": 1454.64,
           "low52": 918.97,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "44.1%",
           "turnover_cr": 1581.29,
           "universes": [
             "nifty50",
@@ -323,7 +330,7 @@
           "high52": 20.39,
           "low52": 12.61,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "43.1%",
           "turnover_cr": 356.22,
           "universes": [
             "nifty500",
@@ -344,7 +351,7 @@
           "high52": 843.41,
           "low52": 530.36,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "41.8%",
           "turnover_cr": 2392.15,
           "universes": [
             "nifty50",
@@ -367,7 +374,7 @@
           "high52": 90.38,
           "low52": 57.18,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "52.6%",
           "turnover_cr": 91.44,
           "universes": [
             "nifty500",
@@ -388,7 +395,7 @@
           "high52": 194.81,
           "low52": 122.57,
           "pe": 18.5,
-          "delivery": "50.0%",
+          "delivery": "34.3%",
           "turnover_cr": 82.58,
           "universes": [
             "nifty500",
@@ -402,7 +409,7 @@
       "name": "Nifty IT",
       "code": "IT",
       "change": -1.28,
-      "turnoverCr": 6861.05,
+      "turnoverCr": 0.0,
       "advCount": 2,
       "decCount": 22,
       "stockCount": 25,
@@ -422,7 +429,7 @@
           "high52": 602.26,
           "low52": 374.17,
           "pe": 29.2,
-          "delivery": "50.0%",
+          "delivery": "39.5%",
           "turnover_cr": 83.53,
           "universes": [
             "nifty500"
@@ -442,7 +449,7 @@
           "high52": 1686.94,
           "low52": 1068.45,
           "pe": 29.2,
-          "delivery": "50.0%",
+          "delivery": "46.8%",
           "turnover_cr": 16.97,
           "universes": [
             "nifty500"
@@ -462,7 +469,7 @@
           "high52": 2893.17,
           "low52": 1839.75,
           "pe": 29.2,
-          "delivery": "50.0%",
+          "delivery": "59.0%",
           "turnover_cr": 190.61,
           "universes": [
             "nifty500",
@@ -483,7 +490,7 @@
           "high52": 1609.42,
           "low52": 1019.25,
           "pe": 29.2,
-          "delivery": "50.0%",
+          "delivery": "48.4%",
           "turnover_cr": 550.74,
           "universes": [
             "nifty50",
@@ -506,7 +513,7 @@
           "high52": 2871.55,
           "low52": 1824.07,
           "pe": 29.2,
-          "delivery": "50.0%",
+          "delivery": "57.0%",
           "turnover_cr": 2142.74,
           "universes": [
             "nifty50",
@@ -531,7 +538,7 @@
           "high52": 642.5,
           "low52": 400.88,
           "pe": 29.2,
-          "delivery": "50.0%",
+          "delivery": "26.8%",
           "turnover_cr": 84.95,
           "universes": [
             "nifty500",
@@ -552,7 +559,7 @@
           "high52": 846.92,
           "low52": 532.12,
           "pe": 29.2,
-          "delivery": "50.0%",
+          "delivery": "67.5%",
           "turnover_cr": 16.09,
           "universes": [
             "nifty500"
@@ -593,7 +600,7 @@
           "high52": 5014.69,
           "low52": 3106.5,
           "pe": 29.2,
-          "delivery": "50.0%",
+          "delivery": "17.2%",
           "turnover_cr": 363.8,
           "universes": [
             "nifty100",
@@ -615,7 +622,7 @@
           "high52": 4295.94,
           "low52": 2685.0,
           "pe": 29.2,
-          "delivery": "50.0%",
+          "delivery": "37.2%",
           "turnover_cr": 38.36,
           "universes": [
             "nifty500"
@@ -628,7 +635,7 @@
       "name": "Nifty Auto",
       "code": "AUTO",
       "change": -0.69,
-      "turnoverCr": 2828.65,
+      "turnoverCr": 0.0,
       "advCount": 7,
       "decCount": 33,
       "stockCount": 40,
@@ -648,7 +655,7 @@
           "high52": 1791.47,
           "low52": 1095.0,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "10.3%",
           "turnover_cr": 398.07,
           "universes": [
             "nifty500"
@@ -668,7 +675,7 @@
           "high52": 480.07,
           "low52": 304.69,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "34.1%",
           "turnover_cr": 22.35,
           "universes": [
             "nifty500"
@@ -688,7 +695,7 @@
           "high52": 12951.3,
           "low52": 8201.25,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "51.2%",
           "turnover_cr": 40.43,
           "universes": [
             "nifty500"
@@ -708,7 +715,7 @@
           "high52": 2392.11,
           "low52": 1524.75,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "58.6%",
           "turnover_cr": 38.68,
           "universes": [
             "nifty500"
@@ -728,7 +735,7 @@
           "high52": 8554.28,
           "low52": 5481.0,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "47.8%",
           "turnover_cr": 361.93,
           "universes": [
             "nifty50",
@@ -753,7 +760,7 @@
           "high52": 328.73,
           "low52": 208.35,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "45.4%",
           "turnover_cr": 148.42,
           "universes": [
             "nifty50",
@@ -776,7 +783,7 @@
           "high52": 428.95,
           "low52": 268.84,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "54.0%",
           "turnover_cr": 58.3,
           "universes": [
             "nifty500"
@@ -796,7 +803,7 @@
           "high52": 745.26,
           "low52": 472.65,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "53.2%",
           "turnover_cr": 8.49,
           "universes": [
             "nifty500"
@@ -816,7 +823,7 @@
           "high52": 1224.52,
           "low52": 781.5,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "48.5%",
           "turnover_cr": 14.46,
           "universes": [
             "nifty500"
@@ -836,7 +843,7 @@
           "high52": 2116.0,
           "low52": 1344.07,
           "pe": 27.4,
-          "delivery": "50.0%",
+          "delivery": "53.1%",
           "turnover_cr": 77.69,
           "universes": [
             "nifty500",
@@ -850,7 +857,7 @@
       "name": "Nifty Energy",
       "code": "ENERGY",
       "change": -0.6,
-      "turnoverCr": 6050.15,
+      "turnoverCr": 0.0,
       "advCount": 1,
       "decCount": 18,
       "stockCount": 19,
@@ -870,7 +877,7 @@
           "high52": 485.3,
           "low52": 302.14,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "54.4%",
           "turnover_cr": 63.79,
           "universes": [
             "nifty500"
@@ -890,7 +897,7 @@
           "high52": 291.35,
           "low52": 186.86,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "60.0%",
           "turnover_cr": 223.83,
           "universes": [
             "nifty50",
@@ -913,7 +920,7 @@
           "high52": 1595.97,
           "low52": 1023.0,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "52.1%",
           "turnover_cr": 178.9,
           "universes": [
             "nifty100",
@@ -935,7 +942,7 @@
           "high52": 558.32,
           "low52": 359.06,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "58.9%",
           "turnover_cr": 67.87,
           "universes": [
             "nifty500",
@@ -956,7 +963,7 @@
           "high52": 17.31,
           "low52": 11.0,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "37.6%",
           "turnover_cr": 67.62,
           "universes": [
             "nifty500"
@@ -978,7 +985,7 @@
           "high52": 61.19,
           "low52": 38.25,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "47.6%",
           "turnover_cr": 45.97,
           "universes": [
             "nifty500"
@@ -998,7 +1005,7 @@
           "high52": 21.59,
           "low52": 13.24,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "44.4%",
           "turnover_cr": 37.16,
           "universes": [
             "nifty500"
@@ -1018,7 +1025,7 @@
           "high52": 290.32,
           "low52": 182.7,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "49.2%",
           "turnover_cr": 14.26,
           "universes": [
             "nifty500"
@@ -1038,7 +1045,7 @@
           "high52": 1483.04,
           "low52": 916.12,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "50.6%",
           "turnover_cr": 20.48,
           "universes": [
             "nifty500"
@@ -1058,7 +1065,7 @@
           "high52": 103.79,
           "low52": 65.47,
           "pe": 16.8,
-          "delivery": "50.0%",
+          "delivery": "57.8%",
           "turnover_cr": 19.48,
           "universes": [
             "nifty500"
@@ -1071,7 +1078,7 @@
       "name": "Nifty Metal",
       "code": "METALS",
       "change": -0.55,
-      "turnoverCr": 2224.39,
+      "turnoverCr": 0.0,
       "advCount": 1,
       "decCount": 19,
       "stockCount": 20,
@@ -1091,7 +1098,7 @@
           "high52": 1434.28,
           "low52": 908.47,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "55.6%",
           "turnover_cr": 410.45,
           "universes": [
             "nifty50",
@@ -1114,7 +1121,7 @@
           "high52": 46.58,
           "low52": 29.88,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "37.4%",
           "turnover_cr": 11.15,
           "universes": [
             "nifty500"
@@ -1134,7 +1141,7 @@
           "high52": 433.43,
           "low52": 271.73,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "57.5%",
           "turnover_cr": 163.37,
           "universes": [
             "nifty100",
@@ -1155,7 +1162,7 @@
           "high52": 859.34,
           "low52": 546.15,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "58.5%",
           "turnover_cr": 65.34,
           "universes": [
             "nifty500"
@@ -1175,7 +1182,7 @@
           "high52": 629.51,
           "low52": 402.08,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "39.7%",
           "turnover_cr": 164.46,
           "universes": [
             "nifty100",
@@ -1199,7 +1206,7 @@
           "high52": 529.69,
           "low52": 328.58,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "47.2%",
           "turnover_cr": 189.85,
           "universes": [
             "nifty500"
@@ -1219,7 +1226,7 @@
           "high52": 543.72,
           "low52": 342.0,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "41.2%",
           "turnover_cr": 21.17,
           "universes": [
             "nifty500"
@@ -1239,7 +1246,7 @@
           "high52": 2149.35,
           "low52": 1350.75,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "48.4%",
           "turnover_cr": 55.53,
           "universes": [
             "nifty500"
@@ -1259,7 +1266,7 @@
           "high52": 1721.55,
           "low52": 1080.75,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "46.7%",
           "turnover_cr": 21.52,
           "universes": [
             "nifty500"
@@ -1279,7 +1286,7 @@
           "high52": 372.89,
           "low52": 237.68,
           "pe": 18.0,
-          "delivery": "50.0%",
+          "delivery": "47.4%",
           "turnover_cr": 90.36,
           "universes": [
             "nifty500",
@@ -1293,7 +1300,7 @@
       "name": "Nifty Pharma",
       "code": "PHARMA",
       "change": -0.65,
-      "turnoverCr": 2222.13,
+      "turnoverCr": 0.0,
       "advCount": 8,
       "decCount": 35,
       "stockCount": 44,
@@ -1313,7 +1320,7 @@
           "high52": 462.3,
           "low52": 286.88,
           "pe": 34.0,
-          "delivery": "50.0%",
+          "delivery": "45.5%",
           "turnover_cr": 67.36,
           "universes": [
             "nifty500"
@@ -1333,7 +1340,7 @@
           "high52": 931.27,
           "low52": 584.62,
           "pe": 34.0,
-          "delivery": "50.0%",
+          "delivery": "26.9%",
           "turnover_cr": 61.41,
           "universes": [
             "nifty500"
@@ -1353,7 +1360,7 @@
           "high52": 3857.56,
           "low52": 2425.57,
           "pe": 34.0,
-          "delivery": "50.0%",
+          "delivery": "30.5%",
           "turnover_cr": 183.89,
           "universes": [
             "nifty500"
@@ -1373,7 +1380,7 @@
           "high52": 2010.31,
           "low52": 1277.25,
           "pe": 34.0,
-          "delivery": "50.0%",
+          "delivery": "50.6%",
           "turnover_cr": 17.51,
           "universes": [
             "nifty500"
@@ -1393,7 +1400,7 @@
           "high52": 1431.75,
           "low52": 920.25,
           "pe": 34.0,
-          "delivery": "50.0%",
+          "delivery": "47.8%",
           "turnover_cr": 126.69,
           "universes": [
             "nifty50",
@@ -1418,7 +1425,7 @@
           "high52": 1552.5,
           "low52": 957.08,
           "pe": 34.0,
-          "delivery": "50.0%",
+          "delivery": "56.9%",
           "turnover_cr": 10.39,
           "universes": [
             "nifty500"
@@ -1438,8 +1445,8 @@
           "high52": 2103.35,
           "low52": 1309.88,
           "pe": 34.0,
-          "delivery": "50.0%",
-          "turnover_cr": 19.37,
+          "delivery": "54.5%",
+          "turnover_cr": 19.36,
           "universes": [
             "nifty500"
           ]
@@ -1458,7 +1465,7 @@
           "high52": 1625.29,
           "low52": 1014.22,
           "pe": 34.0,
-          "delivery": "50.0%",
+          "delivery": "44.7%",
           "turnover_cr": 12.77,
           "universes": [
             "nifty500"
@@ -1478,7 +1485,7 @@
           "high52": 2938.48,
           "low52": 1854.98,
           "pe": 34.0,
-          "delivery": "50.0%",
+          "delivery": "51.8%",
           "turnover_cr": 5.29,
           "universes": [
             "nifty500"
@@ -1498,7 +1505,7 @@
           "high52": 1933.84,
           "low52": 1211.7,
           "pe": 34.0,
-          "delivery": "50.0%",
+          "delivery": "52.3%",
           "turnover_cr": 121.24,
           "universes": [
             "nifty500",
@@ -1512,7 +1519,7 @@
       "name": "Nifty FMCG",
       "code": "FMCG",
       "change": -1.44,
-      "turnoverCr": 1626.98,
+      "turnoverCr": 0.0,
       "advCount": 5,
       "decCount": 39,
       "stockCount": 44,
@@ -1532,7 +1539,7 @@
           "high52": 594.26,
           "low52": 376.16,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "44.3%",
           "turnover_cr": 3.13,
           "universes": [
             "nifty500"
@@ -1552,7 +1559,7 @@
           "high52": 8377.75,
           "low52": 5364.38,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "50.3%",
           "turnover_cr": 7.14,
           "universes": [
             "nifty500"
@@ -1572,7 +1579,7 @@
           "high52": 1390.24,
           "low52": 893.62,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "89.7%",
           "turnover_cr": 67.15,
           "universes": [
             "nifty500"
@@ -1592,7 +1599,7 @@
           "high52": 1814.24,
           "low52": 1159.12,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "47.6%",
           "turnover_cr": 30.31,
           "universes": [
             "nifty500",
@@ -1613,7 +1620,7 @@
           "high52": 847.32,
           "low52": 534.38,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "35.1%",
           "turnover_cr": 20.77,
           "universes": [
             "nifty500"
@@ -1635,7 +1642,7 @@
           "high52": 411.7,
           "low52": 250.27,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "35.6%",
           "turnover_cr": 775.61,
           "universes": [
             "nifty500"
@@ -1655,7 +1662,7 @@
           "high52": 216.12,
           "low52": 134.4,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "59.2%",
           "turnover_cr": 91.84,
           "universes": [
             "nifty500"
@@ -1675,7 +1682,7 @@
           "high52": 254.99,
           "low52": 155.92,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "31.6%",
           "turnover_cr": 171.01,
           "universes": [
             "nifty500",
@@ -1696,7 +1703,7 @@
           "high52": 478.92,
           "low52": 298.5,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "45.2%",
           "turnover_cr": 28.51,
           "universes": [
             "nifty500"
@@ -1716,7 +1723,7 @@
           "high52": 793.5,
           "low52": 503.25,
           "pe": 52.0,
-          "delivery": "50.0%",
+          "delivery": "41.4%",
           "turnover_cr": 18.51,
           "universes": [
             "nifty500"
@@ -1729,7 +1736,7 @@
       "name": "Nifty Realty",
       "code": "REALTY",
       "change": -1.2,
-      "turnoverCr": 602.62,
+      "turnoverCr": 0.0,
       "advCount": 0,
       "decCount": 11,
       "stockCount": 11,
@@ -1749,7 +1756,7 @@
           "high52": 788.73,
           "low52": 502.54,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "38.0%",
           "turnover_cr": 169.39,
           "universes": [
             "nifty100",
@@ -1771,7 +1778,7 @@
           "high52": 2219.15,
           "low52": 1413.0,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "58.1%",
           "turnover_cr": 80.69,
           "universes": [
             "nifty500",
@@ -1792,7 +1799,7 @@
           "high52": 671.94,
           "low52": 424.76,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "35.1%",
           "turnover_cr": 6.24,
           "universes": [
             "nifty500"
@@ -1812,7 +1819,7 @@
           "high52": 1871.62,
           "low52": 1184.4,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "37.4%",
           "turnover_cr": 42.26,
           "universes": [
             "nifty500",
@@ -1833,7 +1840,7 @@
           "high52": 1386.44,
           "low52": 879.0,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "74.2%",
           "turnover_cr": 19.42,
           "universes": [
             "nifty500"
@@ -1855,7 +1862,7 @@
           "high52": 599.04,
           "low52": 372.0,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "37.3%",
           "turnover_cr": 108.19,
           "universes": [
             "nifty500"
@@ -1875,7 +1882,7 @@
           "high52": 1227.74,
           "low52": 770.78,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "49.5%",
           "turnover_cr": 83.92,
           "universes": [
             "nifty500",
@@ -1896,7 +1903,7 @@
           "high52": 1299.5,
           "low52": 821.25,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "51.6%",
           "turnover_cr": 6.58,
           "universes": [
             "nifty500"
@@ -1916,7 +1923,7 @@
           "high52": 1983.75,
           "low52": 1250.1,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "29.7%",
           "turnover_cr": 43.23,
           "universes": [
             "nifty500",
@@ -1937,7 +1944,7 @@
           "high52": 855.26,
           "low52": 532.99,
           "pe": 42.0,
-          "delivery": "50.0%",
+          "delivery": "19.9%",
           "turnover_cr": 16.28,
           "universes": [
             "nifty500"
@@ -1950,7 +1957,7 @@
       "name": "Nifty Fin Services",
       "code": "FINSERV",
       "change": -1.58,
-      "turnoverCr": 12784.38,
+      "turnoverCr": 0.0,
       "advCount": 8,
       "decCount": 65,
       "stockCount": 73,
@@ -1970,7 +1977,7 @@
           "high52": 350.0,
           "low52": 223.65,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "38.3%",
           "turnover_cr": 183.45,
           "universes": [
             "nifty500",
@@ -1991,7 +1998,7 @@
           "high52": 3708.06,
           "low52": 2366.7,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "45.6%",
           "turnover_cr": 368.99,
           "universes": [
             "nifty500",
@@ -2012,7 +2019,7 @@
           "high52": 13006.5,
           "low52": 8327.25,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "52.4%",
           "turnover_cr": 29.19,
           "universes": [
             "nifty100",
@@ -2034,7 +2041,7 @@
           "high52": 668.61,
           "low52": 423.98,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "30.2%",
           "turnover_cr": 86.35,
           "universes": [
             "nifty500",
@@ -2055,7 +2062,7 @@
           "high52": 1588.38,
           "low52": 1013.32,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "51.2%",
           "turnover_cr": 13.38,
           "universes": [
             "nifty500"
@@ -2077,7 +2084,7 @@
           "high52": 154.16,
           "low52": 93.07,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "56.5%",
           "turnover_cr": 131.11,
           "universes": [
             "nifty500"
@@ -2097,7 +2104,7 @@
           "high52": 255.13,
           "low52": 159.38,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "57.4%",
           "turnover_cr": 24.73,
           "universes": [
             "nifty500"
@@ -2117,7 +2124,7 @@
           "high52": 1261.09,
           "low52": 789.0,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "74.7%",
           "turnover_cr": 34.78,
           "universes": [
             "nifty500"
@@ -2137,7 +2144,7 @@
           "high52": 655.73,
           "low52": 407.66,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "42.7%",
           "turnover_cr": 6.25,
           "universes": [
             "nifty500"
@@ -2157,7 +2164,7 @@
           "high52": 1224.69,
           "low52": 760.69,
           "pe": 24.0,
-          "delivery": "50.0%",
+          "delivery": "43.6%",
           "turnover_cr": 98.76,
           "universes": [
             "nifty500",
@@ -2171,7 +2178,7 @@
       "name": "Nifty Infra",
       "code": "INFRA",
       "change": -0.68,
-      "turnoverCr": 9571.39,
+      "turnoverCr": 0.0,
       "advCount": 41,
       "decCount": 153,
       "stockCount": 194,
@@ -2191,7 +2198,7 @@
           "high52": 780.68,
           "low52": 438.49,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "5.5%",
           "turnover_cr": 1124.29,
           "universes": [
             "nifty500"
@@ -2211,7 +2218,7 @@
           "high52": 8072.42,
           "low52": 5078.25,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "44.3%",
           "turnover_cr": 386.26,
           "universes": [
             "nifty100",
@@ -2233,7 +2240,7 @@
           "high52": 1426.57,
           "low52": 883.88,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "47.1%",
           "turnover_cr": 93.77,
           "universes": [
             "nifty500"
@@ -2253,7 +2260,7 @@
           "high52": 1978.0,
           "low52": 1259.25,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "43.4%",
           "turnover_cr": 7.32,
           "universes": [
             "nifty500"
@@ -2273,7 +2280,7 @@
           "high52": 1677.62,
           "low52": 1058.25,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "18.5%",
           "turnover_cr": 303.67,
           "universes": [
             "nifty500"
@@ -2295,7 +2302,7 @@
           "high52": 175.24,
           "low52": 105.75,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "21.6%",
           "turnover_cr": 321.51,
           "universes": [
             "nifty500"
@@ -2315,7 +2322,7 @@
           "high52": 764.12,
           "low52": 449.48,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "35.3%",
           "turnover_cr": 358.1,
           "universes": [
             "nifty500"
@@ -2335,7 +2342,7 @@
           "high52": 1534.79,
           "low52": 922.5,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "33.4%",
           "turnover_cr": 152.7,
           "universes": [
             "nifty500"
@@ -2355,7 +2362,7 @@
           "high52": 1564.92,
           "low52": 951.08,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "42.5%",
           "turnover_cr": 157.64,
           "universes": [
             "nifty500"
@@ -2375,7 +2382,7 @@
           "high52": 1345.84,
           "low52": 822.38,
           "pe": 31.0,
-          "delivery": "50.0%",
+          "delivery": "50.4%",
           "turnover_cr": 75.2,
           "universes": [
             "nifty500"
@@ -2399,7 +2406,7 @@
       "high52": 1623.57,
       "low52": 1033.43,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "48.1%",
       "turnover_cr": 3497.44,
       "universes": [
         "nifty50",
@@ -2422,7 +2429,7 @@
       "high52": 843.41,
       "low52": 530.36,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "41.8%",
       "turnover_cr": 2392.15,
       "universes": [
         "nifty50",
@@ -2445,7 +2452,7 @@
       "high52": 2871.55,
       "low52": 1824.07,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "57.0%",
       "turnover_cr": 2142.74,
       "universes": [
         "nifty50",
@@ -2468,7 +2475,7 @@
       "high52": 1412.43,
       "low52": 900.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "39.6%",
       "turnover_cr": 1887.9,
       "universes": [
         "nifty50",
@@ -2491,7 +2498,7 @@
       "high52": 2219.04,
       "low52": 1397.93,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "47.5%",
       "turnover_cr": 1618.51,
       "universes": [
         "nifty50",
@@ -2514,7 +2521,7 @@
       "high52": 1454.64,
       "low52": 918.97,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "44.1%",
       "turnover_cr": 1581.29,
       "universes": [
         "nifty50",
@@ -2537,7 +2544,7 @@
       "high52": 1330.49,
       "low52": 843.82,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "46.9%",
       "turnover_cr": 1508.17,
       "universes": [
         "nifty50",
@@ -2560,7 +2567,7 @@
       "high52": 1131.37,
       "low52": 720.53,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "49.4%",
       "turnover_cr": 1467.34,
       "universes": [
         "nifty50",
@@ -2583,7 +2590,7 @@
       "high52": 780.68,
       "low52": 438.49,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "5.5%",
       "turnover_cr": 1124.29,
       "universes": [
         "nifty500"
@@ -2603,7 +2610,7 @@
       "high52": 408.82,
       "low52": 241.01,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "33.3%",
       "turnover_cr": 1071.41,
       "universes": [
         "nifty500",
@@ -2624,7 +2631,7 @@
       "high52": 144.0,
       "low52": 90.0,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "28.1%",
       "turnover_cr": 960.93,
       "universes": [
         "nifty100",
@@ -2646,7 +2653,7 @@
       "high52": 4240.85,
       "low52": 2724.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "37.9%",
       "turnover_cr": 852.86,
       "universes": [
         "nifty50",
@@ -2669,7 +2676,7 @@
       "high52": 210.44,
       "low52": 129.32,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "29.0%",
       "turnover_cr": 821.84,
       "universes": [
         "nifty100",
@@ -2691,7 +2698,7 @@
       "high52": 1133.32,
       "low52": 716.7,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "55.9%",
       "turnover_cr": 806.54,
       "universes": [
         "nifty50",
@@ -2714,7 +2721,7 @@
       "high52": 411.7,
       "low52": 250.27,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "35.6%",
       "turnover_cr": 775.61,
       "universes": [
         "nifty500"
@@ -2734,7 +2741,7 @@
       "high52": 6795.35,
       "low52": 4226.25,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "52.6%",
       "turnover_cr": 738.9,
       "universes": [
         "nifty500",
@@ -2755,7 +2762,7 @@
       "high52": 2065.4,
       "low52": 1314.52,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "41.7%",
       "turnover_cr": 700.73,
       "universes": [
         "nifty50",
@@ -2778,7 +2785,7 @@
       "high52": 514.22,
       "low52": 328.95,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "58.9%",
       "turnover_cr": 663.38,
       "universes": [
         "nifty50",
@@ -2801,7 +2808,7 @@
       "high52": 12901.85,
       "low52": 7913.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "38.7%",
       "turnover_cr": 662.62,
       "universes": [
         "nifty50",
@@ -2824,7 +2831,7 @@
       "high52": 3379.39,
       "low52": 2164.2,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "54.1%",
       "turnover_cr": 622.28,
       "universes": [
         "nifty50",
@@ -2847,7 +2854,7 @@
       "high52": 297.62,
       "low52": 181.66,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "15.7%",
       "turnover_cr": 620.17,
       "universes": [
         "nifty500"
@@ -2867,7 +2874,7 @@
       "high52": 376.16,
       "low52": 239.62,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "61.1%",
       "turnover_cr": 577.53,
       "universes": [
         "nifty50",
@@ -2890,7 +2897,7 @@
       "high52": 3905.86,
       "low52": 2497.5,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "39.0%",
       "turnover_cr": 571.56,
       "universes": [
         "nifty50",
@@ -2913,7 +2920,7 @@
       "high52": 1609.42,
       "low52": 1019.25,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "48.4%",
       "turnover_cr": 550.74,
       "universes": [
         "nifty50",
@@ -2936,7 +2943,7 @@
       "high52": 13457.3,
       "low52": 8580.0,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "53.1%",
       "turnover_cr": 524.82,
       "universes": [
         "nifty50",
@@ -2959,7 +2966,7 @@
       "high52": 432.69,
       "low52": 266.59,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "25.4%",
       "turnover_cr": 514.69,
       "universes": [
         "nifty500"
@@ -2979,7 +2986,7 @@
       "high52": 957.78,
       "low52": 600.3,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "20.8%",
       "turnover_cr": 445.87,
       "universes": [
         "nifty500"
@@ -2999,7 +3006,7 @@
       "high52": 2052.63,
       "low52": 1309.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "57.5%",
       "turnover_cr": 445.82,
       "universes": [
         "nifty50",
@@ -3022,7 +3029,7 @@
       "high52": 233.39,
       "low52": 148.21,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "52.9%",
       "turnover_cr": 419.42,
       "universes": [
         "nifty500"
@@ -3042,7 +3049,7 @@
       "high52": 10722.02,
       "low52": 6783.75,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "54.0%",
       "turnover_cr": 411.97,
       "universes": [
         "nifty100",
@@ -3064,7 +3071,7 @@
       "high52": 1434.28,
       "low52": 908.47,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "55.6%",
       "turnover_cr": 410.45,
       "universes": [
         "nifty50",
@@ -3087,8 +3094,8 @@
       "high52": 14.59,
       "low52": 9.17,
       "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 402.87,
+      "delivery": "35.9%",
+      "turnover_cr": 402.86,
       "universes": [
         "nifty100",
         "nifty500",
@@ -3109,7 +3116,7 @@
       "high52": 1791.47,
       "low52": 1095.0,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "10.3%",
       "turnover_cr": 398.07,
       "universes": [
         "nifty500"
@@ -3129,7 +3136,7 @@
       "high52": 8072.42,
       "low52": 5078.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.3%",
       "turnover_cr": 386.26,
       "universes": [
         "nifty100",
@@ -3151,7 +3158,7 @@
       "high52": 14369.25,
       "low52": 9063.0,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "45.1%",
       "turnover_cr": 381.85,
       "universes": [
         "nifty500",
@@ -3172,7 +3179,7 @@
       "high52": 141.2,
       "low52": 89.2,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "42.2%",
       "turnover_cr": 378.08,
       "universes": [
         "nifty100",
@@ -3194,7 +3201,7 @@
       "high52": 501.74,
       "low52": 319.16,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.4%",
       "turnover_cr": 373.6,
       "universes": [
         "nifty500",
@@ -3215,7 +3222,7 @@
       "high52": 3708.06,
       "low52": 2366.7,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "45.6%",
       "turnover_cr": 368.99,
       "universes": [
         "nifty500",
@@ -3236,7 +3243,7 @@
       "high52": 5014.69,
       "low52": 3106.5,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "17.2%",
       "turnover_cr": 363.8,
       "universes": [
         "nifty100",
@@ -3258,7 +3265,7 @@
       "high52": 8554.28,
       "low52": 5481.0,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "47.8%",
       "turnover_cr": 361.93,
       "universes": [
         "nifty50",
@@ -3281,7 +3288,7 @@
       "high52": 764.12,
       "low52": 449.48,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "35.3%",
       "turnover_cr": 358.1,
       "universes": [
         "nifty500"
@@ -3301,7 +3308,7 @@
       "high52": 20.39,
       "low52": 12.61,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "43.1%",
       "turnover_cr": 356.22,
       "universes": [
         "nifty500",
@@ -3322,7 +3329,7 @@
       "high52": 5439.5,
       "low52": 3441.68,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "15.3%",
       "turnover_cr": 350.74,
       "universes": [
         "nifty500"
@@ -3342,7 +3349,7 @@
       "high52": 995.32,
       "low52": 632.4,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.5%",
       "turnover_cr": 339.62,
       "universes": [
         "nifty100",
@@ -3364,7 +3371,7 @@
       "high52": 9079.25,
       "low52": 5748.38,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "61.9%",
       "turnover_cr": 327.3,
       "universes": [
         "nifty50",
@@ -3387,7 +3394,7 @@
       "high52": 274.5,
       "low52": 172.31,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "47.4%",
       "turnover_cr": 322.27,
       "universes": [
         "nifty100",
@@ -3409,7 +3416,7 @@
       "high52": 175.24,
       "low52": 105.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "21.6%",
       "turnover_cr": 321.51,
       "universes": [
         "nifty500"
@@ -3429,7 +3436,7 @@
       "high52": 1079.5,
       "low52": 693.0,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "54.9%",
       "turnover_cr": 317.08,
       "universes": [
         "nifty50",
@@ -3452,7 +3459,7 @@
       "high52": 1677.62,
       "low52": 1058.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "18.5%",
       "turnover_cr": 303.67,
       "universes": [
         "nifty500"
@@ -3472,7 +3479,7 @@
       "high52": 303.48,
       "low52": 194.96,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "53.2%",
       "turnover_cr": 301.36,
       "universes": [
         "nifty50",
@@ -3495,7 +3502,7 @@
       "high52": 5763.8,
       "low52": 3692.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "55.0%",
       "turnover_cr": 289.76,
       "universes": [
         "nifty100",
@@ -3517,7 +3524,7 @@
       "high52": 213.73,
       "low52": 136.11,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "44.6%",
       "turnover_cr": 289.66,
       "universes": [
         "nifty100",
@@ -3539,7 +3546,7 @@
       "high52": 5168.56,
       "low52": 3302.02,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "53.4%",
       "turnover_cr": 288.88,
       "universes": [
         "nifty50",
@@ -3562,7 +3569,7 @@
       "high52": 1726.15,
       "low52": 1091.47,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "32.1%",
       "turnover_cr": 285.87,
       "universes": [
         "nifty500",
@@ -3583,7 +3590,7 @@
       "high52": 891.25,
       "low52": 567.41,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "53.7%",
       "turnover_cr": 283.81,
       "universes": [
         "nifty500",
@@ -3604,7 +3611,7 @@
       "high52": 2700.77,
       "low52": 1684.5,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "59.9%",
       "turnover_cr": 281.22,
       "universes": [
         "nifty500",
@@ -3625,7 +3632,7 @@
       "high52": 5455.83,
       "low52": 3497.55,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "48.1%",
       "turnover_cr": 270.46,
       "universes": [
         "nifty50",
@@ -3648,7 +3655,7 @@
       "high52": 47.82,
       "low52": 30.19,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.5%",
       "turnover_cr": 266.61,
       "universes": [
         "nifty500",
@@ -3669,7 +3676,7 @@
       "high52": 3013.0,
       "low52": 1902.07,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "46.8%",
       "turnover_cr": 265.26,
       "universes": [
         "nifty500"
@@ -3689,7 +3696,7 @@
       "high52": 388.18,
       "low52": 247.73,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "56.7%",
       "turnover_cr": 264.0,
       "universes": [
         "nifty100",
@@ -3711,7 +3718,7 @@
       "high52": 2259.4,
       "low52": 1437.3,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "41.8%",
       "turnover_cr": 253.46,
       "universes": [
         "nifty500",
@@ -3732,7 +3739,7 @@
       "high52": 363.86,
       "low52": 231.08,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "60.9%",
       "turnover_cr": 245.48,
       "universes": [
         "nifty50",
@@ -3755,7 +3762,7 @@
       "high52": 18569.05,
       "low52": 11700.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.9%",
       "turnover_cr": 240.25,
       "universes": [
         "nifty500"
@@ -3775,7 +3782,7 @@
       "high52": 9473.7,
       "low52": 5992.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "43.4%",
       "turnover_cr": 236.82,
       "universes": [
         "nifty100",
@@ -3797,7 +3804,7 @@
       "high52": 3401.7,
       "low52": 2150.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "47.8%",
       "turnover_cr": 235.73,
       "universes": [
         "nifty50",
@@ -3820,7 +3827,7 @@
       "high52": 2402.35,
       "low52": 1539.15,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "42.8%",
       "turnover_cr": 234.41,
       "universes": [
         "nifty500",
@@ -3841,7 +3848,7 @@
       "high52": 1974.55,
       "low52": 1255.57,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "37.6%",
       "turnover_cr": 233.18,
       "universes": [
         "nifty500",
@@ -3862,7 +3869,7 @@
       "high52": 3106.95,
       "low52": 1987.5,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "43.6%",
       "turnover_cr": 228.26,
       "universes": [
         "nifty50",
@@ -3885,7 +3892,7 @@
       "high52": 2172.35,
       "low52": 1386.07,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "50.6%",
       "turnover_cr": 228.18,
       "universes": [
         "nifty50",
@@ -3908,7 +3915,7 @@
       "high52": 457.7,
       "low52": 293.25,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "76.8%",
       "turnover_cr": 224.95,
       "universes": [
         "nifty500",
@@ -3929,7 +3936,7 @@
       "high52": 291.35,
       "low52": 186.86,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "60.0%",
       "turnover_cr": 223.83,
       "universes": [
         "nifty50",
@@ -3952,7 +3959,7 @@
       "high52": 2962.74,
       "low52": 1873.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.2%",
       "turnover_cr": 221.87,
       "universes": [
         "nifty500",
@@ -3973,7 +3980,7 @@
       "high52": 202.86,
       "low52": 130.4,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "44.3%",
       "turnover_cr": 221.08,
       "universes": [
         "nifty50",
@@ -3996,7 +4003,7 @@
       "high52": 437.58,
       "low52": 280.91,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "50.5%",
       "turnover_cr": 204.33,
       "universes": [
         "nifty50",
@@ -4019,7 +4026,7 @@
       "high52": 495.02,
       "low52": 313.88,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "56.8%",
       "turnover_cr": 198.84,
       "universes": [
         "nifty100",
@@ -4041,7 +4048,7 @@
       "high52": 157.93,
       "low52": 99.62,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "43.6%",
       "turnover_cr": 198.68,
       "universes": [
         "nifty500",
@@ -4062,7 +4069,7 @@
       "high52": 249.88,
       "low52": 159.76,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "41.9%",
       "turnover_cr": 198.42,
       "universes": [
         "nifty50",
@@ -4085,7 +4092,7 @@
       "high52": 4758.7,
       "low52": 3041.25,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "42.0%",
       "turnover_cr": 193.36,
       "universes": [
         "nifty100",
@@ -4107,7 +4114,7 @@
       "high52": 6093.85,
       "low52": 3887.25,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "47.0%",
       "turnover_cr": 192.02,
       "universes": [
         "nifty500",
@@ -4128,7 +4135,7 @@
       "high52": 2893.17,
       "low52": 1839.75,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "59.0%",
       "turnover_cr": 190.61,
       "universes": [
         "nifty500",
@@ -4149,7 +4156,7 @@
       "high52": 529.69,
       "low52": 328.58,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "47.2%",
       "turnover_cr": 189.85,
       "universes": [
         "nifty500"
@@ -4169,7 +4176,7 @@
       "high52": 1539.85,
       "low52": 991.2,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "68.6%",
       "turnover_cr": 184.21,
       "universes": [
         "nifty50",
@@ -4192,7 +4199,7 @@
       "high52": 3857.56,
       "low52": 2425.57,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "30.5%",
       "turnover_cr": 183.89,
       "universes": [
         "nifty500"
@@ -4212,7 +4219,7 @@
       "high52": 350.0,
       "low52": 223.65,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "38.3%",
       "turnover_cr": 183.45,
       "universes": [
         "nifty500",
@@ -4233,7 +4240,7 @@
       "high52": 23098.9,
       "low52": 14775.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.3%",
       "turnover_cr": 181.89,
       "universes": [
         "nifty100",
@@ -4255,7 +4262,7 @@
       "high52": 1054.2,
       "low52": 674.74,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "47.9%",
       "turnover_cr": 181.75,
       "universes": [
         "nifty50",
@@ -4278,7 +4285,7 @@
       "high52": 4447.28,
       "low52": 2823.98,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "39.1%",
       "turnover_cr": 181.47,
       "universes": [
         "nifty500",
@@ -4299,7 +4306,7 @@
       "high52": 449.53,
       "low52": 284.85,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "56.6%",
       "turnover_cr": 180.91,
       "universes": [
         "nifty500",
@@ -4320,7 +4327,7 @@
       "high52": 1595.97,
       "low52": 1023.0,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "52.1%",
       "turnover_cr": 178.9,
       "universes": [
         "nifty100",
@@ -4342,7 +4349,7 @@
       "high52": 1236.25,
       "low52": 782.4,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "62.5%",
       "turnover_cr": 178.49,
       "universes": [
         "nifty500",
@@ -4363,7 +4370,7 @@
       "high52": 983.88,
       "low52": 621.45,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "51.6%",
       "turnover_cr": 171.6,
       "universes": [
         "nifty50",
@@ -4386,7 +4393,7 @@
       "high52": 254.99,
       "low52": 155.92,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "31.6%",
       "turnover_cr": 171.01,
       "universes": [
         "nifty500",
@@ -4407,7 +4414,7 @@
       "high52": 788.73,
       "low52": 502.54,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "38.0%",
       "turnover_cr": 169.39,
       "universes": [
         "nifty100",
@@ -4429,7 +4436,7 @@
       "high52": 226.73,
       "low52": 144.47,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "33.5%",
       "turnover_cr": 166.32,
       "universes": [
         "nifty100",
@@ -4451,7 +4458,7 @@
       "high52": 1227.39,
       "low52": 774.0,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "39.9%",
       "turnover_cr": 165.93,
       "universes": [
         "nifty500",
@@ -4472,7 +4479,7 @@
       "high52": 1994.33,
       "low52": 1270.5,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "57.7%",
       "turnover_cr": 165.52,
       "universes": [
         "nifty50",
@@ -4495,7 +4502,7 @@
       "high52": 203.94,
       "low52": 129.38,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "21.7%",
       "turnover_cr": 165.1,
       "universes": [
         "nifty500"
@@ -4515,7 +4522,7 @@
       "high52": 629.51,
       "low52": 402.08,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "39.7%",
       "turnover_cr": 164.46,
       "universes": [
         "nifty100",
@@ -4537,7 +4544,7 @@
       "high52": 433.43,
       "low52": 271.73,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "57.5%",
       "turnover_cr": 163.37,
       "universes": [
         "nifty100",
@@ -4558,7 +4565,7 @@
       "high52": 264.84,
       "low52": 168.55,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.0%",
       "turnover_cr": 158.93,
       "universes": [
         "nifty500"
@@ -4578,7 +4585,7 @@
       "high52": 1564.92,
       "low52": 951.08,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "42.5%",
       "turnover_cr": 157.64,
       "universes": [
         "nifty500"
@@ -4598,7 +4605,7 @@
       "high52": 1907.85,
       "low52": 1226.47,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "52.9%",
       "turnover_cr": 156.31,
       "universes": [
         "nifty50",
@@ -4621,7 +4628,7 @@
       "high52": 4566.08,
       "low52": 2936.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "58.7%",
       "turnover_cr": 153.85,
       "universes": [
         "nifty500",
@@ -4642,7 +4649,7 @@
       "high52": 445.62,
       "low52": 274.65,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "50.5%",
       "turnover_cr": 152.98,
       "universes": [
         "nifty500"
@@ -4662,7 +4669,7 @@
       "high52": 1534.79,
       "low52": 922.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "33.4%",
       "turnover_cr": 152.7,
       "universes": [
         "nifty500"
@@ -4682,32 +4689,9 @@
       "high52": 185.4,
       "low52": 118.24,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "54.4%",
       "turnover_cr": 149.43,
       "universes": [
-        "nifty100",
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
-      "symbol": "TMPV",
-      "name": "Tata Motors Passenger Vehicles Ltd.",
-      "sector": "auto",
-      "price": 278.0,
-      "change": -3.09,
-      "volume": "5.3M",
-      "vol_raw": 5268186,
-      "volMul": 1.25,
-      "high": 285.85,
-      "low": 277.8,
-      "high52": 328.73,
-      "low52": 208.35,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 148.42,
-      "universes": [
-        "nifty50",
         "nifty100",
         "nifty500",
         "fno"
@@ -4727,7 +4711,30 @@
       "high52": 1454.64,
       "low52": 928.88,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "44.0%",
+      "turnover_cr": 148.42,
+      "universes": [
+        "nifty50",
+        "nifty100",
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "TMPV",
+      "name": "Tata Motors Passenger Vehicles Ltd.",
+      "sector": "auto",
+      "price": 278.0,
+      "change": -3.09,
+      "volume": "5.3M",
+      "vol_raw": 5268186,
+      "volMul": 1.25,
+      "high": 285.85,
+      "low": 277.8,
+      "high52": 328.73,
+      "low52": 208.35,
+      "pe": 27.4,
+      "delivery": "45.4%",
       "turnover_cr": 148.42,
       "universes": [
         "nifty50",
@@ -4750,7 +4757,7 @@
       "high52": 8307.6,
       "low52": 5101.12,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "56.7%",
       "turnover_cr": 146.25,
       "universes": [
         "nifty500"
@@ -4770,7 +4777,7 @@
       "high52": 1142.87,
       "low52": 726.53,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "54.4%",
       "turnover_cr": 146.1,
       "universes": [
         "nifty500",
@@ -4791,7 +4798,7 @@
       "high52": 422.05,
       "low52": 269.59,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "32.7%",
       "turnover_cr": 145.96,
       "universes": [
         "nifty500",
@@ -4812,7 +4819,7 @@
       "high52": 2034.24,
       "low52": 1301.47,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "53.9%",
       "turnover_cr": 144.9,
       "universes": [
         "nifty50",
@@ -4835,31 +4842,9 @@
       "high52": 1071.34,
       "low52": 674.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "28.6%",
       "turnover_cr": 143.19,
       "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
-      "symbol": "POWERINDIA",
-      "name": "Hitachi Energy India Ltd.",
-      "sector": "infra",
-      "price": 28730.0,
-      "change": -0.9,
-      "volume": "49.2K",
-      "vol_raw": 49179,
-      "volMul": 1.25,
-      "high": 29015.0,
-      "low": 28605.0,
-      "high52": 33367.25,
-      "low52": 21453.75,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 141.72,
-      "universes": [
-        "nifty100",
         "nifty500",
         "fno"
       ]
@@ -4878,10 +4863,32 @@
       "high52": 744.11,
       "low52": 467.62,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "16.6%",
       "turnover_cr": 141.72,
       "universes": [
         "nifty500"
+      ]
+    },
+    {
+      "symbol": "POWERINDIA",
+      "name": "Hitachi Energy India Ltd.",
+      "sector": "infra",
+      "price": 28730.0,
+      "change": -0.9,
+      "volume": "49.2K",
+      "vol_raw": 49179,
+      "volMul": 1.25,
+      "high": 29015.0,
+      "low": 28605.0,
+      "high52": 33367.25,
+      "low52": 21453.75,
+      "pe": 31.0,
+      "delivery": "43.4%",
+      "turnover_cr": 141.72,
+      "universes": [
+        "nifty100",
+        "nifty500",
+        "fno"
       ]
     },
     {
@@ -4898,7 +4905,7 @@
       "high52": 26358.0,
       "low52": 16717.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.2%",
       "turnover_cr": 141.64,
       "universes": [
         "nifty500",
@@ -4919,7 +4926,7 @@
       "high52": 3864.0,
       "low52": 2472.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "52.3%",
       "turnover_cr": 139.9,
       "universes": [
         "nifty100",
@@ -4941,7 +4948,7 @@
       "high52": 401.98,
       "low52": 258.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "58.2%",
       "turnover_cr": 138.1,
       "universes": [
         "nifty500",
@@ -4962,7 +4969,7 @@
       "high52": 3245.53,
       "low52": 2064.38,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "56.0%",
       "turnover_cr": 134.26,
       "universes": [
         "nifty500"
@@ -4982,7 +4989,7 @@
       "high52": 400.66,
       "low52": 251.48,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.1%",
       "turnover_cr": 133.02,
       "universes": [
         "nifty500",
@@ -5003,7 +5010,7 @@
       "high52": 286.46,
       "low52": 181.88,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "45.2%",
       "turnover_cr": 132.58,
       "universes": [
         "nifty100",
@@ -5025,7 +5032,7 @@
       "high52": 74.11,
       "low52": 45.92,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "32.7%",
       "turnover_cr": 132.4,
       "universes": [
         "fno"
@@ -5045,7 +5052,7 @@
       "high52": 1856.1,
       "low52": 1155.22,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.0%",
       "turnover_cr": 131.49,
       "universes": [
         "nifty500"
@@ -5065,7 +5072,7 @@
       "high52": 154.16,
       "low52": 93.07,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "56.5%",
       "turnover_cr": 131.11,
       "universes": [
         "nifty500"
@@ -5085,7 +5092,7 @@
       "high52": 482.77,
       "low52": 308.77,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "50.5%",
       "turnover_cr": 128.31,
       "universes": [
         "nifty50",
@@ -5108,7 +5115,7 @@
       "high52": 855.77,
       "low52": 541.76,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "42.3%",
       "turnover_cr": 127.46,
       "universes": [
         "nifty500"
@@ -5128,7 +5135,7 @@
       "high52": 646.07,
       "low52": 412.5,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "27.7%",
       "turnover_cr": 127.36,
       "universes": [
         "nifty500",
@@ -5149,7 +5156,7 @@
       "high52": 293.02,
       "low52": 186.86,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "49.2%",
       "turnover_cr": 127.27,
       "universes": [
         "nifty500",
@@ -5170,7 +5177,7 @@
       "high52": 1431.75,
       "low52": 920.25,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "47.8%",
       "turnover_cr": 126.69,
       "universes": [
         "nifty50",
@@ -5193,7 +5200,7 @@
       "high52": 171.81,
       "low52": 110.41,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.7%",
       "turnover_cr": 126.13,
       "universes": [
         "nifty500",
@@ -5214,7 +5221,7 @@
       "high52": 1517.08,
       "low52": 968.25,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "30.7%",
       "turnover_cr": 125.81,
       "universes": [
         "nifty100",
@@ -5236,7 +5243,7 @@
       "high52": 11943.9,
       "low52": 7600.5,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "27.6%",
       "turnover_cr": 122.24,
       "universes": [
         "nifty500",
@@ -5257,7 +5264,7 @@
       "high52": 1933.84,
       "low52": 1211.7,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "52.3%",
       "turnover_cr": 121.24,
       "universes": [
         "nifty500",
@@ -5278,7 +5285,7 @@
       "high52": 2781.73,
       "low52": 1757.02,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "51.8%",
       "turnover_cr": 119.51,
       "universes": [
         "nifty100",
@@ -5300,7 +5307,7 @@
       "high52": 260.19,
       "low52": 167.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "43.9%",
       "turnover_cr": 118.14,
       "universes": [
         "nifty50",
@@ -5323,7 +5330,7 @@
       "high52": 2267.34,
       "low52": 1447.5,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "56.4%",
       "turnover_cr": 117.62,
       "universes": [
         "nifty500",
@@ -5344,7 +5351,7 @@
       "high52": 93.87,
       "low52": 59.9,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "41.1%",
       "turnover_cr": 117.56,
       "universes": [
         "nifty500",
@@ -5365,7 +5372,7 @@
       "high52": 342.58,
       "low52": 210.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "9.3%",
       "turnover_cr": 117.06,
       "universes": [
         "nifty500"
@@ -5385,7 +5392,7 @@
       "high52": 1487.06,
       "low52": 946.95,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "55.1%",
       "turnover_cr": 116.02,
       "universes": [
         "nifty500",
@@ -5406,7 +5413,7 @@
       "high52": 2687.32,
       "low52": 1732.5,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "58.6%",
       "turnover_cr": 115.65,
       "universes": [
         "nifty50",
@@ -5429,7 +5436,7 @@
       "high52": 381.68,
       "low52": 240.45,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "26.4%",
       "turnover_cr": 115.55,
       "universes": [
         "nifty500"
@@ -5449,7 +5456,7 @@
       "high52": 12073.85,
       "low52": 7715.25,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "35.3%",
       "turnover_cr": 115.29,
       "universes": [
         "nifty50",
@@ -5472,7 +5479,7 @@
       "high52": 748.82,
       "low52": 476.36,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "58.9%",
       "turnover_cr": 114.67,
       "universes": [
         "nifty500"
@@ -5492,7 +5499,7 @@
       "high52": 408.65,
       "low52": 262.69,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "51.3%",
       "turnover_cr": 114.47,
       "universes": [
         "nifty100",
@@ -5514,7 +5521,7 @@
       "high52": 5311.5,
       "low52": 3399.3,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "58.6%",
       "turnover_cr": 114.29,
       "universes": [
         "nifty100",
@@ -5536,7 +5543,7 @@
       "high52": 934.26,
       "low52": 593.7,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "45.9%",
       "turnover_cr": 114.19,
       "universes": [
         "nifty500",
@@ -5557,7 +5564,7 @@
       "high52": 1014.99,
       "low52": 644.78,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "61.4%",
       "turnover_cr": 111.41,
       "universes": [
         "nifty500",
@@ -5578,7 +5585,7 @@
       "high52": 402.38,
       "low52": 255.0,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "58.3%",
       "turnover_cr": 110.91,
       "universes": [
         "nifty500",
@@ -5599,7 +5606,7 @@
       "high52": 270.82,
       "low52": 171.38,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "39.7%",
       "turnover_cr": 110.66,
       "universes": [
         "nifty500",
@@ -5620,7 +5627,7 @@
       "high52": 722.78,
       "low52": 457.5,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "49.5%",
       "turnover_cr": 110.53,
       "universes": [
         "nifty500"
@@ -5640,7 +5647,7 @@
       "high52": 356.21,
       "low52": 226.5,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "46.8%",
       "turnover_cr": 109.11,
       "universes": [
         "nifty500",
@@ -5661,7 +5668,7 @@
       "high52": 599.04,
       "low52": 372.0,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "37.3%",
       "turnover_cr": 108.19,
       "universes": [
         "nifty500"
@@ -5681,7 +5688,7 @@
       "high52": 2758.73,
       "low52": 1744.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "39.2%",
       "turnover_cr": 103.44,
       "universes": [
         "nifty500"
@@ -5701,7 +5708,7 @@
       "high52": 343.91,
       "low52": 209.02,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "39.8%",
       "turnover_cr": 102.85,
       "universes": [
         "nifty500"
@@ -5721,7 +5728,7 @@
       "high52": 910.63,
       "low52": 582.08,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "66.7%",
       "turnover_cr": 101.37,
       "universes": [
         "nifty500",
@@ -5742,7 +5749,7 @@
       "high52": 5342.21,
       "low52": 3440.18,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "55.9%",
       "turnover_cr": 100.89,
       "universes": [
         "nifty100",
@@ -5764,7 +5771,7 @@
       "high52": 1224.69,
       "low52": 760.69,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "43.6%",
       "turnover_cr": 98.76,
       "universes": [
         "nifty500",
@@ -5785,7 +5792,7 @@
       "high52": 1211.87,
       "low52": 774.53,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "50.3%",
       "turnover_cr": 97.84,
       "universes": [
         "nifty100",
@@ -5807,7 +5814,7 @@
       "high52": 2282.75,
       "low52": 1460.4,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "52.1%",
       "turnover_cr": 95.82,
       "universes": [
         "nifty100",
@@ -5829,7 +5836,7 @@
       "high52": 1005.85,
       "low52": 641.36,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "30.5%",
       "turnover_cr": 95.31,
       "universes": [
         "nifty500",
@@ -5850,7 +5857,7 @@
       "high52": 1426.57,
       "low52": 883.88,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "47.1%",
       "turnover_cr": 93.77,
       "universes": [
         "nifty500"
@@ -5870,7 +5877,7 @@
       "high52": 5198.58,
       "low52": 3315.45,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "34.9%",
       "turnover_cr": 93.76,
       "universes": [
         "nifty500",
@@ -5891,7 +5898,7 @@
       "high52": 1455.78,
       "low52": 915.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.3%",
       "turnover_cr": 93.45,
       "universes": [
         "nifty500",
@@ -5912,7 +5919,7 @@
       "high52": 2042.98,
       "low52": 1292.32,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "45.9%",
       "turnover_cr": 91.96,
       "universes": [
         "nifty500",
@@ -5933,7 +5940,7 @@
       "high52": 216.12,
       "low52": 134.4,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "59.2%",
       "turnover_cr": 91.84,
       "universes": [
         "nifty500"
@@ -5953,7 +5960,7 @@
       "high52": 484.38,
       "low52": 311.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.5%",
       "turnover_cr": 91.77,
       "universes": [
         "nifty100",
@@ -5974,7 +5981,7 @@
       "high52": 3016.91,
       "low52": 1914.0,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "57.1%",
       "turnover_cr": 91.54,
       "universes": [
         "nifty100",
@@ -5996,7 +6003,7 @@
       "high52": 90.38,
       "low52": 57.18,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "52.6%",
       "turnover_cr": 91.44,
       "universes": [
         "nifty500",
@@ -6017,7 +6024,7 @@
       "high52": 372.89,
       "low52": 237.68,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "47.4%",
       "turnover_cr": 90.36,
       "universes": [
         "nifty500",
@@ -6038,7 +6045,7 @@
       "high52": 3155.83,
       "low52": 1998.98,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "35.7%",
       "turnover_cr": 90.08,
       "universes": [
         "nifty500"
@@ -6058,7 +6065,7 @@
       "high52": 3398.02,
       "low52": 2149.88,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "37.7%",
       "turnover_cr": 89.93,
       "universes": [
         "nifty50",
@@ -6081,7 +6088,7 @@
       "high52": 1828.84,
       "low52": 1161.07,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "56.2%",
       "turnover_cr": 89.89,
       "universes": [
         "nifty100",
@@ -6103,7 +6110,7 @@
       "high52": 76.82,
       "low52": 48.16,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "25.9%",
       "turnover_cr": 89.17,
       "universes": [
         "nifty500"
@@ -6123,7 +6130,7 @@
       "high52": 3784.54,
       "low52": 2427.6,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "27.2%",
       "turnover_cr": 87.84,
       "universes": [
         "nifty500",
@@ -6144,7 +6151,7 @@
       "high52": 668.61,
       "low52": 423.98,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "30.2%",
       "turnover_cr": 86.35,
       "universes": [
         "nifty500",
@@ -6165,7 +6172,7 @@
       "high52": 20645.95,
       "low52": 13026.75,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "25.6%",
       "turnover_cr": 85.12,
       "universes": [
         "nifty500",
@@ -6186,7 +6193,7 @@
       "high52": 438.15,
       "low52": 280.5,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "33.6%",
       "turnover_cr": 84.96,
       "universes": [
         "nifty500",
@@ -6207,7 +6214,7 @@
       "high52": 642.5,
       "low52": 400.88,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "26.8%",
       "turnover_cr": 84.95,
       "universes": [
         "nifty500",
@@ -6228,7 +6235,7 @@
       "high52": 595.53,
       "low52": 378.08,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "43.5%",
       "turnover_cr": 84.45,
       "universes": [
         "nifty500"
@@ -6248,7 +6255,7 @@
       "high52": 1948.68,
       "low52": 1231.5,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "55.4%",
       "turnover_cr": 84.44,
       "universes": [
         "nifty500",
@@ -6269,7 +6276,7 @@
       "high52": 84.24,
       "low52": 53.19,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "37.3%",
       "turnover_cr": 84.35,
       "universes": [
         "nifty500"
@@ -6289,7 +6296,7 @@
       "high52": 1227.74,
       "low52": 770.78,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "49.5%",
       "turnover_cr": 83.92,
       "universes": [
         "nifty500",
@@ -6310,7 +6317,7 @@
       "high52": 602.26,
       "low52": 374.17,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "39.5%",
       "turnover_cr": 83.53,
       "universes": [
         "nifty500"
@@ -6330,7 +6337,7 @@
       "high52": 639.11,
       "low52": 406.72,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "46.0%",
       "turnover_cr": 82.95,
       "universes": [
         "nifty50",
@@ -6353,7 +6360,7 @@
       "high52": 194.81,
       "low52": 122.57,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "34.3%",
       "turnover_cr": 82.58,
       "universes": [
         "nifty500",
@@ -6374,7 +6381,7 @@
       "high52": 97.46,
       "low52": 61.49,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "32.5%",
       "turnover_cr": 82.32,
       "universes": [
         "nifty500"
@@ -6394,7 +6401,7 @@
       "high52": 2479.17,
       "low52": 1590.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "60.2%",
       "turnover_cr": 81.5,
       "universes": [
         "nifty500",
@@ -6415,7 +6422,7 @@
       "high52": 2219.15,
       "low52": 1413.0,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "58.1%",
       "turnover_cr": 80.69,
       "universes": [
         "nifty500",
@@ -6436,7 +6443,7 @@
       "high52": 856.92,
       "low52": 548.85,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "61.7%",
       "turnover_cr": 79.66,
       "universes": [
         "nifty500",
@@ -6457,7 +6464,7 @@
       "high52": 3346.27,
       "low52": 2124.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "48.9%",
       "turnover_cr": 79.21,
       "universes": [
         "nifty100",
@@ -6479,7 +6486,7 @@
       "high52": 29210.0,
       "low52": 18097.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "29.8%",
       "turnover_cr": 78.76,
       "universes": [
         "nifty500"
@@ -6499,7 +6506,7 @@
       "high52": 2116.0,
       "low52": 1344.07,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "53.1%",
       "turnover_cr": 77.69,
       "universes": [
         "nifty500",
@@ -6520,7 +6527,7 @@
       "high52": 1983.75,
       "low52": 1259.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.2%",
       "turnover_cr": 76.31,
       "universes": [
         "nifty500"
@@ -6540,7 +6547,7 @@
       "high52": 1646.8,
       "low52": 1039.43,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "46.3%",
       "turnover_cr": 76.07,
       "universes": [
         "nifty500"
@@ -6560,7 +6567,7 @@
       "high52": 3513.25,
       "low52": 2217.15,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.0%",
       "turnover_cr": 75.31,
       "universes": [
         "nifty500"
@@ -6580,7 +6587,7 @@
       "high52": 1345.84,
       "low52": 822.38,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "50.4%",
       "turnover_cr": 75.2,
       "universes": [
         "nifty500"
@@ -6600,7 +6607,7 @@
       "high52": 260.94,
       "low52": 161.41,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "38.1%",
       "turnover_cr": 73.33,
       "universes": [
         "nifty500"
@@ -6620,7 +6627,7 @@
       "high52": 1575.5,
       "low52": 984.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "36.4%",
       "turnover_cr": 73.06,
       "universes": [
         "nifty500"
@@ -6640,7 +6647,7 @@
       "high52": 190.77,
       "low52": 122.25,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "28.3%",
       "turnover_cr": 71.94,
       "universes": [
         "nifty500"
@@ -6660,7 +6667,7 @@
       "high52": 197.46,
       "low52": 126.22,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "36.1%",
       "turnover_cr": 71.82,
       "universes": [
         "nifty500",
@@ -6681,7 +6688,7 @@
       "high52": 962.49,
       "low52": 599.47,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "37.7%",
       "turnover_cr": 71.76,
       "universes": [
         "nifty500"
@@ -6701,7 +6708,7 @@
       "high52": 362.54,
       "low52": 226.5,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "60.4%",
       "turnover_cr": 71.63,
       "universes": [
         "nifty500"
@@ -6721,7 +6728,7 @@
       "high52": 342.7,
       "low52": 219.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "56.1%",
       "turnover_cr": 71.54,
       "universes": [
         "nifty100",
@@ -6743,7 +6750,7 @@
       "high52": 2552.54,
       "low52": 1613.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "52.1%",
       "turnover_cr": 71.28,
       "universes": [
         "nifty500",
@@ -6764,7 +6771,7 @@
       "high52": 4727.88,
       "low52": 2985.38,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.7%",
       "turnover_cr": 70.98,
       "universes": [
         "nifty500"
@@ -6784,7 +6791,7 @@
       "high52": 1487.76,
       "low52": 949.5,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "38.7%",
       "turnover_cr": 70.83,
       "universes": [
         "nifty500",
@@ -6805,7 +6812,7 @@
       "high52": 82.92,
       "low52": 52.72,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "64.1%",
       "turnover_cr": 70.19,
       "universes": [
         "nifty500",
@@ -6826,7 +6833,7 @@
       "high52": 2260.9,
       "low52": 1425.45,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "43.8%",
       "turnover_cr": 69.46,
       "universes": [
         "nifty500"
@@ -6846,7 +6853,7 @@
       "high52": 322.75,
       "low52": 199.91,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "39.9%",
       "turnover_cr": 69.41,
       "universes": [
         "nifty500"
@@ -6866,7 +6873,7 @@
       "high52": 814.54,
       "low52": 519.15,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "24.5%",
       "turnover_cr": 68.17,
       "universes": [
         "nifty500"
@@ -6886,7 +6893,7 @@
       "high52": 558.32,
       "low52": 359.06,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "58.9%",
       "turnover_cr": 67.87,
       "universes": [
         "nifty500",
@@ -6907,7 +6914,7 @@
       "high52": 17.31,
       "low52": 11.0,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "37.6%",
       "turnover_cr": 67.62,
       "universes": [
         "nifty500"
@@ -6927,7 +6934,7 @@
       "high52": 462.3,
       "low52": 286.88,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "45.5%",
       "turnover_cr": 67.36,
       "universes": [
         "nifty500"
@@ -6947,7 +6954,7 @@
       "high52": 1390.24,
       "low52": 893.62,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "89.7%",
       "turnover_cr": 67.15,
       "universes": [
         "nifty500"
@@ -6967,7 +6974,7 @@
       "high52": 1753.75,
       "low52": 1114.65,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "51.5%",
       "turnover_cr": 66.59,
       "universes": [
         "nifty500"
@@ -6987,7 +6994,7 @@
       "high52": 92.69,
       "low52": 58.5,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "38.0%",
       "turnover_cr": 66.53,
       "universes": [
         "nifty100",
@@ -7009,7 +7016,7 @@
       "high52": 4749.38,
       "low52": 3020.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "24.2%",
       "turnover_cr": 66.18,
       "universes": [
         "nifty500"
@@ -7029,7 +7036,7 @@
       "high52": 859.34,
       "low52": 546.15,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "58.5%",
       "turnover_cr": 65.34,
       "universes": [
         "nifty500"
@@ -7049,7 +7056,7 @@
       "high52": 5179.6,
       "low52": 3302.25,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "45.1%",
       "turnover_cr": 63.85,
       "universes": [
         "nifty500",
@@ -7070,7 +7077,7 @@
       "high52": 485.3,
       "low52": 302.14,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "54.4%",
       "turnover_cr": 63.79,
       "universes": [
         "nifty500"
@@ -7090,7 +7097,7 @@
       "high52": 2610.38,
       "low52": 1650.0,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "42.3%",
       "turnover_cr": 63.65,
       "universes": [
         "nifty500",
@@ -7111,7 +7118,7 @@
       "high52": 82.72,
       "low52": 52.92,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "52.1%",
       "turnover_cr": 63.21,
       "universes": [
         "nifty500",
@@ -7132,7 +7139,7 @@
       "high52": 4198.3,
       "low52": 2691.08,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "56.7%",
       "turnover_cr": 63.16,
       "universes": [
         "nifty500",
@@ -7153,7 +7160,7 @@
       "high52": 315.16,
       "low52": 200.18,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "41.5%",
       "turnover_cr": 62.11,
       "universes": [
         "nifty500"
@@ -7173,7 +7180,7 @@
       "high52": 362.25,
       "low52": 214.88,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "26.3%",
       "turnover_cr": 62.0,
       "universes": [
         "nifty500"
@@ -7193,7 +7200,7 @@
       "high52": 5506.08,
       "low52": 3527.92,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "54.6%",
       "turnover_cr": 61.98,
       "universes": [
         "nifty100",
@@ -7215,7 +7222,7 @@
       "high52": 1731.9,
       "low52": 1107.82,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "57.5%",
       "turnover_cr": 61.56,
       "universes": [
         "nifty100",
@@ -7237,7 +7244,7 @@
       "high52": 931.27,
       "low52": 584.62,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "26.9%",
       "turnover_cr": 61.41,
       "universes": [
         "nifty500"
@@ -7257,7 +7264,7 @@
       "high52": 22931.0,
       "low52": 14351.25,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "51.8%",
       "turnover_cr": 61.34,
       "universes": [
         "nifty500"
@@ -7277,7 +7284,7 @@
       "high52": 374.84,
       "low52": 237.15,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "39.9%",
       "turnover_cr": 60.71,
       "universes": [
         "nifty500",
@@ -7298,7 +7305,7 @@
       "high52": 2405.8,
       "low52": 1537.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "36.9%",
       "turnover_cr": 60.09,
       "universes": [
         "nifty100",
@@ -7320,7 +7327,7 @@
       "high52": 986.7,
       "low52": 632.55,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "62.8%",
       "turnover_cr": 60.07,
       "universes": [
         "nifty100",
@@ -7342,7 +7349,7 @@
       "high52": 104.02,
       "low52": 66.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "65.0%",
       "turnover_cr": 59.71,
       "universes": [
         "nifty500",
@@ -7363,7 +7370,7 @@
       "high52": 537.97,
       "low52": 334.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "22.2%",
       "turnover_cr": 59.59,
       "universes": [
         "nifty500"
@@ -7383,7 +7390,7 @@
       "high52": 150.45,
       "low52": 97.02,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "51.1%",
       "turnover_cr": 59.42,
       "universes": [
         "nifty100",
@@ -7405,7 +7412,7 @@
       "high52": 5196.85,
       "low52": 3263.18,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "46.1%",
       "turnover_cr": 58.42,
       "universes": [
         "nifty500"
@@ -7425,7 +7432,7 @@
       "high52": 428.95,
       "low52": 268.84,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "54.0%",
       "turnover_cr": 58.3,
       "universes": [
         "nifty500"
@@ -7445,7 +7452,7 @@
       "high52": 1066.74,
       "low52": 664.69,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "23.5%",
       "turnover_cr": 57.46,
       "universes": [
         "nifty500"
@@ -7465,7 +7472,7 @@
       "high52": 419.75,
       "low52": 267.52,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "31.6%",
       "turnover_cr": 56.89,
       "universes": [
         "nifty100",
@@ -7487,7 +7494,7 @@
       "high52": 40.27,
       "low52": 25.71,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "31.5%",
       "turnover_cr": 56.8,
       "universes": [
         "nifty500"
@@ -7507,7 +7514,7 @@
       "high52": 2321.85,
       "low52": 1471.57,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "37.8%",
       "turnover_cr": 56.13,
       "universes": [
         "nifty500"
@@ -7527,7 +7534,7 @@
       "high52": 2149.35,
       "low52": 1350.75,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "48.4%",
       "turnover_cr": 55.53,
       "universes": [
         "nifty500"
@@ -7547,7 +7554,7 @@
       "high52": 369.38,
       "low52": 235.24,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "59.8%",
       "turnover_cr": 54.86,
       "universes": [
         "nifty100",
@@ -7568,7 +7575,7 @@
       "high52": 78.14,
       "low52": 48.58,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.6%",
       "turnover_cr": 54.33,
       "universes": [
         "nifty500",
@@ -7589,7 +7596,7 @@
       "high52": 194.7,
       "low52": 124.88,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "60.1%",
       "turnover_cr": 53.27,
       "universes": [
         "nifty100",
@@ -7611,7 +7618,7 @@
       "high52": 1773.53,
       "low52": 1119.22,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "47.4%",
       "turnover_cr": 53.12,
       "universes": [
         "nifty500"
@@ -7631,7 +7638,7 @@
       "high52": 1125.68,
       "low52": 721.35,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "42.0%",
       "turnover_cr": 52.85,
       "universes": [
         "nifty50",
@@ -7654,7 +7661,7 @@
       "high52": 4861.39,
       "low52": 3076.5,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "40.3%",
       "turnover_cr": 52.67,
       "universes": [
         "nifty500"
@@ -7674,7 +7681,7 @@
       "high52": 2845.9,
       "low52": 1811.32,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.6%",
       "turnover_cr": 52.41,
       "universes": [
         "nifty500",
@@ -7695,7 +7702,7 @@
       "high52": 110.63,
       "low52": 70.51,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "50.4%",
       "turnover_cr": 51.29,
       "universes": [
         "nifty500",
@@ -7716,7 +7723,7 @@
       "high52": 438.15,
       "low52": 279.79,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "53.8%",
       "turnover_cr": 51.09,
       "universes": [
         "nifty500",
@@ -7737,7 +7744,7 @@
       "high52": 2497.8,
       "low52": 1607.62,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "55.6%",
       "turnover_cr": 50.92,
       "universes": [
         "nifty500",
@@ -7758,7 +7765,7 @@
       "high52": 3536.36,
       "low52": 2252.1,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "55.5%",
       "turnover_cr": 50.78,
       "universes": [
         "nifty500"
@@ -7778,7 +7785,7 @@
       "high52": 5445.25,
       "low52": 3436.2,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "46.4%",
       "turnover_cr": 50.69,
       "universes": [
         "nifty500"
@@ -7798,7 +7805,7 @@
       "high52": 126.61,
       "low52": 79.65,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "29.3%",
       "turnover_cr": 48.85,
       "universes": [
         "nifty500",
@@ -7819,7 +7826,7 @@
       "high52": 465.52,
       "low52": 297.3,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "48.5%",
       "turnover_cr": 48.77,
       "universes": [
         "nifty500",
@@ -7840,7 +7847,7 @@
       "high52": 1384.83,
       "low52": 872.78,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "50.4%",
       "turnover_cr": 48.4,
       "universes": [
         "nifty500"
@@ -7860,7 +7867,7 @@
       "high52": 5864.42,
       "low52": 3731.62,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "59.8%",
       "turnover_cr": 47.85,
       "universes": [
         "nifty500",
@@ -7881,7 +7888,7 @@
       "high52": 517.5,
       "low52": 331.16,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "60.3%",
       "turnover_cr": 46.95,
       "universes": [
         "nifty500"
@@ -7901,7 +7908,7 @@
       "high52": 52526.25,
       "low52": 33716.25,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "44.0%",
       "turnover_cr": 46.37,
       "universes": [
         "nifty100",
@@ -7923,7 +7930,7 @@
       "high52": 61.19,
       "low52": 38.25,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "47.6%",
       "turnover_cr": 45.97,
       "universes": [
         "nifty500"
@@ -7943,7 +7950,7 @@
       "high52": 601.22,
       "low52": 378.98,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "39.3%",
       "turnover_cr": 44.89,
       "universes": [
         "nifty500",
@@ -7964,7 +7971,7 @@
       "high52": 229.68,
       "low52": 147.04,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "50.6%",
       "turnover_cr": 44.76,
       "universes": [
         "nifty500"
@@ -7984,7 +7991,7 @@
       "high52": 7733.75,
       "low52": 4875.75,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "28.9%",
       "turnover_cr": 44.31,
       "universes": [
         "nifty500",
@@ -8005,7 +8012,7 @@
       "high52": 515.2,
       "low52": 326.29,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "50.8%",
       "turnover_cr": 43.87,
       "universes": [
         "nifty500",
@@ -8026,7 +8033,7 @@
       "high52": 1591.94,
       "low52": 1020.0,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "52.5%",
       "turnover_cr": 43.52,
       "universes": [
         "nifty500",
@@ -8047,7 +8054,7 @@
       "high52": 2437.31,
       "low52": 1562.18,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "39.6%",
       "turnover_cr": 43.42,
       "universes": [
         "nifty500"
@@ -8067,7 +8074,7 @@
       "high52": 1983.75,
       "low52": 1250.1,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "29.7%",
       "turnover_cr": 43.23,
       "universes": [
         "nifty500",
@@ -8088,7 +8095,7 @@
       "high52": 95.68,
       "low52": 60.93,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "45.4%",
       "turnover_cr": 43.09,
       "universes": [
         "nifty500"
@@ -8108,7 +8115,7 @@
       "high52": 602.37,
       "low52": 383.1,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "44.6%",
       "turnover_cr": 43.05,
       "universes": [
         "nifty500",
@@ -8129,7 +8136,7 @@
       "high52": 1728.45,
       "low52": 1098.0,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "40.8%",
       "turnover_cr": 42.7,
       "universes": [
         "nifty500",
@@ -8150,7 +8157,7 @@
       "high52": 2575.88,
       "low52": 1620.0,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "43.6%",
       "turnover_cr": 42.35,
       "universes": [
         "nifty500",
@@ -8171,7 +8178,7 @@
       "high52": 1871.62,
       "low52": 1184.4,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "37.4%",
       "turnover_cr": 42.26,
       "universes": [
         "nifty500",
@@ -8192,7 +8199,7 @@
       "high52": 443.67,
       "low52": 282.75,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "55.5%",
       "turnover_cr": 41.88,
       "universes": [
         "nifty500",
@@ -8213,7 +8220,7 @@
       "high52": 148.92,
       "low52": 94.91,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "34.9%",
       "turnover_cr": 41.87,
       "universes": [
         "nifty500"
@@ -8233,7 +8240,7 @@
       "high52": 518.94,
       "low52": 333.67,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "43.9%",
       "turnover_cr": 41.55,
       "universes": [
         "nifty500",
@@ -8254,28 +8261,8 @@
       "high52": 3847.44,
       "low52": 2418.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "41.4%",
       "turnover_cr": 40.99,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
-      "symbol": "BSOFT",
-      "name": "Birlasoft Ltd.",
-      "sector": "it",
-      "price": 312.6,
-      "change": -1.76,
-      "volume": "1.3M",
-      "vol_raw": 1302001,
-      "volMul": 1.25,
-      "high": 319.65,
-      "low": 309.1,
-      "high52": 367.6,
-      "low52": 231.82,
-      "pe": 29.2,
-      "delivery": "50.0%",
-      "turnover_cr": 40.98,
       "universes": [
         "nifty500"
       ]
@@ -8294,12 +8281,32 @@
       "high52": 4197.5,
       "low52": 2693.4,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "32.6%",
       "turnover_cr": 40.98,
       "universes": [
         "nifty100",
         "nifty500",
         "fno"
+      ]
+    },
+    {
+      "symbol": "BSOFT",
+      "name": "Birlasoft Ltd.",
+      "sector": "it",
+      "price": 312.6,
+      "change": -1.76,
+      "volume": "1.3M",
+      "vol_raw": 1302001,
+      "volMul": 1.25,
+      "high": 319.65,
+      "low": 309.1,
+      "high52": 367.6,
+      "low52": 231.82,
+      "pe": 29.2,
+      "delivery": "38.4%",
+      "turnover_cr": 40.98,
+      "universes": [
+        "nifty500"
       ]
     },
     {
@@ -8316,7 +8323,7 @@
       "high52": 1350.33,
       "low52": 860.03,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "50.8%",
       "turnover_cr": 40.77,
       "universes": [
         "nifty500",
@@ -8337,7 +8344,7 @@
       "high52": 519.34,
       "low52": 325.2,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "53.8%",
       "turnover_cr": 40.67,
       "universes": [
         "nifty500"
@@ -8357,7 +8364,7 @@
       "high52": 1229.12,
       "low52": 774.75,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "49.1%",
       "turnover_cr": 40.57,
       "universes": [
         "nifty500",
@@ -8378,7 +8385,7 @@
       "high52": 1624.49,
       "low52": 1027.8,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "52.2%",
       "turnover_cr": 40.47,
       "universes": [
         "nifty500"
@@ -8398,7 +8405,7 @@
       "high52": 12951.3,
       "low52": 8201.25,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "51.2%",
       "turnover_cr": 40.43,
       "universes": [
         "nifty500"
@@ -8418,7 +8425,7 @@
       "high52": 1281.9,
       "low52": 813.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "31.4%",
       "turnover_cr": 40.25,
       "universes": [
         "nifty500",
@@ -8439,7 +8446,7 @@
       "high52": 156.63,
       "low52": 96.82,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.3%",
       "turnover_cr": 40.18,
       "universes": [
         "nifty500"
@@ -8459,7 +8466,7 @@
       "high52": 161.31,
       "low52": 100.76,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "37.3%",
       "turnover_cr": 39.98,
       "universes": [
         "nifty500"
@@ -8479,7 +8486,7 @@
       "high52": 339.71,
       "low52": 218.29,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "62.7%",
       "turnover_cr": 39.12,
       "universes": [
         "nifty500",
@@ -8500,7 +8507,7 @@
       "high52": 231.09,
       "low52": 145.51,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "30.8%",
       "turnover_cr": 38.77,
       "universes": [
         "nifty500",
@@ -8521,7 +8528,7 @@
       "high52": 2392.11,
       "low52": 1524.75,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "58.6%",
       "turnover_cr": 38.68,
       "universes": [
         "nifty500"
@@ -8541,7 +8548,7 @@
       "high52": 1188.52,
       "low52": 759.9,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "33.7%",
       "turnover_cr": 38.49,
       "universes": [
         "nifty500",
@@ -8562,7 +8569,7 @@
       "high52": 2265.73,
       "low52": 1454.25,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "60.3%",
       "turnover_cr": 38.48,
       "universes": [
         "nifty500"
@@ -8582,7 +8589,7 @@
       "high52": 4295.94,
       "low52": 2685.0,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "37.2%",
       "turnover_cr": 38.36,
       "universes": [
         "nifty500"
@@ -8602,7 +8609,7 @@
       "high52": 327.81,
       "low52": 205.65,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "41.0%",
       "turnover_cr": 38.13,
       "universes": [
         "nifty500"
@@ -8622,7 +8629,7 @@
       "high52": 892.4,
       "low52": 555.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.0%",
       "turnover_cr": 37.73,
       "universes": [
         "nifty500"
@@ -8642,7 +8649,7 @@
       "high52": 1975.24,
       "low52": 1260.0,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "50.8%",
       "turnover_cr": 37.18,
       "universes": [
         "nifty500"
@@ -8662,7 +8669,7 @@
       "high52": 21.59,
       "low52": 13.24,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "44.4%",
       "turnover_cr": 37.16,
       "universes": [
         "nifty500"
@@ -8682,7 +8689,7 @@
       "high52": 1436.81,
       "low52": 916.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "47.1%",
       "turnover_cr": 36.32,
       "universes": [
         "nifty500",
@@ -8703,8 +8710,8 @@
       "high52": 36.68,
       "low52": 23.17,
       "pe": 18.5,
-      "delivery": "50.0%",
-      "turnover_cr": 35.81,
+      "delivery": "29.3%",
+      "turnover_cr": 35.82,
       "universes": [
         "nifty500"
       ]
@@ -8723,7 +8730,7 @@
       "high52": 186.18,
       "low52": 116.62,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "55.2%",
       "turnover_cr": 35.57,
       "universes": [
         "nifty500"
@@ -8743,7 +8750,7 @@
       "high52": 1385.64,
       "low52": 871.88,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "41.1%",
       "turnover_cr": 35.5,
       "universes": [
         "nifty500"
@@ -8763,7 +8770,7 @@
       "high52": 2157.52,
       "low52": 1371.3,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "63.3%",
       "turnover_cr": 35.11,
       "universes": [
         "nifty500"
@@ -8783,7 +8790,7 @@
       "high52": 1653.93,
       "low52": 1063.88,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "48.6%",
       "turnover_cr": 34.87,
       "universes": [
         "nifty500",
@@ -8804,7 +8811,7 @@
       "high52": 1311.46,
       "low52": 825.08,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "54.3%",
       "turnover_cr": 34.81,
       "universes": [
         "nifty500"
@@ -8824,7 +8831,7 @@
       "high52": 1261.09,
       "low52": 789.0,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "74.7%",
       "turnover_cr": 34.78,
       "universes": [
         "nifty500"
@@ -8844,7 +8851,7 @@
       "high52": 1290.41,
       "low52": 823.5,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "46.2%",
       "turnover_cr": 34.77,
       "universes": [
         "nifty500",
@@ -8865,7 +8872,7 @@
       "high52": 2305.63,
       "low52": 1447.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "26.8%",
       "turnover_cr": 34.67,
       "universes": [
         "nifty500"
@@ -8885,7 +8892,7 @@
       "high52": 1023.5,
       "low52": 649.88,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "36.0%",
       "turnover_cr": 33.59,
       "universes": [
         "nifty500",
@@ -8906,7 +8913,7 @@
       "high52": 483.0,
       "low52": 309.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.8%",
       "turnover_cr": 33.04,
       "universes": [
         "nifty500",
@@ -8927,7 +8934,7 @@
       "high52": 405.43,
       "low52": 256.95,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "49.9%",
       "turnover_cr": 32.84,
       "universes": [
         "nifty500"
@@ -8947,7 +8954,7 @@
       "high52": 406.52,
       "low52": 254.21,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "34.7%",
       "turnover_cr": 32.25,
       "universes": [
         "nifty500"
@@ -8967,7 +8974,7 @@
       "high52": 9427.7,
       "low52": 6083.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "57.4%",
       "turnover_cr": 32.21,
       "universes": [
         "nifty500"
@@ -8987,7 +8994,7 @@
       "high52": 616.57,
       "low52": 394.61,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "47.9%",
       "turnover_cr": 31.83,
       "universes": [
         "nifty500",
@@ -9029,7 +9036,7 @@
       "high52": 41693.25,
       "low52": 26662.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "38.2%",
       "turnover_cr": 31.32,
       "universes": [
         "nifty500",
@@ -9050,7 +9057,7 @@
       "high52": 2131.98,
       "low52": 1347.75,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "52.6%",
       "turnover_cr": 30.63,
       "universes": [
         "nifty500"
@@ -9070,7 +9077,7 @@
       "high52": 1814.24,
       "low52": 1159.12,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "47.6%",
       "turnover_cr": 30.31,
       "universes": [
         "nifty500",
@@ -9091,7 +9098,7 @@
       "high52": 949.67,
       "low52": 602.14,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "54.7%",
       "turnover_cr": 29.41,
       "universes": [
         "nifty500"
@@ -9111,7 +9118,7 @@
       "high52": 13006.5,
       "low52": 8327.25,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "52.4%",
       "turnover_cr": 29.19,
       "universes": [
         "nifty100",
@@ -9133,7 +9140,7 @@
       "high52": 834.27,
       "low52": 526.72,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "39.3%",
       "turnover_cr": 29.08,
       "universes": [
         "nifty500"
@@ -9153,7 +9160,7 @@
       "high52": 391.52,
       "low52": 246.11,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "46.5%",
       "turnover_cr": 28.99,
       "universes": [
         "nifty500"
@@ -9173,7 +9180,7 @@
       "high52": 1957.3,
       "low52": 1254.75,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "53.7%",
       "turnover_cr": 28.55,
       "universes": [
         "nifty500"
@@ -9193,7 +9200,7 @@
       "high52": 478.92,
       "low52": 298.5,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "45.2%",
       "turnover_cr": 28.51,
       "universes": [
         "nifty500"
@@ -9213,7 +9220,7 @@
       "high52": 1304.33,
       "low52": 832.72,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "44.0%",
       "turnover_cr": 28.41,
       "universes": [
         "nifty100",
@@ -9235,7 +9242,7 @@
       "high52": 787.58,
       "low52": 498.6,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "53.2%",
       "turnover_cr": 27.79,
       "universes": [
         "nifty500"
@@ -9255,28 +9262,8 @@
       "high52": 788.9,
       "low52": 500.92,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "52.4%",
       "turnover_cr": 27.01,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
-      "symbol": "MRF",
-      "name": "MRF Ltd.",
-      "sector": "auto",
-      "price": 121905.0,
-      "change": -0.72,
-      "volume": "2.2K",
-      "vol_raw": 2209,
-      "volMul": 1.25,
-      "high": 122940.0,
-      "low": 121615.0,
-      "high52": 141381.0,
-      "low52": 91211.25,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 27.0,
       "universes": [
         "nifty500"
       ]
@@ -9295,7 +9282,27 @@
       "high52": 267.32,
       "low52": 168.99,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "47.0%",
+      "turnover_cr": 27.0,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "MRF",
+      "name": "MRF Ltd.",
+      "sector": "auto",
+      "price": 121905.0,
+      "change": -0.72,
+      "volume": "2.2K",
+      "vol_raw": 2209,
+      "volMul": 1.25,
+      "high": 122940.0,
+      "low": 121615.0,
+      "high52": 141381.0,
+      "low52": 91211.25,
+      "pe": 27.4,
+      "delivery": "43.9%",
       "turnover_cr": 27.0,
       "universes": [
         "nifty500"
@@ -9315,7 +9322,7 @@
       "high52": 570.17,
       "low52": 356.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.0%",
       "turnover_cr": 26.93,
       "universes": [
         "nifty500"
@@ -9335,7 +9342,7 @@
       "high52": 1896.35,
       "low52": 1184.4,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "57.9%",
       "turnover_cr": 26.61,
       "universes": [
         "nifty500"
@@ -9355,7 +9362,7 @@
       "high52": 37.42,
       "low52": 23.7,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "34.1%",
       "turnover_cr": 26.47,
       "universes": [
         "nifty500"
@@ -9375,7 +9382,7 @@
       "high52": 238.69,
       "low52": 146.7,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "43.9%",
       "turnover_cr": 26.38,
       "universes": [
         "nifty500"
@@ -9395,7 +9402,7 @@
       "high52": 316.25,
       "low52": 194.89,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.9%",
       "turnover_cr": 26.28,
       "universes": [
         "nifty500"
@@ -9415,7 +9422,7 @@
       "high52": 231.99,
       "low52": 145.36,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "37.9%",
       "turnover_cr": 26.02,
       "universes": [
         "nifty500"
@@ -9435,7 +9442,7 @@
       "high52": 805.92,
       "low52": 508.76,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "50.6%",
       "turnover_cr": 26.01,
       "universes": [
         "nifty500"
@@ -9455,7 +9462,7 @@
       "high52": 540.9,
       "low52": 340.05,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "49.4%",
       "turnover_cr": 25.81,
       "universes": [
         "nifty500"
@@ -9475,7 +9482,7 @@
       "high52": 863.25,
       "low52": 549.86,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "47.5%",
       "turnover_cr": 25.8,
       "universes": [
         "nifty500"
@@ -9495,7 +9502,7 @@
       "high52": 552.0,
       "low52": 343.91,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "30.8%",
       "turnover_cr": 25.74,
       "universes": [
         "nifty500"
@@ -9515,7 +9522,7 @@
       "high52": 266.46,
       "low52": 168.75,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "41.1%",
       "turnover_cr": 25.64,
       "universes": [
         "nifty500"
@@ -9535,7 +9542,7 @@
       "high52": 1584.7,
       "low52": 1016.03,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "62.3%",
       "turnover_cr": 25.23,
       "universes": [
         "nifty500"
@@ -9555,7 +9562,7 @@
       "high52": 1918.31,
       "low52": 1213.72,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "31.6%",
       "turnover_cr": 25.19,
       "universes": [
         "nifty500"
@@ -9575,7 +9582,7 @@
       "high52": 87.04,
       "low52": 55.12,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "41.1%",
       "turnover_cr": 25.09,
       "universes": [
         "nifty500",
@@ -9596,7 +9603,7 @@
       "high52": 255.13,
       "low52": 159.38,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "57.4%",
       "turnover_cr": 24.73,
       "universes": [
         "nifty500"
@@ -9616,7 +9623,7 @@
       "high52": 1175.88,
       "low52": 731.25,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "32.0%",
       "turnover_cr": 24.63,
       "universes": [
         "nifty500"
@@ -9636,7 +9643,7 @@
       "high52": 2364.74,
       "low52": 1485.22,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "31.9%",
       "turnover_cr": 24.53,
       "universes": [
         "nifty500"
@@ -9656,7 +9663,7 @@
       "high52": 40.94,
       "low52": 26.25,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "44.7%",
       "turnover_cr": 23.96,
       "universes": [
         "nifty500"
@@ -9676,7 +9683,7 @@
       "high52": 2211.56,
       "low52": 1390.57,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.2%",
       "turnover_cr": 23.74,
       "universes": [
         "nifty500"
@@ -9696,7 +9703,7 @@
       "high52": 568.85,
       "low52": 362.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "61.4%",
       "turnover_cr": 23.41,
       "universes": [
         "nifty500"
@@ -9716,7 +9723,7 @@
       "high52": 35.88,
       "low52": 22.84,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "43.3%",
       "turnover_cr": 23.32,
       "universes": [
         "nifty500"
@@ -9736,7 +9743,7 @@
       "high52": 5951.25,
       "low52": 3747.75,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "36.2%",
       "turnover_cr": 22.69,
       "universes": [
         "nifty500"
@@ -9756,7 +9763,7 @@
       "high52": 1281.33,
       "low52": 810.38,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "53.7%",
       "turnover_cr": 22.61,
       "universes": [
         "nifty500"
@@ -9776,7 +9783,7 @@
       "high52": 480.07,
       "low52": 304.69,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "34.1%",
       "turnover_cr": 22.35,
       "universes": [
         "nifty500"
@@ -9796,7 +9803,7 @@
       "high52": 2482.96,
       "low52": 1584.0,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "56.4%",
       "turnover_cr": 22.21,
       "universes": [
         "nifty500"
@@ -9816,7 +9823,7 @@
       "high52": 746.23,
       "low52": 476.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "28.4%",
       "turnover_cr": 21.88,
       "universes": [
         "nifty500"
@@ -9836,7 +9843,7 @@
       "high52": 135.58,
       "low52": 86.1,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "34.8%",
       "turnover_cr": 21.76,
       "universes": [
         "nifty500"
@@ -9856,7 +9863,7 @@
       "high52": 1721.55,
       "low52": 1080.75,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "46.7%",
       "turnover_cr": 21.52,
       "universes": [
         "nifty500"
@@ -9876,7 +9883,7 @@
       "high52": 543.72,
       "low52": 342.0,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "41.2%",
       "turnover_cr": 21.17,
       "universes": [
         "nifty500"
@@ -9896,7 +9903,7 @@
       "high52": 805.75,
       "low52": 513.0,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "35.0%",
       "turnover_cr": 21.03,
       "universes": [
         "nifty500",
@@ -9917,28 +9924,8 @@
       "high52": 4226.82,
       "low52": 2702.7,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "77.2%",
       "turnover_cr": 21.01,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
-      "symbol": "AVANTIFEED",
-      "name": "Avanti Feeds Ltd.",
-      "sector": "fmcg",
-      "price": 722.95,
-      "change": 0.05,
-      "volume": "287.1K",
-      "vol_raw": 287078,
-      "volMul": 1.25,
-      "high": 736.8,
-      "low": 712.5,
-      "high52": 847.32,
-      "low52": 534.38,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 20.77,
       "universes": [
         "nifty500"
       ]
@@ -9957,7 +9944,27 @@
       "high52": 986.82,
       "low52": 624.0,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "25.3%",
+      "turnover_cr": 20.77,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AVANTIFEED",
+      "name": "Avanti Feeds Ltd.",
+      "sector": "fmcg",
+      "price": 722.95,
+      "change": 0.05,
+      "volume": "287.1K",
+      "vol_raw": 287078,
+      "volMul": 1.25,
+      "high": 736.8,
+      "low": 712.5,
+      "high52": 847.32,
+      "low52": 534.38,
+      "pe": 52.0,
+      "delivery": "35.1%",
       "turnover_cr": 20.77,
       "universes": [
         "nifty500"
@@ -9977,7 +9984,7 @@
       "high52": 150.82,
       "low52": 94.43,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "56.3%",
       "turnover_cr": 20.67,
       "universes": [
         "nifty500"
@@ -9997,7 +10004,7 @@
       "high52": 341.9,
       "low52": 212.62,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "20.3%",
       "turnover_cr": 20.53,
       "universes": [
         "nifty500"
@@ -10017,7 +10024,7 @@
       "high52": 1483.04,
       "low52": 916.12,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "50.6%",
       "turnover_cr": 20.48,
       "universes": [
         "nifty500"
@@ -10037,7 +10044,7 @@
       "high52": 140.18,
       "low52": 87.58,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "64.1%",
       "turnover_cr": 20.41,
       "universes": [
         "nifty500"
@@ -10057,7 +10064,7 @@
       "high52": 123.88,
       "low52": 78.39,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "47.4%",
       "turnover_cr": 20.1,
       "universes": [
         "nifty500",
@@ -10078,7 +10085,7 @@
       "high52": 33.95,
       "low52": 21.64,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "53.5%",
       "turnover_cr": 20.03,
       "universes": [
         "nifty500"
@@ -10098,7 +10105,7 @@
       "high52": 2252.27,
       "low52": 1432.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "41.1%",
       "turnover_cr": 19.79,
       "universes": [
         "nifty500"
@@ -10118,7 +10125,7 @@
       "high52": 131.18,
       "low52": 83.36,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "34.8%",
       "turnover_cr": 19.71,
       "universes": [
         "nifty500"
@@ -10138,7 +10145,7 @@
       "high52": 3811.44,
       "low52": 2440.65,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "35.0%",
       "turnover_cr": 19.69,
       "universes": [
         "nifty500"
@@ -10158,7 +10165,7 @@
       "high52": 748.59,
       "low52": 474.38,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "56.6%",
       "turnover_cr": 19.68,
       "universes": [
         "nifty500"
@@ -10178,7 +10185,7 @@
       "high52": 377.43,
       "low52": 239.29,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "59.3%",
       "turnover_cr": 19.65,
       "universes": [
         "nifty500"
@@ -10198,7 +10205,7 @@
       "high52": 2136.7,
       "low52": 1346.62,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "41.7%",
       "turnover_cr": 19.59,
       "universes": [
         "nifty500",
@@ -10219,7 +10226,7 @@
       "high52": 103.79,
       "low52": 65.47,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "57.8%",
       "turnover_cr": 19.48,
       "universes": [
         "nifty500"
@@ -10239,7 +10246,7 @@
       "high52": 1386.44,
       "low52": 879.0,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "74.2%",
       "turnover_cr": 19.42,
       "universes": [
         "nifty500"
@@ -10259,8 +10266,8 @@
       "high52": 2103.35,
       "low52": 1309.88,
       "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 19.37,
+      "delivery": "54.5%",
+      "turnover_cr": 19.36,
       "universes": [
         "nifty500"
       ]
@@ -10279,7 +10286,7 @@
       "high52": 857.15,
       "low52": 548.25,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "48.5%",
       "turnover_cr": 18.9,
       "universes": [
         "nifty500"
@@ -10299,7 +10306,7 @@
       "high52": 1420.82,
       "low52": 900.75,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "47.5%",
       "turnover_cr": 18.85,
       "universes": [
         "nifty500"
@@ -10319,7 +10326,7 @@
       "high52": 669.59,
       "low52": 429.11,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.6%",
       "turnover_cr": 18.78,
       "universes": [
         "nifty500"
@@ -10360,7 +10367,7 @@
       "high52": 793.5,
       "low52": 503.25,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "41.4%",
       "turnover_cr": 18.51,
       "universes": [
         "nifty500"
@@ -10380,7 +10387,7 @@
       "high52": 1148.62,
       "low52": 729.9,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.0%",
       "turnover_cr": 18.3,
       "universes": [
         "nifty500"
@@ -10400,7 +10407,7 @@
       "high52": 187.92,
       "low52": 118.4,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "57.6%",
       "turnover_cr": 18.15,
       "universes": [
         "nifty500"
@@ -10420,7 +10427,7 @@
       "high52": 517.16,
       "low52": 330.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "49.8%",
       "turnover_cr": 18.01,
       "universes": [
         "nifty500",
@@ -10441,7 +10448,7 @@
       "high52": 3864.12,
       "low52": 2449.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "59.6%",
       "turnover_cr": 17.85,
       "universes": [
         "nifty500"
@@ -10461,7 +10468,7 @@
       "high52": 855.89,
       "low52": 548.92,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "55.3%",
       "turnover_cr": 17.61,
       "universes": [
         "nifty500"
@@ -10481,7 +10488,7 @@
       "high52": 2010.31,
       "low52": 1277.25,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "50.6%",
       "turnover_cr": 17.51,
       "universes": [
         "nifty500"
@@ -10501,7 +10508,7 @@
       "high52": 123.61,
       "low52": 77.85,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "31.0%",
       "turnover_cr": 17.26,
       "universes": [
         "nifty500"
@@ -10521,7 +10528,7 @@
       "high52": 209.68,
       "low52": 129.78,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "26.6%",
       "turnover_cr": 17.1,
       "universes": [
         "nifty500"
@@ -10541,7 +10548,7 @@
       "high52": 1686.94,
       "low52": 1068.45,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "46.8%",
       "turnover_cr": 16.97,
       "universes": [
         "nifty500"
@@ -10561,28 +10568,8 @@
       "high52": 2041.25,
       "low52": 1305.68,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "60.7%",
       "turnover_cr": 16.85,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
-      "symbol": "ACC",
-      "name": "ACC Ltd.",
-      "sector": "infra",
-      "price": 1167.8,
-      "change": -1.63,
-      "volume": "138.7K",
-      "vol_raw": 138695,
-      "volMul": 1.25,
-      "high": 1208.8,
-      "low": 1156.0,
-      "high52": 1390.12,
-      "low52": 867.0,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.44,
       "universes": [
         "nifty500"
       ]
@@ -10601,7 +10588,27 @@
       "high52": 587.65,
       "low52": 372.52,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "49.7%",
+      "turnover_cr": 16.44,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ACC",
+      "name": "ACC Ltd.",
+      "sector": "infra",
+      "price": 1167.8,
+      "change": -1.63,
+      "volume": "138.7K",
+      "vol_raw": 138695,
+      "volMul": 1.25,
+      "high": 1208.8,
+      "low": 1156.0,
+      "high52": 1390.12,
+      "low52": 867.0,
+      "pe": 31.0,
+      "delivery": "36.5%",
       "turnover_cr": 16.44,
       "universes": [
         "nifty500"
@@ -10621,7 +10628,7 @@
       "high52": 905.22,
       "low52": 565.61,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "51.0%",
       "turnover_cr": 16.4,
       "universes": [
         "nifty500"
@@ -10641,28 +10648,8 @@
       "high52": 538.2,
       "low52": 342.0,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "53.2%",
       "turnover_cr": 16.33,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
-      "symbol": "RAILTEL",
-      "name": "Railtel Corporation Of India Ltd.",
-      "sector": "infra",
-      "price": 250.5,
-      "change": -1.92,
-      "volume": "643.9K",
-      "vol_raw": 643903,
-      "volMul": 1.25,
-      "high": 261.25,
-      "low": 248.7,
-      "high52": 300.44,
-      "low52": 186.52,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.29,
       "universes": [
         "nifty500"
       ]
@@ -10681,7 +10668,27 @@
       "high52": 1742.02,
       "low52": 1099.12,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "54.8%",
+      "turnover_cr": 16.29,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "RAILTEL",
+      "name": "Railtel Corporation Of India Ltd.",
+      "sector": "infra",
+      "price": 250.5,
+      "change": -1.92,
+      "volume": "643.9K",
+      "vol_raw": 643903,
+      "volMul": 1.25,
+      "high": 261.25,
+      "low": 248.7,
+      "high52": 300.44,
+      "low52": 186.52,
+      "pe": 31.0,
+      "delivery": "31.3%",
       "turnover_cr": 16.29,
       "universes": [
         "nifty500"
@@ -10701,7 +10708,7 @@
       "high52": 855.26,
       "low52": 532.99,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "19.9%",
       "turnover_cr": 16.28,
       "universes": [
         "nifty500"
@@ -10721,7 +10728,7 @@
       "high52": 846.92,
       "low52": 532.12,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "67.5%",
       "turnover_cr": 16.09,
       "universes": [
         "nifty500"
@@ -10741,7 +10748,7 @@
       "high52": 2670.41,
       "low52": 1691.25,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "45.0%",
       "turnover_cr": 16.08,
       "universes": [
         "nifty500"
@@ -10761,7 +10768,7 @@
       "high52": 610.82,
       "low52": 387.98,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "54.3%",
       "turnover_cr": 15.95,
       "universes": [
         "nifty500"
@@ -10781,7 +10788,7 @@
       "high52": 529.46,
       "low52": 336.0,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "55.6%",
       "turnover_cr": 15.83,
       "universes": [
         "nifty500"
@@ -10801,7 +10808,7 @@
       "high52": 432.57,
       "low52": 277.73,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "57.5%",
       "turnover_cr": 15.51,
       "universes": [
         "nifty500"
@@ -10821,7 +10828,7 @@
       "high52": 570.28,
       "low52": 362.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "51.3%",
       "turnover_cr": 15.42,
       "universes": [
         "nifty500"
@@ -10841,7 +10848,7 @@
       "high52": 1279.49,
       "low52": 799.2,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "61.4%",
       "turnover_cr": 15.35,
       "universes": [
         "nifty500"
@@ -10861,7 +10868,7 @@
       "high52": 2780.24,
       "low52": 1762.57,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "48.4%",
       "turnover_cr": 15.17,
       "universes": [
         "nifty500"
@@ -10881,7 +10888,7 @@
       "high52": 207.01,
       "low52": 129.87,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "39.2%",
       "turnover_cr": 14.73,
       "universes": [
         "nifty500"
@@ -10901,7 +10908,7 @@
       "high52": 1886.0,
       "low52": 1204.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "53.8%",
       "turnover_cr": 14.63,
       "universes": [
         "nifty500"
@@ -10921,7 +10928,7 @@
       "high52": 1224.52,
       "low52": 781.5,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "48.5%",
       "turnover_cr": 14.46,
       "universes": [
         "nifty500"
@@ -10941,7 +10948,7 @@
       "high52": 657.8,
       "low52": 406.58,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "51.5%",
       "turnover_cr": 14.41,
       "universes": [
         "nifty500"
@@ -10961,7 +10968,7 @@
       "high52": 1411.05,
       "low52": 901.5,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "54.0%",
       "turnover_cr": 14.34,
       "universes": [
         "nifty500"
@@ -10981,7 +10988,7 @@
       "high52": 290.32,
       "low52": 182.7,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "49.2%",
       "turnover_cr": 14.26,
       "universes": [
         "nifty500"
@@ -11001,7 +11008,7 @@
       "high52": 1440.49,
       "low52": 922.5,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "59.0%",
       "turnover_cr": 14.2,
       "universes": [
         "nifty500"
@@ -11021,7 +11028,7 @@
       "high52": 326.83,
       "low52": 206.1,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "33.7%",
       "turnover_cr": 14.14,
       "universes": [
         "nifty500"
@@ -11041,7 +11048,7 @@
       "high52": 262.89,
       "low52": 162.01,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.6%",
       "turnover_cr": 13.77,
       "universes": [
         "nifty500"
@@ -11061,7 +11068,7 @@
       "high52": 357.08,
       "low52": 226.16,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "46.0%",
       "turnover_cr": 13.55,
       "universes": [
         "nifty500"
@@ -11081,7 +11088,7 @@
       "high52": 1588.38,
       "low52": 1013.32,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "51.2%",
       "turnover_cr": 13.38,
       "universes": [
         "nifty500"
@@ -11101,7 +11108,7 @@
       "high52": 377.37,
       "low52": 240.08,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "59.4%",
       "turnover_cr": 12.96,
       "universes": [
         "nifty500"
@@ -11121,7 +11128,7 @@
       "high52": 27.96,
       "low52": 17.66,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "26.9%",
       "turnover_cr": 12.84,
       "universes": [
         "nifty500"
@@ -11141,7 +11148,7 @@
       "high52": 1838.28,
       "low52": 1156.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "60.0%",
       "turnover_cr": 12.8,
       "universes": [
         "nifty500"
@@ -11161,7 +11168,7 @@
       "high52": 671.02,
       "low52": 426.04,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "47.3%",
       "turnover_cr": 12.79,
       "universes": [
         "nifty500"
@@ -11181,7 +11188,7 @@
       "high52": 1625.29,
       "low52": 1014.22,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "44.7%",
       "turnover_cr": 12.77,
       "universes": [
         "nifty500"
@@ -11201,7 +11208,7 @@
       "high52": 4907.05,
       "low52": 3150.0,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "61.3%",
       "turnover_cr": 12.4,
       "universes": [
         "nifty500"
@@ -11221,28 +11228,8 @@
       "high52": 710.93,
       "low52": 450.79,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "31.2%",
       "turnover_cr": 12.2,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
-      "symbol": "AIAENG",
-      "name": "AIA Engineering Ltd.",
-      "sector": "infra",
-      "price": 3665.2,
-      "change": -1.47,
-      "volume": "33.1K",
-      "vol_raw": 33135,
-      "volMul": 1.25,
-      "high": 3704.8,
-      "low": 3640.1,
-      "high52": 4260.52,
-      "low52": 2730.08,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 12.19,
       "universes": [
         "nifty500"
       ]
@@ -11261,7 +11248,27 @@
       "high52": 3895.62,
       "low52": 2463.75,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "50.4%",
+      "turnover_cr": 12.19,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AIAENG",
+      "name": "AIA Engineering Ltd.",
+      "sector": "infra",
+      "price": 3665.2,
+      "change": -1.47,
+      "volume": "33.1K",
+      "vol_raw": 33135,
+      "volMul": 1.25,
+      "high": 3704.8,
+      "low": 3640.1,
+      "high52": 4260.52,
+      "low52": 2730.08,
+      "pe": 31.0,
+      "delivery": "57.4%",
       "turnover_cr": 12.19,
       "universes": [
         "nifty500"
@@ -11281,7 +11288,7 @@
       "high52": 3151.0,
       "low52": 2016.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.6%",
       "turnover_cr": 12.12,
       "universes": [
         "nifty500"
@@ -11301,7 +11308,7 @@
       "high52": 156.6,
       "low52": 99.75,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "50.2%",
       "turnover_cr": 12.1,
       "universes": [
         "nifty500"
@@ -11321,7 +11328,7 @@
       "high52": 1342.51,
       "low52": 843.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "51.5%",
       "turnover_cr": 12.08,
       "universes": [
         "nifty500"
@@ -11341,7 +11348,7 @@
       "high52": 236.42,
       "low52": 147.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "49.3%",
       "turnover_cr": 11.74,
       "universes": [
         "nifty500"
@@ -11361,7 +11368,7 @@
       "high52": 2007.67,
       "low52": 1258.5,
       "pe": 29.2,
-      "delivery": "50.0%",
+      "delivery": "56.1%",
       "turnover_cr": 11.6,
       "universes": [
         "nifty500"
@@ -11381,7 +11388,7 @@
       "high52": 1590.34,
       "low52": 1005.0,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "57.6%",
       "turnover_cr": 11.44,
       "universes": [
         "nifty500"
@@ -11401,7 +11408,7 @@
       "high52": 169.85,
       "low52": 107.61,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "46.8%",
       "turnover_cr": 11.44,
       "universes": [
         "nifty500"
@@ -11421,7 +11428,7 @@
       "high52": 3339.6,
       "low52": 2128.43,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "65.2%",
       "turnover_cr": 11.34,
       "universes": [
         "nifty500"
@@ -11441,7 +11448,7 @@
       "high52": 46.58,
       "low52": 29.88,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "37.4%",
       "turnover_cr": 11.15,
       "universes": [
         "nifty500"
@@ -11461,7 +11468,7 @@
       "high52": 448.21,
       "low52": 286.12,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.3%",
       "turnover_cr": 11.12,
       "universes": [
         "nifty500"
@@ -11481,7 +11488,7 @@
       "high52": 869.23,
       "low52": 554.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "38.3%",
       "turnover_cr": 10.93,
       "universes": [
         "nifty500"
@@ -11501,7 +11508,7 @@
       "high52": 245.98,
       "low52": 154.62,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "48.7%",
       "turnover_cr": 10.73,
       "universes": [
         "nifty500"
@@ -11521,7 +11528,7 @@
       "high52": 1552.5,
       "low52": 957.08,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "56.9%",
       "turnover_cr": 10.39,
       "universes": [
         "nifty500"
@@ -11541,7 +11548,7 @@
       "high52": 566.72,
       "low52": 360.38,
       "pe": 18.0,
-      "delivery": "50.0%",
+      "delivery": "52.8%",
       "turnover_cr": 10.25,
       "universes": [
         "nifty500"
@@ -11561,7 +11568,7 @@
       "high52": 1122.46,
       "low52": 715.99,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "55.6%",
       "turnover_cr": 10.08,
       "universes": [
         "nifty500"
@@ -11581,7 +11588,7 @@
       "high52": 428.95,
       "low52": 270.6,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "75.8%",
       "turnover_cr": 9.94,
       "universes": [
         "nifty500"
@@ -11601,7 +11608,7 @@
       "high52": 240.35,
       "low52": 152.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "26.7%",
       "turnover_cr": 9.83,
       "universes": [
         "nifty500"
@@ -11621,7 +11628,7 @@
       "high52": 5759.2,
       "low52": 3638.62,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "29.1%",
       "turnover_cr": 9.81,
       "universes": [
         "nifty500"
@@ -11641,7 +11648,7 @@
       "high52": 1434.86,
       "low52": 914.55,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "58.3%",
       "turnover_cr": 9.47,
       "universes": [
         "nifty500"
@@ -11661,7 +11668,7 @@
       "high52": 285.2,
       "low52": 180.23,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "38.1%",
       "turnover_cr": 9.44,
       "universes": [
         "nifty500"
@@ -11681,7 +11688,7 @@
       "high52": 905.05,
       "low52": 562.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.5%",
       "turnover_cr": 9.4,
       "universes": [
         "nifty500"
@@ -11701,7 +11708,7 @@
       "high52": 304.29,
       "low52": 190.58,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "37.7%",
       "turnover_cr": 9.38,
       "universes": [
         "nifty500"
@@ -11721,7 +11728,7 @@
       "high52": 353.05,
       "low52": 223.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "35.0%",
       "turnover_cr": 9.37,
       "universes": [
         "nifty500"
@@ -11741,7 +11748,7 @@
       "high52": 741.63,
       "low52": 473.25,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "47.1%",
       "turnover_cr": 8.89,
       "universes": [
         "nifty500"
@@ -11761,7 +11768,7 @@
       "high52": 1834.14,
       "low52": 1157.25,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "44.0%",
       "turnover_cr": 8.7,
       "universes": [
         "nifty500"
@@ -11781,7 +11788,7 @@
       "high52": 165.98,
       "low52": 106.64,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.8%",
       "turnover_cr": 8.57,
       "universes": [
         "nifty500"
@@ -11801,7 +11808,7 @@
       "high52": 745.26,
       "low52": 472.65,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "53.2%",
       "turnover_cr": 8.49,
       "universes": [
         "nifty500"
@@ -11821,7 +11828,7 @@
       "high52": 259.92,
       "low52": 163.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "53.0%",
       "turnover_cr": 8.44,
       "universes": [
         "nifty500"
@@ -11841,7 +11848,7 @@
       "high52": 36.22,
       "low52": 22.96,
       "pe": 18.5,
-      "delivery": "50.0%",
+      "delivery": "41.0%",
       "turnover_cr": 7.68,
       "universes": [
         "nifty500"
@@ -11861,7 +11868,7 @@
       "high52": 1944.42,
       "low52": 1208.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.7%",
       "turnover_cr": 7.47,
       "universes": [
         "nifty500"
@@ -11881,7 +11888,7 @@
       "high52": 731.28,
       "low52": 465.75,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "59.0%",
       "turnover_cr": 7.45,
       "universes": [
         "nifty500"
@@ -11901,7 +11908,7 @@
       "high52": 1371.6,
       "low52": 873.75,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "67.7%",
       "turnover_cr": 7.44,
       "universes": [
         "nifty500"
@@ -11921,7 +11928,7 @@
       "high52": 7125.4,
       "low52": 4493.62,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "51.8%",
       "turnover_cr": 7.39,
       "universes": [
         "nifty500"
@@ -11941,7 +11948,7 @@
       "high52": 1449.0,
       "low52": 922.35,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "55.4%",
       "turnover_cr": 7.36,
       "universes": [
         "nifty500"
@@ -11961,7 +11968,7 @@
       "high52": 1978.0,
       "low52": 1259.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "43.4%",
       "turnover_cr": 7.32,
       "universes": [
         "nifty500"
@@ -11981,7 +11988,7 @@
       "high52": 20.33,
       "low52": 12.99,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "48.0%",
       "turnover_cr": 7.24,
       "universes": [
         "nifty500"
@@ -12001,7 +12008,7 @@
       "high52": 928.62,
       "low52": 587.59,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "48.8%",
       "turnover_cr": 7.16,
       "universes": [
         "nifty500"
@@ -12021,7 +12028,7 @@
       "high52": 8377.75,
       "low52": 5364.38,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "50.3%",
       "turnover_cr": 7.14,
       "universes": [
         "nifty500"
@@ -12041,7 +12048,7 @@
       "high52": 7163.35,
       "low52": 4552.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "45.8%",
       "turnover_cr": 6.92,
       "universes": [
         "nifty500"
@@ -12061,7 +12068,7 @@
       "high52": 140.42,
       "low52": 88.35,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "44.0%",
       "turnover_cr": 6.8,
       "universes": [
         "nifty500"
@@ -12081,7 +12088,7 @@
       "high52": 389.16,
       "low52": 248.29,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "40.0%",
       "turnover_cr": 6.78,
       "universes": [
         "nifty500"
@@ -12101,7 +12108,7 @@
       "high52": 851.0,
       "low52": 544.72,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "54.9%",
       "turnover_cr": 6.73,
       "universes": [
         "nifty500"
@@ -12121,7 +12128,7 @@
       "high52": 1299.5,
       "low52": 821.25,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "51.6%",
       "turnover_cr": 6.58,
       "universes": [
         "nifty500"
@@ -12141,7 +12148,7 @@
       "high52": 627.9,
       "low52": 400.88,
       "pe": 16.8,
-      "delivery": "50.0%",
+      "delivery": "62.2%",
       "turnover_cr": 6.49,
       "universes": [
         "nifty500"
@@ -12161,7 +12168,7 @@
       "high52": 1874.5,
       "low52": 1192.5,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "50.9%",
       "turnover_cr": 6.45,
       "universes": [
         "nifty500"
@@ -12181,7 +12188,7 @@
       "high52": 36920.75,
       "low52": 23636.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "39.2%",
       "turnover_cr": 6.43,
       "universes": [
         "nifty500"
@@ -12201,7 +12208,7 @@
       "high52": 464.66,
       "low52": 293.25,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "53.3%",
       "turnover_cr": 6.29,
       "universes": [
         "nifty500"
@@ -12221,7 +12228,7 @@
       "high52": 655.73,
       "low52": 407.66,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "42.7%",
       "turnover_cr": 6.25,
       "universes": [
         "nifty500"
@@ -12241,7 +12248,7 @@
       "high52": 671.94,
       "low52": 424.76,
       "pe": 42.0,
-      "delivery": "50.0%",
+      "delivery": "35.1%",
       "turnover_cr": 6.24,
       "universes": [
         "nifty500"
@@ -12261,7 +12268,7 @@
       "high52": 517.21,
       "low52": 327.38,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "38.6%",
       "turnover_cr": 6.17,
       "universes": [
         "nifty500"
@@ -12281,7 +12288,7 @@
       "high52": 625.54,
       "low52": 395.62,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "38.7%",
       "turnover_cr": 5.95,
       "universes": [
         "nifty500"
@@ -12301,7 +12308,7 @@
       "high52": 64.95,
       "low52": 40.8,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "40.2%",
       "turnover_cr": 5.92,
       "universes": [
         "nifty500"
@@ -12321,7 +12328,7 @@
       "high52": 36.73,
       "low52": 23.49,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "52.6%",
       "turnover_cr": 5.67,
       "universes": [
         "nifty500"
@@ -12341,7 +12348,7 @@
       "high52": 1211.98,
       "low52": 775.65,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "58.5%",
       "turnover_cr": 5.65,
       "universes": [
         "nifty500"
@@ -12361,28 +12368,8 @@
       "high52": 5261.48,
       "low52": 3352.5,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "44.7%",
       "turnover_cr": 5.62,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
-      "symbol": "TRIDENT",
-      "name": "Trident Ltd.",
-      "sector": "infra",
-      "price": 21.92,
-      "change": -1.57,
-      "volume": "2.4M",
-      "vol_raw": 2430716,
-      "volMul": 1.25,
-      "high": 22.44,
-      "low": 21.9,
-      "high52": 25.81,
-      "low52": 16.42,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 5.37,
       "universes": [
         "nifty500"
       ]
@@ -12401,7 +12388,27 @@
       "high52": 545.04,
       "low52": 349.54,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "60.1%",
+      "turnover_cr": 5.37,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "TRIDENT",
+      "name": "Trident Ltd.",
+      "sector": "infra",
+      "price": 21.92,
+      "change": -1.57,
+      "volume": "2.4M",
+      "vol_raw": 2430716,
+      "volMul": 1.25,
+      "high": 22.44,
+      "low": 21.9,
+      "high52": 25.81,
+      "low52": 16.42,
+      "pe": 31.0,
+      "delivery": "53.6%",
       "turnover_cr": 5.37,
       "universes": [
         "nifty500"
@@ -12421,7 +12428,7 @@
       "high52": 2938.48,
       "low52": 1854.98,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "51.8%",
       "turnover_cr": 5.29,
       "universes": [
         "nifty500"
@@ -12441,7 +12448,7 @@
       "high52": 30066.75,
       "low52": 19353.75,
       "pe": 34.0,
-      "delivery": "50.0%",
+      "delivery": "49.5%",
       "turnover_cr": 5.22,
       "universes": [
         "nifty500"
@@ -12461,7 +12468,7 @@
       "high52": 1200.6,
       "low52": 757.28,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "42.8%",
       "turnover_cr": 4.96,
       "universes": [
         "nifty500"
@@ -12481,7 +12488,7 @@
       "high52": 436.54,
       "low52": 277.95,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "58.0%",
       "turnover_cr": 4.89,
       "universes": [
         "nifty500"
@@ -12501,7 +12508,7 @@
       "high52": 1094.8,
       "low52": 702.6,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "50.8%",
       "turnover_cr": 4.6,
       "universes": [
         "nifty500"
@@ -12521,7 +12528,7 @@
       "high52": 1017.06,
       "low52": 647.51,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "49.8%",
       "turnover_cr": 4.39,
       "universes": [
         "nifty500"
@@ -12541,7 +12548,7 @@
       "high52": 631.35,
       "low52": 405.0,
       "pe": 24.0,
-      "delivery": "50.0%",
+      "delivery": "52.1%",
       "turnover_cr": 3.76,
       "universes": [
         "nifty500"
@@ -12561,7 +12568,7 @@
       "high52": 280.57,
       "low52": 177.38,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "47.8%",
       "turnover_cr": 3.22,
       "universes": [
         "nifty500"
@@ -12581,7 +12588,7 @@
       "high52": 1069.44,
       "low52": 686.4,
       "pe": 27.4,
-      "delivery": "50.0%",
+      "delivery": "52.1%",
       "turnover_cr": 3.15,
       "universes": [
         "nifty500"
@@ -12601,7 +12608,7 @@
       "high52": 594.26,
       "low52": 376.16,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "44.3%",
       "turnover_cr": 3.13,
       "universes": [
         "nifty500"
@@ -12621,7 +12628,7 @@
       "high52": 38.97,
       "low52": 24.57,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "51.4%",
       "turnover_cr": 2.88,
       "universes": [
         "nifty500"
@@ -12641,7 +12648,7 @@
       "high52": 848.18,
       "low52": 540.79,
       "pe": 31.0,
-      "delivery": "50.0%",
+      "delivery": "53.8%",
       "turnover_cr": 2.3,
       "universes": [
         "nifty500"
@@ -12661,7 +12668,7 @@
       "high52": 2437.42,
       "low52": 1552.43,
       "pe": 52.0,
-      "delivery": "50.0%",
+      "delivery": "42.4%",
       "turnover_cr": 1.67,
       "universes": [
         "nifty500"
