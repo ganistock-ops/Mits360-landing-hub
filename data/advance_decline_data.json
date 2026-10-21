@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-21T17:28:56.047084+00:00",
+    "generated_at": "2026-10-21T17:55:42.884009+00:00",
     "market_date": "21-Oct-2026",
     "market_date_iso": "2026-10-21",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -11275,26 +11275,6 @@
       ]
     },
     {
-      "symbol": "STARHEALTH",
-      "name": "Star Health and Allied Insurance Company Ltd.",
-      "sector": "finserv",
-      "price": 541.95,
-      "change": -0.02,
-      "volume": "277.5K",
-      "vol_raw": 277498,
-      "volMul": 1.25,
-      "high": 549.85,
-      "low": 535.65,
-      "high52": 632.33,
-      "low52": 401.74,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 15.0,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "IRB",
       "name": "IRB Infrastructure Developers Ltd.",
       "sector": "infra",
@@ -11308,6 +11288,26 @@
       "high52": 19.98,
       "low52": 12.56,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 15.0,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "STARHEALTH",
+      "name": "Star Health and Allied Insurance Company Ltd.",
+      "sector": "finserv",
+      "price": 541.95,
+      "change": -0.02,
+      "volume": "277.5K",
+      "vol_raw": 277498,
+      "volMul": 1.25,
+      "high": 549.85,
+      "low": 535.65,
+      "high52": 632.33,
+      "low52": 401.74,
+      "pe": 24.0,
       "delivery": "50.0%",
       "turnover_cr": 15.0,
       "universes": [
@@ -11735,26 +11735,6 @@
       ]
     },
     {
-      "symbol": "BLS",
-      "name": "BLS International Services Ltd.",
-      "sector": "infra",
-      "price": 217.98,
-      "change": -1.38,
-      "volume": "541.7K",
-      "vol_raw": 541690,
-      "volMul": 1.25,
-      "high": 223.85,
-      "low": 216.0,
-      "high52": 257.43,
-      "low52": 162.0,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 11.88,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CLEAN",
       "name": "Clean Science and Technology Ltd.",
       "sector": "infra",
@@ -11767,6 +11747,26 @@
       "low": 734.4,
       "high52": 880.32,
       "low52": 550.8,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 11.88,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "BLS",
+      "name": "BLS International Services Ltd.",
+      "sector": "infra",
+      "price": 217.98,
+      "change": -1.38,
+      "volume": "541.7K",
+      "vol_raw": 541690,
+      "volMul": 1.25,
+      "high": 223.85,
+      "low": 216.0,
+      "high52": 257.43,
+      "low52": 162.0,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 11.88,
