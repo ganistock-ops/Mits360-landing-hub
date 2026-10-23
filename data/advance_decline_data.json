@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-23T16:35:20.693521+00:00",
+    "generated_at": "2026-10-23T17:20:15.088023+00:00",
     "market_date": "23-Oct-2026",
     "market_date_iso": "2026-10-23",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8128,6 +8128,27 @@
       ]
     },
     {
+      "symbol": "SUPREMEIND",
+      "name": "Supreme Industries Ltd.",
+      "sector": "infra",
+      "price": 3390.0,
+      "change": -2.9,
+      "volume": "199.9K",
+      "vol_raw": 199906,
+      "volMul": 1.25,
+      "high": 3484.8,
+      "low": 3358.7,
+      "high52": 4007.52,
+      "low52": 2519.02,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 68.08,
+      "universes": [
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
       "symbol": "IRFC",
       "name": "Indian Railway Finance Corporation Ltd.",
       "sector": "finserv",
@@ -8145,27 +8166,6 @@
       "turnover_cr": 68.08,
       "universes": [
         "nifty100",
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
-      "symbol": "SUPREMEIND",
-      "name": "Supreme Industries Ltd.",
-      "sector": "infra",
-      "price": 3390.0,
-      "change": -2.9,
-      "volume": "199.9K",
-      "vol_raw": 199906,
-      "volMul": 1.25,
-      "high": 3484.8,
-      "low": 3358.7,
-      "high52": 4007.52,
-      "low52": 2519.02,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 68.08,
-      "universes": [
         "nifty500",
         "fno"
       ]
@@ -9290,26 +9290,6 @@
       ]
     },
     {
-      "symbol": "ACMESOLAR",
-      "name": "ACME Solar Holdings Ltd.",
-      "sector": "energy",
-      "price": 371.85,
-      "change": -4.36,
-      "volume": "1.1M",
-      "vol_raw": 1146674,
-      "volMul": 1.25,
-      "high": 387.2,
-      "low": 368.0,
-      "high52": 445.28,
-      "low52": 276.0,
-      "pe": 16.8,
-      "delivery": "50.0%",
-      "turnover_cr": 42.93,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "TATACAP",
       "name": "Tata Capital Ltd.",
       "sector": "finserv",
@@ -9331,21 +9311,21 @@
       ]
     },
     {
-      "symbol": "ANTHEM",
-      "name": "Anthem Biosciences Ltd.",
-      "sector": "pharma",
-      "price": 812.8,
-      "change": 1.5,
-      "volume": "535.9K",
-      "vol_raw": 535896,
+      "symbol": "ACMESOLAR",
+      "name": "ACME Solar Holdings Ltd.",
+      "sector": "energy",
+      "price": 371.85,
+      "change": -4.36,
+      "volume": "1.1M",
+      "vol_raw": 1146674,
       "volMul": 1.25,
-      "high": 817.8,
-      "low": 783.35,
-      "high52": 940.47,
-      "low52": 587.51,
-      "pe": 34.0,
+      "high": 387.2,
+      "low": 368.0,
+      "high52": 445.28,
+      "low52": 276.0,
+      "pe": 16.8,
       "delivery": "50.0%",
-      "turnover_cr": 42.82,
+      "turnover_cr": 42.93,
       "universes": [
         "nifty500"
       ]
@@ -9364,6 +9344,26 @@
       "high52": 591.9,
       "low52": 370.61,
       "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 42.82,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ANTHEM",
+      "name": "Anthem Biosciences Ltd.",
+      "sector": "pharma",
+      "price": 812.8,
+      "change": 1.5,
+      "volume": "535.9K",
+      "vol_raw": 535896,
+      "volMul": 1.25,
+      "high": 817.8,
+      "low": 783.35,
+      "high52": 940.47,
+      "low52": 587.51,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 42.82,
       "universes": [
@@ -11120,26 +11120,6 @@
       ]
     },
     {
-      "symbol": "AFCONS",
-      "name": "Afcons Infrastructure Ltd.",
-      "sector": "infra",
-      "price": 217.84,
-      "change": -7.71,
-      "volume": "959.0K",
-      "vol_raw": 959032,
-      "volMul": 1.25,
-      "high": 236.84,
-      "low": 216.28,
-      "high52": 272.37,
-      "low52": 162.21,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 21.23,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ABSLAMC",
       "name": "Aditya Birla Sun Life AMC Ltd.",
       "sector": "finserv",
@@ -11153,6 +11133,26 @@
       "high52": 1046.44,
       "low52": 641.36,
       "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 21.23,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AFCONS",
+      "name": "Afcons Infrastructure Ltd.",
+      "sector": "infra",
+      "price": 217.84,
+      "change": -7.71,
+      "volume": "959.0K",
+      "vol_raw": 959032,
+      "volMul": 1.25,
+      "high": 236.84,
+      "low": 216.28,
+      "high52": 272.37,
+      "low52": 162.21,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 21.23,
       "universes": [
