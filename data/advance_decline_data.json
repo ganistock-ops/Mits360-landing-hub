@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T12:49:45.747160+00:00",
+    "generated_at": "2026-10-26T18:20:26.003261+00:00",
     "market_date": "26-Oct-2026",
     "market_date_iso": "2026-10-26",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -11510,26 +11510,6 @@
       ]
     },
     {
-      "symbol": "NSLNISP",
-      "name": "NMDC Steel Ltd.",
-      "sector": "metals",
-      "price": 38.56,
-      "change": 2.66,
-      "volume": "3.4M",
-      "vol_raw": 3410189,
-      "volMul": 1.25,
-      "high": 38.98,
-      "low": 36.91,
-      "high52": 44.83,
-      "low52": 27.68,
-      "pe": 18.0,
-      "delivery": "50.0%",
-      "turnover_cr": 12.91,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "SARDAEN",
       "name": "Sarda Energy and Minerals Ltd.",
       "sector": "metals",
@@ -11542,6 +11522,26 @@
       "low": 437.6,
       "high52": 528.37,
       "low52": 328.2,
+      "pe": 18.0,
+      "delivery": "50.0%",
+      "turnover_cr": 12.91,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "NSLNISP",
+      "name": "NMDC Steel Ltd.",
+      "sector": "metals",
+      "price": 38.56,
+      "change": 2.66,
+      "volume": "3.4M",
+      "vol_raw": 3410189,
+      "volMul": 1.25,
+      "high": 38.98,
+      "low": 36.91,
+      "high52": 44.83,
+      "low52": 27.68,
       "pe": 18.0,
       "delivery": "50.0%",
       "turnover_cr": 12.91,
@@ -11850,26 +11850,6 @@
       ]
     },
     {
-      "symbol": "NUVOCO",
-      "name": "Nuvoco Vistas Corporation Ltd.",
-      "sector": "infra",
-      "price": 340.45,
-      "change": 2.98,
-      "volume": "313.4K",
-      "vol_raw": 313371,
-      "volMul": 1.25,
-      "high": 345.55,
-      "low": 327.4,
-      "high52": 397.38,
-      "low52": 245.55,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 10.59,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "BHARTIHEXA",
       "name": "Bharti Hexacom Ltd.",
       "sector": "infra",
@@ -11882,6 +11862,26 @@
       "low": 1612.0,
       "high52": 1889.1,
       "low52": 1209.0,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 10.59,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "NUVOCO",
+      "name": "Nuvoco Vistas Corporation Ltd.",
+      "sector": "infra",
+      "price": 340.45,
+      "change": 2.98,
+      "volume": "313.4K",
+      "vol_raw": 313371,
+      "volMul": 1.25,
+      "high": 345.55,
+      "low": 327.4,
+      "high52": 397.38,
+      "low52": 245.55,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 10.59,
