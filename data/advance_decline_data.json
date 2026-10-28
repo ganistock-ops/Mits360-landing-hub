@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-28T13:02:41.223227+00:00",
+    "generated_at": "2026-10-28T17:57:31.268328+00:00",
     "market_date": "28-Oct-2026",
     "market_date_iso": "2026-10-28",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -10173,26 +10173,6 @@
       ]
     },
     {
-      "symbol": "IRB",
-      "name": "IRB Infrastructure Developers Ltd.",
-      "sector": "infra",
-      "price": 16.07,
-      "change": 1.71,
-      "volume": "12.4M",
-      "vol_raw": 12354939,
-      "volMul": 1.25,
-      "high": 16.23,
-      "low": 15.71,
-      "high52": 18.66,
-      "low52": 11.78,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 19.8,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CESC",
       "name": "CESC Ltd.",
       "sector": "energy",
@@ -10206,6 +10186,26 @@
       "high52": 144.9,
       "low52": 92.07,
       "pe": 16.8,
+      "delivery": "50.0%",
+      "turnover_cr": 19.8,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "IRB",
+      "name": "IRB Infrastructure Developers Ltd.",
+      "sector": "infra",
+      "price": 16.07,
+      "change": 1.71,
+      "volume": "12.4M",
+      "vol_raw": 12354939,
+      "volMul": 1.25,
+      "high": 16.23,
+      "low": 15.71,
+      "high52": 18.66,
+      "low52": 11.78,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 19.8,
       "universes": [
@@ -10793,26 +10793,6 @@
       ]
     },
     {
-      "symbol": "INOXINDIA",
-      "name": "INOX India Ltd.",
-      "sector": "infra",
-      "price": 1910.0,
-      "change": -0.23,
-      "volume": "75.6K",
-      "vol_raw": 75558,
-      "volMul": 1.25,
-      "high": 1944.2,
-      "low": 1891.1,
-      "high52": 2235.83,
-      "low52": 1418.32,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 14.5,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "JSWCEMENT",
       "name": "JSW Cement Ltd.",
       "sector": "infra",
@@ -10825,6 +10805,26 @@
       "low": 113.0,
       "high52": 133.54,
       "low52": 84.75,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 14.5,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "INOXINDIA",
+      "name": "INOX India Ltd.",
+      "sector": "infra",
+      "price": 1910.0,
+      "change": -0.23,
+      "volume": "75.6K",
+      "vol_raw": 75558,
+      "volMul": 1.25,
+      "high": 1944.2,
+      "low": 1891.1,
+      "high52": 2235.83,
+      "low52": 1418.32,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 14.5,
@@ -10913,26 +10913,6 @@
       ]
     },
     {
-      "symbol": "ABSLAMC",
-      "name": "Aditya Birla Sun Life AMC Ltd.",
-      "sector": "finserv",
-      "price": 866.75,
-      "change": -1.34,
-      "volume": "161.7K",
-      "vol_raw": 161733,
-      "volMul": 1.25,
-      "high": 894.0,
-      "low": 860.0,
-      "high52": 1028.1,
-      "low52": 645.0,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 14.0,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AEGISVOPAK",
       "name": "Aegis Vopak Terminals Ltd.",
       "sector": "infra",
@@ -10946,6 +10926,26 @@
       "high52": 271.57,
       "low52": 170.85,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 14.0,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ABSLAMC",
+      "name": "Aditya Birla Sun Life AMC Ltd.",
+      "sector": "finserv",
+      "price": 866.75,
+      "change": -1.34,
+      "volume": "161.7K",
+      "vol_raw": 161733,
+      "volMul": 1.25,
+      "high": 894.0,
+      "low": 860.0,
+      "high52": 1028.1,
+      "low52": 645.0,
+      "pe": 24.0,
       "delivery": "50.0%",
       "turnover_cr": 14.0,
       "universes": [
