@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-29T18:07:07.452023+00:00",
+    "generated_at": "2026-10-29T18:34:59.451948+00:00",
     "market_date": "29-Oct-2026",
     "market_date_iso": "2026-10-29",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -6625,6 +6625,26 @@
       ]
     },
     {
+      "symbol": "JSWINFRA",
+      "name": "JSW Infrastructure Ltd.",
+      "sector": "infra",
+      "price": 323.9,
+      "change": 2.89,
+      "volume": "3.1M",
+      "vol_raw": 3091174,
+      "volMul": 1.25,
+      "high": 326.1,
+      "low": 313.0,
+      "high52": 375.02,
+      "low52": 234.75,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 99.44,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "MFSL",
       "name": "Max Financial Services Ltd.",
       "sector": "finserv",
@@ -6643,26 +6663,6 @@
       "universes": [
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "JSWINFRA",
-      "name": "JSW Infrastructure Ltd.",
-      "sector": "infra",
-      "price": 323.9,
-      "change": 2.89,
-      "volume": "3.1M",
-      "vol_raw": 3091174,
-      "volMul": 1.25,
-      "high": 326.1,
-      "low": 313.0,
-      "high52": 375.02,
-      "low52": 234.75,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 99.44,
-      "universes": [
-        "nifty500"
       ]
     },
     {
