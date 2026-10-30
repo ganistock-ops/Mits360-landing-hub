@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T11:08:04.269556+00:00",
+    "generated_at": "2026-10-30T17:46:40.557227+00:00",
     "market_date": "30-Oct-2026",
     "market_date_iso": "2026-10-30",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -12,6 +12,13 @@
       "price": "23,053.10",
       "change": "+0.51%",
       "isPositive": true,
+      "isVix": false
+    },
+    {
+      "symbol": "NIFTY AUTO",
+      "price": "25,422.70",
+      "change": "-0.87%",
+      "isPositive": false,
       "isVix": false
     },
     {
@@ -29,13 +36,6 @@
       "isVix": false
     },
     {
-      "symbol": "NIFTY AUTO",
-      "price": "25,422.70",
-      "change": "-0.87%",
-      "isPositive": false,
-      "isVix": false
-    },
-    {
       "symbol": "NIFTY METAL",
       "price": "11,784.90",
       "change": "-0.54%",
@@ -48,13 +48,6 @@
       "change": "-0.72%",
       "isPositive": false,
       "isVix": false
-    },
-    {
-      "symbol": "INDIA VIX",
-      "price": "15.30",
-      "change": "+1.19%",
-      "isPositive": false,
-      "isVix": true
     }
   ],
   "market_breadth": {
@@ -179,7 +172,7 @@
       "name": "Nifty Bank",
       "code": "BANKING",
       "change": -0.41,
-      "turnoverCr": 0.0,
+      "turnoverCr": 7089.75,
       "advCount": 6,
       "decCount": 20,
       "stockCount": 26,
@@ -408,7 +401,7 @@
       "name": "Nifty IT",
       "code": "IT",
       "change": 2.32,
-      "turnoverCr": 0.0,
+      "turnoverCr": 6511.31,
       "advCount": 11,
       "decCount": 14,
       "stockCount": 25,
@@ -633,7 +626,7 @@
       "name": "Nifty Auto",
       "code": "AUTO",
       "change": -0.87,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3499.44,
       "advCount": 6,
       "decCount": 34,
       "stockCount": 40,
@@ -852,7 +845,7 @@
       "name": "Nifty Energy",
       "code": "ENERGY",
       "change": -0.97,
-      "turnoverCr": 0.0,
+      "turnoverCr": 8514.7,
       "advCount": 6,
       "decCount": 13,
       "stockCount": 19,
@@ -1074,7 +1067,7 @@
       "name": "Nifty Metal",
       "code": "METALS",
       "change": -0.54,
-      "turnoverCr": 0.0,
+      "turnoverCr": 2504.85,
       "advCount": 4,
       "decCount": 15,
       "stockCount": 20,
@@ -1296,7 +1289,7 @@
       "name": "Nifty Pharma",
       "code": "PHARMA",
       "change": 1.55,
-      "turnoverCr": 0.0,
+      "turnoverCr": 7007.57,
       "advCount": 29,
       "decCount": 15,
       "stockCount": 44,
@@ -1515,7 +1508,7 @@
       "name": "Nifty FMCG",
       "code": "FMCG",
       "change": -0.62,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3642.76,
       "advCount": 9,
       "decCount": 35,
       "stockCount": 44,
@@ -1742,7 +1735,7 @@
       "name": "Nifty Realty",
       "code": "REALTY",
       "change": -0.72,
-      "turnoverCr": 0.0,
+      "turnoverCr": 743.35,
       "advCount": 2,
       "decCount": 9,
       "stockCount": 11,
@@ -1964,7 +1957,7 @@
       "name": "Nifty Fin Services",
       "code": "FINSERV",
       "change": 0.03,
-      "turnoverCr": 0.0,
+      "turnoverCr": 9329.54,
       "advCount": 11,
       "decCount": 62,
       "stockCount": 73,
@@ -2185,7 +2178,7 @@
       "name": "Nifty Infra",
       "code": "INFRA",
       "change": 0.07,
-      "turnoverCr": 0.0,
+      "turnoverCr": 12724.71,
       "advCount": 30,
       "decCount": 164,
       "stockCount": 194,

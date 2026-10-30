@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T11:08:04.482095+00:00",
+    "generated_at": "2026-10-30T17:46:41.199196+00:00",
     "market_date": "30-Oct-2026",
     "index_name": "BANK NIFTY",
     "current_price": 54686.95,
@@ -9,9 +9,9 @@
     "low": 54580.75,
     "points_change": -222.7,
     "change_pct": -0.41,
-    "pe": 13.39,
-    "pb": 1.7,
-    "div_yield": 0.69,
+    "pe": 12.23,
+    "pb": 1.65,
+    "div_yield": 1.14,
     "status": "FINALIZED"
   },
   "returns_matrix": [
