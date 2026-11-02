@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-02T21:51:05.995014+00:00",
+    "generated_at": "2026-11-02T22:11:21.353713+00:00",
     "market_date": "02-Nov-2026",
     "market_date_iso": "2026-11-02",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -12255,26 +12255,6 @@
       ]
     },
     {
-      "symbol": "CLEANMAX",
-      "name": "Clean Max Enviro Energy Solutions Ltd.",
-      "sector": "energy",
-      "price": 1252.5,
-      "change": 0.8,
-      "volume": "67.6K",
-      "vol_raw": 67590,
-      "volMul": 1.25,
-      "high": 1272.0,
-      "low": 1229.1,
-      "high52": 1462.8,
-      "low52": 921.82,
-      "pe": 16.8,
-      "delivery": "50.0%",
-      "turnover_cr": 8.48,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "POLYMED",
       "name": "Poly Medicure Ltd.",
       "sector": "pharma",
@@ -12288,6 +12268,26 @@
       "high52": 1719.59,
       "low52": 1082.55,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 8.48,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CLEANMAX",
+      "name": "Clean Max Enviro Energy Solutions Ltd.",
+      "sector": "energy",
+      "price": 1252.5,
+      "change": 0.8,
+      "volume": "67.6K",
+      "vol_raw": 67590,
+      "volMul": 1.25,
+      "high": 1272.0,
+      "low": 1229.1,
+      "high52": 1462.8,
+      "low52": 921.82,
+      "pe": 16.8,
       "delivery": "50.0%",
       "turnover_cr": 8.48,
       "universes": [
