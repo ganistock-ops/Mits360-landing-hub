@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-03T11:33:34.233854+00:00",
+    "generated_at": "2026-11-03T19:10:03.875834+00:00",
     "market_date": "03-Nov-2026",
     "market_date_iso": "2026-11-03",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -11,6 +11,13 @@
       "symbol": "NIFTY 50",
       "price": "23,810.85",
       "change": "+1.58%",
+      "isPositive": true,
+      "isVix": false
+    },
+    {
+      "symbol": "NIFTY AUTO",
+      "price": "26,201.95",
+      "change": "+1.71%",
       "isPositive": true,
       "isVix": false
     },
@@ -29,13 +36,6 @@
       "isVix": false
     },
     {
-      "symbol": "NIFTY AUTO",
-      "price": "26,201.95",
-      "change": "+1.71%",
-      "isPositive": true,
-      "isVix": false
-    },
-    {
       "symbol": "NIFTY METAL",
       "price": "12,146.15",
       "change": "-0.14%",
@@ -48,13 +48,6 @@
       "change": "+2.33%",
       "isPositive": true,
       "isVix": false
-    },
-    {
-      "symbol": "INDIA VIX",
-      "price": "15.72",
-      "change": "+1.42%",
-      "isPositive": false,
-      "isVix": true
     }
   ],
   "market_breadth": {
@@ -179,7 +172,7 @@
       "name": "Nifty Bank",
       "code": "BANKING",
       "change": 0.98,
-      "turnoverCr": 0.0,
+      "turnoverCr": 12028.46,
       "advCount": 11,
       "decCount": 15,
       "stockCount": 26,
@@ -413,7 +406,7 @@
       "name": "Nifty IT",
       "code": "IT",
       "change": 0.34,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3774.29,
       "advCount": 9,
       "decCount": 16,
       "stockCount": 25,
@@ -634,7 +627,7 @@
       "name": "Nifty Auto",
       "code": "AUTO",
       "change": 1.71,
-      "turnoverCr": 0.0,
+      "turnoverCr": 4624.23,
       "advCount": 31,
       "decCount": 9,
       "stockCount": 40,
@@ -854,7 +847,7 @@
       "name": "Nifty Energy",
       "code": "ENERGY",
       "change": -0.11,
-      "turnoverCr": 0.0,
+      "turnoverCr": 12465.63,
       "advCount": 5,
       "decCount": 14,
       "stockCount": 19,
@@ -1079,7 +1072,7 @@
       "name": "Nifty Metal",
       "code": "METALS",
       "change": -0.14,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3141.43,
       "advCount": 10,
       "decCount": 10,
       "stockCount": 20,
@@ -1304,7 +1297,7 @@
       "name": "Nifty Pharma",
       "code": "PHARMA",
       "change": 0.42,
-      "turnoverCr": 0.0,
+      "turnoverCr": 4673.25,
       "advCount": 29,
       "decCount": 15,
       "stockCount": 44,
@@ -1521,7 +1514,7 @@
       "name": "Nifty FMCG",
       "code": "FMCG",
       "change": 3.65,
-      "turnoverCr": 0.0,
+      "turnoverCr": 4696.77,
       "advCount": 37,
       "decCount": 7,
       "stockCount": 44,
@@ -1743,7 +1736,7 @@
       "name": "Nifty Realty",
       "code": "REALTY",
       "change": 2.33,
-      "turnoverCr": 0.0,
+      "turnoverCr": 1018.85,
       "advCount": 9,
       "decCount": 2,
       "stockCount": 11,
@@ -1963,7 +1956,7 @@
       "name": "Nifty Fin Services",
       "code": "FINSERV",
       "change": 1.84,
-      "turnoverCr": 0.0,
+      "turnoverCr": 15776.76,
       "advCount": 52,
       "decCount": 21,
       "stockCount": 73,
@@ -2185,7 +2178,7 @@
       "name": "Nifty Infra",
       "code": "INFRA",
       "change": 1.1,
-      "turnoverCr": 0.0,
+      "turnoverCr": 18061.51,
       "advCount": 119,
       "decCount": 74,
       "stockCount": 194,
@@ -8790,6 +8783,26 @@
       ]
     },
     {
+      "symbol": "RPOWER",
+      "name": "Reliance Power Ltd.",
+      "sector": "energy",
+      "price": 18.28,
+      "change": -1.56,
+      "volume": "26.3M",
+      "vol_raw": 26309456,
+      "volMul": 1.25,
+      "high": 18.85,
+      "low": 18.1,
+      "high52": 21.68,
+      "low52": 13.58,
+      "pe": 16.8,
+      "delivery": "50.0%",
+      "turnover_cr": 48.47,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "IRFC",
       "name": "Indian Railway Finance Corporation Ltd.",
       "sector": "finserv",
@@ -8809,26 +8822,6 @@
         "nifty100",
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "RPOWER",
-      "name": "Reliance Power Ltd.",
-      "sector": "energy",
-      "price": 18.28,
-      "change": -1.56,
-      "volume": "26.3M",
-      "vol_raw": 26309456,
-      "volMul": 1.25,
-      "high": 18.85,
-      "low": 18.1,
-      "high52": 21.68,
-      "low52": 13.58,
-      "pe": 16.8,
-      "delivery": "50.0%",
-      "turnover_cr": 48.47,
-      "universes": [
-        "nifty500"
       ]
     },
     {

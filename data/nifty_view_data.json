@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-03T11:33:34.423534+00:00",
+    "generated_at": "2026-11-03T19:10:04.083848+00:00",
     "market_date": "03-Nov-2026",
     "index_name": "NIFTY 50",
     "current_price": 23810.85,
@@ -9,9 +9,9 @@
     "low": 23482.8,
     "points_change": 370.05,
     "change_pct": 1.58,
-    "pe": 19.78,
-    "pb": 2.83,
-    "div_yield": 1.21,
+    "pe": 19.71,
+    "pb": 2.92,
+    "div_yield": 1.46,
     "status": "FINALIZED"
   },
   "returns_matrix": [
