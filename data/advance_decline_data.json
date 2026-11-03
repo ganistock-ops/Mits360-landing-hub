@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-03T19:41:04.310388+00:00",
+    "generated_at": "2026-11-03T19:58:42.983906+00:00",
     "market_date": "03-Nov-2026",
     "market_date_iso": "2026-11-03",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8783,26 +8783,6 @@
       ]
     },
     {
-      "symbol": "RPOWER",
-      "name": "Reliance Power Ltd.",
-      "sector": "energy",
-      "price": 18.28,
-      "change": -1.56,
-      "volume": "26.3M",
-      "vol_raw": 26309456,
-      "volMul": 1.25,
-      "high": 18.85,
-      "low": 18.1,
-      "high52": 21.68,
-      "low52": 13.58,
-      "pe": 16.8,
-      "delivery": "50.0%",
-      "turnover_cr": 48.47,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "IRFC",
       "name": "Indian Railway Finance Corporation Ltd.",
       "sector": "finserv",
@@ -8822,6 +8802,26 @@
         "nifty100",
         "nifty500",
         "fno"
+      ]
+    },
+    {
+      "symbol": "RPOWER",
+      "name": "Reliance Power Ltd.",
+      "sector": "energy",
+      "price": 18.28,
+      "change": -1.56,
+      "volume": "26.3M",
+      "vol_raw": 26309456,
+      "volMul": 1.25,
+      "high": 18.85,
+      "low": 18.1,
+      "high52": 21.68,
+      "low52": 13.58,
+      "pe": 16.8,
+      "delivery": "50.0%",
+      "turnover_cr": 48.47,
+      "universes": [
+        "nifty500"
       ]
     },
     {
