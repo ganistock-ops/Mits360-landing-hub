@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-04T11:13:53.606432+00:00",
+    "generated_at": "2026-11-04T19:26:41.640992+00:00",
     "market_date": "04-Nov-2026",
     "market_date_iso": "2026-11-04",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -11,6 +11,13 @@
       "symbol": "NIFTY 50",
       "price": "23,960.60",
       "change": "+0.63%",
+      "isPositive": true,
+      "isVix": false
+    },
+    {
+      "symbol": "NIFTY AUTO",
+      "price": "26,504.80",
+      "change": "+1.16%",
       "isPositive": true,
       "isVix": false
     },
@@ -29,13 +36,6 @@
       "isVix": false
     },
     {
-      "symbol": "NIFTY AUTO",
-      "price": "26,504.80",
-      "change": "+1.16%",
-      "isPositive": true,
-      "isVix": false
-    },
-    {
       "symbol": "NIFTY METAL",
       "price": "12,485.90",
       "change": "+2.80%",
@@ -48,13 +48,6 @@
       "change": "+2.85%",
       "isPositive": true,
       "isVix": false
-    },
-    {
-      "symbol": "INDIA VIX",
-      "price": "15.19",
-      "change": "-3.37%",
-      "isPositive": false,
-      "isVix": true
     }
   ],
   "market_breadth": {
@@ -179,7 +172,7 @@
       "name": "Nifty Bank",
       "code": "BANKING",
       "change": 0.67,
-      "turnoverCr": 0.0,
+      "turnoverCr": 9856.94,
       "advCount": 21,
       "decCount": 5,
       "stockCount": 26,
@@ -408,7 +401,7 @@
       "name": "Nifty IT",
       "code": "IT",
       "change": -1.5,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3718.53,
       "advCount": 11,
       "decCount": 14,
       "stockCount": 25,
@@ -632,7 +625,7 @@
       "name": "Nifty Auto",
       "code": "AUTO",
       "change": 1.16,
-      "turnoverCr": 0.0,
+      "turnoverCr": 4928.46,
       "advCount": 32,
       "decCount": 8,
       "stockCount": 40,
@@ -849,7 +842,7 @@
       "name": "Nifty Energy",
       "code": "ENERGY",
       "change": 2.17,
-      "turnoverCr": 0.0,
+      "turnoverCr": 10192.96,
       "advCount": 18,
       "decCount": 1,
       "stockCount": 19,
@@ -1077,7 +1070,7 @@
       "name": "Nifty Metal",
       "code": "METALS",
       "change": 2.8,
-      "turnoverCr": 0.0,
+      "turnoverCr": 4044.59,
       "advCount": 20,
       "decCount": 0,
       "stockCount": 20,
@@ -1302,7 +1295,7 @@
       "name": "Nifty Pharma",
       "code": "PHARMA",
       "change": 0.42,
-      "turnoverCr": 0.0,
+      "turnoverCr": 5464.95,
       "advCount": 31,
       "decCount": 12,
       "stockCount": 44,
@@ -1519,7 +1512,7 @@
       "name": "Nifty FMCG",
       "code": "FMCG",
       "change": 1.5,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3931.14,
       "advCount": 32,
       "decCount": 12,
       "stockCount": 44,
@@ -1742,7 +1735,7 @@
       "name": "Nifty Realty",
       "code": "REALTY",
       "change": 2.85,
-      "turnoverCr": 0.0,
+      "turnoverCr": 1101.34,
       "advCount": 11,
       "decCount": 0,
       "stockCount": 11,
@@ -1964,7 +1957,7 @@
       "name": "Nifty Fin Services",
       "code": "FINSERV",
       "change": 0.88,
-      "turnoverCr": 0.0,
+      "turnoverCr": 14399.26,
       "advCount": 63,
       "decCount": 10,
       "stockCount": 73,
@@ -2186,7 +2179,7 @@
       "name": "Nifty Infra",
       "code": "INFRA",
       "change": 1.0,
-      "turnoverCr": 0.0,
+      "turnoverCr": 13916.9,
       "advCount": 166,
       "decCount": 28,
       "stockCount": 194,
@@ -8728,26 +8721,6 @@
       ]
     },
     {
-      "symbol": "LGEINDIA",
-      "name": "LG Electronics India Ltd.",
-      "sector": "fmcg",
-      "price": 1692.1,
-      "change": 0.11,
-      "volume": "361.9K",
-      "vol_raw": 361926,
-      "volMul": 1.25,
-      "high": 1726.9,
-      "low": 1681.2,
-      "high52": 1985.94,
-      "low52": 1260.9,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 61.64,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "INTELLECT",
       "name": "Intellect Design Arena Ltd.",
       "sector": "it",
@@ -8761,6 +8734,26 @@
       "high52": 611.68,
       "low52": 378.75,
       "pe": 29.2,
+      "delivery": "50.0%",
+      "turnover_cr": 61.64,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "LGEINDIA",
+      "name": "LG Electronics India Ltd.",
+      "sector": "fmcg",
+      "price": 1692.1,
+      "change": 0.11,
+      "volume": "361.9K",
+      "vol_raw": 361926,
+      "volMul": 1.25,
+      "high": 1726.9,
+      "low": 1681.2,
+      "high52": 1985.94,
+      "low52": 1260.9,
+      "pe": 52.0,
       "delivery": "50.0%",
       "turnover_cr": 61.64,
       "universes": [
@@ -11466,26 +11459,6 @@
       ]
     },
     {
-      "symbol": "RAINBOW",
-      "name": "Rainbow Childrens Medicare Ltd.",
-      "sector": "pharma",
-      "price": 1279.6,
-      "change": 2.66,
-      "volume": "128.8K",
-      "vol_raw": 128754,
-      "volMul": 1.25,
-      "high": 1286.9,
-      "low": 1235.0,
-      "high52": 1479.94,
-      "low52": 926.25,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.44,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CARBORUNIV",
       "name": "Carborundum Universal Ltd.",
       "sector": "infra",
@@ -11499,6 +11472,26 @@
       "high52": 1288.69,
       "low52": 817.12,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 16.44,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "RAINBOW",
+      "name": "Rainbow Childrens Medicare Ltd.",
+      "sector": "pharma",
+      "price": 1279.6,
+      "change": 2.66,
+      "volume": "128.8K",
+      "vol_raw": 128754,
+      "volMul": 1.25,
+      "high": 1286.9,
+      "low": 1235.0,
+      "high52": 1479.94,
+      "low52": 926.25,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 16.44,
       "universes": [
