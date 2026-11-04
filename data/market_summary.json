@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-04T19:56:42.825529+00:00",
+    "generated_at": "2026-11-04T20:18:20.358815+00:00",
     "market_date": "04-Nov-2026",
     "market_date_iso": "2026-11-04",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8721,26 +8721,6 @@
       ]
     },
     {
-      "symbol": "LGEINDIA",
-      "name": "LG Electronics India Ltd.",
-      "sector": "fmcg",
-      "price": 1692.1,
-      "change": 0.11,
-      "volume": "361.9K",
-      "vol_raw": 361926,
-      "volMul": 1.25,
-      "high": 1726.9,
-      "low": 1681.2,
-      "high52": 1985.94,
-      "low52": 1260.9,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 61.64,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "INTELLECT",
       "name": "Intellect Design Arena Ltd.",
       "sector": "it",
@@ -8754,6 +8734,26 @@
       "high52": 611.68,
       "low52": 378.75,
       "pe": 29.2,
+      "delivery": "50.0%",
+      "turnover_cr": 61.64,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "LGEINDIA",
+      "name": "LG Electronics India Ltd.",
+      "sector": "fmcg",
+      "price": 1692.1,
+      "change": 0.11,
+      "volume": "361.9K",
+      "vol_raw": 361926,
+      "volMul": 1.25,
+      "high": 1726.9,
+      "low": 1681.2,
+      "high52": 1985.94,
+      "low52": 1260.9,
+      "pe": 52.0,
       "delivery": "50.0%",
       "turnover_cr": 61.64,
       "universes": [
@@ -11459,26 +11459,6 @@
       ]
     },
     {
-      "symbol": "RAINBOW",
-      "name": "Rainbow Childrens Medicare Ltd.",
-      "sector": "pharma",
-      "price": 1279.6,
-      "change": 2.66,
-      "volume": "128.8K",
-      "vol_raw": 128754,
-      "volMul": 1.25,
-      "high": 1286.9,
-      "low": 1235.0,
-      "high52": 1479.94,
-      "low52": 926.25,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.44,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CARBORUNIV",
       "name": "Carborundum Universal Ltd.",
       "sector": "infra",
@@ -11492,6 +11472,26 @@
       "high52": 1288.69,
       "low52": 817.12,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 16.44,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "RAINBOW",
+      "name": "Rainbow Childrens Medicare Ltd.",
+      "sector": "pharma",
+      "price": 1279.6,
+      "change": 2.66,
+      "volume": "128.8K",
+      "vol_raw": 128754,
+      "volMul": 1.25,
+      "high": 1286.9,
+      "low": 1235.0,
+      "high52": 1479.94,
+      "low52": 926.25,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 16.44,
       "universes": [
