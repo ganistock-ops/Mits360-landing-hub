@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-04T19:26:41.640992+00:00",
+    "generated_at": "2026-11-04T19:56:42.825529+00:00",
     "market_date": "04-Nov-2026",
     "market_date_iso": "2026-11-04",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8721,26 +8721,6 @@
       ]
     },
     {
-      "symbol": "INTELLECT",
-      "name": "Intellect Design Arena Ltd.",
-      "sector": "it",
-      "price": 529.9,
-      "change": 1.84,
-      "volume": "1.2M",
-      "vol_raw": 1188299,
-      "volMul": 1.25,
-      "high": 531.9,
-      "low": 505.0,
-      "high52": 611.68,
-      "low52": 378.75,
-      "pe": 29.2,
-      "delivery": "50.0%",
-      "turnover_cr": 61.64,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "LGEINDIA",
       "name": "LG Electronics India Ltd.",
       "sector": "fmcg",
@@ -8754,6 +8734,26 @@
       "high52": 1985.94,
       "low52": 1260.9,
       "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 61.64,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "INTELLECT",
+      "name": "Intellect Design Arena Ltd.",
+      "sector": "it",
+      "price": 529.9,
+      "change": 1.84,
+      "volume": "1.2M",
+      "vol_raw": 1188299,
+      "volMul": 1.25,
+      "high": 531.9,
+      "low": 505.0,
+      "high52": 611.68,
+      "low52": 378.75,
+      "pe": 29.2,
       "delivery": "50.0%",
       "turnover_cr": 61.64,
       "universes": [
@@ -11459,26 +11459,6 @@
       ]
     },
     {
-      "symbol": "CARBORUNIV",
-      "name": "Carborundum Universal Ltd.",
-      "sector": "infra",
-      "price": 1093.4,
-      "change": -1.5,
-      "volume": "149.0K",
-      "vol_raw": 148961,
-      "volMul": 1.25,
-      "high": 1120.6,
-      "low": 1089.5,
-      "high52": 1288.69,
-      "low52": 817.12,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.44,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "RAINBOW",
       "name": "Rainbow Childrens Medicare Ltd.",
       "sector": "pharma",
@@ -11492,6 +11472,26 @@
       "high52": 1479.94,
       "low52": 926.25,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 16.44,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CARBORUNIV",
+      "name": "Carborundum Universal Ltd.",
+      "sector": "infra",
+      "price": 1093.4,
+      "change": -1.5,
+      "volume": "149.0K",
+      "vol_raw": 148961,
+      "volMul": 1.25,
+      "high": 1120.6,
+      "low": 1089.5,
+      "high52": 1288.69,
+      "low52": 817.12,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 16.44,
       "universes": [
