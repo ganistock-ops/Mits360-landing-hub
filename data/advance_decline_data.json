@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-05T12:19:48.946794+00:00",
+    "generated_at": "2026-11-05T19:36:33.430775+00:00",
     "market_date": "05-Nov-2026",
     "market_date_iso": "2026-11-05",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8946,6 +8946,26 @@
       ]
     },
     {
+      "symbol": "IRCON",
+      "name": "IRCON International Ltd.",
+      "sector": "infra",
+      "price": 106.75,
+      "change": 3.36,
+      "volume": "6.4M",
+      "vol_raw": 6387916,
+      "volMul": 1.25,
+      "high": 110.28,
+      "low": 105.0,
+      "high52": 126.82,
+      "low52": 78.75,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 68.87,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "ASTRAL",
       "name": "Astral Ltd.",
       "sector": "infra",
@@ -8964,26 +8984,6 @@
       "universes": [
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "IRCON",
-      "name": "IRCON International Ltd.",
-      "sector": "infra",
-      "price": 106.75,
-      "change": 3.36,
-      "volume": "6.4M",
-      "vol_raw": 6387916,
-      "volMul": 1.25,
-      "high": 110.28,
-      "low": 105.0,
-      "high52": 126.82,
-      "low52": 78.75,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 68.87,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -10698,26 +10698,6 @@
       ]
     },
     {
-      "symbol": "BAJAJHFL",
-      "name": "Bajaj Housing Finance Ltd.",
-      "sector": "finserv",
-      "price": 83.16,
-      "change": 2.14,
-      "volume": "3.9M",
-      "vol_raw": 3872757,
-      "volMul": 1.25,
-      "high": 83.75,
-      "low": 82.5,
-      "high52": 96.31,
-      "low52": 61.88,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 32.17,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "INOXINDIA",
       "name": "INOX India Ltd.",
       "sector": "infra",
@@ -10731,6 +10711,26 @@
       "high52": 2309.54,
       "low52": 1458.82,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 32.17,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "BAJAJHFL",
+      "name": "Bajaj Housing Finance Ltd.",
+      "sector": "finserv",
+      "price": 83.16,
+      "change": 2.14,
+      "volume": "3.9M",
+      "vol_raw": 3872757,
+      "volMul": 1.25,
+      "high": 83.75,
+      "low": 82.5,
+      "high52": 96.31,
+      "low52": 61.88,
+      "pe": 24.0,
       "delivery": "50.0%",
       "turnover_cr": 32.17,
       "universes": [
