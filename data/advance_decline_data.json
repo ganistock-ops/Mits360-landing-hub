@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-06T19:36:31.116336+00:00",
+    "generated_at": "2026-11-06T19:52:12.955461+00:00",
     "market_date": "06-Nov-2026",
     "market_date_iso": "2026-11-06",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -12172,26 +12172,6 @@
       ]
     },
     {
-      "symbol": "JBMA",
-      "name": "JBM Auto Ltd.",
-      "sector": "auto",
-      "price": 495.6,
-      "change": -1.6,
-      "volume": "185.3K",
-      "vol_raw": 185299,
-      "volMul": 1.25,
-      "high": 500.6,
-      "low": 489.5,
-      "high52": 575.69,
-      "low52": 367.12,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 9.15,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CHAMBLFERT",
       "name": "Chambal Fertilizers & Chemicals Ltd.",
       "sector": "infra",
@@ -12205,6 +12185,26 @@
       "high52": 444.53,
       "low52": 285.41,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 9.15,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "JBMA",
+      "name": "JBM Auto Ltd.",
+      "sector": "auto",
+      "price": 495.6,
+      "change": -1.6,
+      "volume": "185.3K",
+      "vol_raw": 185299,
+      "volMul": 1.25,
+      "high": 500.6,
+      "low": 489.5,
+      "high52": 575.69,
+      "low52": 367.12,
+      "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 9.15,
       "universes": [
