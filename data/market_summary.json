@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-06T12:03:04.891473+00:00",
+    "generated_at": "2026-11-06T18:57:47.245907+00:00",
     "market_date": "06-Nov-2026",
     "market_date_iso": "2026-11-06",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -11,6 +11,13 @@
       "symbol": "NIFTY 50",
       "price": "25,030.35",
       "change": "+2.01%",
+      "isPositive": true,
+      "isVix": false
+    },
+    {
+      "symbol": "NIFTY AUTO",
+      "price": "27,811.80",
+      "change": "+0.76%",
       "isPositive": true,
       "isVix": false
     },
@@ -29,13 +36,6 @@
       "isVix": false
     },
     {
-      "symbol": "NIFTY AUTO",
-      "price": "27,811.80",
-      "change": "+0.76%",
-      "isPositive": true,
-      "isVix": false
-    },
-    {
       "symbol": "NIFTY METAL",
       "price": "12,678.15",
       "change": "+0.66%",
@@ -48,13 +48,6 @@
       "change": "+0.09%",
       "isPositive": true,
       "isVix": false
-    },
-    {
-      "symbol": "INDIA VIX",
-      "price": "17.46",
-      "change": "+12.07%",
-      "isPositive": false,
-      "isVix": true
     }
   ],
   "market_breadth": {
@@ -179,7 +172,7 @@
       "name": "Nifty Bank",
       "code": "BANKING",
       "change": 2.27,
-      "turnoverCr": 0.0,
+      "turnoverCr": 19146.12,
       "advCount": 18,
       "decCount": 8,
       "stockCount": 26,
@@ -411,7 +404,7 @@
       "name": "Nifty IT",
       "code": "IT",
       "change": 0.43,
-      "turnoverCr": 0.0,
+      "turnoverCr": 6611.3,
       "advCount": 11,
       "decCount": 14,
       "stockCount": 25,
@@ -633,7 +626,7 @@
       "name": "Nifty Auto",
       "code": "AUTO",
       "change": 0.76,
-      "turnoverCr": 0.0,
+      "turnoverCr": 8932.33,
       "advCount": 11,
       "decCount": 29,
       "stockCount": 40,
@@ -858,7 +851,7 @@
       "name": "Nifty Energy",
       "code": "ENERGY",
       "change": -0.05,
-      "turnoverCr": 0.0,
+      "turnoverCr": 13764.28,
       "advCount": 7,
       "decCount": 12,
       "stockCount": 19,
@@ -1083,7 +1076,7 @@
       "name": "Nifty Metal",
       "code": "METALS",
       "change": 0.66,
-      "turnoverCr": 0.0,
+      "turnoverCr": 4255.57,
       "advCount": 7,
       "decCount": 13,
       "stockCount": 20,
@@ -1307,7 +1300,7 @@
       "name": "Nifty Pharma",
       "code": "PHARMA",
       "change": 1.21,
-      "turnoverCr": 0.0,
+      "turnoverCr": 7143.34,
       "advCount": 28,
       "decCount": 16,
       "stockCount": 44,
@@ -1527,7 +1520,7 @@
       "name": "Nifty FMCG",
       "code": "FMCG",
       "change": 0.67,
-      "turnoverCr": 0.0,
+      "turnoverCr": 2519.15,
       "advCount": 21,
       "decCount": 23,
       "stockCount": 44,
@@ -1754,7 +1747,7 @@
       "name": "Nifty Realty",
       "code": "REALTY",
       "change": 0.09,
-      "turnoverCr": 0.0,
+      "turnoverCr": 931.35,
       "advCount": 4,
       "decCount": 7,
       "stockCount": 11,
@@ -1975,7 +1968,7 @@
       "name": "Nifty Fin Services",
       "code": "FINSERV",
       "change": 2.57,
-      "turnoverCr": 0.0,
+      "turnoverCr": 21226.6,
       "advCount": 39,
       "decCount": 33,
       "stockCount": 73,
@@ -2196,7 +2189,7 @@
       "name": "Nifty Infra",
       "code": "INFRA",
       "change": 0.77,
-      "turnoverCr": 0.0,
+      "turnoverCr": 20248.9,
       "advCount": 71,
       "decCount": 122,
       "stockCount": 194,
@@ -12179,26 +12172,6 @@
       ]
     },
     {
-      "symbol": "JBMA",
-      "name": "JBM Auto Ltd.",
-      "sector": "auto",
-      "price": 495.6,
-      "change": -1.6,
-      "volume": "185.3K",
-      "vol_raw": 185299,
-      "volMul": 1.25,
-      "high": 500.6,
-      "low": 489.5,
-      "high52": 575.69,
-      "low52": 367.12,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 9.15,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CHAMBLFERT",
       "name": "Chambal Fertilizers & Chemicals Ltd.",
       "sector": "infra",
@@ -12212,6 +12185,26 @@
       "high52": 444.53,
       "low52": 285.41,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 9.15,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "JBMA",
+      "name": "JBM Auto Ltd.",
+      "sector": "auto",
+      "price": 495.6,
+      "change": -1.6,
+      "volume": "185.3K",
+      "vol_raw": 185299,
+      "volMul": 1.25,
+      "high": 500.6,
+      "low": 489.5,
+      "high52": 575.69,
+      "low52": 367.12,
+      "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 9.15,
       "universes": [
