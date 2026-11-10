@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-10T19:24:24.883564+00:00",
+    "generated_at": "2026-11-10T19:54:16.057345+00:00",
     "market_date": "10-Nov-2026",
     "market_date_iso": "2026-11-10",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -12003,26 +12003,6 @@
       ]
     },
     {
-      "symbol": "GODREJIND",
-      "name": "Godrej Industries Ltd.",
-      "sector": "infra",
-      "price": 951.95,
-      "change": -1.88,
-      "volume": "78.7K",
-      "vol_raw": 78674,
-      "volMul": 1.25,
-      "high": 980.55,
-      "low": 947.3,
-      "high52": 1127.63,
-      "low52": 710.47,
-      "pe": 31.0,
-      "delivery": "47.2%",
-      "turnover_cr": 7.52,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "MINDACORP",
       "name": "Minda Corporation Ltd.",
       "sector": "auto",
@@ -12037,6 +12017,26 @@
       "low52": 525.75,
       "pe": 27.4,
       "delivery": "44.6%",
+      "turnover_cr": 7.52,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "GODREJIND",
+      "name": "Godrej Industries Ltd.",
+      "sector": "infra",
+      "price": 951.95,
+      "change": -1.88,
+      "volume": "78.7K",
+      "vol_raw": 78674,
+      "volMul": 1.25,
+      "high": 980.55,
+      "low": 947.3,
+      "high52": 1127.63,
+      "low52": 710.47,
+      "pe": 31.0,
+      "delivery": "47.2%",
       "turnover_cr": 7.52,
       "universes": [
         "nifty500"
