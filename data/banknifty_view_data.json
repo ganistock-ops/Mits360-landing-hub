@@ -1,36 +1,36 @@
 {
   "meta": {
-    "generated_at": "2026-11-09T22:53:29.268410+00:00",
-    "market_date": "09-Nov-2026",
+    "generated_at": "2026-11-10T19:24:25.286321+00:00",
+    "market_date": "10-Nov-2026",
     "index_name": "BANK NIFTY",
     "current_price": 59741.25,
     "open": 59219.95,
     "high": 59741.25,
     "low": 58877.85,
-    "points_change": 890.6,
-    "change_pct": 1.51,
-    "pe": 13.2,
-    "pb": 1.8,
-    "div_yield": 1.05,
+    "points_change": 655.25,
+    "change_pct": 1.11,
+    "pe": 13.39,
+    "pb": 1.7,
+    "div_yield": 0.69,
     "status": "FINALIZED"
   },
   "returns_matrix": [
     {
       "period": "1 Week",
-      "old_price": 55002.2,
-      "return_pct": 8.62,
+      "old_price": 55540.05,
+      "return_pct": 7.56,
       "period_high": 59741.25,
-      "period_low": 54582.0,
-      "high_date": "09-Nov-2026",
-      "low_date": "02-Nov-2026"
+      "period_low": 55174.1,
+      "high_date": "10-Nov-2026",
+      "low_date": "03-Nov-2026"
     },
     {
       "period": "2 Weeks",
-      "old_price": 54366.7,
-      "return_pct": 9.89,
+      "old_price": 53974.9,
+      "return_pct": 10.68,
       "period_high": 59741.25,
       "period_low": 53626.15,
-      "high_date": "09-Nov-2026",
+      "high_date": "10-Nov-2026",
       "low_date": "28-Oct-2026"
     },
     {
@@ -39,16 +39,16 @@
       "return_pct": 8.12,
       "period_high": 59741.25,
       "period_low": 53626.15,
-      "high_date": "09-Nov-2026",
+      "high_date": "10-Nov-2026",
       "low_date": "28-Oct-2026"
     },
     {
       "period": "3 Months",
-      "old_price": 57746.45,
-      "return_pct": 3.45,
+      "old_price": 57686.95,
+      "return_pct": 3.56,
       "period_high": 59741.25,
       "period_low": 53626.15,
-      "high_date": "09-Nov-2026",
+      "high_date": "10-Nov-2026",
       "low_date": "28-Oct-2026"
     },
     {
@@ -57,13 +57,13 @@
       "return_pct": 8.01,
       "period_high": 59741.25,
       "period_low": 52783.45,
-      "high_date": "09-Nov-2026",
+      "high_date": "10-Nov-2026",
       "low_date": "18-May-2026"
     },
     {
       "period": "1 Year",
-      "old_price": 57876.8,
-      "return_pct": 3.22,
+      "old_price": 57937.55,
+      "return_pct": 3.11,
       "period_high": 61764.85,
       "period_low": 49954.85,
       "high_date": "03-Feb-2026",
@@ -80,8 +80,8 @@
     },
     {
       "period": "5 Years",
-      "old_price": 39368.8,
-      "return_pct": 51.75,
+      "old_price": 39023.25,
+      "return_pct": 53.09,
       "period_high": 61764.85,
       "period_low": 32155.35,
       "high_date": "03-Feb-2026",
