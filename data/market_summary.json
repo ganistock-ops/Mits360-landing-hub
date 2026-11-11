@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-11T19:18:31.801069+00:00",
+    "generated_at": "2026-11-11T19:46:06.392573+00:00",
     "market_date": "11-Nov-2026",
     "market_date_iso": "2026-11-11",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -11080,26 +11080,6 @@
       ]
     },
     {
-      "symbol": "CIEINDIA",
-      "name": "CIE Automotive India Ltd.",
-      "sector": "auto",
-      "price": 374.9,
-      "change": 4.05,
-      "volume": "688.2K",
-      "vol_raw": 688177,
-      "volMul": 1.25,
-      "high": 377.75,
-      "low": 360.3,
-      "high52": 434.41,
-      "low52": 270.23,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 25.54,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "TORNTPOWER",
       "name": "Torrent Power Ltd.",
       "sector": "energy",
@@ -11113,6 +11093,26 @@
       "high52": 1459.0,
       "low52": 924.3,
       "pe": 16.8,
+      "delivery": "50.0%",
+      "turnover_cr": 25.54,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CIEINDIA",
+      "name": "CIE Automotive India Ltd.",
+      "sector": "auto",
+      "price": 374.9,
+      "change": 4.05,
+      "volume": "688.2K",
+      "vol_raw": 688177,
+      "volMul": 1.25,
+      "high": 377.75,
+      "low": 360.3,
+      "high52": 434.41,
+      "low52": 270.23,
+      "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 25.54,
       "universes": [
@@ -11340,26 +11340,6 @@
       ]
     },
     {
-      "symbol": "ATUL",
-      "name": "Atul Ltd.",
-      "sector": "infra",
-      "price": 5246.0,
-      "change": -0.83,
-      "volume": "40.6K",
-      "vol_raw": 40569,
-      "volMul": 1.25,
-      "high": 5334.0,
-      "low": 5235.5,
-      "high52": 6134.1,
-      "low52": 3926.62,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 21.41,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CEMPRO",
       "name": "Cemindia Projects Ltd.",
       "sector": "infra",
@@ -11372,6 +11352,26 @@
       "low": 1311.9,
       "high52": 1539.74,
       "low52": 983.92,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 21.41,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ATUL",
+      "name": "Atul Ltd.",
+      "sector": "infra",
+      "price": 5246.0,
+      "change": -0.83,
+      "volume": "40.6K",
+      "vol_raw": 40569,
+      "volMul": 1.25,
+      "high": 5334.0,
+      "low": 5235.5,
+      "high52": 6134.1,
+      "low52": 3926.62,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 21.41,
@@ -11580,26 +11580,6 @@
       ]
     },
     {
-      "symbol": "ENDURANCE",
-      "name": "Endurance Technologies Ltd.",
-      "sector": "auto",
-      "price": 2527.6,
-      "change": 1.67,
-      "volume": "77.8K",
-      "vol_raw": 77800,
-      "volMul": 1.25,
-      "high": 2552.5,
-      "low": 2498.4,
-      "high52": 2935.38,
-      "low52": 1873.8,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 19.73,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AETHER",
       "name": "Aether Industries Ltd.",
       "sector": "infra",
@@ -11613,6 +11593,26 @@
       "high52": 1887.61,
       "low52": 1200.68,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 19.73,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ENDURANCE",
+      "name": "Endurance Technologies Ltd.",
+      "sector": "auto",
+      "price": 2527.6,
+      "change": 1.67,
+      "volume": "77.8K",
+      "vol_raw": 77800,
+      "volMul": 1.25,
+      "high": 2552.5,
+      "low": 2498.4,
+      "high52": 2935.38,
+      "low52": 1873.8,
+      "pe": 27.4,
       "delivery": "50.0%",
       "turnover_cr": 19.73,
       "universes": [
