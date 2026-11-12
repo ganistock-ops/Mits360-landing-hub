@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-12T19:37:04.481347+00:00",
+    "generated_at": "2026-11-12T20:13:55.682783+00:00",
     "market_date": "12-Nov-2026",
     "market_date_iso": "2026-11-12",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -9204,26 +9204,6 @@
       ]
     },
     {
-      "symbol": "IPCALAB",
-      "name": "Ipca Laboratories Ltd.",
-      "sector": "pharma",
-      "price": 1899.7,
-      "change": -2.0,
-      "volume": "209.3K",
-      "vol_raw": 209267,
-      "volMul": 1.25,
-      "high": 1956.0,
-      "low": 1883.5,
-      "high52": 2249.4,
-      "low52": 1412.62,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 39.93,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "RPOWER",
       "name": "Reliance Power Ltd.",
       "sector": "energy",
@@ -9237,6 +9217,26 @@
       "high52": 22.54,
       "low52": 14.4,
       "pe": 16.8,
+      "delivery": "50.0%",
+      "turnover_cr": 39.93,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "IPCALAB",
+      "name": "Ipca Laboratories Ltd.",
+      "sector": "pharma",
+      "price": 1899.7,
+      "change": -2.0,
+      "volume": "209.3K",
+      "vol_raw": 209267,
+      "volMul": 1.25,
+      "high": 1956.0,
+      "low": 1883.5,
+      "high52": 2249.4,
+      "low52": 1412.62,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 39.93,
       "universes": [
@@ -11293,26 +11293,6 @@
       ]
     },
     {
-      "symbol": "JSWCEMENT",
-      "name": "JSW Cement Ltd.",
-      "sector": "infra",
-      "price": 125.63,
-      "change": 1.24,
-      "volume": "1.4M",
-      "vol_raw": 1372247,
-      "volMul": 1.25,
-      "high": 126.45,
-      "low": 123.77,
-      "high52": 145.42,
-      "low52": 92.83,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 17.16,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "CHAMBLFERT",
       "name": "Chambal Fertilizers & Chemicals Ltd.",
       "sector": "infra",
@@ -11325,6 +11305,26 @@
       "low": 385.0,
       "high52": 451.95,
       "low52": 288.75,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 17.16,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "JSWCEMENT",
+      "name": "JSW Cement Ltd.",
+      "sector": "infra",
+      "price": 125.63,
+      "change": 1.24,
+      "volume": "1.4M",
+      "vol_raw": 1372247,
+      "volMul": 1.25,
+      "high": 126.45,
+      "low": 123.77,
+      "high52": 145.42,
+      "low52": 92.83,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 17.16,
@@ -11873,26 +11873,6 @@
       ]
     },
     {
-      "symbol": "NTPCGREEN",
-      "name": "NTPC Green Energy Ltd.",
-      "sector": "energy",
-      "price": 83.56,
-      "change": 0.07,
-      "volume": "1.4M",
-      "vol_raw": 1425127,
-      "volMul": 1.25,
-      "high": 84.19,
-      "low": 83.4,
-      "high52": 96.82,
-      "low52": 62.55,
-      "pe": 16.8,
-      "delivery": "50.0%",
-      "turnover_cr": 11.93,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "RUBICON",
       "name": "Rubicon Research Ltd.",
       "sector": "pharma",
@@ -11906,6 +11886,26 @@
       "high52": 2008.94,
       "low52": 1278.07,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 11.93,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "NTPCGREEN",
+      "name": "NTPC Green Energy Ltd.",
+      "sector": "energy",
+      "price": 83.56,
+      "change": 0.07,
+      "volume": "1.4M",
+      "vol_raw": 1425127,
+      "volMul": 1.25,
+      "high": 84.19,
+      "low": 83.4,
+      "high52": 96.82,
+      "low52": 62.55,
+      "pe": 16.8,
       "delivery": "50.0%",
       "turnover_cr": 11.93,
       "universes": [
@@ -12393,26 +12393,6 @@
       ]
     },
     {
-      "symbol": "RAMCOCEM",
-      "name": "The Ramco Cements Ltd.",
-      "sector": "infra",
-      "price": 831.35,
-      "change": -1.22,
-      "volume": "83.2K",
-      "vol_raw": 83174,
-      "volMul": 1.25,
-      "high": 856.0,
-      "low": 827.0,
-      "high52": 984.4,
-      "low52": 620.25,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 7.0,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "TIMKEN",
       "name": "Timken India Ltd.",
       "sector": "infra",
@@ -12425,6 +12405,26 @@
       "low": 3052.9,
       "high52": 3569.14,
       "low52": 2289.68,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 7.0,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "RAMCOCEM",
+      "name": "The Ramco Cements Ltd.",
+      "sector": "infra",
+      "price": 831.35,
+      "change": -1.22,
+      "volume": "83.2K",
+      "vol_raw": 83174,
+      "volMul": 1.25,
+      "high": 856.0,
+      "low": 827.0,
+      "high52": 984.4,
+      "low52": 620.25,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 7.0,
