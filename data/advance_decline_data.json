@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-13T12:29:17.126085+00:00",
+    "generated_at": "2026-11-13T19:17:31.554770+00:00",
     "market_date": "13-Nov-2026",
     "market_date_iso": "2026-11-13",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -7407,6 +7407,28 @@
       ]
     },
     {
+      "symbol": "BRITANNIA",
+      "name": "Britannia Industries Ltd.",
+      "sector": "fmcg",
+      "price": 4750.5,
+      "change": -0.97,
+      "volume": "166.2K",
+      "vol_raw": 166179,
+      "volMul": 1.25,
+      "high": 4810.0,
+      "low": 4741.2,
+      "high52": 5531.5,
+      "low52": 3555.9,
+      "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 79.3,
+      "universes": [
+        "nifty100",
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
       "symbol": "BAJAJFINSV",
       "name": "Bajaj Finserv Ltd.",
       "sector": "finserv",
@@ -7424,28 +7446,6 @@
       "turnover_cr": 79.3,
       "universes": [
         "nifty50",
-        "nifty100",
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
-      "symbol": "BRITANNIA",
-      "name": "Britannia Industries Ltd.",
-      "sector": "fmcg",
-      "price": 4750.5,
-      "change": -0.97,
-      "volume": "166.2K",
-      "vol_raw": 166179,
-      "volMul": 1.25,
-      "high": 4810.0,
-      "low": 4741.2,
-      "high52": 5531.5,
-      "low52": 3555.9,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 79.3,
-      "universes": [
         "nifty100",
         "nifty500",
         "fno"
@@ -8846,26 +8846,6 @@
       ]
     },
     {
-      "symbol": "ZENTEC",
-      "name": "Zen Technologies Ltd.",
-      "sector": "infra",
-      "price": 1743.7,
-      "change": -0.63,
-      "volume": "240.1K",
-      "vol_raw": 240053,
-      "volMul": 1.25,
-      "high": 1784.2,
-      "low": 1733.0,
-      "high52": 2051.83,
-      "low52": 1299.75,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 42.05,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "NUVAMA",
       "name": "Nuvama Wealth Management Ltd.",
       "sector": "finserv",
@@ -8879,6 +8859,26 @@
       "high52": 2202.36,
       "low52": 1377.22,
       "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 42.05,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ZENTEC",
+      "name": "Zen Technologies Ltd.",
+      "sector": "infra",
+      "price": 1743.7,
+      "change": -0.63,
+      "volume": "240.1K",
+      "vol_raw": 240053,
+      "volMul": 1.25,
+      "high": 1784.2,
+      "low": 1733.0,
+      "high52": 2051.83,
+      "low52": 1299.75,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 42.05,
       "universes": [
@@ -10600,26 +10600,6 @@
       ]
     },
     {
-      "symbol": "CHOICEIN",
-      "name": "Choice International Ltd.",
-      "sector": "finserv",
-      "price": 727.35,
-      "change": -0.95,
-      "volume": "272.7K",
-      "vol_raw": 272694,
-      "volMul": 1.25,
-      "high": 734.35,
-      "low": 725.5,
-      "high52": 844.5,
-      "low52": 544.12,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 19.92,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "USHAMART",
       "name": "Usha Martin Ltd.",
       "sector": "infra",
@@ -10633,6 +10613,26 @@
       "high52": 565.63,
       "low52": 358.8,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 19.92,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CHOICEIN",
+      "name": "Choice International Ltd.",
+      "sector": "finserv",
+      "price": 727.35,
+      "change": -0.95,
+      "volume": "272.7K",
+      "vol_raw": 272694,
+      "volMul": 1.25,
+      "high": 734.35,
+      "low": 725.5,
+      "high52": 844.5,
+      "low52": 544.12,
+      "pe": 24.0,
       "delivery": "50.0%",
       "turnover_cr": 19.92,
       "universes": [
@@ -11741,26 +11741,6 @@
       ]
     },
     {
-      "symbol": "ABBOTINDIA",
-      "name": "Abbott India Ltd.",
-      "sector": "pharma",
-      "price": 26440.0,
-      "change": -0.6,
-      "volume": "3.8K",
-      "vol_raw": 3788,
-      "volMul": 1.25,
-      "high": 26685.0,
-      "low": 26350.0,
-      "high52": 30687.75,
-      "low52": 19762.5,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 10.03,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "HOMEFIRST",
       "name": "Home First Finance Company India Ltd.",
       "sector": "finserv",
@@ -11774,6 +11754,26 @@
       "high52": 1285.7,
       "low52": 813.75,
       "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 10.03,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ABBOTINDIA",
+      "name": "Abbott India Ltd.",
+      "sector": "pharma",
+      "price": 26440.0,
+      "change": -0.6,
+      "volume": "3.8K",
+      "vol_raw": 3788,
+      "volMul": 1.25,
+      "high": 26685.0,
+      "low": 26350.0,
+      "high52": 30687.75,
+      "low52": 19762.5,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 10.03,
       "universes": [
