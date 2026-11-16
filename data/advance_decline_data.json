@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-16T21:41:58.933794+00:00",
+    "generated_at": "2026-11-16T22:24:14.193550+00:00",
     "market_date": "16-Nov-2026",
     "market_date_iso": "2026-11-16",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8348,27 +8348,6 @@
       ]
     },
     {
-      "symbol": "SUPREMEIND",
-      "name": "Supreme Industries Ltd.",
-      "sector": "infra",
-      "price": 3266.3,
-      "change": -1.25,
-      "volume": "155.7K",
-      "vol_raw": 155722,
-      "volMul": 1.25,
-      "high": 3310.0,
-      "low": 3219.9,
-      "high52": 3806.5,
-      "low52": 2414.93,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 50.49,
-      "universes": [
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
       "symbol": "SAGILITY",
       "name": "Sagility Ltd.",
       "sector": "it",
@@ -8382,6 +8361,27 @@
       "high52": 50.54,
       "low52": 32.17,
       "pe": 29.2,
+      "delivery": "50.0%",
+      "turnover_cr": 50.49,
+      "universes": [
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
+      "symbol": "SUPREMEIND",
+      "name": "Supreme Industries Ltd.",
+      "sector": "infra",
+      "price": 3266.3,
+      "change": -1.25,
+      "volume": "155.7K",
+      "vol_raw": 155722,
+      "volMul": 1.25,
+      "high": 3310.0,
+      "low": 3219.9,
+      "high52": 3806.5,
+      "low52": 2414.93,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 50.49,
       "universes": [
@@ -11130,26 +11130,6 @@
       ]
     },
     {
-      "symbol": "ELECON",
-      "name": "Elecon Engineering Co. Ltd.",
-      "sector": "infra",
-      "price": 444.45,
-      "change": 0.1,
-      "volume": "349.7K",
-      "vol_raw": 349744,
-      "volMul": 1.25,
-      "high": 445.85,
-      "low": 433.7,
-      "high52": 512.73,
-      "low52": 325.27,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 15.34,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "PARADEEP",
       "name": "Paradeep Phosphates Ltd.",
       "sector": "infra",
@@ -11162,6 +11142,26 @@
       "low": 136.1,
       "high52": 161.46,
       "low52": 102.07,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 15.34,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "ELECON",
+      "name": "Elecon Engineering Co. Ltd.",
+      "sector": "infra",
+      "price": 444.45,
+      "change": 0.1,
+      "volume": "349.7K",
+      "vol_raw": 349744,
+      "volMul": 1.25,
+      "high": 445.85,
+      "low": 433.7,
+      "high52": 512.73,
+      "low52": 325.27,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 15.34,
@@ -12130,26 +12130,6 @@
       ]
     },
     {
-      "symbol": "SARDAEN",
-      "name": "Sarda Energy and Minerals Ltd.",
-      "sector": "metals",
-      "price": 441.7,
-      "change": -0.59,
-      "volume": "184.8K",
-      "vol_raw": 184807,
-      "volMul": 1.25,
-      "high": 447.5,
-      "low": 436.75,
-      "high52": 514.62,
-      "low52": 327.56,
-      "pe": 18.0,
-      "delivery": "50.0%",
-      "turnover_cr": 8.16,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ABSLAMC",
       "name": "Aditya Birla Sun Life AMC Ltd.",
       "sector": "finserv",
@@ -12163,6 +12143,26 @@
       "high52": 1037.82,
       "low52": 663.71,
       "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 8.16,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "SARDAEN",
+      "name": "Sarda Energy and Minerals Ltd.",
+      "sector": "metals",
+      "price": 441.7,
+      "change": -0.59,
+      "volume": "184.8K",
+      "vol_raw": 184807,
+      "volMul": 1.25,
+      "high": 447.5,
+      "low": 436.75,
+      "high52": 514.62,
+      "low52": 327.56,
+      "pe": 18.0,
       "delivery": "50.0%",
       "turnover_cr": 8.16,
       "universes": [
