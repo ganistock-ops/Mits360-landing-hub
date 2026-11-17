@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-17T21:10:16.268724+00:00",
+    "generated_at": "2026-11-17T21:31:52.193822+00:00",
     "market_date": "17-Nov-2026",
     "market_date_iso": "2026-11-17",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -10775,26 +10775,6 @@
       ]
     },
     {
-      "symbol": "SYNGENE",
-      "name": "Syngene International Ltd.",
-      "sector": "pharma",
-      "price": 434.35,
-      "change": -1.55,
-      "volume": "424.5K",
-      "vol_raw": 424539,
-      "volMul": 1.25,
-      "high": 442.0,
-      "low": 433.0,
-      "high52": 508.3,
-      "low52": 324.75,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 18.5,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "SUNTV",
       "name": "Sun TV Network Ltd.",
       "sector": "infra",
@@ -10808,6 +10788,26 @@
       "high52": 769.23,
       "low52": 488.21,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 18.5,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "SYNGENE",
+      "name": "Syngene International Ltd.",
+      "sector": "pharma",
+      "price": 434.35,
+      "change": -1.55,
+      "volume": "424.5K",
+      "vol_raw": 424539,
+      "volMul": 1.25,
+      "high": 442.0,
+      "low": 433.0,
+      "high52": 508.3,
+      "low52": 324.75,
+      "pe": 34.0,
       "delivery": "50.0%",
       "turnover_cr": 18.5,
       "universes": [
@@ -11455,26 +11455,6 @@
       ]
     },
     {
-      "symbol": "DEEPAKNTR",
-      "name": "Deepak Nitrite Ltd.",
-      "sector": "infra",
-      "price": 1590.1,
-      "change": -0.3,
-      "volume": "84.6K",
-      "vol_raw": 84553,
-      "volMul": 1.25,
-      "high": 1608.5,
-      "low": 1574.4,
-      "high52": 1849.78,
-      "low52": 1180.8,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 13.46,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "RUBICON",
       "name": "Rubicon Research Ltd.",
       "sector": "pharma",
@@ -11488,6 +11468,26 @@
       "high52": 1947.06,
       "low52": 1237.88,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 13.46,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "DEEPAKNTR",
+      "name": "Deepak Nitrite Ltd.",
+      "sector": "infra",
+      "price": 1590.1,
+      "change": -0.3,
+      "volume": "84.6K",
+      "vol_raw": 84553,
+      "volMul": 1.25,
+      "high": 1608.5,
+      "low": 1574.4,
+      "high52": 1849.78,
+      "low52": 1180.8,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 13.46,
       "universes": [
