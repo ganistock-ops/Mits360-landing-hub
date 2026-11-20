@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-20T19:40:11.850056+00:00",
+    "generated_at": "2026-11-20T20:36:54.091399+00:00",
     "market_date": "20-Nov-2026",
     "market_date_iso": "2026-11-20",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -9051,6 +9051,26 @@
       ]
     },
     {
+      "symbol": "JYOTICNC",
+      "name": "Jyoti CNC Automation Ltd.",
+      "sector": "infra",
+      "price": 1052.45,
+      "change": -1.8,
+      "volume": "444.3K",
+      "vol_raw": 444282,
+      "volMul": 1.25,
+      "high": 1063.8,
+      "low": 1031.0,
+      "high52": 1223.37,
+      "low52": 773.25,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 46.42,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "PREMIERENE",
       "name": "Premier Energies Ltd.",
       "sector": "infra",
@@ -9069,26 +9089,6 @@
       "universes": [
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "JYOTICNC",
-      "name": "Jyoti CNC Automation Ltd.",
-      "sector": "infra",
-      "price": 1052.45,
-      "change": -1.8,
-      "volume": "444.3K",
-      "vol_raw": 444282,
-      "volMul": 1.25,
-      "high": 1063.8,
-      "low": 1031.0,
-      "high52": 1223.37,
-      "low52": 773.25,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 46.42,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -10801,26 +10801,6 @@
       ]
     },
     {
-      "symbol": "BAJAJHFL",
-      "name": "Bajaj Housing Finance Ltd.",
-      "sector": "finserv",
-      "price": 81.95,
-      "change": 0.04,
-      "volume": "2.7M",
-      "vol_raw": 2669194,
-      "volMul": 1.25,
-      "high": 82.46,
-      "low": 81.0,
-      "high52": 94.83,
-      "low52": 60.75,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 21.79,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AFFLE",
       "name": "Affle 3i Ltd.",
       "sector": "it",
@@ -10834,6 +10814,26 @@
       "high52": 1846.9,
       "low52": 1181.1,
       "pe": 29.2,
+      "delivery": "50.0%",
+      "turnover_cr": 21.79,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "BAJAJHFL",
+      "name": "Bajaj Housing Finance Ltd.",
+      "sector": "finserv",
+      "price": 81.95,
+      "change": 0.04,
+      "volume": "2.7M",
+      "vol_raw": 2669194,
+      "volMul": 1.25,
+      "high": 82.46,
+      "low": 81.0,
+      "high52": 94.83,
+      "low52": 60.75,
+      "pe": 24.0,
       "delivery": "50.0%",
       "turnover_cr": 21.79,
       "universes": [
@@ -11121,26 +11121,6 @@
       ]
     },
     {
-      "symbol": "CLEANMAX",
-      "name": "Clean Max Enviro Energy Solutions Ltd.",
-      "sector": "energy",
-      "price": 1226.4,
-      "change": -2.97,
-      "volume": "148.4K",
-      "vol_raw": 148431,
-      "volMul": 1.25,
-      "high": 1257.6,
-      "low": 1220.1,
-      "high52": 1446.24,
-      "low52": 915.08,
-      "pe": 16.8,
-      "delivery": "50.0%",
-      "turnover_cr": 18.32,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "NTPCGREEN",
       "name": "NTPC Green Energy Ltd.",
       "sector": "energy",
@@ -11153,6 +11133,26 @@
       "low": 81.74,
       "high52": 96.3,
       "low52": 61.3,
+      "pe": 16.8,
+      "delivery": "50.0%",
+      "turnover_cr": 18.32,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CLEANMAX",
+      "name": "Clean Max Enviro Energy Solutions Ltd.",
+      "sector": "energy",
+      "price": 1226.4,
+      "change": -2.97,
+      "volume": "148.4K",
+      "vol_raw": 148431,
+      "volMul": 1.25,
+      "high": 1257.6,
+      "low": 1220.1,
+      "high52": 1446.24,
+      "low52": 915.08,
       "pe": 16.8,
       "delivery": "50.0%",
       "turnover_cr": 18.32,
@@ -12321,26 +12321,6 @@
       ]
     },
     {
-      "symbol": "BHARATCOAL",
-      "name": "Bharat Coking Coal Ltd.",
-      "sector": "infra",
-      "price": 30.46,
-      "change": -0.68,
-      "volume": "2.1M",
-      "vol_raw": 2074760,
-      "volMul": 1.25,
-      "high": 30.54,
-      "low": 30.3,
-      "high52": 35.12,
-      "low52": 22.72,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 6.31,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "ELGIEQUIP",
       "name": "Elgi Equipments Ltd.",
       "sector": "infra",
@@ -12353,6 +12333,26 @@
       "low": 555.0,
       "high52": 650.32,
       "low52": 416.25,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 6.31,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "BHARATCOAL",
+      "name": "Bharat Coking Coal Ltd.",
+      "sector": "infra",
+      "price": 30.46,
+      "change": -0.68,
+      "volume": "2.1M",
+      "vol_raw": 2074760,
+      "volMul": 1.25,
+      "high": 30.54,
+      "low": 30.3,
+      "high52": 35.12,
+      "low52": 22.72,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 6.31,
