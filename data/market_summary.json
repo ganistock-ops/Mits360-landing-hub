@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-23T14:02:29.774513+00:00",
+    "generated_at": "2026-11-23T23:28:10.860317+00:00",
     "market_date": "23-Nov-2026",
     "market_date_iso": "2026-11-23",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -75,7 +75,7 @@
       "unch": 1,
       "total": 218,
       "adr": 0.3,
-      "totalValueCr": "₹82,857 Cr",
+      "totalValueCr": "₹82,723 Cr",
       "high52": 16,
       "low52": 20
     },
@@ -133,7 +133,7 @@
       "unch": 1,
       "total": 218,
       "adr": 0.3,
-      "totalValueCr": "₹82,857 Cr",
+      "totalValueCr": "₹82,723 Cr",
       "high52": 16,
       "low52": 20
     },
@@ -2103,8 +2103,7 @@
           "delivery": "50.0%",
           "turnover_cr": 130.82,
           "universes": [
-            "nifty500",
-            "fno"
+            "nifty500"
           ]
         },
         {
@@ -4491,8 +4490,7 @@
       "delivery": "50.0%",
       "turnover_cr": 261.73,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -5386,7 +5384,8 @@
       "delivery": "50.0%",
       "turnover_cr": 181.21,
       "universes": [
-        "nifty500"
+        "nifty500",
+        "fno"
       ]
     },
     {
@@ -6288,8 +6287,7 @@
       "delivery": "50.0%",
       "turnover_cr": 130.82,
       "universes": [
-        "nifty500",
-        "fno"
+        "nifty500"
       ]
     },
     {
@@ -7459,7 +7457,8 @@
       "delivery": "50.0%",
       "turnover_cr": 77.38,
       "universes": [
-        "nifty500"
+        "nifty500",
+        "fno"
       ]
     },
     {
@@ -9796,26 +9795,6 @@
       ]
     },
     {
-      "symbol": "HEGAM",
-      "name": "HEG Advanced Materials Ltd.",
-      "sector": "infra",
-      "price": 258.67,
-      "change": 0.5,
-      "volume": "1.1M",
-      "vol_raw": 1087504,
-      "volMul": 1.25,
-      "high": 262.36,
-      "low": 253.19,
-      "high52": 301.71,
-      "low52": 189.89,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 27.98,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "FIRSTCRY",
       "name": "Brainbees Solutions Ltd.",
       "sector": "infra",
@@ -9828,6 +9807,26 @@
       "low": 167.6,
       "high52": 198.29,
       "low52": 125.7,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 27.98,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "HEGAM",
+      "name": "HEG Advanced Materials Ltd.",
+      "sector": "infra",
+      "price": 258.67,
+      "change": 0.5,
+      "volume": "1.1M",
+      "vol_raw": 1087504,
+      "volMul": 1.25,
+      "high": 262.36,
+      "low": 253.19,
+      "high52": 301.71,
+      "low52": 189.89,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 27.98,
@@ -11679,26 +11678,6 @@
       ]
     },
     {
-      "symbol": "AEGISVOPAK",
-      "name": "Aegis Vopak Terminals Ltd.",
-      "sector": "infra",
-      "price": 280.9,
-      "change": -3.25,
-      "volume": "405.2K",
-      "vol_raw": 405165,
-      "volMul": 1.25,
-      "high": 292.06,
-      "low": 278.2,
-      "high52": 335.87,
-      "low52": 208.65,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 11.48,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AVANTIFEED",
       "name": "Avanti Feeds Ltd.",
       "sector": "fmcg",
@@ -11712,6 +11691,26 @@
       "high52": 832.43,
       "low52": 523.5,
       "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 11.48,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AEGISVOPAK",
+      "name": "Aegis Vopak Terminals Ltd.",
+      "sector": "infra",
+      "price": 280.9,
+      "change": -3.25,
+      "volume": "405.2K",
+      "vol_raw": 405165,
+      "volMul": 1.25,
+      "high": 292.06,
+      "low": 278.2,
+      "high52": 335.87,
+      "low52": 208.65,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 11.48,
       "universes": [
@@ -12199,26 +12198,6 @@
       ]
     },
     {
-      "symbol": "JUBLINGREA",
-      "name": "Jubilant Ingrevia Ltd.",
-      "sector": "infra",
-      "price": 559.2,
-      "change": -1.59,
-      "volume": "128.3K",
-      "vol_raw": 128263,
-      "volMul": 1.25,
-      "high": 571.5,
-      "low": 557.75,
-      "high52": 657.22,
-      "low52": 418.31,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 7.19,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "GILLETTE",
       "name": "Gillette India Ltd.",
       "sector": "fmcg",
@@ -12232,6 +12211,26 @@
       "high52": 8193.17,
       "low52": 5291.25,
       "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 7.19,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "JUBLINGREA",
+      "name": "Jubilant Ingrevia Ltd.",
+      "sector": "infra",
+      "price": 559.2,
+      "change": -1.59,
+      "volume": "128.3K",
+      "vol_raw": 128263,
+      "volMul": 1.25,
+      "high": 571.5,
+      "low": 557.75,
+      "high52": 657.22,
+      "low52": 418.31,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 7.19,
       "universes": [
