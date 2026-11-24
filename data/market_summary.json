@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-24T22:39:35.634474+00:00",
+    "generated_at": "2026-11-24T22:55:46.933477+00:00",
     "market_date": "24-Nov-2026",
     "market_date_iso": "2026-11-24",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -11685,26 +11685,6 @@
       ]
     },
     {
-      "symbol": "AEGISVOPAK",
-      "name": "Aegis Vopak Terminals Ltd.",
-      "sector": "infra",
-      "price": 280.9,
-      "change": -3.25,
-      "volume": "405.2K",
-      "vol_raw": 405165,
-      "volMul": 1.25,
-      "high": 292.06,
-      "low": 278.2,
-      "high52": 335.87,
-      "low52": 208.65,
-      "pe": 31.0,
-      "delivery": "44.5%",
-      "turnover_cr": 11.48,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AVANTIFEED",
       "name": "Avanti Feeds Ltd.",
       "sector": "fmcg",
@@ -11719,6 +11699,26 @@
       "low52": 523.5,
       "pe": 52.0,
       "delivery": "47.8%",
+      "turnover_cr": 11.48,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AEGISVOPAK",
+      "name": "Aegis Vopak Terminals Ltd.",
+      "sector": "infra",
+      "price": 280.9,
+      "change": -3.25,
+      "volume": "405.2K",
+      "vol_raw": 405165,
+      "volMul": 1.25,
+      "high": 292.06,
+      "low": 278.2,
+      "high52": 335.87,
+      "low52": 208.65,
+      "pe": 31.0,
+      "delivery": "44.5%",
       "turnover_cr": 11.48,
       "universes": [
         "nifty500"
@@ -12205,26 +12205,6 @@
       ]
     },
     {
-      "symbol": "JUBLINGREA",
-      "name": "Jubilant Ingrevia Ltd.",
-      "sector": "infra",
-      "price": 559.2,
-      "change": -1.59,
-      "volume": "128.3K",
-      "vol_raw": 128263,
-      "volMul": 1.25,
-      "high": 571.5,
-      "low": 557.75,
-      "high52": 657.22,
-      "low52": 418.31,
-      "pe": 31.0,
-      "delivery": "56.9%",
-      "turnover_cr": 7.19,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "GILLETTE",
       "name": "Gillette India Ltd.",
       "sector": "fmcg",
@@ -12239,6 +12219,26 @@
       "low52": 5291.25,
       "pe": 52.0,
       "delivery": "52.5%",
+      "turnover_cr": 7.19,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "JUBLINGREA",
+      "name": "Jubilant Ingrevia Ltd.",
+      "sector": "infra",
+      "price": 559.2,
+      "change": -1.59,
+      "volume": "128.3K",
+      "vol_raw": 128263,
+      "volMul": 1.25,
+      "high": 571.5,
+      "low": 557.75,
+      "high52": 657.22,
+      "low52": 418.31,
+      "pe": 31.0,
+      "delivery": "56.9%",
       "turnover_cr": 7.19,
       "universes": [
         "nifty500"
