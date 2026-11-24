@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-23T23:28:10.860317+00:00",
+    "generated_at": "2026-11-24T00:09:39.355701+00:00",
     "market_date": "23-Nov-2026",
     "market_date_iso": "2026-11-23",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -9795,26 +9795,6 @@
       ]
     },
     {
-      "symbol": "FIRSTCRY",
-      "name": "Brainbees Solutions Ltd.",
-      "sector": "infra",
-      "price": 168.71,
-      "change": -0.88,
-      "volume": "1.6M",
-      "vol_raw": 1648511,
-      "volMul": 1.25,
-      "high": 172.43,
-      "low": 167.6,
-      "high52": 198.29,
-      "low52": 125.7,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 27.98,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "HEGAM",
       "name": "HEG Advanced Materials Ltd.",
       "sector": "infra",
@@ -9827,6 +9807,26 @@
       "low": 253.19,
       "high52": 301.71,
       "low52": 189.89,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 27.98,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "FIRSTCRY",
+      "name": "Brainbees Solutions Ltd.",
+      "sector": "infra",
+      "price": 168.71,
+      "change": -0.88,
+      "volume": "1.6M",
+      "vol_raw": 1648511,
+      "volMul": 1.25,
+      "high": 172.43,
+      "low": 167.6,
+      "high52": 198.29,
+      "low52": 125.7,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 27.98,
@@ -11678,26 +11678,6 @@
       ]
     },
     {
-      "symbol": "AVANTIFEED",
-      "name": "Avanti Feeds Ltd.",
-      "sector": "fmcg",
-      "price": 700.35,
-      "change": -2.34,
-      "volume": "162.4K",
-      "vol_raw": 162407,
-      "volMul": 1.25,
-      "high": 723.85,
-      "low": 698.0,
-      "high52": 832.43,
-      "low52": 523.5,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 11.48,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AEGISVOPAK",
       "name": "Aegis Vopak Terminals Ltd.",
       "sector": "infra",
@@ -11711,6 +11691,26 @@
       "high52": 335.87,
       "low52": 208.65,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 11.48,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AVANTIFEED",
+      "name": "Avanti Feeds Ltd.",
+      "sector": "fmcg",
+      "price": 700.35,
+      "change": -2.34,
+      "volume": "162.4K",
+      "vol_raw": 162407,
+      "volMul": 1.25,
+      "high": 723.85,
+      "low": 698.0,
+      "high52": 832.43,
+      "low52": 523.5,
+      "pe": 52.0,
       "delivery": "50.0%",
       "turnover_cr": 11.48,
       "universes": [
@@ -12198,26 +12198,6 @@
       ]
     },
     {
-      "symbol": "GILLETTE",
-      "name": "Gillette India Ltd.",
-      "sector": "fmcg",
-      "price": 7116.5,
-      "change": 0.37,
-      "volume": "10.1K",
-      "vol_raw": 10129,
-      "volMul": 1.25,
-      "high": 7124.5,
-      "low": 7055.0,
-      "high52": 8193.17,
-      "low52": 5291.25,
-      "pe": 52.0,
-      "delivery": "50.0%",
-      "turnover_cr": 7.19,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "JUBLINGREA",
       "name": "Jubilant Ingrevia Ltd.",
       "sector": "infra",
@@ -12231,6 +12211,26 @@
       "high52": 657.22,
       "low52": 418.31,
       "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 7.19,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "GILLETTE",
+      "name": "Gillette India Ltd.",
+      "sector": "fmcg",
+      "price": 7116.5,
+      "change": 0.37,
+      "volume": "10.1K",
+      "vol_raw": 10129,
+      "volMul": 1.25,
+      "high": 7124.5,
+      "low": 7055.0,
+      "high52": 8193.17,
+      "low52": 5291.25,
+      "pe": 52.0,
       "delivery": "50.0%",
       "turnover_cr": 7.19,
       "universes": [
