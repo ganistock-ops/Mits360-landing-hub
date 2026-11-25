@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-25T21:53:03.366762+00:00",
+    "generated_at": "2026-11-25T22:10:15.688500+00:00",
     "market_date": "25-Nov-2026",
     "market_date_iso": "2026-11-25",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -9447,26 +9447,6 @@
       ]
     },
     {
-      "symbol": "CHOLAHLDNG",
-      "name": "Cholamandalam Financial Holdings Ltd.",
-      "sector": "finserv",
-      "price": 1337.9,
-      "change": -1.41,
-      "volume": "289.4K",
-      "vol_raw": 289385,
-      "volMul": 1.25,
-      "high": 1390.6,
-      "low": 1329.2,
-      "high52": 1599.19,
-      "low52": 996.9,
-      "pe": 24.0,
-      "delivery": "50.0%",
-      "turnover_cr": 39.64,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "NATCOPHARM",
       "name": "NATCO Pharma Ltd.",
       "sector": "pharma",
@@ -9480,6 +9460,26 @@
       "high52": 933.4,
       "low52": 596.29,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 39.64,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CHOLAHLDNG",
+      "name": "Cholamandalam Financial Holdings Ltd.",
+      "sector": "finserv",
+      "price": 1337.9,
+      "change": -1.41,
+      "volume": "289.4K",
+      "vol_raw": 289385,
+      "volMul": 1.25,
+      "high": 1390.6,
+      "low": 1329.2,
+      "high52": 1599.19,
+      "low52": 996.9,
+      "pe": 24.0,
       "delivery": "50.0%",
       "turnover_cr": 39.64,
       "universes": [
@@ -11710,26 +11710,6 @@
       ]
     },
     {
-      "symbol": "CARBORUNIV",
-      "name": "Carborundum Universal Ltd.",
-      "sector": "infra",
-      "price": 977.3,
-      "change": 0.02,
-      "volume": "142.2K",
-      "vol_raw": 142218,
-      "volMul": 1.25,
-      "high": 992.0,
-      "low": 965.7,
-      "high52": 1140.8,
-      "low52": 724.28,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 13.94,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "SOBHA",
       "name": "Sobha Ltd.",
       "sector": "realty",
@@ -11743,6 +11723,26 @@
       "high52": 1480.05,
       "low52": 930.0,
       "pe": 42.0,
+      "delivery": "50.0%",
+      "turnover_cr": 13.94,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CARBORUNIV",
+      "name": "Carborundum Universal Ltd.",
+      "sector": "infra",
+      "price": 977.3,
+      "change": 0.02,
+      "volume": "142.2K",
+      "vol_raw": 142218,
+      "volMul": 1.25,
+      "high": 992.0,
+      "low": 965.7,
+      "high52": 1140.8,
+      "low52": 724.28,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 13.94,
       "universes": [
@@ -12430,26 +12430,6 @@
       ]
     },
     {
-      "symbol": "AEGISVOPAK",
-      "name": "Aegis Vopak Terminals Ltd.",
-      "sector": "infra",
-      "price": 278.13,
-      "change": -0.99,
-      "volume": "253.1K",
-      "vol_raw": 253077,
-      "volMul": 1.25,
-      "high": 283.55,
-      "low": 276.15,
-      "high52": 326.08,
-      "low52": 207.11,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 7.11,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "NIACL",
       "name": "The New India Assurance Company Ltd.",
       "sector": "finserv",
@@ -12463,6 +12443,26 @@
       "high52": 174.05,
       "low52": 111.46,
       "pe": 24.0,
+      "delivery": "50.0%",
+      "turnover_cr": 7.11,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "AEGISVOPAK",
+      "name": "Aegis Vopak Terminals Ltd.",
+      "sector": "infra",
+      "price": 278.13,
+      "change": -0.99,
+      "volume": "253.1K",
+      "vol_raw": 253077,
+      "volMul": 1.25,
+      "high": 283.55,
+      "low": 276.15,
+      "high52": 326.08,
+      "low52": 207.11,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 7.11,
       "universes": [
