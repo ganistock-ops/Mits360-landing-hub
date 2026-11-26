@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T13:23:16.695300+00:00",
+    "generated_at": "2026-11-26T20:59:45.454302+00:00",
     "market_date": "26-Nov-2026",
     "market_date_iso": "2026-11-26",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -8430,6 +8430,26 @@
       ]
     },
     {
+      "symbol": "LTTS",
+      "name": "L&T Technology Services Ltd.",
+      "sector": "it",
+      "price": 4245.2,
+      "change": 1.61,
+      "volume": "113.7K",
+      "vol_raw": 113651,
+      "volMul": 1.25,
+      "high": 4298.0,
+      "low": 4178.0,
+      "high52": 4942.7,
+      "low52": 3133.5,
+      "pe": 29.2,
+      "delivery": "50.0%",
+      "turnover_cr": 48.4,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
       "symbol": "HAVELLS",
       "name": "Havells India Ltd.",
       "sector": "fmcg",
@@ -8448,26 +8468,6 @@
       "universes": [
         "nifty500",
         "fno"
-      ]
-    },
-    {
-      "symbol": "LTTS",
-      "name": "L&T Technology Services Ltd.",
-      "sector": "it",
-      "price": 4245.2,
-      "change": 1.61,
-      "volume": "113.7K",
-      "vol_raw": 113651,
-      "volMul": 1.25,
-      "high": 4298.0,
-      "low": 4178.0,
-      "high52": 4942.7,
-      "low52": 3133.5,
-      "pe": 29.2,
-      "delivery": "50.0%",
-      "turnover_cr": 48.4,
-      "universes": [
-        "nifty500"
       ]
     },
     {
@@ -11029,26 +11029,6 @@
       ]
     },
     {
-      "symbol": "CEMPRO",
-      "name": "Cemindia Projects Ltd.",
-      "sector": "infra",
-      "price": 1425.0,
-      "change": 0.73,
-      "volume": "112.4K",
-      "vol_raw": 112387,
-      "volMul": 1.25,
-      "high": 1442.2,
-      "low": 1410.5,
-      "high52": 1658.53,
-      "low52": 1057.88,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 16.05,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "SYNGENE",
       "name": "Syngene International Ltd.",
       "sector": "pharma",
@@ -11062,6 +11042,26 @@
       "high52": 519.17,
       "low52": 331.61,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 16.05,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "CEMPRO",
+      "name": "Cemindia Projects Ltd.",
+      "sector": "infra",
+      "price": 1425.0,
+      "change": 0.73,
+      "volume": "112.4K",
+      "vol_raw": 112387,
+      "volMul": 1.25,
+      "high": 1442.2,
+      "low": 1410.5,
+      "high52": 1658.53,
+      "low52": 1057.88,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 16.05,
       "universes": [
@@ -11569,26 +11569,6 @@
       ]
     },
     {
-      "symbol": "SHYAMMETL",
-      "name": "Shyam Metalics and Energy Ltd.",
-      "sector": "infra",
-      "price": 1293.0,
-      "change": 0.07,
-      "volume": "86.4K",
-      "vol_raw": 86360,
-      "volMul": 1.25,
-      "high": 1303.9,
-      "low": 1283.1,
-      "high52": 1499.48,
-      "low52": 962.32,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 11.19,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "AVANTIFEED",
       "name": "Avanti Feeds Ltd.",
       "sector": "fmcg",
@@ -11602,6 +11582,26 @@
       "high52": 813.51,
       "low52": 518.17,
       "pe": 52.0,
+      "delivery": "50.0%",
+      "turnover_cr": 11.19,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "SHYAMMETL",
+      "name": "Shyam Metalics and Energy Ltd.",
+      "sector": "infra",
+      "price": 1293.0,
+      "change": 0.07,
+      "volume": "86.4K",
+      "vol_raw": 86360,
+      "volMul": 1.25,
+      "high": 1303.9,
+      "low": 1283.1,
+      "high52": 1499.48,
+      "low52": 962.32,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 11.19,
       "universes": [
