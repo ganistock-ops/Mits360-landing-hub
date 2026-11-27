@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T12:06:20.317324+00:00",
+    "generated_at": "2026-11-27T20:44:59.567791+00:00",
     "market_date": "27-Nov-2026",
     "market_date_iso": "2026-11-27",
     "source": "National Stock Exchange of India (Official EOD Bhavcopy)",
@@ -11,6 +11,13 @@
       "symbol": "NIFTY 50",
       "price": "25,607.20",
       "change": "-1.07%",
+      "isPositive": false,
+      "isVix": false
+    },
+    {
+      "symbol": "NIFTY AUTO",
+      "price": "28,199.90",
+      "change": "-1.48%",
       "isPositive": false,
       "isVix": false
     },
@@ -29,13 +36,6 @@
       "isVix": false
     },
     {
-      "symbol": "NIFTY AUTO",
-      "price": "28,199.90",
-      "change": "-1.48%",
-      "isPositive": false,
-      "isVix": false
-    },
-    {
       "symbol": "NIFTY METAL",
       "price": "11,878.00",
       "change": "+1.40%",
@@ -48,13 +48,6 @@
       "change": "-1.43%",
       "isPositive": false,
       "isVix": false
-    },
-    {
-      "symbol": "INDIA VIX",
-      "price": "16.55",
-      "change": "-1.72%",
-      "isPositive": false,
-      "isVix": true
     }
   ],
   "market_breadth": {
@@ -179,7 +172,7 @@
       "name": "Nifty Bank",
       "code": "BANKING",
       "change": -0.78,
-      "turnoverCr": 0.0,
+      "turnoverCr": 8657.74,
       "advCount": 12,
       "decCount": 14,
       "stockCount": 26,
@@ -408,7 +401,7 @@
       "name": "Nifty IT",
       "code": "IT",
       "change": -1.88,
-      "turnoverCr": 0.0,
+      "turnoverCr": 5108.02,
       "advCount": 12,
       "decCount": 13,
       "stockCount": 25,
@@ -635,7 +628,7 @@
       "name": "Nifty Auto",
       "code": "AUTO",
       "change": -1.48,
-      "turnoverCr": 0.0,
+      "turnoverCr": 4883.49,
       "advCount": 18,
       "decCount": 22,
       "stockCount": 40,
@@ -857,7 +850,7 @@
       "name": "Nifty Energy",
       "code": "ENERGY",
       "change": 0.15,
-      "turnoverCr": 0.0,
+      "turnoverCr": 6950.93,
       "advCount": 7,
       "decCount": 12,
       "stockCount": 19,
@@ -1083,7 +1076,7 @@
       "name": "Nifty Metal",
       "code": "METALS",
       "change": 1.4,
-      "turnoverCr": 0.0,
+      "turnoverCr": 5938.47,
       "advCount": 18,
       "decCount": 2,
       "stockCount": 20,
@@ -1310,7 +1303,7 @@
       "name": "Nifty Pharma",
       "code": "PHARMA",
       "change": -0.4,
-      "turnoverCr": 0.0,
+      "turnoverCr": 3774.95,
       "advCount": 15,
       "decCount": 29,
       "stockCount": 44,
@@ -1528,7 +1521,7 @@
       "name": "Nifty FMCG",
       "code": "FMCG",
       "change": -0.93,
-      "turnoverCr": 0.0,
+      "turnoverCr": 2031.1,
       "advCount": 15,
       "decCount": 29,
       "stockCount": 44,
@@ -1750,7 +1743,7 @@
       "name": "Nifty Realty",
       "code": "REALTY",
       "change": -1.43,
-      "turnoverCr": 0.0,
+      "turnoverCr": 1578.24,
       "advCount": 1,
       "decCount": 10,
       "stockCount": 11,
@@ -1972,7 +1965,7 @@
       "name": "Nifty Fin Services",
       "code": "FINSERV",
       "change": -1.33,
-      "turnoverCr": 0.0,
+      "turnoverCr": 13066.16,
       "advCount": 26,
       "decCount": 47,
       "stockCount": 73,
@@ -2197,7 +2190,7 @@
       "name": "Nifty Infra",
       "code": "INFRA",
       "change": -0.74,
-      "turnoverCr": 0.0,
+      "turnoverCr": 10080.55,
       "advCount": 128,
       "decCount": 66,
       "stockCount": 194,
@@ -5578,6 +5571,27 @@
       ]
     },
     {
+      "symbol": "SONACOMS",
+      "name": "Sona BLW Precision Forgings Ltd.",
+      "sector": "auto",
+      "price": 879.0,
+      "change": -0.28,
+      "volume": "1.8M",
+      "vol_raw": 1816873,
+      "volMul": 1.25,
+      "high": 903.9,
+      "low": 877.75,
+      "high52": 1039.48,
+      "low52": 658.31,
+      "pe": 27.4,
+      "delivery": "50.0%",
+      "turnover_cr": 161.64,
+      "universes": [
+        "nifty500",
+        "fno"
+      ]
+    },
+    {
       "symbol": "DMART",
       "name": "Avenue Supermarts Ltd.",
       "sector": "infra",
@@ -5595,27 +5609,6 @@
       "turnover_cr": 161.64,
       "universes": [
         "nifty100",
-        "nifty500",
-        "fno"
-      ]
-    },
-    {
-      "symbol": "SONACOMS",
-      "name": "Sona BLW Precision Forgings Ltd.",
-      "sector": "auto",
-      "price": 879.0,
-      "change": -0.28,
-      "volume": "1.8M",
-      "vol_raw": 1816873,
-      "volMul": 1.25,
-      "high": 903.9,
-      "low": 877.75,
-      "high52": 1039.48,
-      "low52": 658.31,
-      "pe": 27.4,
-      "delivery": "50.0%",
-      "turnover_cr": 161.64,
-      "universes": [
         "nifty500",
         "fno"
       ]
@@ -10980,26 +10973,6 @@
       ]
     },
     {
-      "symbol": "TEGA",
-      "name": "Tega Industries Ltd.",
-      "sector": "infra",
-      "price": 1510.0,
-      "change": -0.19,
-      "volume": "99.3K",
-      "vol_raw": 99341,
-      "volMul": 1.25,
-      "high": 1549.8,
-      "low": 1505.1,
-      "high52": 1782.27,
-      "low52": 1128.82,
-      "pe": 31.0,
-      "delivery": "50.0%",
-      "turnover_cr": 15.13,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "LINDEINDIA",
       "name": "Linde India Ltd.",
       "sector": "infra",
@@ -11012,6 +10985,26 @@
       "low": 6932.0,
       "high52": 8138.55,
       "low52": 5199.0,
+      "pe": 31.0,
+      "delivery": "50.0%",
+      "turnover_cr": 15.13,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "TEGA",
+      "name": "Tega Industries Ltd.",
+      "sector": "infra",
+      "price": 1510.0,
+      "change": -0.19,
+      "volume": "99.3K",
+      "vol_raw": 99341,
+      "volMul": 1.25,
+      "high": 1549.8,
+      "low": 1505.1,
+      "high52": 1782.27,
+      "low52": 1128.82,
       "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 15.13,
@@ -11500,26 +11493,6 @@
       ]
     },
     {
-      "symbol": "VIJAYA",
-      "name": "Vijaya Diagnostic Centre Ltd.",
-      "sector": "pharma",
-      "price": 1552.5,
-      "change": -2.18,
-      "volume": "75.1K",
-      "vol_raw": 75058,
-      "volMul": 1.25,
-      "high": 1587.2,
-      "low": 1548.8,
-      "high52": 1825.28,
-      "low52": 1161.6,
-      "pe": 34.0,
-      "delivery": "50.0%",
-      "turnover_cr": 11.72,
-      "universes": [
-        "nifty500"
-      ]
-    },
-    {
       "symbol": "TECHNOE",
       "name": "Techno Electric & Engineering Company Ltd.",
       "sector": "infra",
@@ -11540,21 +11513,21 @@
       ]
     },
     {
-      "symbol": "SCHNEIDER",
-      "name": "Schneider Electric Infrastructure Ltd.",
-      "sector": "infra",
-      "price": 1032.0,
-      "change": 0.35,
-      "volume": "112.0K",
-      "vol_raw": 112018,
+      "symbol": "VIJAYA",
+      "name": "Vijaya Diagnostic Centre Ltd.",
+      "sector": "pharma",
+      "price": 1552.5,
+      "change": -2.18,
+      "volume": "75.1K",
+      "vol_raw": 75058,
       "volMul": 1.25,
-      "high": 1042.0,
-      "low": 1026.0,
-      "high52": 1198.3,
-      "low52": 769.5,
-      "pe": 31.0,
+      "high": 1587.2,
+      "low": 1548.8,
+      "high52": 1825.28,
+      "low52": 1161.6,
+      "pe": 34.0,
       "delivery": "50.0%",
-      "turnover_cr": 11.58,
+      "turnover_cr": 11.72,
       "universes": [
         "nifty500"
       ]
@@ -11573,6 +11546,26 @@
       "high52": 1483.27,
       "low52": 946.58,
       "pe": 34.0,
+      "delivery": "50.0%",
+      "turnover_cr": 11.58,
+      "universes": [
+        "nifty500"
+      ]
+    },
+    {
+      "symbol": "SCHNEIDER",
+      "name": "Schneider Electric Infrastructure Ltd.",
+      "sector": "infra",
+      "price": 1032.0,
+      "change": 0.35,
+      "volume": "112.0K",
+      "vol_raw": 112018,
+      "volMul": 1.25,
+      "high": 1042.0,
+      "low": 1026.0,
+      "high52": 1198.3,
+      "low52": 769.5,
+      "pe": 31.0,
       "delivery": "50.0%",
       "turnover_cr": 11.58,
       "universes": [
